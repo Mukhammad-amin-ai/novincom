@@ -4,13 +4,13 @@ export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 export const CLEAR_CART = 'CLEAR_CART';
 export const UPDATE_CART = 'UPDATE_CART';
 
-export const state = () => (
+ const state = () => (
     {
         data: []
     }
 );
 
-export const getters = {
+ const getters = {
     cartList: state => {
         return state.data
     },
@@ -39,7 +39,7 @@ export const getters = {
     }
 }
 
-export const actions = {
+ const actions = {
     addToCart: function ( { commit, getters }, payload ) {
         if ( !getters.canAddToCart( payload.product, payload.qty ) ) {
             this._vm.$vToastify.removeToast();
@@ -80,7 +80,7 @@ export const actions = {
     }
 }
 
-export const mutations = {
+ const mutations = {
     [ ADD_TO_CART ] ( state, payload ) {
         var findIndex = state.data.findIndex( item => item.id == payload.product.id );
         let qty = payload.qty ? payload.qty : 1;
@@ -138,4 +138,11 @@ export const mutations = {
     [ CLEAR_CART ] ( state ) {
         state.data = [];
     }
+}
+
+export default {
+    namespaced: true,
+    state,
+    actions,
+    mutations,
 }
