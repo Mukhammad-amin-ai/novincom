@@ -154,7 +154,7 @@ export default {
 @media (max-width: 576px) {
   .carousel .swiper-button-next {
     position: absolute;
-    top: auto !important;
+    top: 96% !important;
     bottom: 7px !important;
     right: 20px !important;
     width: 32px !important;
@@ -164,7 +164,8 @@ export default {
     position: absolute;
     width: 32px !important;
     height: 32px !important;
-    top: auto !important;
+    top: 96% !important;
+
     bottom: 7px !important;
     right: 64px !important;
     left: auto !important;
