@@ -5,21 +5,15 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
                         <div class="widget widget-about">
-                            <img
-                                v-lazy="'./images/logo-footer.png'"
-                                class="footer-logo bg-transparent"
-                                alt="Footer Logo"
-                                width="105"
-                                height="27"
-                            />
-                            <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+                            <img src="../../../assets/newImg/logotypes/logo-footer.svg" class="footer-logo bg-transparent"
+                                alt="Footer Logo" width="105" height="27" />
+                            <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros
+                                eu erat.</p>
 
                             <div class="widget-call">
                                 <i class="icon-phone"></i>
                                 Got Question? Call us 24/7
-                                <a
-                                    href="tel:#"
-                                >+0123 456 789</a>
+                                <a href="tel:#">+0123 456 789</a>
                             </div>
                         </div>
                     </div>
@@ -104,23 +98,15 @@
 
         <div class="footer-bottom">
             <div :class="isFullwidth ? 'container-fluid' : 'container'" class="pb-2 pt-2">
-                <p
-                    class="footer-copyright"
-                >Copyright © {{ new Date().getFullYear() }} Molla Store. All Rights Reserved.</p>
-
+                <p class="footer-copyright">АО АКБ “Новикомбанк”</p>
+                <!-- Copyright © {{ new Date().getFullYear() }} Molla Store. All Rights Reserved. -->
                 <figure class="footer-payments">
-                    <img
-                        v-lazy="'./images/payments.png'"
-                        alt="Payment methods"
-                        class="bg-transparent"
-                        width="272"
-                        height="20"
-                    />
+                    <img src="../../../assets/newImg/logotypes/mir.jpg" alt="Payment methods" class="bg-transparent" />
                 </figure>
             </div>
         </div>
         <div class="mb-10" v-if="bottomSticky"></div>
-	</footer>
+    </footer>
 </template>
 
 <script>
@@ -131,7 +117,7 @@ export default {
         }
     },
     computed: {
-        isFullwidth: function() {
+        isFullwidth: function () {
             return this.$route.path.includes('fullwidth');
         }
     },
@@ -140,9 +126,9 @@ export default {
             this.handleBottomSticky();
         }
     },
-    mounted: function() {
+    mounted: function () {
         this.handleBottomSticky();
-        window.addEventListener('resize', this.handleBottomSticky, {passive: true});
+        window.addEventListener('resize', this.handleBottomSticky, { passive: true });
     },
     destroyed: function () {
         window.removeEventListener('resize', this.handleBottomSticky);
