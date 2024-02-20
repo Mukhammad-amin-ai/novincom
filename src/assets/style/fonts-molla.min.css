@@ -1,18 +1,34 @@
 @font-face {
-    font-family: molla;
-    src: url(../fonts/molla.eot?74273691);
-    src:
-        url(../fonts/molla.eot?74273691#iefix) format("embedded-opentype"),
-        url(../fonts/molla.woff2?74273691) format("woff2"),
-        url(../fonts/molla.woff?74273691) format("woff"),
-        url(../fonts/molla.ttf?74273691) format("truetype"),
-        url(../fonts/molla.svg?74273691#molla) format("svg");
-    font-weight: 400;
-    font-style: normal;
+    font-family: Gilroy-Light;
+    src: url("../font/Gilroy-Light.ttf");
+    /* ! font-weight =>  300 */
 }
+
+@font-face {
+    font-family: Gilroy-Regular;     
+    src: url("../font/Gilroy-Regular.ttf");
+    /* ! font-weight =>  400 */
+}
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url("../font/Gilroy-Medium.ttf");
+    /* ! font-weight =>  500 */
+
+}
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("../font/Gilroy-Bold.ttf");
+    /* ! font-weight =>  600 */
+}
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url("../font/Gilroy-SemiBold.ttf");
+    /* ! font-weight =>  700 */
+}
+
 [class*=" icon-"]:before,
 [class^="icon-"]:before {
-    font-family: molla;
+    font-family: Gilroy-Light,Gilroy-Regular,Gilroy-Medium,Gilroy-Bold,Gilroy-SemiBold;
     font-style: normal;
     font-weight: 400;
     display: inline-block;

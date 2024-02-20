@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderDefault/>
+    <!-- <HeaderDefault/> -->
       <RouterView/>
   </div>
 </template>
