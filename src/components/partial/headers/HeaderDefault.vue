@@ -202,12 +202,13 @@
 </template>
 
 <script>
-import CartMenu from '~/components/partial/headers/shared/CartMenu';
-import CompareMenu from '~/components/partial/headers/shared/CompareMenu';
-import WishlistMenu from '~/components/partial/headers/shared/WishlistMenu';
-import MainMenu from '~/components/partial/headers/shared/MainMenu';
-import HeaderSearch from '~/components/partial/headers/shared/HeaderSearch';
-import StickyHeader from '~/components/elements/StickyHeader';
+// import CartMenu from '../headers/shared/CartMenu.vue';
+import CartMenu from '../headers/shared/CartMenu.vue';
+import CompareMenu from '../headers/shared/CompareMenu.vue';
+import WishlistMenu from '../headers/shared/WishlistMenu.vue';
+import MainMenu from '../headers/shared/MainMenu.vue';
+import HeaderSearch from '../headers/shared/HeaderSearch.vue';
+import StickyHeader from '../../elements/StickyHeader.vue';
 
 export default {
     components: {
@@ -226,7 +227,7 @@ export default {
     methods: {
         openSignInModal: function() {
             this.$modal.show(
-                () => import('~/components/elements/modals/SignInModal'),
+                () => import('../../elements/modals/SignInModal.vue'),
                 {},
                 { width: '575', height: 'auto', adaptive: true }
             );

@@ -39,7 +39,7 @@
 </template>
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import { baseUrl } from '~/repositories/repository';
+import { baseUrl } from '../../../../repositories/repository.js';
 
 export default {
     data: function() {
