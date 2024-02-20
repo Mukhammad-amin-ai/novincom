@@ -1,0 +1,21 @@
+.swiper-item-content {
+  font-family: Gilroy, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text_color);
+}
+.swiper-wrapper {
+  align-items: center;
+}
+.swiper_custom_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.left-swiper-item,
+.right-swiper-item {
+  width: 50%;
+}
