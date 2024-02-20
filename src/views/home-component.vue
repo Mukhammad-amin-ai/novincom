@@ -1,95 +1,7 @@
 <template>
   <div class="main home-page">
     <div class="intro-slider-container mb-5">
-      <div class="intro-slider swiper-carousel swiper-1">
-        <div v-swiper:swiper1="carouselSetting1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div
-                class="intro-slide"
-                v-lazy:background-image="
-                  './assets/images/home/sliders/slide-1.png'
-                "
-              >
-                <div class="container intro-content">
-                  <div class="row justify-content-end">
-                    <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                      <h3 class="intro-subtitle text-third">
-                        Deals and Promotions
-                      </h3>
-
-                      <h1 class="intro-title">Beats by</h1>
-                      <h1 class="intro-title">Dre Studio 3</h1>
-
-                      <div class="intro-price">
-                        <sup class="intro-old-price">$349,95</sup>
-                        <span class="text-third">
-                          $279
-                          <sup>.99</sup>
-                        </span>
-                      </div>
-
-                      <router-link
-                        to="/shop/sidebar/list"
-                        class="btn btn-primary btn-round"
-                      >
-                        <span>Shop More</span>
-                        <i class="icon-long-arrow-right"></i>
-                      </router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="intro-slide"
-                v-lazy:background-image="
-                  './assets/images/home/sliders/slide-2.png'
-                "
-              >
-                <div class="container intro-content">
-                  <div class="row justify-content-end">
-                    <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                      <h3 class="intro-subtitle text-primary">New Arrival</h3>
-
-                      <h1 class="intro-title">
-                        Apple iPad Pro
-                        <br />12.9 Inch, 64GB
-                      </h1>
-
-                      <div class="intro-price">
-                        <sup>Today:</sup>
-                        <span class="text-primary">
-                          $999
-                          <sup>.99</sup>
-                        </span>
-                      </div>
-
-                      <router-link
-                        to="/shop/sidebar/list"
-                        class="btn btn-primary btn-round"
-                      >
-                        <span>Shop More</span>
-                        <i class="icon-long-arrow-right"></i>
-                      </router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-nav nav-rounded">
-          <div class="swiper-prev">
-            <i class="icon-angle-left"></i>
-          </div>
-          <div class="swiper-next">
-            <i class="icon-angle-right"></i>
-          </div>
-        </div>
-        <div class="swiper-dots swiper-dots-inner"></div>
-      </div>
+      <carousel />
     </div>
 
     <div class="container">
@@ -524,6 +436,7 @@ import {
   carouselSettingDefault,
 } from "../utilities/carousel";
 import { homeData } from "../utilities/data";
+import Carousel from "@/components/elements/Carousel.vue";
 
 export default {
   components: {
@@ -531,6 +444,7 @@ export default {
     DealCollection,
     TrendyCollection,
     NewCollection,
+    Carousel,
   },
   data: function () {
     return {
