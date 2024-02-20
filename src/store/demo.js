@@ -1,24 +1,28 @@
-export const HIDE_NEWSLETTER = 'HIDE_NEWSLETTER';
-export const REFRESH_STORE = 'REFRESH_STORE';
+export const HIDE_NEWSLETTER = "HIDE_NEWSLETTER";
+export const REFRESH_STORE = "REFRESH_STORE";
 
-export const state = () => (
-    {
-        current: 4,
-        showNewsletter: true
-    }
-);
+const state = () => ({
+  current: 4,
+  showNewsletter: true,
+});
 
-export const getters = {
-    currentDemo: state => {
-        return 'demo' + state.current;
-    },
-    newsletterShow: state => {
-        return state.showNewsletter;
-    }
+const getters = {
+  currentDemo: (state) => {
+    return "demo" + state.current;
+  },
+  newsletterShow: (state) => {
+    return state.showNewsletter;
+  },
 };
 
-export const mutations = {
-    [ HIDE_NEWSLETTER ] ( state ) {
-        state.showNewsletter = false;
-    },
-}
+const mutations = {
+  [HIDE_NEWSLETTER](state) {
+    state.showNewsletter = false;
+  },
+};
+export default {
+  namespaced: true,
+  state,
+  getters,
+  mutations,
+};
