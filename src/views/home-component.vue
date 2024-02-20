@@ -7,7 +7,7 @@
                       <div class="swiper-slide">
                           <div
                               class="intro-slide"
-                              v-lazy:background-image="'./images/home/sliders/slide-1.png'"
+                              v-lazy:background-image="'./assets/images/home/sliders/slide-1.png'"
                           >
                               <div class="container intro-content">
                                   <div class="row justify-content-end">
@@ -42,7 +42,7 @@
                       <div class="swiper-slide">
                           <div
                               class="intro-slide"
-                              v-lazy:background-image="'./images/home/sliders/slide-2.png'"
+                              v-lazy:background-image="'./assets/images/home/sliders/slide-2.png'"
                           >
                               <div class="container intro-content">
                                   <div class="row justify-content-end">
