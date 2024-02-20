@@ -5,7 +5,6 @@
         <div class="header-left">
           <a href="tel:#"> <i class="icon-phone"></i>Call: +0123 456 789 </a>
         </div>
-
         <div class="header-right">
           <ul class="top-menu">
             <li>

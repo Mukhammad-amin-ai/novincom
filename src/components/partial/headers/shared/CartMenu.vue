@@ -7,7 +7,7 @@
       </div>
       <p>Cart</p>
     </router-link>
-
+<!-- 
     <div
       class="dropdown-menu dropdown-menu-right"
       v-if="cartList.length > 0"
@@ -74,7 +74,7 @@
     </div>
     <div class="dropdown-menu dropdown-menu-right" v-else key="noCart">
       <p class="text-center">No products in the cart.</p>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -91,7 +91,7 @@ export default {
     ...mapGetters("cart", ["cartList", "priceTotal", "qtyTotal"]),
   },
   methods: {
-    ...mapActions("cart", ["removeFromCart"]),
+    // ...mapActions("cart", ["removeFromCart"]),
   },
 };
 </script>

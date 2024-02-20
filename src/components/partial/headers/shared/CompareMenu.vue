@@ -7,7 +7,7 @@
       <p>Compare</p>
     </a>
 
-    <div
+    <!-- <div
       class="dropdown-menu dropdown-menu-right"
       v-if="compareList.length > 0"
     >
@@ -43,9 +43,10 @@
         </a>
       </div>
     </div>
-    <div class="dropdown-menu dropdown-menu-right" v-else key="noCompare">
+     -->
+    <!-- <div class="dropdown-menu dropdown-menu-right" v-else key="noCompare">
       <p class="text-center">No products in the compare.</p>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -62,7 +63,7 @@ export default {
     ...mapGetters("compare", ["compareList"]),
   },
   methods: {
-    ...mapActions("compare", ["removeFromCompare", "clearCompare"]),
+    // ...mapActions("compare", ["removeFromCompare", "clearCompare"]),
   },
 };
 </script>

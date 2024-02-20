@@ -7,6 +7,7 @@ const state = () => ({
   data: [],
 });
 
+
 const getters = {
   compareList: (state) => {
     return state.data;
