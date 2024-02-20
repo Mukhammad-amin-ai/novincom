@@ -7,15 +7,14 @@
             <div class="col-sm-6 col-lg-3">
               <div class="widget widget-about">
                 <img
-                  v-lazy="'./images/logo-footer.png'"
+                  src="../../../assets/newImg/logotypes/logo.svg"
                   class="footer-logo bg-transparent"
                   alt="Footer Logo"
                   width="105"
                   height="27"
                 />
                 <p>
-                  Praesent dapibus, neque id cursus ucibus, tortor neque egestas
-                  augue, eu vulputate magna eros eu erat.
+                  Подключите программу “Бонусы” к Вашей карте, оплачивайте ей покупки и получайте баллы
                 </p>
   
                 <div class="widget-call">

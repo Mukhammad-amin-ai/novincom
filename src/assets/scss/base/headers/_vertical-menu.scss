@@ -33,11 +33,12 @@
 		text-transform: uppercase;
 		padding: 1rem 1.9rem 1rem 2rem;
 		min-width: 270px;
+		// gap: 50px;
 		transition: background .4s,  color .1s;
 
 		&:after {
-			content: '\f131';
-			font-family: 'molla';
+			// content: '';
+			font-family: Gilroy-medium;
 			border:none;
 			font-size: 2.3rem;
 			line-height: 1;
@@ -73,9 +74,9 @@
 			color: #fff !important;
 			background-color: $primary-color;
 
-			&:after {
-				content: '\f191';
-			}
+			// &:after {
+			// 	// content: '\f191';
+			// }
 		}
 	}
 

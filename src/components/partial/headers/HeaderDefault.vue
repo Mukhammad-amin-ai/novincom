@@ -3,14 +3,19 @@
     <div class="header-top">
       <div :class="isFullwidth ? 'container-fluid' : 'container'">
         <div class="header-left">
-          <a href="tel:#"> <i class="icon-phone"></i>Call: +0123 456 789 </a>
+          <a href="tell:#">
+            <div class="call">
+              <img src="../../../assets/newImg/icons/call-icon.svg" alt="">
+              Обратиться в банк: +7 800 250-70-07
+            </div>
+          </a>
         </div>
         <div class="header-right">
           <ul class="top-menu">
             <li>
               <a href="#">Links</a>
               <ul>
-                <li>
+                <!-- <li>
                   <div class="header-dropdown">
                     <a href="#">USD</a>
                     <div class="header-menu">
@@ -42,11 +47,13 @@
                       </ul>
                     </div>
                   </div>
-                </li>
+                </li> -->
                 <li>
-                  <a href="#signin-modal" @click.prevent="openSignInModal"
-                    >Sign in / Sign up</a
-                  >
+                  <a href="#signin-modal" @click.prevent="openSignInModal">
+                    <span class="logIn">
+                      <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
+                      Выход
+                    </span> </a>
                 </li>
               </ul>
             </li>
@@ -54,7 +61,6 @@
         </div>
       </div>
     </div>
-
     <div class="header-middle">
       <div :class="isFullwidth ? 'container-fluid' : 'container'">
         <div class="header-left">
@@ -64,13 +70,8 @@
           </button>
 
           <router-link to="/" class="logo">
-            <img
-              v-lazy="'./images/logo.png'"
-              class="bg-transparent"
-              alt="Molla Logo"
-              width="105"
-              height="27"
-            />
+            <img src="../../../assets/newImg/logotypes/logo.svg" class="bg-transparent" alt="Molla Logo" width="105"
+              height="27" />
           </router-link>
         </div>
 
@@ -93,112 +94,62 @@
         <div :class="isFullwidth ? 'container-fluid' : 'container'">
           <div class="header-left">
             <div class="dropdown category-dropdown">
-              <a
-                href="javascript:;"
-                class="dropdown-toggle"
-                title="Browse Categories"
-              >
-                Browse Categories
+              <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы">
+                <div class="drop-custom">
+                  <img src="../../../assets/newImg/icons/twotone-menu.svg" alt="">
+                  Потратить бонусы
+                </div>
                 <i class="icon-angle-down"></i>
               </a>
-
               <div class="dropdown-menu">
                 <nav class="side-nav">
                   <ul class="menu-vertical sf-arrows">
-                    <li
-                      class="item-lead"
-                      :class="{
-                        active: $route.query.category == 'electronics',
-                      }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=electronics'"
-                        >Electronics</router-link
-                      >
+                    <li class="item-lead" :class="{
+                      active: $route.query.category == 'electronics',
+                    }">
+                      <router-link :to="'/shop/sidebar/3cols?category=electronics'">Electronics</router-link>
                     </li>
-                    <li
-                      class="item-lead"
-                      :class="{ active: $route.query.category == 'gift-idea' }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=gift-idea'"
-                        >Gift Ideas</router-link
-                      >
+                    <li class="item-lead" :class="{ active: $route.query.category == 'gift-idea' }">
+                      <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Gift Ideas</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'beds' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=beds'"
-                        >Beds</router-link
-                      >
+                      <router-link :to="'/shop/sidebar/3cols?category=beds'">Beds</router-link>
                     </li>
-                    <li
-                      :class="{ active: $route.query.category == 'lighting' }"
-                    >
-                      <router-link :to="'/shop/sidebar/3cols?category=lighting'"
-                        >Lighting</router-link
-                      >
+                    <li :class="{ active: $route.query.category == 'lighting' }">
+                      <router-link :to="'/shop/sidebar/3cols?category=lighting'">Lighting</router-link>
                     </li>
-                    <li
-                      :class="{
-                        active:
-                          $route.query.category == 'sofas-and-sleeper-sofas',
-                      }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'"
-                        >Sofas & Sleeper sofas</router-link
-                      >
+                    <li :class="{
+                      active:
+                        $route.query.category == 'sofas-and-sleeper-sofas',
+                    }">
+                      <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Sofas & Sleeper
+                        sofas</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'storage' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=storage'"
-                        >Storage</router-link
-                      >
+                      <router-link :to="'/shop/sidebar/3cols?category=storage'">Storage</router-link>
                     </li>
-                    <li
-                      :class="{
-                        active:
-                          $route.query.category == 'armchairs-and-chaises',
-                      }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'"
-                        >Armchairs & Chaises</router-link
-                      >
+                    <li :class="{
+                      active:
+                        $route.query.category == 'armchairs-and-chaises',
+                    }">
+                      <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Armchairs &
+                        Chaises</router-link>
                     </li>
-                    <li
-                      :class="{ active: $route.query.category == 'decoration' }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=decoration'"
-                        >Decoration</router-link
-                      >
+                    <li :class="{ active: $route.query.category == 'decoration' }">
+                      <router-link :to="'/shop/sidebar/3cols?category=decoration'">Decoration</router-link>
                     </li>
-                    <li
-                      :class="{
-                        active: $route.query.category == 'kitchen-cabinets',
-                      }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=kitchen-cabinets'"
-                        >Kitchen Cabinets</router-link
-                      >
+                    <li :class="{
+                      active: $route.query.category == 'kitchen-cabinets',
+                    }">
+                      <router-link :to="'/shop/sidebar/3cols?category=kitchen-cabinets'">Kitchen Cabinets</router-link>
                     </li>
-                    <li
-                      :class="{
-                        active: $route.query.category == 'coffee-and-tables',
-                      }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=coffee-and-tables'"
-                        >Coffee & Tables</router-link
-                      >
+                    <li :class="{
+                      active: $route.query.category == 'coffee-and-tables',
+                    }">
+                      <router-link :to="'/shop/sidebar/3cols?category=coffee-and-tables'">Coffee & Tables</router-link>
                     </li>
-                    <li
-                      :class="{ active: $route.query.category == 'furniture' }"
-                    >
-                      <router-link
-                        :to="'/shop/sidebar/3cols?category=furniture'"
-                        >Outdoor Furniture</router-link
-                      >
+                    <li :class="{ active: $route.query.category == 'furniture' }">
+                      <router-link :to="'/shop/sidebar/3cols?category=furniture'">Outdoor Furniture</router-link>
                     </li>
                   </ul>
                 </nav>
@@ -260,3 +211,26 @@ export default {
   },
 };
 </script>
+<style scoped>
+.call {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  font-family: Gilroy-Medium;
+}
+
+.logIn {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  font-family: Gilroy-Medium;
+}
+
+.drop-custom{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+</style>

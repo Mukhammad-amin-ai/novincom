@@ -3,7 +3,6 @@
     <ul class="menu sf-arrows">
       <li class="megamenu-container" :class="{ active: current == '/' }">
         <router-link to="/" class="sf-with-ul">Home</router-link>
-
         <div class="megamenu demo">
           <div class="menu-col">
             <div class="menu-title">Choose your demo</div>

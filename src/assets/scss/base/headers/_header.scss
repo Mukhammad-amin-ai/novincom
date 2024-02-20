@@ -306,7 +306,7 @@
 		text-decoration: none !important;
 		line-height: 1;
 		color: #333;
-
+		
 		&::after {
 			display: none;
 		}
@@ -1046,7 +1046,7 @@
 		.dropdown-toggle {
 			color: #333;
 			text-transform: none;
-			padding-left: 5.5rem;
+			// padding-left: 5.5rem;
 			min-width: 100%;
 			i {
 				font-size: 1rem;
