@@ -2,13 +2,13 @@ export const ADD_TO_WISHLIST = 'ADD_TO_WISHLIST';
 export const REMOVE_FROM_WISHLIST = 'REMOVE_FROM_WISHLIST';
 export const MOVE_TO_CART = 'MOVE_TO_CART';
 
-export const state = () => (
+ const state = () => (
     {
         data: []
     }
 );
 
-export const getters = {
+ const getters = {
     wishlist: state => {
         return state.data;
     },
@@ -20,7 +20,7 @@ export const getters = {
     }
 }
 
-export const actions = {
+ const actions = {
     addToWishlist: function ( { commit }, payload ) {
         commit( ADD_TO_WISHLIST, payload );
         this._vm.$vToastify.setSettings( {
@@ -51,7 +51,7 @@ export const actions = {
     }
 }
 
-export const mutations = {
+ const mutations = {
     [ ADD_TO_WISHLIST ] ( state, payload ) {
         var findIndex = state.data.findIndex( item => item.id === payload.product.id );
         if ( findIndex == -1 ) {
@@ -65,4 +65,11 @@ export const mutations = {
     [ REMOVE_FROM_WISHLIST ] ( state, payload ) {
         state.data = state.data.filter( item => item.id !== payload.product.id );
     }
+}
+
+export default {
+    namespaced: true,
+    state,
+    actions,
+    mutations,
 }
