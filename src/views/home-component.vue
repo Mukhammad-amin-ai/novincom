@@ -90,11 +90,11 @@
             </router-link>
             <div class="banner-content">
               <h4 class="banner-subtitle">
-                <a href="#">Smart Offer</a>
+                <a href="#">Специальное предложение</a>
               </h4>
               <h3 class="banner-title">
-                <a href="#">
-                  Save $150
+                <a href="#" style="font-family: Gilroy-Medium !important;">
+                  Скидка 150 Б
                   <strong>
                     on Samsung
                     <br />Galaxy Note9
@@ -116,13 +116,13 @@
             </router-link>
             <div class="banner-content">
               <h4 class="banner-subtitle">
-                <a href="#">Time Deals</a>
+                <a href="#">Выгодно</a>
               </h4>
 
               <h3 class="banner-title">
-                <a href="#">
+                <a href="#" style="font-family: Gilroy-Medium !important;">
                   <strong>Bose SoundSport</strong>
-                  <br />Time Deal -30%
+                  <br />Скидка –30%
                 </a>
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
@@ -140,12 +140,12 @@
             </router-link>
             <div class="banner-content">
               <h4 class="banner-subtitle">
-                <a href="#">Clearance</a>
+                <a href="#">Выгодное предложение</a>
               </h4>
               <h3 class="banner-title">
-                <a href="#">
+                <a href="#" style="font-family: Gilroy-Medium !important;">
                   <strong>GoPro - Fusion 360</strong>
-                  <br />Save $70
+                  <br />Экономия 70 Б
                 </a>
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
@@ -157,39 +157,34 @@
         </div>
       </div>
     </div>
-
     <div class="mb-3"></div>
-
     <new-collection :products="newProducts" v-if="loaded"></new-collection>
-
     <div class="mb-6"></div>
-
     <div class="container">
-      <div class="cta cta-border mb-5" v-lazy:background-image="'./images/home/bg-1.jpg'">
-        <img v-lazy="'./images/home/camera.png'" alt="camera" class="cta-img bg-transparent" />
+      <div class="cta cta-border mb-5" style="background-image:url(../assets/newImg/box.png)">
+        <img src=" ../assets/newImg/plane.png" alt="camera" class="cta-img bg-transparent" />
         <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="cta-content d-flex">
               <div class="cta-text text-right text-white">
                 <p>
-                  Shop Today’s Deals
+                  Путешествие по всем направлениям!
                   <br />
-                  <strong>Awesome Made Easy. HERO7 Black</strong>
+                  <strong style="font-family: Gilroy-SemiBold !important; ">Авиа- и железнодорожныебилеты и
+                    отели.</strong>
                 </p>
               </div>
 
-              <router-link to="/shop/sidebar/list" class="btn btn-primary btn-round">
-                <span>Shop Now - $429.99</span>
-                <i class="icon-long-arrow-right"></i>
+              <router-link to="/shop/sidebar/list" class="btn btn-primary btn-round" style="display: flex; gap: 10px;">
+                <span>Смотреть</span>
+                <img src="../assets/newImg/icons/w_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
               </router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <deal-collection v-if="loaded"></deal-collection>
-
     <div class="container">
       <hr class="mb-0" />
       <div class="swiper-carousel brands-slider swiper-2 mb-5 mt-5">
@@ -215,13 +210,10 @@
     <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
     <div class="mb-5"></div>
     <recommend-collection :products="products" v-if="loaded"></recommend-collection>
-
     <div class="mb-4"></div>
-
     <div class="container">
       <hr class="mb-0" />
     </div>
-
     <div class="icon-boxes-container bg-transparent">
       <div class="container">
         <div class="row">
@@ -273,29 +265,25 @@
         </div>
       </div>
     </div>
-
     <div class="cta bg-image bg-dark pt-4 pb-5 mb-0">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-md-8 col-lg-6">
             <div class="cta-heading text-center">
-              <h3 class="cta-title text-white">Get The Latest Deals</h3>
-
+              <h3 class="cta-title text-white">Получайте специальные предложения</h3>
               <p class="cta-desc text-white">
-                and receive
-                <span class="font-weight-normal">$20 coupon</span> for first
-                shopping
+                подпишитесь на нашу рассылку
               </p>
             </div>
-
             <form action="#">
               <div class="input-group input-group-round">
-                <input type="email" class="form-control form-control-white" placeholder="Enter your Email Address"
+                <input type="email" class="form-control form-control-white" 
                   aria-label="Email Adress" required />
                 <div class="input-group-append">
-                  <button class="btn btn-primary" type="submit">
-                    <span>Subscribe</span>
-                    <i class="icon-long-arrow-right"></i>
+                  <button class="btn btn-primary" type="submit" style="display: flex; gap: 5px;">
+                    <span>Подписаться</span>
+                    <!-- <i class="icon-long-arrow-right"></i> -->
+                    <img src="../assets/newImg/icons/w_arrow-right.svg" alt="w_arrow">
                   </button>
                 </div>
               </div>
