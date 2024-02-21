@@ -39,7 +39,7 @@
               </div>
 
               <div class="w-100 d-flex justify-content-start">
-                <router-link to="auth/login" class="auth-btn text-white mb-2"
+                <router-link to="/sign_up" class="auth-btn text-white mb-2"
                   >Вход / Регистрация
                   <svg
                     width="16"

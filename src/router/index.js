@@ -14,6 +14,16 @@ const router = createRouter({
       path: "/sign_up",
       name: "sign_up",
       component: loginVue,
+    },
+    {
+      path: "/tickets_search_results",
+      name: "tickets search results",
+      component: loginVue
+    },
+    {
+      path:"/catalog",
+      name:"catalog",
+      component:loginVue
     }
   ],
 });

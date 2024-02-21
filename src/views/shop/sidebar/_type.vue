@@ -17,14 +17,10 @@
                 </ol>
             </div>
         </nav>
-
         <div class="page-content">
             <div class="container">
                 <div class="row">
-                    <div
-                        class="col-lg-9 skeleton-body skel-shop-products"
-                        :class="{loaded: loaded}"
-                    >
+                    <div class="col-lg-9 skeleton-body skel-shop-products" :class="{ loaded: loaded }">
                         <div class="toolbox">
                             <div class="toolbox-left">
                                 <div class="toolbox-info">
@@ -32,18 +28,12 @@
                                     <span>{{ products.length }} of {{ totalCount }}</span> Products
                                 </div>
                             </div>
-
                             <div class="toolbox-right">
                                 <div class="toolbox-sort">
                                     <label for="sortby">Sort by:</label>
                                     <div class="select-custom">
-                                        <select
-                                            name="sortby"
-                                            id="sortby"
-                                            class="form-control"
-                                            @change.prevent="getProducts"
-                                            v-model="orderBy"
-                                        >
+                                        <select name="sortby" id="sortby" class="form-control" @change.prevent="getProducts"
+                                            v-model="orderBy">
                                             <option value="default">Default</option>
                                             <option value="featured">Most Popular</option>
                                             <option value="rating">Most Rated</option>
@@ -52,11 +42,8 @@
                                     </div>
                                 </div>
                                 <div class="toolbox-layout">
-                                    <nuxt-link
-                                        to="/shop/sidebar/list"
-                                        class="btn-layout"
-                                        :class="{active: type === 'list'}"
-                                    >
+                                    <nuxt-link to="/shop/sidebar/list" class="btn-layout"
+                                        :class="{ active: type === 'list' }">
                                         <svg width="16" height="10">
                                             <rect x="0" y="0" width="4" height="4" />
                                             <rect x="6" y="0" width="10" height="4" />
@@ -64,12 +51,8 @@
                                             <rect x="6" y="6" width="10" height="4" />
                                         </svg>
                                     </nuxt-link>
-
-                                    <nuxt-link
-                                        to="/shop/sidebar/2cols"
-                                        class="btn-layout"
-                                        :class="{active: type === '2cols'}"
-                                    >
+                                    <nuxt-link to="/shop/sidebar/2cols" class="btn-layout"
+                                        :class="{ active: type === '2cols' }">
                                         <svg width="10" height="10">
                                             <rect x="0" y="0" width="4" height="4" />
                                             <rect x="6" y="0" width="4" height="4" />
@@ -77,12 +60,8 @@
                                             <rect x="6" y="6" width="4" height="4" />
                                         </svg>
                                     </nuxt-link>
-
-                                    <nuxt-link
-                                        to="/shop/sidebar/3cols"
-                                        class="btn-layout"
-                                        :class="{active: type === '3cols'}"
-                                    >
+                                    <nuxt-link to="/shop/sidebar/3cols" class="btn-layout"
+                                        :class="{ active: type === '3cols' }">
                                         <svg width="16" height="10">
                                             <rect x="0" y="0" width="4" height="4" />
                                             <rect x="6" y="0" width="4" height="4" />
@@ -92,12 +71,8 @@
                                             <rect x="12" y="6" width="4" height="4" />
                                         </svg>
                                     </nuxt-link>
-
-                                    <nuxt-link
-                                        to="/shop/sidebar/4cols"
-                                        class="btn-layout"
-                                        :class="{active: type === '4cols'}"
-                                    >
+                                    <nuxt-link to="/shop/sidebar/4cols" class="btn-layout"
+                                        :class="{ active: type === '4cols' }">
                                         <svg width="22" height="10">
                                             <rect x="0" y="0" width="4" height="4" />
                                             <rect x="6" y="0" width="4" height="4" />
@@ -112,22 +87,14 @@
                                 </div>
                             </div>
                         </div>
-
                         <shop-list-one :products="products" :per-page="perPage" :loaded="loaded"></shop-list-one>
-
                         <pagination :per-page="perPage" :total="totalCount"></pagination>
                     </div>
-
                     <aside class="col-lg-3 order-lg-first" sticky-container>
                         <div v-sticky="!isSidebar" sticky-offset="{ top: 69 }">
-                            <button
-                                class="sidebar-fixed-toggler"
-                                @click="toggleSidebar"
-                                v-if="isSidebar"
-                            >
+                            <button class="sidebar-fixed-toggler" @click="toggleSidebar" v-if="isSidebar">
                                 <i class="icon-cog"></i>
                             </button>
-
                             <div class="sidebar-filter-overlay" @click="hideSidebar"></div>
                             <shop-sidebar-one :is-sidebar="isSidebar"></shop-sidebar-one>
                         </div>
@@ -159,7 +126,7 @@ export default {
     directives: {
         Sticky
     },
-    data: function() {
+    data: function () {
         return {
             products: [],
             perPage: 5,
@@ -174,24 +141,24 @@ export default {
         ...mapGetters('demo', ['currentDemo'])
     },
     watch: {
-        $route: function() {
+        $route: function () {
             this.getProducts(true);
         }
     },
-    created: function() {
+    created: function () {
         this.getProducts();
     },
-    mounted: function() {
+    mounted: function () {
         this.resizeHandler();
         window.addEventListener('resize', this.resizeHandler, {
             passive: true
         });
     },
-    destroyed: function() {
+    destroyed: function () {
         window.removeEventListener('resize', this.resizeHandler);
     },
     methods: {
-        getProducts: async function(samePage = false) {
+        getProducts: async function (samePage = false) {
             this.type = this.$route.params.type;
             if (this.type == 'list') {
                 this.pageTitle = 'List';
@@ -227,7 +194,7 @@ export default {
                 })
                 .catch(error => ({ error: JSON.stringify(error) }));
         },
-        toggleSidebar: function() {
+        toggleSidebar: function () {
             if (
                 document
                     .querySelector('body')
@@ -243,12 +210,12 @@ export default {
             }
         },
 
-        hideSidebar: function() {
+        hideSidebar: function () {
             document
                 .querySelector('body')
                 .classList.remove('sidebar-filter-active');
         },
-        resizeHandler: function() {
+        resizeHandler: function () {
             if (window.innerWidth > 991) this.isSidebar = false;
             else this.isSidebar = true;
         }
