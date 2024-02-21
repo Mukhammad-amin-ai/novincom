@@ -71,7 +71,7 @@
               <h4 class="widget-title">Мой аккаунт</h4>
               <ul class="widget-list">
                 <li>
-                  <a href="#">Вход</a>
+                  <router-link to="/sign_up">Вход</router-link>
                 </li>
                 <li>
                   <router-link to="#">Корзина</router-link>
@@ -86,7 +86,7 @@
                   <router-link to="#">Избранное</router-link>
                 </li>
                 <li>
-                  <router-link to="#">Регистрация</router-link>
+                  <router-link to="/sign_up">Регистрация</router-link>
                 </li>
               </ul>
             </div>
