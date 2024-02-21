@@ -248,6 +248,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
@@ -274,7 +275,7 @@
       </div>
     </div>
 
-    <div class="cta bg-image bg-dark pt-4 pb-5 mb-0" v-lazy:background-image="'./images/home/bg-5.jpg'">
+    <div class="cta bg-image bg-dark pt-4 pb-5 mb-0">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-md-8 col-lg-6">

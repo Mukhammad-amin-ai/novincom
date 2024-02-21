@@ -92,7 +92,7 @@ img {
 }
 
 button {
-  -webkit-appearance: none;
+  // -webkit-appearance: none;
   border: none;
   background-color: transparent;
 }
@@ -136,6 +136,7 @@ p {
 
 .bg-image {
   background-color: #f4f4f4;
+  background-image:url(../../newImg/form_mainpage.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
