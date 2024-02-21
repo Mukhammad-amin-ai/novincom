@@ -207,7 +207,7 @@
         </div>
       </div>
     </div>
-    <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
+    <TrendyCollection :products="topProducts" v-if="loaded"></TrendyCollection>
     <div class="mb-5"></div>
     <recommend-collection :products="products" v-if="loaded"></recommend-collection>
     <div class="mb-4"></div>
@@ -265,7 +265,8 @@
         </div>
       </div>
     </div>
-    <div class="cta bg-image bg-dark pt-4 pb-5 mb-0">
+    <div class="cta bg-image bg-dark pt-4 pb-5 mb-0"
+      style="background-image:url(./assets/images/bg-nout.png) !important;">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-md-8 col-lg-6">
