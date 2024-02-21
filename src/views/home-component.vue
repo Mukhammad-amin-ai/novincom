@@ -285,7 +285,7 @@
                 <input type="email" class="form-control form-control-white" aria-label="Email Adress" required />
                 <div class="input-group-append">
                   <button class="btn btn-primary" type="submit" style="display: flex; gap: 5px">
-                    <router-link to="#" style="display: flex; gap: 5px; color: #fff">
+                    <router-link to="/login" style="display: flex; gap: 5px; color: #fff">
                       <span>Подписаться</span>
                       <!-- <i class="icon-long-arrow-right"></i> -->
                       <img src="../assets/newImg/icons/w_arrow-right.svg" alt="w_arrow" />

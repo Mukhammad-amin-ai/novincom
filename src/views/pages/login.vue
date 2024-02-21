@@ -27,24 +27,20 @@
                                         <input type="text" class="form-control" id="singin-email-2" name="singin-email"
                                             required />
                                     </div>
-
                                     <div class="form-group">
                                         <label for="singin-password-2">Password *</label>
                                         <input type="password" class="form-control" id="singin-password-2"
                                             name="singin-password" required />
                                     </div>
-
                                     <div class="form-footer">
                                         <button type="submit" class="btn btn-outline-primary-2">
                                             <span>LOG IN</span>
                                             <i class="icon-long-arrow-right"></i>
                                         </button>
-
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="signin-remember-2" />
                                             <label class="custom-control-label" for="signin-remember-2">Remember Me</label>
                                         </div>
-
                                         <a href="javascript:;" class="forgot-link">Forgot Your Password?</a>
                                     </div>
                                 </form>
@@ -57,7 +53,6 @@
                                                 Login With Google
                                             </a>
                                         </div>
-
                                         <div class="col-sm-6">
                                             <a href="javascript:;" class="btn btn-login btn-f">
                                                 <i class="icon-facebook-f"></i>
@@ -67,7 +62,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tab-pane fade" id="register">
                                 <form action="#">
                                     <div class="form-group">
@@ -75,19 +69,16 @@
                                         <input type="email" class="form-control" id="register-email-2" name="register-email"
                                             required />
                                     </div>
-
                                     <div class="form-group">
                                         <label for="register-password-2">Password *</label>
                                         <input type="password" class="form-control" id="register-password-2"
                                             name="register-password" required />
                                     </div>
-
                                     <div class="form-footer">
                                         <button type="submit" class="btn btn-outline-primary-2">
                                             <span>SIGN UP</span>
                                             <i class="icon-long-arrow-right"></i>
                                         </button>
-
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="register-policy-2"
                                                 required />
@@ -107,7 +98,6 @@
                                                 Login With Google
                                             </a>
                                         </div>
-
                                         <div class="col-sm-6">
                                             <a href="javascript:;" class="btn btn-login btn-f">
                                                 <i class="icon-facebook-f"></i>
@@ -125,7 +115,7 @@
     </main>
 </template>
 <script>
-import Tabs from '~/components/elements/Tabs';
+import Tabs from '../../components/elements/Tabs.vue';
 export default {
     components: {
         Tabs
