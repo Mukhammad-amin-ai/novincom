@@ -2,10 +2,11 @@
   <div class="wishlist">
     <router-link to="/shop/wishlist" title="Wishlist">
       <div class="icon">
-        <i class="icon-heart-o"></i>
+        <!-- <i class="icon-heart-o"></i> -->
+        <img src="../../../../assets/newImg/icons/heart.svg" alt="heart">
         <span class="wishlist-count badge">{{ wishlistQty }}</span>
       </div>
-      <p>Wishlist</p>
+      <p>Избранное</p>
     </router-link>
   </div>
 </template>
@@ -18,3 +19,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+p{
+  font-family: Gilroy-Regular;
+  font-size: 12px;
+}
+</style>

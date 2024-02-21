@@ -3,149 +3,95 @@
     <div class="intro-slider-container mb-5">
       <carousel />
     </div>
-
     <div class="container">
-      <h2 class="title text-center mb-4">Explore Popular Categories</h2>
-
+      <h2 class="title text-center mb-4">Каталог призов</h2>
       <div class="cat-blocks-container">
         <div class="row">
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link
-              to="/shop/sidebar/3cols?category=computers"
-              class="cat-block"
-            >
+            <router-link to="/shop/sidebar/3cols?category=computers" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    v-lazy="'./images/home/cats/1.png'"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_1.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
-
-              <h3 class="cat-block-title">Computer & Laptop</h3>
+              <h3 class="cat-block-title">Подарочные сертификаты</h3>
             </router-link>
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link
-              to="/shop/sidebar/3cols?category=cameras"
-              class="cat-block"
-            >
+            <router-link to="/shop/sidebar/3cols?category=cameras" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    v-lazy="'./images/home/cats/2.png'"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_2.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
-              <h3 class="cat-block-title">Digital Cameras</h3>
+              <h3 class="cat-block-title">Авиабилеты</h3>
             </router-link>
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link
-              to="/shop/sidebar/3cols?category=accessories"
-              class="cat-block"
-            >
+            <router-link to="/shop/sidebar/3cols?category=accessories" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    v-lazy="'./images/home/cats/3.png'"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_3.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
-              <h3 class="cat-block-title">Smart Phones</h3>
+              <h3 class="cat-block-title">ЖД билеты</h3>
             </router-link>
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link
-              to="/shop/sidebar/3cols?category=televisions"
-              class="cat-block"
-            >
+            <router-link to="/shop/sidebar/3cols?category=televisions" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    v-lazy="'./images/home/cats/4.png'"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img  src="../assets/newImg/cat_4.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
-              <h3 class="cat-block-title">Televisions</h3>
+              <h3 class="cat-block-title">Отели</h3>
             </router-link>
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link
-              to="/shop/sidebar/3cols?category=audio"
-              class="cat-block"
-            >
+            <router-link to="/shop/sidebar/3cols?category=audio" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    v-lazy="'./images/home/cats/5.png'"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img  src="../assets/newImg/cat_5.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
-              <h3 class="cat-block-title">Audio</h3>
+              <h3 class="cat-block-title">Товары</h3>
             </router-link>
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link
-              to="/shop/sidebar/3cols?category=watches"
-              class="cat-block"
-            >
+            <router-link to="/shop/sidebar/3cols?category=watches" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    v-lazy="'./images/home/cats/6.png'"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img  src="../assets/newImg/cat_6.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
-              <h3 class="cat-block-title">Smart Watches</h3>
+              <h3 class="cat-block-title">Благотворительность</h3>
             </router-link>
           </div>
         </div>
       </div>
     </div>
-
     <div class="mb-4"></div>
-
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-4">
           <div class="banner banner-overlay banner-overlay-light">
             <router-link to="/shop/sidebar/3cols">
-              <img
-                v-lazy="'./images/home/banners/banner-1.png'"
-                width="376"
-                height="160"
-                alt="Banner"
-              />
+              <img src="../assets/newImg/banner-1.png" width="376" height="160" alt="Banner" />
             </router-link>
-
             <div class="banner-content">
               <h4 class="banner-subtitle">
                 <a href="#">Smart Offer</a>
               </h4>
-
               <h3 class="banner-title">
                 <a href="#">
                   Save $150
@@ -155,7 +101,6 @@
                   </strong>
                 </a>
               </h3>
-
               <router-link to="/shop/sidebar/3cols" class="banner-link">
                 Shop Now
                 <i class="icon-long-arrow-right"></i>
@@ -167,14 +112,8 @@
         <div class="col-md-6 col-lg-4">
           <div class="banner banner-overlay banner-overlay-light">
             <router-link to="/shop/sidebar/list">
-              <img
-                v-lazy="'./images/home/banners/banner-2.jpg'"
-                width="376"
-                height="160"
-                alt="Banner"
-              />
+              <img src="../assets/newImg/banner-2.png" width="376" height="160" alt="Banner" />
             </router-link>
-
             <div class="banner-content">
               <h4 class="banner-subtitle">
                 <a href="#">Time Deals</a>
@@ -186,7 +125,6 @@
                   <br />Time Deal -30%
                 </a>
               </h3>
-
               <router-link to="/shop/sidebar/3cols" class="banner-link">
                 Shop Now
                 <i class="icon-long-arrow-right"></i>
@@ -198,27 +136,19 @@
         <div class="col-md-6 col-lg-4">
           <div class="banner banner-overlay banner-overlay-light">
             <router-link to="/shop/sidebar/list">
-              <img
-                v-lazy="'./images/home/banners/banner-3.png'"
-                class="bg-transparent"
-                width="376"
-                height="160"
-                alt="Banner"
-              />
+              <img src="../assets/newImg/banner-3.png" class="bg-transparent" width="376" height="160"
+                alt="Banner" />
             </router-link>
-
             <div class="banner-content">
               <h4 class="banner-subtitle">
                 <a href="#">Clearance</a>
               </h4>
-
               <h3 class="banner-title">
                 <a href="#">
                   <strong>GoPro - Fusion 360</strong>
                   <br />Save $70
                 </a>
               </h3>
-
               <router-link to="/shop/sidebar/3cols" class="banner-link">
                 Shop Now
                 <i class="icon-long-arrow-right"></i>
@@ -236,15 +166,8 @@
     <div class="mb-6"></div>
 
     <div class="container">
-      <div
-        class="cta cta-border mb-5"
-        v-lazy:background-image="'./images/home/bg-1.jpg'"
-      >
-        <img
-          v-lazy="'./images/home/camera.png'"
-          alt="camera"
-          class="cta-img bg-transparent"
-        />
+      <div class="cta cta-border mb-5" v-lazy:background-image="'./images/home/bg-1.jpg'">
+        <img v-lazy="'./images/home/camera.png'" alt="camera" class="cta-img bg-transparent" />
         <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="cta-content d-flex">
@@ -256,10 +179,7 @@
                 </p>
               </div>
 
-              <router-link
-                to="/shop/sidebar/list"
-                class="btn btn-primary btn-round"
-              >
+              <router-link to="/shop/sidebar/list" class="btn btn-primary btn-round">
                 <span>Shop Now - $429.99</span>
                 <i class="icon-long-arrow-right"></i>
               </router-link>
@@ -276,19 +196,9 @@
       <div class="swiper-carousel brands-slider swiper-2 mb-5 mt-5">
         <div v-swiper:swiper2="carouselSetting2">
           <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              v-for="(brand, index) in homeData.brands"
-              :key="index"
-            >
+            <div class="swiper-slide" v-for="(brand, index) in homeData.brands" :key="index">
               <a href="#" class="brand">
-                <img
-                  :src="brand.image"
-                  class="bg-white"
-                  alt="Brand"
-                  :width="brand.width"
-                  :height="brand.height"
-                />
+                <img :src="brand.image" class="bg-white" alt="Brand" :width="brand.width" :height="brand.height" />
               </a>
             </div>
           </div>
@@ -303,15 +213,9 @@
         </div>
       </div>
     </div>
-    <trendy-collection
-      :products="topProducts"
-      v-if="loaded"
-    ></trendy-collection>
+    <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
     <div class="mb-5"></div>
-    <recommend-collection
-      :products="products"
-      v-if="loaded"
-    ></recommend-collection>
+    <recommend-collection :products="products" v-if="loaded"></recommend-collection>
 
     <div class="mb-4"></div>
 
@@ -325,53 +229,43 @@
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <i class="icon-rocket"></i>
+                <img src="../assets/newImg/icon_1.png" alt="">
               </span>
               <div class="icon-box-content">
                 <h3 class="icon-box-title">Free Shipping</h3>
-
                 <p>Orders $50 or more</p>
               </div>
             </div>
           </div>
-
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <i class="icon-rotate-left"></i>
+                <img src="../assets/newImg/icon_2.png" alt="">
               </span>
-
               <div class="icon-box-content">
                 <h3 class="icon-box-title">Free Returns</h3>
-
                 <p>Within 30 days</p>
               </div>
             </div>
           </div>
-
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <i class="icon-info-circle"></i>
+                <img src="../assets/newImg/icon_3.png" alt="">
               </span>
-
               <div class="icon-box-content">
                 <h3 class="icon-box-title">Get 20% Off 1 Item</h3>
-
                 <p>when you sign up</p>
               </div>
             </div>
           </div>
-
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <i class="icon-life-ring"></i>
+                <img src="../assets/newImg/icon_4.png" alt="">
               </span>
-
               <div class="icon-box-content">
                 <h3 class="icon-box-title">We Support</h3>
-
                 <p>24/7 amazing services</p>
               </div>
             </div>
@@ -380,10 +274,7 @@
       </div>
     </div>
 
-    <div
-      class="cta bg-image bg-dark pt-4 pb-5 mb-0"
-      v-lazy:background-image="'./images/home/bg-5.jpg'"
-    >
+    <div class="cta bg-image bg-dark pt-4 pb-5 mb-0" v-lazy:background-image="'./images/home/bg-5.jpg'">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-md-8 col-lg-6">
@@ -399,13 +290,8 @@
 
             <form action="#">
               <div class="input-group input-group-round">
-                <input
-                  type="email"
-                  class="form-control form-control-white"
-                  placeholder="Enter your Email Address"
-                  aria-label="Email Adress"
-                  required
-                />
+                <input type="email" class="form-control form-control-white" placeholder="Enter your Email Address"
+                  aria-label="Email Adress" required />
                 <div class="input-group-append">
                   <button class="btn btn-primary" type="submit">
                     <span>Subscribe</span>

@@ -2,9 +2,10 @@
   <div class="dropdown compare-dropdown">
     <a href="javascript:;" class="dropdown-toggle">
       <div class="icon">
-        <i class="icon-random"></i>
+        <!-- <i class="icon-random"></i> -->
+        <img src="../../../../assets/newImg/icons/random.svg" alt="random">
       </div>
-      <p>Compare</p>
+      <p>Сравнить</p>
     </a>
 
     <!-- <div
@@ -67,3 +68,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+p{
+  font-family: Gilroy-Regular;
+  font-size: 12px;
+}
+
+</style>
+

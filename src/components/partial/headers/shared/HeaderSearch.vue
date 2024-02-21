@@ -1,77 +1,33 @@
 <template>
-  <div
-    class="header-search header-search-extended mr-0 header-search-visible d-none d-lg-block"
-  >
+  <div class="header-search header-search-extended mr-0 header-search-visible d-none d-lg-block">
     <a href="#" class="search-toggle" role="button">
       <i class="icon-search"></i>
     </a>
-    <form
-      action="#"
-      method="get"
-      @click.stop="showSearchForm"
-      @submit.prevent="submitSearchForm"
-    >
+    <form action="#" method="get" @click.stop="showSearchForm" @submit.prevent="submitSearchForm">
       <div class="header-search-wrapper search-wrapper-wide">
         <label for="q" class="sr-only">Search</label>
-
         <button class="btn" type="submit">
-          <i class="icon-search"></i>
+          <!-- <i class="icon-search"></i> -->
+          <img src="../../../../assets/newImg/icons/search.svg" alt="">
         </button>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Search product ..."
-          required
-          v-model="searchTerm"
-          @input="searchProducts"
-        />
+        <input type="text" class="form-control" placeholder="Поиск по каталогу..." required v-model="searchTerm"
+          @input="searchProducts" />
       </div>
-
       <div class="live-search-list">
-        <div
-          class="autocomplete-suggestions"
-          v-if="suggestions.length > 0"
-          @click="goProductPage"
-        >
-          <router-link
-            :to="'/product/default/' + product.slug"
-            class="autocomplete-suggestion"
-            data-index="0"
-            v-for="product in suggestions"
-            :key="product.id"
-          >
-            <img
-              :src="`${baseUrl}${product.sm_pictures[0].url}`"
-              alt="
-								Product
-							"
-              width="40"
-              height="40"
-              class="product-image"
-            />
-
-            <div
-              class="search-name"
-              v-html="matchEmphasize(product.name)"
-            ></div>
+        <div class="autocomplete-suggestions" v-if="suggestions.length > 0" @click="goProductPage">
+          <router-link :to="'/product/default/' + product.slug" class="autocomplete-suggestion" data-index="0"
+            v-for="product in suggestions" :key="product.id">
+            <img :src="`${baseUrl}${product.sm_pictures[0].url}`" alt="Product" width="40" height="40"
+              class="product-image" />
+            <div class="search-name" v-html="matchEmphasize(product.name)"></div>
             <span class="search-price">
-              <div
-                class="product-price mb-0"
-                v-if="product.minPrice == product.maxPrice"
-              >
+              <div class="product-price mb-0" v-if="product.minPrice == product.maxPrice">
                 ${{ product.minPrice.toFixed(2) }}
               </div>
               <template v-else>
-                <div
-                  class="product-price mb-0"
-                  v-if="product.variants.length == 0"
-                >
-                  <span class="new-price"
-                    >${{ product.minPrice.toFixed(2) }}</span
-                  >
-                  <span class="old-price"
-                    >${{ product.maxPrice.toFixed(2) }}</span
-                  >
+                <div class="product-price mb-0" v-if="product.variants.length == 0">
+                  <span class="new-price">${{ product.minPrice.toFixed(2) }}</span>
+                  <span class="old-price">${{ product.maxPrice.toFixed(2) }}</span>
                 </div>
                 <div class="product-price mb-0" v-else>
                   ${{ product.minPrice.toFixed(2) }} - ${{
@@ -145,7 +101,7 @@ export default {
                   ];
                 }, []);
               })
-              .catch((error) => {});
+              .catch((error) => { });
           }, 500)
         );
       } else {

@@ -68,27 +68,21 @@
             <span class="sr-only">Toggle mobile menu</span>
             <i class="icon-bars"></i>
           </button>
-
           <router-link to="/" class="logo">
             <img src="../../../assets/newImg/logotypes/logo.svg" class="bg-transparent" alt="Molla Logo" width="105"
               height="27" />
           </router-link>
         </div>
-
         <div class="header-center">
           <header-search></header-search>
         </div>
-
         <div class="header-right">
           <compare-menu></compare-menu>
-
           <wishlist-menu></wishlist-menu>
-
           <cart-menu></cart-menu>
         </div>
       </div>
     </div>
-
     <sticky-header>
       <div class="header-bottom sticky-header">
         <div :class="isFullwidth ? 'container-fluid' : 'container'">
@@ -156,11 +150,9 @@
               </div>
             </div>
           </div>
-
           <div class="header-center">
             <main-menu></main-menu>
           </div>
-
           <div class="header-right overflow-hidden">
             <i class="la la-lightbulb-o"></i>
             <p class="text-truncate">
@@ -226,11 +218,9 @@ export default {
   font-family: Gilroy-Medium;
 }
 
-.drop-custom{
+.drop-custom {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
-
 </style>

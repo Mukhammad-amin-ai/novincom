@@ -2,10 +2,11 @@
   <div class="dropdown cart-dropdown">
     <router-link to="/shop/cart" class="dropdown-toggle">
       <div class="icon">
-        <i class="icon-shopping-cart"></i>
+        <!-- <i class="icon-shopping-cart"></i> -->
+        <img src="../../../../assets/newImg/icons/cart.svg" alt="cart">
         <span class="cart-count">{{ qtyTotal }}</span>
       </div>
-      <p>Cart</p>
+      <p>Корзина</p>
     </router-link>
 <!-- 
     <div
@@ -95,3 +96,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+p{
+  font-family: Gilroy-Regular;
+  font-size: 12px;
+}
+</style>
+
