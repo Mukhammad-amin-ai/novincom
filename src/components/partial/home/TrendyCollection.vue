@@ -3,7 +3,7 @@
     <div class="container trending-products">
       <div class="heading heading-flex mb-3">
         <div class="heading-left">
-          <h2 class="title">Trending Products</h2>
+          <h2 class="title">Популярные товары</h2>
         </div>
 
         <div class="heading-right">
@@ -131,17 +131,9 @@ export default {
       tabsData: [
         {
           id: "top-rated",
-          title: "Top Rated",
+          title: "Все",
           active: true,
-        },
-        {
-          id: "best-selling",
-          title: "Best Selling",
-        },
-        {
-          id: "on-sale",
-          title: "On Sale",
-        },
+        }
       ],
       carouselSetting1: {
         ...carouselSetting1,

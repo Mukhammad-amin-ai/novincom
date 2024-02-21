@@ -2,7 +2,7 @@
     <div class="container new new-arrivals">
         <div class="heading heading-flex mb-3">
             <div class="heading-left">
-                <h2 class="title">New Arrivals</h2>
+                <h2 class="title">Популярные сертификаты</h2>
             </div>
             <div class="heading-right">
                 <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="new"></tabs>
@@ -131,24 +131,12 @@ export default {
             tabsData: [
                 {
                     id: 'all',
-                    title: 'All',
+                    title: 'Все',
                     active: true
                 },
                 {
                     id: 'accessories',
-                    title: 'Accessories'
-                },
-                {
-                    id: 'camera',
-                    title: 'Cameras'
-                },
-                {
-                    id: 'computers',
-                    title: 'Computers & Tablets'
-                },
-                {
-                    id: 'entertainment',
-                    title: 'Entertainment'
+                    title: 'Топ 10'
                 }
             ],
             carouselSetting1: {
@@ -198,18 +186,18 @@ export default {
         };
     },
     computed: {
-        // computers: function () {
-        //     return catFilter(this.products, ['computers', 'tablets']);
-        // },
-        // accessories: function () {
-        //     return catFilter(this.products, ['accessories']);
-        // },
-        // camera: function () {
-        //     return catFilter(this.products, ['cameras', 'camcorders']);
-        // },
-        // entertainment: function () {
-        //     return catFilter(this.products, ['entertainment']);
-        // }
+        computers: function () {
+            return catFilter(this.products, ['computers', 'tablets']);
+        },
+        accessories: function () {
+            return catFilter(this.products, ['accessories']);
+        },
+        camera: function () {
+            return catFilter(this.products, ['cameras', 'camcorders']);
+        },
+        entertainment: function () {
+            return catFilter(this.products, ['entertainment']);
+        }
     }
 };
 </script>
