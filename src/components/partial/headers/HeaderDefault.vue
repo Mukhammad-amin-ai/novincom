@@ -156,7 +156,7 @@
           </div>
           <div class="header-right overflow-hidden">
             <!-- <i class="la la-lightbulb-o"></i> -->
-            <p class="text-truncate" style="display: flex; gap:5px">
+            <p class="text-truncate" style="display: flex; gap:5px;font-family: Gilroy-Medium !important;">
               <img src="../../../assets/newImg/icons/user_icon.svg" alt="user">
               Александр: 3300.00
               <!-- <span class="highlight">&nbsp;Up to 30% Off</span> -->
