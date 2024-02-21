@@ -20,14 +20,14 @@
 
       <router-link :to="'/product/default/' + product.slug">
         <img
-          v-lazy="`${baseUrl}${product.sm_pictures[0].url}`"
+          :src="`${baseUrl}${product.sm_pictures[0].url}`"
           alt="Product"
           :width="product.sm_pictures[0].width"
           :height="product.sm_pictures[0].height"
           class="product-image"
         />
         <img
-          v-lazy="`${baseUrl}${product.sm_pictures[1].url}`"
+          :src="`${baseUrl}${product.sm_pictures[1].url}`"
           alt="Product"
           :width="product.sm_pictures[1].width"
           :height="product.sm_pictures[1].height"
@@ -140,7 +140,7 @@ export default {
   },
   computed: {
     ...mapGetters("cart", ["canAddToCart"]),
-    ...mapGetters("wishlist", ["isInWishlist"]),
+    // ...mapGetters("wishlist", ["isInWishlist"]),
     ...mapGetters("compare", ["isInCompare"]),
   },
 
@@ -163,6 +163,9 @@ export default {
     this.maxPrice = max;
   },
   methods: {
+    isInWishlist(product) {
+      this.$store.commit("isInWishlist", product);
+    },
     ...mapActions("cart", ["addToCart"]),
     ...mapActions("wishlist", ["addToWishlist"]),
     ...mapActions("compare", ["addToCompare"]),

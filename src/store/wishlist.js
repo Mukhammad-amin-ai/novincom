@@ -15,9 +15,7 @@ export const MOVE_TO_CART = 'MOVE_TO_CART';
     wishlistQty: state => {
         return state.data.length;
     },
-    isInWishlist: state => ( product ) => {
-        return state.data.find( item => item.id == product.id ) ? true : false
-    }
+   
 }
 
  const actions = {
@@ -64,6 +62,9 @@ export const MOVE_TO_CART = 'MOVE_TO_CART';
 
     [ REMOVE_FROM_WISHLIST ] ( state, payload ) {
         state.data = state.data.filter( item => item.id !== payload.product.id );
+     },
+     isInWishlist: state => ( product ) => {
+        return state.data.find( item => item.id == product.id ) ? true : false
     }
 }
 
