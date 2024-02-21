@@ -93,7 +93,7 @@
                 <a href="#">Специальное предложение</a>
               </h4>
               <h3 class="banner-title">
-                <a href="#" style="font-family: Gilroy-Medium !important;">
+                <a href="#" style="font-family: Gilroy-Medium !important">
                   Скидка 150 Б
                   <strong>
                     on Samsung
@@ -103,7 +103,8 @@
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
                 Купить
-                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
+                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px"
+                  alt="arrow-right" />
               </router-link>
             </div>
           </div>
@@ -120,14 +121,15 @@
               </h4>
 
               <h3 class="banner-title">
-                <a href="#" style="font-family: Gilroy-Medium !important;">
+                <a href="#" style="font-family: Gilroy-Medium !important">
                   <strong>Bose SoundSport</strong>
                   <br />Скидка –30%
                 </a>
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
                 Купить
-                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
+                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px"
+                  alt="arrow-right" />
               </router-link>
             </div>
           </div>
@@ -143,14 +145,15 @@
                 <a href="#">Выгодное предложение</a>
               </h4>
               <h3 class="banner-title">
-                <a href="#" style="font-family: Gilroy-Medium !important;">
+                <a href="#" style="font-family: Gilroy-Medium !important">
                   <strong>GoPro - Fusion 360</strong>
                   <br />Экономия 70 Б
                 </a>
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
                 Купить
-                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
+                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px"
+                  alt="arrow-right" />
               </router-link>
             </div>
           </div>
@@ -161,7 +164,7 @@
     <NewCollection :products="newProducts" v-if="loaded"></NewCollection>
     <div class="mb-6"></div>
     <div class="container">
-      <div class="cta cta-border mb-5" style="background-image:url(../assets/newImg/box.png)">
+      <div class="cta cta-border mb-5" style="background-image: url(../assets/newImg/box.png)">
         <img src=" ../assets/newImg/plane.png" alt="camera" class="cta-img bg-transparent" />
         <div class="row justify-content-center">
           <div class="col-md-12">
@@ -170,14 +173,13 @@
                 <p>
                   Путешествие по всем направлениям!
                   <br />
-                  <strong style="font-family: Gilroy-SemiBold !important; ">Авиа- и железнодорожныебилеты и
-                    отели.</strong>
+                  <strong style="font-family: Gilroy-SemiBold !important">Авиа- и железнодорожныебилеты и отели.</strong>
                 </p>
               </div>
 
-              <router-link to="/shop/sidebar/list" class="btn btn-primary btn-round" style="display: flex; gap: 10px;">
+              <router-link to="/shop/sidebar/list" class="btn btn-primary btn-round" style="display: flex; gap: 10px">
                 <span>Смотреть</span>
-                <img src="../assets/newImg/icons/w_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
+                <img src="../assets/newImg/icons/w_arrow-right.svg" style="width: 16px; height: 16px" alt="arrow-right" />
               </router-link>
             </div>
           </div>
@@ -207,7 +209,9 @@
         </div>
       </div>
     </div>
+    <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
     <TrendyCollection :products="topProducts" v-if="loaded"></TrendyCollection>
+
     <div class="mb-5"></div>
     <recommend-collection :products="products" v-if="loaded"></recommend-collection>
     <div class="mb-4"></div>
@@ -220,7 +224,7 @@
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <img src="../assets/newImg/icon_1.png" alt="">
+                <img src="../assets/newImg/icon_1.png" alt="" />
               </span>
               <div class="icon-box-content">
                 <h3 class="icon-box-title">Free Shipping</h3>
@@ -231,7 +235,7 @@
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <img src="../assets/newImg/icon_2.png" alt="">
+                <img src="../assets/newImg/icon_2.png" alt="" />
               </span>
               <div class="icon-box-content">
                 <h3 class="icon-box-title">Free Returns</h3>
@@ -243,7 +247,7 @@
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <img src="../assets/newImg/icon_3.png" alt="">
+                <img src="../assets/newImg/icon_3.png" alt="" />
               </span>
               <div class="icon-box-content">
                 <h3 class="icon-box-title">Get 20% Off 1 Item</h3>
@@ -254,7 +258,7 @@
           <div class="col-sm-6 col-lg-3">
             <div class="icon-box icon-box-side">
               <span class="icon-box-icon text-dark">
-                <img src="../assets/newImg/icon_4.png" alt="">
+                <img src="../assets/newImg/icon_4.png" alt="" />
               </span>
               <div class="icon-box-content">
                 <h3 class="icon-box-title">We Support</h3>
@@ -266,15 +270,15 @@
       </div>
     </div>
     <div class="cta bg-image bg-dark pt-4 pb-5 mb-0"
-      style="background-image:url(./assets/images/bg-nout.png) !important;">
+      style="background-image: url(./assets/images/bg-nout.png) !important">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-md-8 col-lg-6">
             <div class="cta-heading text-center">
-              <h3 class="cta-title text-white">Получайте специальные предложения</h3>
-              <p class="cta-desc text-white">
-                подпишитесь на нашу рассылку
-              </p>
+              <h3 class="cta-title text-white">
+                Получайте специальные предложения
+              </h3>
+              <p class="cta-desc text-white">подпишитесь на нашу рассылку</p>
             </div>
             <form action="#">
               <div class="input-group input-group-round">
@@ -311,9 +315,9 @@ import {
   carouselSettingSingle,
   carouselSettingDefault,
 } from "../utilities/carousel";
-import { homeData } from "../utilities/data";
+import { homeData, products } from "../utilities/data";
 import Carousel from "@/components/elements/Carousel.vue";
-
+import { shopData } from "../utilities/data";
 export default {
   components: {
     RecommendCollection,
@@ -325,7 +329,7 @@ export default {
   data: function () {
     return {
       loaded: true,
-      products: [],
+      products: products,
       newProducts: [],
       topProducts: [],
       carouselSetting1: {
