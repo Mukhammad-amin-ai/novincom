@@ -1,90 +1,39 @@
 <template>
   <div class="product product-2">
     <figure class="product-media">
-      <span class="product-label label-circle label-new" v-if="product.new"
-        >New</span
-      >
-      <span
-        class="product-label label-circle label-sale"
-        v-if="product.sale_price"
-        >Sale</span
-      >
-      <span class="product-label label-circle label-top" v-if="product.top"
-        >Top</span
-      >
-      <span
-        class="product-label label-circle label-out"
-        v-if="product.stock === 0"
-        >Out Of Stock</span
-      >
-
+      <span class="product-label label-circle label-new" v-if="product.new">New</span>
+      <span class="product-label label-circle label-sale" v-if="product.sale_price">Sale</span>
+      <span class="product-label label-circle label-top" v-if="product.top">Top</span>
+      <span class="product-label label-circle label-out" v-if="product.stock === 0">Out Of Stock</span>
       <router-link :to="'/product/default/' + product.slug">
-        <img
-          :src="`${baseUrl}${product.sm_pictures[0].url}`"
-          alt="Product"
-          :width="product.sm_pictures[0].width"
-          :height="product.sm_pictures[0].height"
-          class="product-image"
-        />
-        <img
-          :src="`${baseUrl}${product.sm_pictures[1].url}`"
-          alt="Product"
-          :width="product.sm_pictures[1].width"
-          :height="product.sm_pictures[1].height"
-          class="product-image-hover"
-          v-if="product.sm_pictures[1]"
-        />
+        <img :src="`${baseUrl}${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
+          :height="product.sm_pictures[0].height" class="product-image" />
+        <img :src="`${baseUrl}${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
+          :height="product.sm_pictures[1].height" class="product-image-hover" v-if="product.sm_pictures[1]" />
       </router-link>
-      <div class="product-action-vertical" v-if="product.stock !== 0">
-        <router-link
-          to="/shop/wishlist"
-          class="btn-product-icon btn-wishlist added-to-wishlist"
-          v-if="isInWishlist(product)"
-          key="inWishlist"
-        >
+      <!-- <div class="product-action-vertical" v-if="product.stock !== 0">
+        <router-link to="/shop/wishlist" class="btn-product-icon btn-wishlist added-to-wishlist"
+          v-if="isInWishlist(product)" key="inWishlist">
           <span>go to wishlist</span>
         </router-link>
-        <a
-          href="javascript:;"
-          class="btn-product-icon btn-wishlist"
-          @click.prevent="addToWishlist({ product: product })"
-          v-else
-          key="notInWishlist"
-        >
+        <a href="javascript:;" class="btn-product-icon btn-wishlist" @click.prevent="addToWishlist({ product: product })"
+          v-else key="notInWishlist">
           <span>add to wishlist</span>
         </a>
-      </div>
-      <div
-        class="product-action product-action-dark"
-        v-if="product.stock !== 0"
-      >
-        <router-link
-          :to="'/product/default/' + product.slug"
-          class="btn-product btn-cart btn-select text-center"
-          v-if="product.variants.length > 0"
-        ></router-link>
-        <button
-          class="btn-product btn-cart"
-          @click.prevent="addToCart({ product: product })"
-          v-else
-        ></button>
-        <button
-          class="btn-product btn-quickview"
-          title="Quick view"
-          @click.prevent="quickView({ product: product })"
-        ></button>
-      </div>
+      </div> -->
+      <!-- <div class="product-action product-action-dark" v-if="product.stock !== 0">
+        <router-link :to="'/product/default/' + product.slug" class="btn-product btn-cart btn-select text-center"
+          v-if="product.variants.length > 0"></router-link>
+        <button class="btn-product btn-cart" @click.prevent="addToCart({ product: product })" v-else></button>
+        <button class="btn-product btn-quickview" title="Quick view"
+          @click.prevent="quickView({ product: product })"></button>
+      </div> -->
     </figure>
-
     <div class="product-body">
       <div class="product-cat">
         <span v-for="(cat, index) of product.category" :key="index">
-          <router-link
-            :to="{ path: '/shop/sidebar/list', query: { category: cat.slug } }"
-            >{{ cat.name }}</router-link
-          >
-          {{ index < product.category.length - 1 ? "," : "" }}
-        </span>
+          <router-link :to="{ path: '/shop/sidebar/list', query: { category: cat.slug } }">{{ cat.name }}</router-link>
+          {{ index < product.category.length - 1 ? "," : "" }} </span>
       </div>
       <h3 class="product-title">
         <router-link :to="'/product/default/' + product.slug">{{
@@ -111,16 +60,13 @@
         </template>
       </template>
 
-      <div class="ratings-container">
+      <!-- <div class="ratings-container">
         <div class="ratings">
-          <div
-            class="ratings-val"
-            :style="{ width: product.ratings * 20 + '%' }"
-          ></div>
+          <div class="ratings-val" :style="{ width: product.ratings * 20 + '%' }"></div>
           <span class="tooltip-text">{{ product.ratings.toFixed(2) }}</span>
         </div>
         <span class="ratings-text">( {{ product.review }} Reviews )</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

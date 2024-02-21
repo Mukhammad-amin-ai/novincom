@@ -227,8 +227,8 @@
                 <img src="../assets/newImg/icon_1.png" alt="" />
               </span>
               <div class="icon-box-content">
-                <h3 class="icon-box-title">Free Shipping</h3>
-                <p>Orders $50 or more</p>
+                <h3 class="icon-box-title">Быстрая доставка</h3>
+                <p>любого товара</p>
               </div>
             </div>
           </div>
@@ -238,8 +238,8 @@
                 <img src="../assets/newImg/icon_2.png" alt="" />
               </span>
               <div class="icon-box-content">
-                <h3 class="icon-box-title">Free Returns</h3>
-                <p>Within 30 days</p>
+                <h3 class="icon-box-title">Удобный возврат</h3>
+                <p>в течении 30 дней</p>
               </div>
             </div>
           </div>
@@ -250,8 +250,8 @@
                 <img src="../assets/newImg/icon_3.png" alt="" />
               </span>
               <div class="icon-box-content">
-                <h3 class="icon-box-title">Get 20% Off 1 Item</h3>
-                <p>when you sign up</p>
+                <h3 class="icon-box-title">Супер скидки</h3>
+                <p>подписывайтесь на рассылку</p>
               </div>
             </div>
           </div>
@@ -261,8 +261,8 @@
                 <img src="../assets/newImg/icon_4.png" alt="" />
               </span>
               <div class="icon-box-content">
-                <h3 class="icon-box-title">We Support</h3>
-                <p>24/7 amazing services</p>
+                <h3 class="icon-box-title">Поддержка</h3>
+                <p>24/7 по любым вопросам</p>
               </div>
             </div>
           </div>
@@ -284,11 +284,11 @@
               <div class="input-group input-group-round">
                 <input type="email" class="form-control form-control-white" aria-label="Email Adress" required />
                 <div class="input-group-append">
-                  <button class="btn btn-primary" type="submit" style="display: flex; gap: 5px;">
-                    <router-link to="#" style="display: flex; gap: 5px; color: #fff;">
+                  <button class="btn btn-primary" type="submit" style="display: flex; gap: 5px">
+                    <router-link to="#" style="display: flex; gap: 5px; color: #fff">
                       <span>Подписаться</span>
                       <!-- <i class="icon-long-arrow-right"></i> -->
-                      <img src="../assets/newImg/icons/w_arrow-right.svg" alt="w_arrow">
+                      <img src="../assets/newImg/icons/w_arrow-right.svg" alt="w_arrow" />
                     </router-link>
                   </button>
                 </div>
@@ -403,3 +403,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.icon-box-content p {
+  font-size: 14px !important;
+}
+</style>
