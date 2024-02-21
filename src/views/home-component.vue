@@ -441,7 +441,7 @@ export default {
   data: function () {
     return {
       loaded: true,
-      products: products,
+      products: [],
       newProducts: [],
       topProducts: [],
       carouselSetting1: {
