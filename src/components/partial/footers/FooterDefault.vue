@@ -60,7 +60,7 @@
                   <router-link to="">RuStore</router-link>
                 </li>
                 <li>
-                  <router-link to="">NashMarket</router-link>
+                  <router-link to="#">NashMarket</router-link>
                 </li>
               </ul>
             </div>
