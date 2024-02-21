@@ -3,7 +3,7 @@
     <ul class="menu sf-arrows">
       <li class="megamenu-container" :class="{ active: current == '/' }">
         <router-link to="/" class="sf-with-ul">Главная</router-link>
-        <div class="megamenu demo">
+        <!-- <div class="megamenu demo">
           <div class="menu-col">
             <div class="menu-title">Choose your demo</div>
             <div class="demo-list">
@@ -231,7 +231,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
       </li>
       <li :class="{ active: current == 'shop' }">
         <router-link to="/shop/sidebar/list" class="sf-with-ul">Спецпредложения</router-link>
@@ -346,8 +346,7 @@
       </li>
       <li :class="{ active: current == 'product' }">
         <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress" class="sf-with-ul">Акции</router-link>
-
-        <div class="megamenu megamenu-sm">
+        <!-- <div class="megamenu megamenu-sm">
           <div class="row no-gutters">
             <div class="col-md-6">
               <div class="menu-col">
@@ -405,7 +404,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </li>
       <!-- <li :class="{ active: current == 'pages' }">
         <a href="javascript:;" class="sf-with-ul">Pages</a>

@@ -741,8 +741,8 @@
 		color: #777;
 		padding: .1rem 4rem .1rem 2rem;
 		border-radius: 0;
-		-moz-appearance: none;
-		-webkit-appearance: none;
+		// -moz-appearance: none;
+		// -webkit-appearance: none;
 
 		&:focus {
 			outline: none !important;
@@ -997,7 +997,7 @@
 
 		.container::before {
 			position: absolute;
-			content: '';
+			// content: '';
 			left: 28.5rem;
 			height: 1.5rem;
 			width: .1rem;
@@ -1007,7 +1007,7 @@
 		}
 		.container::after {
 			position: absolute;
-			content: '';
+			// content: '';
 			right: 28rem;
 			height: 1.5rem;
 			width: .1rem;
@@ -1673,7 +1673,7 @@
 	.header-top {
 		font-weight: 300;
 		font-size: 1.4rem;
-		background-color: #f5f6f9;
+		background-color: #F4F7FF;
 		margin-bottom: 0;
 		letter-spacing: -.01em;
 
@@ -1774,7 +1774,7 @@
 	}
 
 	.dropdown.category-dropdown {
-		background-color: #f8f8f8;
+		background-color: #F4F7FF;
 		.dropdown-toggle:not(:hover):not(:focus) {
 			color: $primary-color;
 		}

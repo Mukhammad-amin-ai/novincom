@@ -88,12 +88,13 @@
         <div :class="isFullwidth ? 'container-fluid' : 'container'">
           <div class="header-left">
             <div class="dropdown category-dropdown">
-              <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы">
+              <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы" style="justify-content: space-between;">
                 <div class="drop-custom">
                   <img src="../../../assets/newImg/icons/twotone-menu.svg" alt="">
                   Потратить бонусы
                 </div>
-                <i class="icon-angle-down"></i>
+                <!-- <i class="icon-angle-down"></i> -->
+                <img src="../../../assets/newImg/icons/arrow_down.svg" alt="arrow_down">
               </a>
               <div class="dropdown-menu">
                 <nav class="side-nav">
@@ -154,10 +155,11 @@
             <main-menu></main-menu>
           </div>
           <div class="header-right overflow-hidden">
-            <i class="la la-lightbulb-o"></i>
-            <p class="text-truncate">
-              Clearance
-              <span class="highlight">&nbsp;Up to 30% Off</span>
+            <!-- <i class="la la-lightbulb-o"></i> -->
+            <p class="text-truncate" style="display: flex; gap:5px">
+              <img src="../../../assets/newImg/icons/user_icon.svg" alt="user">
+              Александр: 3300.00
+              <!-- <span class="highlight">&nbsp;Up to 30% Off</span> -->
             </p>
           </div>
         </div>
