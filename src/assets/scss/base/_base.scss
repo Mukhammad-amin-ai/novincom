@@ -1,8 +1,8 @@
 // Base
 html {
-	font-size: 62.5%;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   font-size-adjust: 100%;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font: normal 300 #{$font-size}/1.86 $font-family;
+  font: normal 300 #{$font-size}/ 1.86 $font-family;
   color: $body-text;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -38,12 +38,12 @@ body {
 }
 
 p {
-	margin-bottom: 0;
-	font-size: 1.4rem;
-	font-weight: 300;
-	font-family: 'Poppins';
-	letter-spacing: 0;
-	color: #777;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Poppins";
+  letter-spacing: 0;
+  color: #777;
 }
 
 ul,
@@ -78,16 +78,16 @@ sup {
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 img {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -98,14 +98,14 @@ button {
 }
 
 a {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 p {
   margin-bottom: 0;
   font-size: 1.4rem;
   font-weight: 300;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   letter-spacing: 0;
   color: #777;
 }
@@ -135,8 +135,7 @@ p {
 }
 
 .bg-image {
-  // background-color: #f4f4f4;
-  background-image:url(../../../assets/newImg/bg-1.png) !important;
+  background-color: #f4f4f4;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -146,7 +145,7 @@ p {
   position: relative;
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 0;
@@ -154,7 +153,7 @@ p {
     top: 0;
     bottom: 0;
     z-index: 1;
-    opacity: .3;
+    opacity: 0.3;
     background-color: #333;
   }
 
@@ -178,6 +177,6 @@ p {
 /* Animation for Skeleton Loading */
 @keyframes skeletonloading {
   to {
-    background-position: 400% 0
+    background-position: 400% 0;
   }
 }
