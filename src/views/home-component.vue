@@ -46,7 +46,7 @@
             <router-link to="/shop/sidebar/3cols?category=televisions" class="cat-block">
               <figure>
                 <span>
-                  <img  src="../assets/newImg/cat_4.png" alt="Category" class="bg-transparent" />
+                  <img src="../assets/newImg/cat_4.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -58,7 +58,7 @@
             <router-link to="/shop/sidebar/3cols?category=audio" class="cat-block">
               <figure>
                 <span>
-                  <img  src="../assets/newImg/cat_5.png" alt="Category" class="bg-transparent" />
+                  <img src="../assets/newImg/cat_5.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -70,7 +70,7 @@
             <router-link to="/shop/sidebar/3cols?category=watches" class="cat-block">
               <figure>
                 <span>
-                  <img  src="../assets/newImg/cat_6.png" alt="Category" class="bg-transparent" />
+                  <img src="../assets/newImg/cat_6.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -102,8 +102,8 @@
                 </a>
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
-                Shop Now
-                <i class="icon-long-arrow-right"></i>
+                Купить
+                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
               </router-link>
             </div>
           </div>
@@ -126,8 +126,8 @@
                 </a>
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
-                Shop Now
-                <i class="icon-long-arrow-right"></i>
+                Купить
+                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
               </router-link>
             </div>
           </div>
@@ -136,8 +136,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="banner banner-overlay banner-overlay-light">
             <router-link to="/shop/sidebar/list">
-              <img src="../assets/newImg/banner-3.png" class="bg-transparent" width="376" height="160"
-                alt="Banner" />
+              <img src="../assets/newImg/banner-3.png" class="bg-transparent" width="376" height="160" alt="Banner" />
             </router-link>
             <div class="banner-content">
               <h4 class="banner-subtitle">
@@ -150,8 +149,8 @@
                 </a>
               </h3>
               <router-link to="/shop/sidebar/3cols" class="banner-link">
-                Shop Now
-                <i class="icon-long-arrow-right"></i>
+                Купить
+                <img src="../assets/newImg/icons/bi_arrow-right.svg" style="width: 16px; height: 16px;" alt="arrow-right">
               </router-link>
             </div>
           </div>
