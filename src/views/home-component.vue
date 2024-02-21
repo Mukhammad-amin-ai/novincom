@@ -158,7 +158,7 @@
       </div>
     </div>
     <div class="mb-3"></div>
-    <new-collection :products="newProducts" v-if="loaded"></new-collection>
+    <NewCollection :products="newProducts" v-if="loaded"></NewCollection>
     <div class="mb-6"></div>
     <div class="container">
       <div class="cta cta-border mb-5" style="background-image:url(../assets/newImg/box.png)">
@@ -184,7 +184,7 @@
         </div>
       </div>
     </div>
-    <deal-collection v-if="loaded"></deal-collection>
+    <DealCollection v-if="loaded"></DealCollection>
     <div class="container">
       <hr class="mb-0" />
       <div class="swiper-carousel brands-slider swiper-2 mb-5 mt-5">
@@ -277,8 +277,7 @@
             </div>
             <form action="#">
               <div class="input-group input-group-round">
-                <input type="email" class="form-control form-control-white" 
-                  aria-label="Email Adress" required />
+                <input type="email" class="form-control form-control-white" aria-label="Email Adress" required />
                 <div class="input-group-append">
                   <button class="btn btn-primary" type="submit" style="display: flex; gap: 5px;">
                     <span>Подписаться</span>
@@ -322,7 +321,7 @@ export default {
   },
   data: function () {
     return {
-      loaded: false,
+      loaded: true,
       products: [],
       newProducts: [],
       topProducts: [],
@@ -384,7 +383,7 @@ export default {
   },
   methods: {
     getProducts: async function () {
-      this.loaded = false;
+      this.loaded = true;
       await Repository.get(`${baseUrl}/demo4`)
         .then((response) => {
           this.products = response.data.products;

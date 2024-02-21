@@ -66,7 +66,8 @@
         <div class="header-left">
           <button class="mobile-menu-toggler" @click="openMobileMenu">
             <span class="sr-only">Toggle mobile menu</span>
-            <i class="icon-bars"></i>
+            <!-- <i class="icon-bars"></i> -->
+            <img src="../../../assets/newImg/icons/menu.svg" alt="">
           </button>
           <router-link to="/" class="logo">
             <img src="../../../assets/newImg/logotypes/logo.svg" class="bg-transparent" alt="Molla Logo" width="105"

@@ -4,13 +4,8 @@
             <div class="heading-left">
                 <h2 class="title">New Arrivals</h2>
             </div>
-
             <div class="heading-right">
-                <tabs
-                    class="nav nav-pills nav-border-anim justify-content-center"
-                    :data="tabsData"
-                    id="new"
-                ></tabs>
+                <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="new"></tabs>
             </div>
         </div>
         <div class="tab-content tab-content-carousel just-action-icons-sm">
@@ -18,16 +13,11 @@
                 <div class="swiper-carousel carousel-with-shadow swiper-1">
                     <div class="mb-0" v-swiper:swiper1="carouselSetting1">
                         <div class="swiper-wrapper">
-                            <div
-                                class="swiper-slide"
-                                v-for="(product, index) in products"
-                                :key="index"
-                            >
+                            <div class="swiper-slide" v-for="(product, index) in products" :key="index">
                                 <product-twelve :product="product"></product-twelve>
                             </div>
                         </div>
                     </div>
-
                     <div class="swiper-nav nav-side">
                         <div class="swiper-prev">
                             <i class="icon-angle-left"></i>
@@ -43,16 +33,11 @@
                 <div class="swiper-carousel carousel-with-shadow swiper-2">
                     <div class="mb-0" v-swiper:swiper2="carouselSetting2">
                         <div class="swiper-wrapper">
-                            <div
-                                class="swiper-slide"
-                                v-for="(product, index) in accessories"
-                                :key="index"
-                            >
+                            <div class="swiper-slide" v-for="(product, index) in accessories" :key="index">
                                 <product-twelve :product="product"></product-twelve>
                             </div>
                         </div>
                     </div>
-
                     <div class="swiper-nav nav-side">
                         <div class="swiper-prev">
                             <i class="icon-angle-left"></i>
@@ -68,16 +53,11 @@
                 <div class="swiper-carousel carousel-with-shadow swiper-3">
                     <div class="mb-0" v-swiper:swiper3="carouselSetting3">
                         <div class="swiper-wrapper">
-                            <div
-                                class="swiper-slide"
-                                v-for="(product, index) in camera"
-                                :key="index"
-                            >
+                            <div class="swiper-slide" v-for="(product, index) in camera" :key="index">
                                 <product-twelve :product="product"></product-twelve>
                             </div>
                         </div>
                     </div>
-
                     <div class="swiper-nav nav-side">
                         <div class="swiper-prev">
                             <i class="icon-angle-left"></i>
@@ -93,16 +73,11 @@
                 <div class="swiper-carousel carousel-with-shadow swiper-4">
                     <div class="mb-0" v-swiper:swiper4="carouselSetting4">
                         <div class="swiper-wrapper">
-                            <div
-                                class="swiper-slide"
-                                v-for="(product, index) in computers"
-                                :key="index"
-                            >
+                            <div class="swiper-slide" v-for="(product, index) in computers" :key="index">
                                 <product-twelve :product="product"></product-twelve>
                             </div>
                         </div>
                     </div>
-
                     <div class="swiper-nav nav-side">
                         <div class="swiper-prev">
                             <i class="icon-angle-left"></i>
@@ -118,16 +93,11 @@
                 <div class="swiper-carousel carousel-with-shadow swiper-5">
                     <div class="mb-0" v-swiper:swiper5="carouselSetting5">
                         <div class="swiper-wrapper">
-                            <div
-                                class="swiper-slide"
-                                v-for="(product, index) in entertainment"
-                                :key="index"
-                            >
+                            <div class="swiper-slide" v-for="(product, index) in entertainment" :key="index">
                                 <product-twelve :product="product"></product-twelve>
                             </div>
                         </div>
                     </div>
-
                     <div class="swiper-nav nav-side">
                         <div class="swiper-prev">
                             <i class="icon-angle-left"></i>
@@ -156,7 +126,7 @@ export default {
     props: {
         products: Array
     },
-    data: function() {
+    data: function () {
         return {
             tabsData: [
                 {
@@ -228,18 +198,18 @@ export default {
         };
     },
     computed: {
-        computers: function() {
-            return catFilter(this.products, ['computers', 'tablets']);
-        },
-        accessories: function() {
-            return catFilter(this.products, ['accessories']);
-        },
-        camera: function() {
-            return catFilter(this.products, ['cameras', 'camcorders']);
-        },
-        entertainment: function() {
-            return catFilter(this.products, ['entertainment']);
-        }
+        // computers: function () {
+        //     return catFilter(this.products, ['computers', 'tablets']);
+        // },
+        // accessories: function () {
+        //     return catFilter(this.products, ['accessories']);
+        // },
+        // camera: function () {
+        //     return catFilter(this.products, ['cameras', 'camcorders']);
+        // },
+        // entertainment: function () {
+        //     return catFilter(this.products, ['entertainment']);
+        // }
     }
 };
 </script>
