@@ -210,8 +210,6 @@
       </div>
     </div>
     <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
-    <TrendyCollection :products="topProducts" v-if="loaded"></TrendyCollection>
-
     <div class="mb-5"></div>
     <recommend-collection :products="products" v-if="loaded"></recommend-collection>
     <div class="mb-4"></div>
@@ -285,7 +283,7 @@
                 <input type="email" class="form-control form-control-white" aria-label="Email Adress" required />
                 <div class="input-group-append">
                   <button class="btn btn-primary" type="submit" style="display: flex; gap: 5px">
-                    <router-link to="/login" style="display: flex; gap: 5px; color: #fff">
+                    <router-link to="/sign_up" style="display: flex; gap: 5px; color: #fff">
                       <span>Подписаться</span>
                       <!-- <i class="icon-long-arrow-right"></i> -->
                       <img src="../assets/newImg/icons/w_arrow-right.svg" alt="w_arrow" />

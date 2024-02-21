@@ -7,11 +7,7 @@
         </div>
 
         <div class="heading-right">
-          <tabs
-            class="nav nav-pills nav-border-anim justify-content-center"
-            :data="tabsData"
-            id="trendy"
-          ></tabs>
+          <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="trendy"></tabs>
         </div>
       </div>
       <!-- <div class="row">
@@ -19,40 +15,29 @@
           <product-twelve :product="product" class="mb-3"></product-twelve>
         </div>
       </div> -->
-      <swiper
-        :breakpoints="{
-          '320': {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          '576': {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
+      <swiper :breakpoints="{
+        '320': {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        '576': {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
 
-          '768': {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          '1200': {
-            slidesPerView: 5,
-          },
-          '1201': {
-            slidesPerView: 4,
-            spaceBetween: 35,
-          },
-        }"
-        :modules="modules"
-        :navigation="true"
-        :slidesPerView="1"
-        :spaceBetween="10"
-        class="row"
-      >
-        <swiper-slide
-          class="col"
-          v-for="(product, index) in ratedProducts"
-          :key="index"
-        >
+        '768': {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        '1200': {
+          slidesPerView: 5,
+        },
+        '1201': {
+          slidesPerView: 4,
+          spaceBetween: 35,
+        },
+      }" :modules="modules" :navigation="true" :slidesPerView="1" :spaceBetween="10" class="row">
+        <swiper-slide class="col" v-for="(product, index) in ratedProducts" :key="index">
           <ProductTwelve :product="product" class="mb-3" />
         </swiper-slide>
       </swiper>
@@ -136,7 +121,7 @@ export default {
     const onSwiper = (swiper) => {
       return swiper;
     };
-    const onSlideChange = () => {};
+    const onSlideChange = () => { };
     return {
       onSwiper,
       onSlideChange,
@@ -145,3 +130,5 @@ export default {
   },
 };
 </script>
+<style scoped>
+</style>
