@@ -217,7 +217,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters("cart", ["canAddToCart"]),
+    // ...mapGetters("cart", ["canAddToCart"]),
     // ...mapGetters("wishlist", ["isInWishlist"]),
     ...mapGetters("compare", ["isInCompare"]),
     showClear() {
