@@ -60,9 +60,9 @@ import Tabs from "../../elements/Tabs.vue";
 import ProductTwelve from "../../elements/products/ProductTwelve.vue";
 import { catFilter } from "../../../utilities/common.js";
 import { carouselSetting1 } from "../../../utilities/carousel.js";
-import { Navigation, Pagination, Scrollbar } from "swiper";
 
 import { attrFilter } from "../../../utilities/common.js";
+import { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 import "swiper/css";

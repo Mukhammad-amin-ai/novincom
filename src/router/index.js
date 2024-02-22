@@ -14,7 +14,12 @@ const router = createRouter({
       path: "/sign_up",
       name: "sign_up",
       component: loginVue,
-    }
+    },
+    {
+      path: "/product/default/:slug",
+      name: "product show",
+      component: () => import("@/views/product/centered/_slug.vue"),
+    },
   ],
 });
 

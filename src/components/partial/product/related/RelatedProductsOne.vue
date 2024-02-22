@@ -1,67 +1,129 @@
 <template>
-    <div>
-        <h2 class="title text-center mb-4">You May Also Like</h2>
+  <div>
+    <h2 class="title text-center mb-4">You May Also Like</h2>
 
-        <div v-if="products.length == 0">
-            <div class="swiper-carousel carousel-with-shadow">
-                <div v-swiper:swiper2="carouselSetting">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" v-for="item in [1,2,3,4]" :key="item">
-                            <div class="skel-pro"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-carousel carousel-with-shadow swiper-1" v-else>
-            <div v-swiper:swiper1="carouselSetting">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" v-for="(product, index) in products" :key="index">
-                        <product-nine :product="product"></product-nine>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-nav">
-                <div class="swiper-prev">
-                    <i class="icon-angle-left"></i>
-                </div>
-                <div class="swiper-next">
-                    <i class="icon-angle-right"></i>
-                </div>
-            </div>
-        </div>
+    <div v-if="products.length == 0">
+      <swiper
+        :breakpoints="{
+          '320': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '576': {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+
+          '768': {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          '1200': {
+            slidesPerView: 5,
+          },
+          '1201': {
+            slidesPerView: 4,
+            spaceBetween: 35,
+          },
+        }"
+        :modules="modules"
+        :navigation="true"
+        :slidesPerView="1"
+        :spaceBetween="10"
+        class="row"
+      >
+        <swiper-slide class="" v-for="(item, index) in 4" :key="index">
+          <div class="skel-pro"></div>
+        </swiper-slide>
+      </swiper>
     </div>
+    <swiper
+      v-else
+      :breakpoints="{
+        '320': {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        '576': {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+
+        '768': {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        '1200': {
+          slidesPerView: 5,
+        },
+        '1201': {
+          slidesPerView: 4,
+          spaceBetween: 35,
+        },
+      }"
+      :modules="modules"
+      :navigation="true"
+      :slidesPerView="1"
+      :spaceBetween="10"
+      class="row"
+    >
+      <swiper-slide class="" v-for="(product, index) in products" :key="index">
+        <ProductNine :product="product" class="mb-3" />
+      </swiper-slide>
+    </swiper>
+  </div>
 </template>
 <script>
-import ProductNine from '~/components/elements/products/ProductNine';
-import { carouselSetting1 } from '~/utilities/carousel';
+import ProductNine from "@/components/elements/products/ProductNine.vue";
+import { carouselSetting1 } from "@/utilities/carousel";
+import { Navigation, Pagination, Scrollbar } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default {
-    components: {
-        ProductNine
+  components: {
+    ProductNine,
+    Swiper,
+    SwiperSlide,
+  },
+  props: {
+    products: {
+      type: Array,
+      default: function () {
+        return [];
+      },
     },
-    props: {
-        products: {
-            type: Array,
-            default: function() {
-                return [];
-            }
-        }
-    },
-    data: function() {
-        return {
-            carouselSetting: {
-                ...carouselSetting1,
-                navigation: {
-                    nextEl: '.swiper-1 .swiper-next',
-                    prevEl: '.swiper-1 .swiper-prev'
-                },
-                pagination: {
-                    el: '.swiper-1 .swiper-dots',
-                    clickable: true
-                }
-            }
-        };
-    }
+  },
+
+  data: function () {
+    return {
+      carouselSetting: {
+        ...carouselSetting1,
+        navigation: {
+          nextEl: ".swiper-1 .swiper-next",
+          prevEl: ".swiper-1 .swiper-prev",
+        },
+        pagination: {
+          el: ".swiper-1 .swiper-dots",
+          clickable: true,
+        },
+      },
+    };
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+      return swiper;
+    };
+    const onSlideChange = () => {};
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar],
+    };
+  },
 };
 </script>

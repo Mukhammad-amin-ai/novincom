@@ -68,7 +68,7 @@
 import LightBox from 'vue-image-lightbox';
 import isotope from 'vueisotope';
 import imagesLoaded from 'vue-images-loaded';
-import { VueLazyloadImage } from 'vue-lazyload';
+// import { VueLazyloadImage } from 'vue-lazyload';
 import 'vue-image-lightbox/dist/vue-image-lightbox.min.css';
 
 import { baseUrl } from '~/repositories/repository.js';

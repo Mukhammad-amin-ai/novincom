@@ -12,14 +12,14 @@
 
       <router-link :to="'/product/default/' + product.slug">
         <img
-          v-lazy="`${baseUrl}${product.sm_pictures[0].url}`"
+          :src="`${baseUrl}${product.sm_pictures[0].url}`"
           alt="Product"
           :width="product.sm_pictures[0].width"
           :height="product.sm_pictures[0].height"
           class="product-image"
         />
         <img
-          v-lazy="`${baseUrl}${product.sm_pictures[1].url}`"
+          :src="`${baseUrl}${product.sm_pictures[1].url}`"
           alt="Product"
           :width="product.sm_pictures[1].width"
           :height="product.sm_pictures[1].height"
@@ -160,7 +160,8 @@
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";
-import { baseUrl } from "~/repositories/repository";
+import { baseUrl } from "@/repositories/repository";
+import store from "@/store";
 export default {
   props: {
     product: Object,
@@ -173,9 +174,9 @@ export default {
     };
   },
   computed: {
-    ...mapGetters("cart", ["canAddToCart"]),
-    ...mapGetters("wishlist", ["isInWishlist"]),
-    ...mapGetters("compare", ["isInCompare"]),
+    // ...mapGetters("cart", ["canAddToCart"]),
+    // ...mapGetters("wishlist", ["isInWishlist"]),
+    // ...mapGetters("compare", ["isInCompare"]),
   },
 
   created: function () {
@@ -200,9 +201,24 @@ export default {
     ...mapActions("cart", ["addToCart"]),
     ...mapActions("wishlist", ["addToWishlist"]),
     ...mapActions("compare", ["addToCompare"]),
+    isInWishlist(product) {
+      store.commit("isInWishlist", product);
+    },
+    isInCompare(product) {
+      this.$store.commit("isInCompare", product);
+    },
+    canAddToCart(product, qty) {
+      this.$store.getters("canAddToCart", { product, qty });
+    },
+    addToCompare(product) {
+      this.$store.commit("addToCompare", product);
+    },
+    addToWishlist(product) {
+      this.$store.commit("addToWishlist", product);
+    },
     quickView: function () {
       this.$modal.show(
-        () => import("~/components/elements/modals/QuickViewModal"),
+        () => import("@/components/elements/modals/QuickViewModal.vue"),
         {
           product: this.product,
         },

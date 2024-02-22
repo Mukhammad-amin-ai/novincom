@@ -7,13 +7,9 @@ const state = () => ({
   data: [],
 });
 
-
 const getters = {
   compareList: (state) => {
     return state.data;
-  },
-  isInCompare: (state) => (product) => {
-    return state.data.find((item) => item.id == product.id) ? true : false;
   },
 };
 
@@ -69,6 +65,9 @@ const mutations = {
 
   [CLEAR_COMPARE](state) {
     state.data = [];
+  },
+  isInCompare(state, product) {
+    return state.data.find((item) => item.id == product.id) ? true : false;
   },
 };
 export default {
