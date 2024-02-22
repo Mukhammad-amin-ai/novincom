@@ -54,10 +54,10 @@
 
               <ul class="widget-list">
                 <li>
-                  <router-link to="">RuMarket</router-link>
+                  <a @click="downloadFile" style="cursor: pointer;">RuMarket</a>
                 </li>
                 <li>
-                  <router-link to="">RuStore</router-link>
+                  <a @click="downloadFile" style="cursor: pointer;">RuStore</a>
                 </li>
                 <li>
                   <router-link to="#">NashMarket</router-link>
@@ -140,6 +140,18 @@ export default {
       this.bottomSticky =
         this.$route.path.includes("/product/default") &&
         window.innerWidth > 991;
+    },
+    downloadFile() {
+      const fileContent = "HELLO WORLD";
+      const blob = new Blob([fileContent], { type: "text/plain" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "sdk.txt";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     },
   },
 };
