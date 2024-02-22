@@ -31,7 +31,7 @@
           <div class="product-detail">
             <figure>
               <img
-                v-lazy="`${baseUrl}${prevProduct.sm_pictures[0].url}`"
+                :src="`${baseUrl}${prevProduct.sm_pictures[0].url}`"
                 alt="product"
                 :width="prevProduct.sm_pictures[0].width"
                 :height="prevProduct.sm_pictures[0].height"
@@ -51,7 +51,7 @@
           <div class="product-detail">
             <figure>
               <img
-                v-lazy="`${baseUrl}${nextProduct.sm_pictures[0].url}`"
+                :src="`${baseUrl}${nextProduct.sm_pictures[0].url}`"
                 alt="product"
                 :width="nextProduct.sm_pictures[0].width"
                 :height="nextProduct.sm_pictures[0].height"
@@ -65,8 +65,7 @@
   </nav>
 </template>
 <script>
-import { baseUrl } from "~/repositories/repository";
-
+import { baseUrl } from "@/repositories/repository";
 export default {
   props: {
     prevProduct: null,

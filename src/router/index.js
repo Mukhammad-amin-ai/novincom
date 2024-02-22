@@ -16,6 +16,12 @@ const router = createRouter({
       component: loginVue,
     },
     {
+
+      path: "/product/default/:slug",
+      name: "product show",
+      component: () => import("@/views/product/centered/_slug.vue"),
+    },
+
       path: "/tickets_search_results",
       name: "tickets search results",
       component: loginVue
@@ -25,6 +31,7 @@ const router = createRouter({
       name:"catalog",
       component:loginVue
     }
+
   ],
 });
 

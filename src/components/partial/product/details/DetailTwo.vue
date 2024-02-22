@@ -98,13 +98,13 @@
         <a
           href="#"
           class="btn-product btn-cart ml-sm-2"
-          :class="{
+          @click.prevent="addCart"
+        >
+          <!-- :class="{
             'btn-disabled':
               !canAddToCart(product, qty) ||
               (product.variants.length > 0 && !showVariationPrice),
-          }"
-          @click.prevent="addCart"
-        >
+          }" -->
           <span>add to cart</span>
         </a>
       </div>
@@ -185,9 +185,9 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import { VueSlideToggle } from "vue-slide-toggle";
-import QuantityInput from "~/components/elements/QuantityInput";
-import { baseUrl } from "~/repositories/repository.js";
-
+import QuantityInput from "@/components/elements/QuantityInput.vue";
+import { baseUrl } from "@/repositories/repository.js";
+import store from "@/store";
 export default {
   components: {
     VueSlideToggle,
@@ -198,7 +198,7 @@ export default {
       type: Object,
     },
   },
-  data: function () {
+  data() {
     return {
       baseUrl: baseUrl,
       variationGroup: [],
@@ -218,20 +218,20 @@ export default {
   },
   computed: {
     ...mapGetters("cart", ["canAddToCart"]),
-    ...mapGetters("wishlist", ["isInWishlist"]),
+    // ...mapGetters("wishlist", ["isInWishlist"]),
     ...mapGetters("compare", ["isInCompare"]),
-    showClear: function () {
+    showClear() {
       return this.selectedVariant.color || this.selectedVariant.size
         ? true
         : false;
     },
-    showVariationPrice: function () {
+    showVariationPrice() {
       return this.selectedVariant.color && this.selectedVariant.size
         ? true
         : false;
     },
   },
-  created: function () {
+  created() {
     let min = this.minPrice;
     let max = this.maxPrice;
     this.variationGroup = this.product.variants.reduce((acc, cur) => {
@@ -261,9 +261,24 @@ export default {
     this.refreshSelectableGroup();
   },
   methods: {
-    ...mapActions("cart", ["addToCart"]),
-    ...mapActions("wishlist", ["addToWishlist"]),
-    ...mapActions("compare", ["addToCompare"]),
+    // ...mapActions("cart", ["addToCart"]),
+    // ...mapActions("wishlist", ["addToWishlist"]),
+    // ...mapActions("compare", ["addToCompare"]),
+    isInWishlist(product) {
+      store.commit("isInWishlist", product);
+    },
+    canAddToCart(product, qty) {
+      this.$store.getters("canAddToCart", { product, qty });
+    },
+    addToCompare(product) {
+      this.$store.commit("addToCompare", product);
+    },
+    addToWishlist(product) {
+      this.$store.commit("addToWishlist", product);
+    },
+    addToCart(product) {
+      this.$store.commit("addToCart", product);
+    },
     refreshSelectableGroup: function () {
       let tempArray = [...this.variationGroup];
       if (this.selectedVariant.color) {
