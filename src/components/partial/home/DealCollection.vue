@@ -21,7 +21,7 @@
                 бонусов</span>
               <!-- <span class="old-price">Was $159.99</span> -->
             </div>
-            <router-link to="/product/default/home-smart-speaker-with-google-assistant" class="btn btn-link"
+            <router-link to="/flight-tickets" class="btn btn-link"
               style="gap: 5px; margin-top: 40px;">
               <span style="font-family: Gilroy-Medium !important;">Бронировать</span>
               <img src="../../../assets/newImg/icons/bi_arrow-right.svg" alt="">
@@ -51,7 +51,7 @@
               <span class="new-price">7 569.99
                 бонусов</span>
             </div>
-            <router-link to="/pages/login" class="btn btn-link" style="gap: 5px; margin-top: 40px;">
+            <router-link to="/flight-tickets" class="btn btn-link" style="gap: 5px; margin-top: 40px;">
               <span style="font-family: Gilroy-Medium !important;">Бронировать</span>
               <img src="../../../assets/newImg/icons/bi_arrow-right.svg" alt="">
               <!-- <i class="icon-long-arrow-right"></i> -->

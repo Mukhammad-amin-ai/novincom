@@ -1,9 +1,9 @@
 <template>
   <div class="product product-2">
     <figure class="product-media">
-      <span class="product-label label-circle label-new" v-if="product.new">New</span>
-      <span class="product-label label-circle label-sale" v-if="product.sale_price">Sale</span>
-      <span class="product-label label-circle label-top" v-if="product.top">Top</span>
+      <span class="product-label label-circle label-new" v-if="product.new">Новинка</span>
+      <span class="product-label label-circle label-sale" v-if="product.sale_price">Выгодно</span>
+      <span class="product-label label-circle label-top" v-if="product.top">Топ</span>
       <span class="product-label label-circle label-out" v-if="product.stock === 0">Out Of Stock</span>
       <router-link :to="'/product/default/' + product.slug">
         <img :src="`${baseUrl}${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
@@ -71,6 +71,7 @@
   </div>
 </template>
 <script>
+
 import { mapGetters, mapActions } from "vuex";
 import { baseUrl } from "../../../repositories/repository.js";
 export default {

@@ -371,14 +371,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 4.6rem;
-	height: 4.6rem;
+	width: 60px;
+	height: 60px;
 	min-width: 0;
 	border-radius: 50%;
 	line-height: 1;
 
 	& + .label-circle {
-		top: 5.6rem;
+		top: 6.6rem;
 	}
 
 	&.label-out {

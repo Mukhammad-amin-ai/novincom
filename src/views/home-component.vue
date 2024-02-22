@@ -8,7 +8,7 @@
       <div class="cat-blocks-container">
         <div class="row">
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/shop/sidebar/3cols?category=computers" class="cat-block">
+            <router-link to="/product/default/" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_1.png" alt="Category" class="bg-transparent" />
@@ -19,7 +19,7 @@
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/shop/sidebar/3cols?category=cameras" class="cat-block">
+            <router-link to="/flight-tickets" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_2.png" alt="Category" class="bg-transparent" />
@@ -31,7 +31,7 @@
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/shop/sidebar/3cols?category=accessories" class="cat-block">
+            <router-link to="/flight-tickets" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_3.png" alt="Category" class="bg-transparent" />
@@ -43,7 +43,7 @@
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/shop/sidebar/3cols?category=televisions" class="cat-block">
+            <router-link to="/flight-tickets" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_4.png" alt="Category" class="bg-transparent" />
@@ -176,8 +176,7 @@
                   <strong style="font-family: Gilroy-SemiBold !important">Авиа- и железнодорожныебилеты и отели.</strong>
                 </p>
               </div>
-
-              <router-link to="/shop/sidebar/list" class="btn btn-primary btn-round" style="display: flex; gap: 10px">
+              <router-link to="/flight-tickets" class="btn btn-primary btn-round" style="display: flex; gap: 10px">
                 <span>Смотреть</span>
                 <img src="../assets/newImg/icons/w_arrow-right.svg" style="width: 16px; height: 16px" alt="arrow-right" />
               </router-link>
