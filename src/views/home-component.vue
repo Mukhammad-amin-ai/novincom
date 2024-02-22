@@ -189,23 +189,27 @@
     <div class="container">
       <hr class="mb-0" />
       <div class="swiper-carousel brands-slider swiper-2 mb-5 mt-5">
-        <div v-swiper:swiper2="carouselSetting2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="(brand, index) in homeData.brands" :key="index">
-              <a href="#" class="brand">
-                <img :src="brand.image" class="bg-white" alt="Brand" :width="brand.width" :height="brand.height" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-nav">
-          <div class="swiper-prev">
-            <i class="icon-angle-left"></i>
-          </div>
-          <div class="swiper-next">
-            <i class="icon-angle-right"></i>
-          </div>
-        </div>
+        <swiper :slidesPerView="3" :navigation="true" :spaceBetween="30" :freeMode="true" :modules="modules"
+          class="mySwiper">
+          <swiper-slide>
+            <img src="../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/newImg/logotypes/ozon.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/newImg/logotypes/xiaomi.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/newImg/logotypes/десткий мир.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/newImg/logotypes/аэрофлот.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="../assets/newImg/logotypes/РЖД.png" alt="">
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
     <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
@@ -299,6 +303,7 @@
 </template>
 <script>
 import { mapGetters } from "vuex";
+import { FreeMode, Pagination, Navigation } from 'swiper';
 
 import NewCollection from "../components/partial/home/NewCollection.vue";
 import DealCollection from "../components/partial/home/DealCollection.vue";
@@ -314,6 +319,12 @@ import {
 } from "../utilities/carousel";
 import { homeData } from "../utilities/data";
 import Carousel from "@/components/elements/Carousel.vue";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import "swiper/css/navigation";
 
 export default {
   components: {
@@ -322,6 +333,8 @@ export default {
     TrendyCollection,
     NewCollection,
     Carousel,
+    Swiper,
+    SwiperSlide,
   },
   data: function () {
     return {
@@ -397,6 +410,11 @@ export default {
         })
         .catch((error) => ({ error: JSON.stringify(error) }));
     },
+  },
+  setup() {
+    return {
+      modules: [FreeMode, Pagination, Navigation],
+    };
   },
 };
 </script>

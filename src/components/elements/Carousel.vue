@@ -118,7 +118,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .swiper-button-next,
 .swiper-button-prev {
   background: var(--blue);
