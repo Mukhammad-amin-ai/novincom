@@ -38,7 +38,8 @@
             },
           }"
           :modules="modules"
-          :navigation="true"
+          :navigation="false"
+          :pagination="true"
           :slidesPerView="1"
           :spaceBetween="10"
           class="row"

@@ -45,7 +45,15 @@
   letter-spacing: 0em;
   text-align: left;
 }
-
+.swiper-pagination-bullet {
+  background: white !important;
+  border: 1px solid;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-radius: 50px !important;
+  background: var(--grey) !important;
+  border: 1px solid var(--grey);
+}
 @media screen and (max-width: 768px) {
   .swiper_custom_item {
     margin-top: 30px;
