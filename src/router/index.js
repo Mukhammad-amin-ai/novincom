@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/home-component.vue";
 import loginVue from "@/views/pages/login.vue";
+import flyghtTicketsVue from "@/views/flyght-tickets.vue";
+import operationVue from "@/views/operation.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,7 +14,7 @@ const router = createRouter({
     },
     {
       path: "/sign_up",
-      name: "sign_up",
+      name: "sign up",
       component: loginVue,
     },
     {
@@ -36,10 +38,21 @@ const router = createRouter({
       component: loginVue,
     },
     {
+      path: "/flight-tickets",
+      name: "flight tickets",
+      component: flyghtTicketsVue,
+    },
+    {
       path: "/catalog",
       name: "catalog",
       component: loginVue,
     },
+    {
+      path: "/operation",
+      name: "operation",
+      component: operationVue,
+    }
+
   ],
 });
 
