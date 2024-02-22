@@ -81,11 +81,11 @@
         </a>
         <a href="#" @click.prevent="clearSelection" v-if="showClear">clear</a>
       </div>
-      <vue-slide-toggle :open="showVariationPrice">
+      <!-- <vue-slide-toggle :open="showVariationPrice">
         <div class="product-price">
           ${{ selectedVariant.price ? selectedVariant.price.toFixed(2) : 0 }}
         </div>
-      </vue-slide-toggle>
+      </vue-slide-toggle> -->
     </template>
 
     <div class="product-details-action">
