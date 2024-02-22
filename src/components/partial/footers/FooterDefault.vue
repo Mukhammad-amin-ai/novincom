@@ -80,7 +80,7 @@
                   <router-link to="#">Заказы</router-link>
                 </li>
                 <li>
-                  <router-link to="/shop/dashboard">Операции</router-link>
+                  <router-link to="/operation">Операции</router-link>
                 </li>
                 <li>
                   <router-link to="#">Избранное</router-link>
