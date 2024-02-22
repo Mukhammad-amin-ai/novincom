@@ -21,6 +21,16 @@ const router = createRouter({
       component: () => import("@/views/product/centered/_slug.vue"),
     },
     {
+      path: "/shop/sidebar/3cols/:category",
+      name: "category show",
+      component: () => import("@/views/shop/sidebar/_type.vue"),
+    },
+    {
+      path: "/shop/sidebar/3cols",
+      name: "category show with query",
+      component: () => import("@/views/shop/sidebar/_type.vue"),
+    },
+    {
       path: "/tickets_search_results",
       name: "tickets search results",
       component: loginVue,

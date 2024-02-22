@@ -18,7 +18,7 @@
           >
         </h3>
 
-        <vue-slide-toggle :open="toggleStates[0]" class="show" :duration="200">
+        <!-- <vue-slide-toggle :open="toggleStates[0]" class="show" :duration="200">
           <div class="widget-body pt-0">
             <div class="filter-items filter-items-count">
               <div
@@ -38,7 +38,7 @@
               </div>
             </div>
           </div>
-        </vue-slide-toggle>
+        </vue-slide-toggle> -->
       </div>
 
       <div class="widget widget-collapsible">
@@ -51,7 +51,7 @@
           >
         </h3>
 
-        <vue-slide-toggle :open="toggleStates[1]" class="show" :duration="200">
+        <!-- <vue-slide-toggle :open="toggleStates[1]" class="show" :duration="200">
           <div class="widget-body pt-0">
             <div class="filter-items">
               <div
@@ -74,7 +74,7 @@
               </div>
             </div>
           </div>
-        </vue-slide-toggle>
+        </vue-slide-toggle> -->
       </div>
 
       <div class="widget widget-collapsible">
@@ -87,7 +87,7 @@
           >
         </h3>
 
-        <vue-slide-toggle :open="toggleStates[2]" class="show" :duration="200">
+        <!-- <vue-slide-toggle :open="toggleStates[2]" class="show" :duration="200">
           <div class="widget-body pt-0">
             <div class="filter-colors">
               <router-link
@@ -101,7 +101,7 @@
               </router-link>
             </div>
           </div>
-        </vue-slide-toggle>
+        </vue-slide-toggle> -->
       </div>
 
       <div class="widget widget-collapsible">
@@ -114,7 +114,7 @@
           >
         </h3>
 
-        <vue-slide-toggle :open="toggleStates[3]" class="show" :duration="200">
+        <!-- <vue-slide-toggle :open="toggleStates[3]" class="show" :duration="200">
           <div class="widget-body pt-0">
             <div class="filter-items">
               <div
@@ -137,7 +137,7 @@
               </div>
             </div>
           </div>
-        </vue-slide-toggle>
+        </vue-slide-toggle> -->
       </div>
 
       <div class="widget widget-collapsible">
@@ -150,7 +150,7 @@
           >
         </h3>
 
-        <vue-slide-toggle :open="toggleStates[4]" class="show" :duration="200">
+        <!-- <vue-slide-toggle :open="toggleStates[4]" class="show" :duration="200">
           <div class="widget-body pt-0">
             <div class="filter-price">
               <div class="filter-price-text d-flex justify-content-between">
@@ -171,19 +171,19 @@
               ></vue-nouislider>
             </div>
           </div>
-        </vue-slide-toggle>
+        </vue-slide-toggle> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { VueSlideToggle } from "vue-slide-toggle";
-import { shopData } from "~/utilities/data";
+// import { VueSlideToggle } from "vue-slide-toggle";
+import { shopData } from "@/utilities/data.js";
 
 export default {
   components: {
-    VueSlideToggle,
+    // VueSlideToggle,
   },
   props: {
     isSidebar: Boolean,
