@@ -16,22 +16,20 @@ const router = createRouter({
       component: loginVue,
     },
     {
-
       path: "/product/default/:slug",
       name: "product show",
       component: () => import("@/views/product/centered/_slug.vue"),
     },
-
+    {
       path: "/tickets_search_results",
       name: "tickets search results",
-      component: loginVue
+      component: loginVue,
     },
     {
-      path:"/catalog",
-      name:"catalog",
-      component:loginVue
-    }
-
+      path: "/catalog",
+      name: "catalog",
+      component: loginVue,
+    },
   ],
 });
 
