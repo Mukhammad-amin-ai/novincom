@@ -67,7 +67,7 @@
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/shop/sidebar/3cols?category=watches" class="cat-block">
+            <router-link to="#" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_6.png" alt="Category" class="bg-transparent" />

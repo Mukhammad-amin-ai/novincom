@@ -1,7 +1,6 @@
 <template>
     <main class="main">
         <page-header title="Product Category Boxed"></page-header>
-
         <nav class="breadcrumb-nav breadcrumb-with-filter">
             <div class="container">
                 <button class="sidebar-toggler p-0" @click="openSidebar">
