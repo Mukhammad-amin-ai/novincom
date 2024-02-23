@@ -1,6 +1,6 @@
 <template>
   <div class="product-details" v-if="product">
-    <h1 class="product-title">{{ product.name }}</h1>
+    <h1 class="product-title">{{ product.name }} name</h1>
 
     <div class="ratings-container">
       <div class="ratings">
