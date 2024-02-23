@@ -5,50 +5,34 @@
         <h2 class="title">Популярные сертификаты</h2>
       </div>
       <div class="heading-right">
-        <tabs
-          class="nav nav-pills nav-border-anim justify-content-center"
-          :data="tabsData"
-          id="new"
-        ></tabs>
+        <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="new"></tabs>
       </div>
     </div>
     <div class="tab-content tab-content-carousel just-action-icons-sm">
       <div class="tab-pane p-0 fade show active" id="new-all">
-        <swiper
-          :breakpoints="{
-            '320': {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            '576': {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
+        <swiper :breakpoints="{
+          '320': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '576': {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
 
-            '768': {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            },
-            '1200': {
-              slidesPerView: 5,
-            },
-            '1201': {
-              slidesPerView: 4,
-              spaceBetween: 35,
-            },
-          }"
-          :modules="modules"
-          :navigation="false"
-          :pagination="true"
-          :slidesPerView="1"
-          :spaceBetween="10"
-          class="row"
-        >
-          <swiper-slide
-            class=""
-            v-for="(product, index) in products.slice(0, 5)"
-            :key="index"
-          >
+          '768': {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          '1200': {
+            slidesPerView: 5,
+          },
+          '1201': {
+            slidesPerView: 4,
+            spaceBetween: 35,
+          },
+        }" :modules="modules" :navigation="false" :pagination="true" :slidesPerView="1" :spaceBetween="10" class="row">
+          <swiper-slide class="" v-for="(product, index) in products.slice(0, 5)" :key="index">
             <ProductTwelve :product="product" class="mb-3" />
           </swiper-slide>
         </swiper>
@@ -71,20 +55,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 export default {
-  props: {
-    products: Array,
-  },
+  // props: {
+  //   products: Array,
+  // },
   data: function () {
     return {
       tabsData: [
         {
           id: "all",
           title: "Все",
-          active: true,
         },
         {
           id: "accessories",
           title: "Топ 10",
+          active: true,
         },
       ],
       carouselSetting1: {
@@ -134,11 +118,11 @@ export default {
       products: [
         {
           id: 122,
-          name: "Apple – 11” iPad Pro with Wi-Fi 256 GB",
+          name: "Подарочный сертификат OZON",
           slug: 'apple-11"-ipad-pro-with-wi-fi-256-gb',
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ",
-          price: 899.99,
+          price: 3000.00,
           sale_price: null,
           review: 2,
           ratings: 5,
@@ -147,42 +131,43 @@ export default {
           top: null,
           featured: null,
           new: null,
+          top: true,
           author: null,
           sold: null,
-          category: [
-            {
-              name: "Computers",
-              slug: "computers",
-              pivot: {
-                product_id: "122",
-                "product-category_id": "20",
-              },
-            },
-            {
-              name: "Tablets",
-              slug: "tablets",
-              pivot: {
-                product_id: "122",
-                "product-category_id": "21",
-              },
-            },
-            {
-              name: "Cell Phone",
-              slug: "cell-phone",
-              pivot: {
-                product_id: "122",
-                "product-category_id": "27",
-              },
-            },
-            {
-              name: "TV",
-              slug: "tv",
-              pivot: {
-                product_id: "122",
-                "product-category_id": "24",
-              },
-            },
-          ],
+          // category: [
+          //   {
+          //     name: "Computers",
+          //     slug: "computers",
+          //     pivot: {
+          //       product_id: "122",
+          //       "product-category_id": "20",
+          //     },
+          //   },
+          //   {
+          //     name: "Tablets",
+          //     slug: "tablets",
+          //     pivot: {
+          //       product_id: "122",
+          //       "product-category_id": "21",
+          //     },
+          //   },
+          //   {
+          //     name: "Cell Phone",
+          //     slug: "cell-phone",
+          //     pivot: {
+          //       product_id: "122",
+          //       "product-category_id": "27",
+          //     },
+          //   },
+          //   {
+          //     name: "TV",
+          //     slug: "tv",
+          //     pivot: {
+          //       product_id: "122",
+          //       "product-category_id": "24",
+          //     },
+          //   },
+          // ],
           brands: [
             {
               name: "F&F",
@@ -205,7 +190,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_1_2_4e1d56ee3e.jpg",
+              url: "../../../../public/assets/images/Frame_5.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "754",
@@ -214,7 +199,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_1_1_4426ffc7d8.jpg",
+              url: "../../../../public/assets/images/Frame_5.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "755",
@@ -225,7 +210,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_1_2_300x300_23e5807726.jpg",
+              url: "../../../../public/assets/images/Frame_5.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "756",
@@ -234,7 +219,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_1_1_300x300_efb79f650f.jpg",
+              url: "../../../../public/assets/images/Frame_5.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "757",
@@ -245,39 +230,39 @@ export default {
         },
         {
           id: 123,
-          name: "Apple – Smart Folio for 11-inch iPad Pro",
+          name: "Подарочный сертификат Детский Мир",
           slug: "apple-smart-folio-for-11-inch-ipad-pro",
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, ",
-          price: 150.99,
+          price: 3000.00,
           sale_price: null,
           review: 2,
           ratings: 4,
           until: null,
           stock: 100,
-          top: null,
+          top: true,
           featured: null,
           new: null,
           author: null,
           sold: null,
-          category: [
-            {
-              name: "Computers",
-              slug: "computers",
-              pivot: {
-                product_id: "123",
-                "product-category_id": "20",
-              },
-            },
-            {
-              name: "Tablets",
-              slug: "tablets",
-              pivot: {
-                product_id: "123",
-                "product-category_id": "21",
-              },
-            },
-          ],
+          // category: [
+          //   {
+          //     name: "Computers",
+          //     slug: "computers",
+          //     pivot: {
+          //       product_id: "123",
+          //       "product-category_id": "20",
+          //     },
+          //   },
+          //   {
+          //     name: "Tablets",
+          //     slug: "tablets",
+          //     pivot: {
+          //       product_id: "123",
+          //       "product-category_id": "21",
+          //     },
+          //   },
+          // ],
           brands: [
             {
               name: "UGG",
@@ -300,7 +285,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_2_2_6f8df4fd35.jpg",
+              url: "../../../../public/assets/images/Frame_1.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "758",
@@ -309,7 +294,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_2_1_02ebe3462b.jpg",
+              url: "../../../../public/assets/images/Frame_1.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "759",
@@ -320,7 +305,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_2_2_300x300_8f533fffc2.jpg",
+              url: "../../../../public/assets/images/Frame_1.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "761",
@@ -329,7 +314,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_2_1_300x300_fa1dabe59f.jpg",
+              url: "../../../../public/assets/images/Frame_1.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "760",
@@ -337,85 +322,85 @@ export default {
             },
           ],
           variants: [
-            {
-              id: 25,
-              color: "#3399cc",
-              color_name: "Blue",
-              price: 160.99,
-              pivot: {
-                product_id: "123",
-                component_id: "25",
-              },
-              size: [
-                {
-                  id: 61,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "25",
-                    component_id: "61",
-                  },
-                },
-                {
-                  id: 62,
-                  name: "Extra Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "25",
-                    component_id: "62",
-                  },
-                },
-              ],
-            },
-            {
-              id: 24,
-              color: "#ebebeb",
-              color_name: "Grey",
-              price: 150.99,
-              pivot: {
-                product_id: "123",
-                component_id: "24",
-              },
-              size: [
-                {
-                  id: 60,
-                  name: "Small",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "24",
-                    component_id: "60",
-                  },
-                },
-                {
-                  id: 63,
-                  name: "Medium",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "24",
-                    component_id: "63",
-                  },
-                },
-                {
-                  id: 64,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "24",
-                    component_id: "64",
-                  },
-                },
-              ],
-            },
+            // {
+            //   id: 25,
+            //   color: "#3399cc",
+            //   color_name: "Blue",
+            //   price: 160.99,
+            //   pivot: {
+            //     product_id: "123",
+            //     component_id: "25",
+            //   },
+            //   size: [
+            //     {
+            //       id: 61,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "25",
+            //         component_id: "61",
+            //       },
+            //     },
+            //     {
+            //       id: 62,
+            //       name: "Extra Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "25",
+            //         component_id: "62",
+            //       },
+            //     },
+            //   ],
+            // },
+            // {
+            //   id: 24,
+            //   color: "#ebebeb",
+            //   color_name: "Grey",
+            //   price: 150.99,
+            //   pivot: {
+            //     product_id: "123",
+            //     component_id: "24",
+            //   },
+            //   size: [
+            //     {
+            //       id: 60,
+            //       name: "Small",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "24",
+            //         component_id: "60",
+            //       },
+            //     },
+            //     {
+            //       id: 63,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "24",
+            //         component_id: "63",
+            //       },
+            //     },
+            //     {
+            //       id: 64,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "24",
+            //         component_id: "64",
+            //       },
+            //     },
+            //   ],
+            // },
           ],
         },
         {
           id: 124,
-          name: "Apple – Watch Series 3 with White Sport Band",
+          name: "Подарочный сертификат Спортмастер",
           slug: "apple-watch-series-3-with-white-sport-band",
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, ",
-          price: 214.99,
-          sale_price: 167.99,
+          price: 3000.00,
+          sale_price: null,
           review: 2,
           ratings: 4,
           until: null,
@@ -425,24 +410,24 @@ export default {
           new: null,
           author: null,
           sold: null,
-          category: [
-            {
-              name: "Accessories",
-              slug: "accessories",
-              pivot: {
-                product_id: "124",
-                "product-category_id": "18",
-              },
-            },
-            {
-              name: "Smartwatches",
-              slug: "smartwatches",
-              pivot: {
-                product_id: "124",
-                "product-category_id": "25",
-              },
-            },
-          ],
+          // category: [
+          //   {
+          //     name: "Accessories",
+          //     slug: "accessories",
+          //     pivot: {
+          //       product_id: "124",
+          //       "product-category_id": "18",
+          //     },
+          //   },
+          //   {
+          //     name: "Smartwatches",
+          //     slug: "smartwatches",
+          //     pivot: {
+          //       product_id: "124",
+          //       "product-category_id": "25",
+          //     },
+          //   },
+          // ],
           brands: [
             {
               name: "Geox",
@@ -473,7 +458,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_3_1_45e6a01021.jpg",
+              url: "../../../../public/assets/images/Frame_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "762",
@@ -482,7 +467,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_3_2_4fd98d77ab.jpg",
+              url: "../../../../public/assets/images/Frame_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "763",
@@ -493,7 +478,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_3_1_300x300_8581e4797e.jpg",
+              url: "../../../../public/assets/images/Frame_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "765",
@@ -502,7 +487,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_3_2_300x300_1953e6bf05.jpg",
+              url: "../../../../public/assets/images/Frame_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "764",
@@ -510,129 +495,129 @@ export default {
             },
           ],
           variants: [
-            {
-              id: 26,
-              color: "#f2719c",
-              color_name: "Red",
-              price: 214.99,
-              pivot: {
-                product_id: "124",
-                component_id: "26",
-              },
-              size: [
-                {
-                  id: 65,
-                  name: "Small",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "26",
-                    component_id: "65",
-                  },
-                },
-                {
-                  id: 70,
-                  name: "Medium",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "26",
-                    component_id: "70",
-                  },
-                },
-                {
-                  id: 68,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "26",
-                    component_id: "68",
-                  },
-                },
-              ],
-            },
-            {
-              id: 27,
-              color: "#669933",
-              color_name: "Green",
-              price: 217.99,
-              pivot: {
-                product_id: "124",
-                component_id: "27",
-              },
-              size: [
-                {
-                  id: 69,
-                  name: "Medium",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "27",
-                    component_id: "69",
-                  },
-                },
-                {
-                  id: 66,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "27",
-                    component_id: "66",
-                  },
-                },
-                {
-                  id: 67,
-                  name: "Extra Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "27",
-                    component_id: "67",
-                  },
-                },
-              ],
-            },
+            // {
+            //   id: 26,
+            //   color: "#f2719c",
+            //   color_name: "Red",
+            //   price: 214.99,
+            //   pivot: {
+            //     product_id: "124",
+            //     component_id: "26",
+            //   },
+            //   size: [
+            //     {
+            //       id: 65,
+            //       name: "Small",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "65",
+            //       },
+            //     },
+            //     {
+            //       id: 70,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "70",
+            //       },
+            //     },
+            //     {
+            //       id: 68,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "68",
+            //       },
+            //     },
+            //   ],
+            // },
+            // {
+            //   id: 27,
+            //   color: "#669933",
+            //   color_name: "Green",
+            //   price: 217.99,
+            //   pivot: {
+            //     product_id: "124",
+            //     component_id: "27",
+            //   },
+            //   size: [
+            //     {
+            //       id: 69,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "69",
+            //       },
+            //     },
+            //     {
+            //       id: 66,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "66",
+            //       },
+            //     },
+            //     {
+            //       id: 67,
+            //       name: "Extra Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "67",
+            //       },
+            //     },
+            //   ],
+            // },
           ],
         },
         {
           id: 125,
-          name: "GoPro – HERO7 Black HD Waterproof Action",
+          name: "Подарочный сертификат Л'этуаль",
           slug: "gopro-hero7-black-hd-waterproof-action",
           short_desc:
             "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
-          price: 360.99,
-          sale_price: 130,
+          price: 3000,
+          sale_price: null,
           review: 2,
           ratings: 4,
           until: null,
           stock: 100,
-          top: null,
+          top: true,
           featured: null,
-          new: true,
+          new: null,
           author: null,
           sold: null,
-          category: [
-            {
-              name: "Accessories",
-              slug: "accessories",
-              pivot: {
-                product_id: "125",
-                "product-category_id": "18",
-              },
-            },
-            {
-              name: "Camcorders",
-              slug: "camcorders",
-              pivot: {
-                product_id: "125",
-                "product-category_id": "29",
-              },
-            },
-            {
-              name: "Cameras",
-              slug: "cameras",
-              pivot: {
-                product_id: "125",
-                "product-category_id": "28",
-              },
-            },
-          ],
+          // category: [
+          //   {
+          //     name: "Accessories",
+          //     slug: "accessories",
+          //     pivot: {
+          //       product_id: "125",
+          //       "product-category_id": "18",
+          //     },
+          //   },
+          //   {
+          //     name: "Camcorders",
+          //     slug: "camcorders",
+          //     pivot: {
+          //       product_id: "125",
+          //       "product-category_id": "29",
+          //     },
+          //   },
+          //   {
+          //     name: "Cameras",
+          //     slug: "cameras",
+          //     pivot: {
+          //       product_id: "125",
+          //       "product-category_id": "28",
+          //     },
+          //   },
+          // ],
           brands: [
             {
               name: "Geox",
@@ -656,7 +641,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_4_2_dbd9ddb7b4.jpg",
+              url: "../../../../public/assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "767",
@@ -665,7 +650,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_4_3_0faff7383b.jpg",
+              url: "../../../../public/assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "768",
@@ -676,7 +661,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_4_1_300x300_ba8482c604.jpg",
+              url: "../../../../public/assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "769",
@@ -685,7 +670,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_4_2_300x300_d8952e6e3d.jpg",
+              url: "../../../../public/assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "771",
@@ -694,7 +679,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_4_3_300x300_b96bb64a64.jpg",
+              url: "../../../../public/assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "770",
@@ -1882,7 +1867,7 @@ export default {
     const onSwiper = (swiper) => {
       return swiper;
     };
-    const onSlideChange = () => {};
+    const onSlideChange = () => { };
     return {
       onSwiper,
       onSlideChange,
