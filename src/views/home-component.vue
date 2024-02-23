@@ -56,7 +56,7 @@
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/shop/sidebar/3cols?category=audio" class="cat-block">
+            <router-link to="/shop/sidebar/3cols" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_5.png" alt="Category" class="bg-transparent" />
@@ -193,22 +193,34 @@
         <swiper :slidesPerView="3" :navigation="true" :spaceBetween="30" :freeMode="true" :modules="modules"
           class="mySwiper">
           <swiper-slide>
-            <img src="../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="">
+            <router-link to="#" style="cursor: pointer;">
+              <img src="../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="">
+            </router-link>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/newImg/logotypes/ozon.png" alt="">
+            <router-link to="#" style="cursor: pointer;">
+              <img src="../assets/newImg/logotypes/ozon.png" alt="">
+            </router-link>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/newImg/logotypes/xiaomi.png" alt="">
+            <router-link to="#" style="cursor: pointer;">
+              <img src="../assets/newImg/logotypes/xiaomi.png" alt="">
+            </router-link>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/newImg/logotypes/десткий мир.png" alt="">
+            <router-link to="#" style="cursor: pointer;">
+              <img src="../assets/newImg/logotypes/десткий мир.png" alt="">
+            </router-link>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/newImg/logotypes/аэрофлот.png" alt="">
+            <router-link to="#" style="cursor: pointer;">
+              <img src="../assets/newImg/logotypes/аэрофлот.png" alt="">
+            </router-link>
           </swiper-slide>
           <swiper-slide>
-            <img src="../assets/newImg/logotypes/РЖД.png" alt="">
+            <router-link to="#" style="cursor: pointer;">
+              <img src="../assets/newImg/logotypes/РЖД.png" alt="">
+            </router-link>
           </swiper-slide>
         </swiper>
       </div>

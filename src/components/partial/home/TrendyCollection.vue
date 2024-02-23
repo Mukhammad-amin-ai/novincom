@@ -6,11 +6,7 @@
           <h2 class="title">Популярные товары</h2>
         </div>
         <div class="heading-right">
-          <tabs
-            class="nav nav-pills nav-border-anim justify-content-center"
-            :data="tabsData"
-            id="trendy"
-          ></tabs>
+          <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="trendy"></tabs>
         </div>
       </div>
       <!-- <div class="row">
@@ -22,12 +18,7 @@
         <div class="col-xl-5col d-none d-xl-block">
           <div class="banner">
             <router-link to="/shop/sidebar/list">
-              <img
-                src="../../../assets/newImg/banner-trend.png"
-                alt="banner"
-                width="218"
-                height="390"
-              />
+              <img src="../../../assets/newImg/banner-trend.png" alt="banner" width="218" height="390" />
             </router-link>
           </div>
         </div>
@@ -35,40 +26,29 @@
           <div class="tab-content tab-content-carousel just-action-icons-sm">
             <div class="tab-pane p-0 fade show active" id="trendy-top-rated">
               <div class="swiper-carousel carousel-with-shadow swiper-1">
-                <swiper
-                  :breakpoints="{
-                    '320': {
-                      slidesPerView: 2,
-                      spaceBetween: 20,
-                    },
-                    '576': {
-                      slidesPerView: 3,
-                      spaceBetween: 20,
-                    },
+                <swiper :breakpoints="{
+                  '320': {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  '576': {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                  },
 
-                    '768': {
-                      slidesPerView: 4,
-                      spaceBetween: 20,
-                    },
-                    '1200': {
-                      slidesPerView: 5,
-                    },
-                    '1201': {
-                      slidesPerView: 4,
-                      spaceBetween: 35,
-                    },
-                  }"
-                  :modules="modules"
-                  :navigation="false"
-                  :slidesPerView="1"
-                  :spaceBetween="10"
-                  class="row"
-                >
-                  <swiper-slide
-                    class=""
-                    v-for="(product, index) in ratedProducts"
-                    :key="index"
-                  >
+                  '768': {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  },
+                  '1200': {
+                    slidesPerView: 5,
+                  },
+                  '1201': {
+                    slidesPerView: 4,
+                    spaceBetween: 35,
+                  },
+                }" :modules="modules" :navigation="false" :slidesPerView="1" :spaceBetween="10" class="row">
+                  <swiper-slide class="" v-for="(product, index) in ratedProducts" :key="index">
                     <ProductTwelve :product="product" class="mb-3" />
                   </swiper-slide>
                 </swiper>
@@ -118,40 +98,24 @@ export default {
           top: true,
           author: null,
           sold: null,
-          // category: [
-          //   {
-          //     name: "Computers",
-          //     slug: "computers",
-          //     pivot: {
-          //       product_id: "122",
-          //       "product-category_id": "20",
-          //     },
-          //   },
-          //   {
-          //     name: "Tablets",
-          //     slug: "tablets",
-          //     pivot: {
-          //       product_id: "122",
-          //       "product-category_id": "21",
-          //     },
-          //   },
-          //   {
-          //     name: "Cell Phone",
-          //     slug: "cell-phone",
-          //     pivot: {
-          //       product_id: "122",
-          //       "product-category_id": "27",
-          //     },
-          //   },
-          //   {
-          //     name: "TV",
-          //     slug: "tv",
-          //     pivot: {
-          //       product_id: "122",
-          //       "product-category_id": "24",
-          //     },
-          //   },
-          // ],
+          category: [
+            {
+              name: "Аксессуары",
+              slug: "computers",
+              pivot: {
+                product_id: "122",
+                "product-category_id": "20",
+              },
+            },
+            {
+              name: "Умные часы",
+              slug: "tablets",
+              pivot: {
+                product_id: "122",
+                "product-category_id": "21",
+              },
+            }
+          ],
           brands: [
             {
               name: "F&F",
@@ -299,24 +263,16 @@ export default {
           new: null,
           author: null,
           sold: null,
-          // category: [
-          //   {
-          //     name: "Computers",
-          //     slug: "computers",
-          //     pivot: {
-          //       product_id: "123",
-          //       "product-category_id": "20",
-          //     },
-          //   },
-          //   {
-          //     name: "Tablets",
-          //     slug: "tablets",
-          //     pivot: {
-          //       product_id: "123",
-          //       "product-category_id": "21",
-          //     },
-          //   },
-          // ],
+          category: [
+            {
+              name: "Подарочный сертификат",
+              slug: "computers",
+              pivot: {
+                product_id: "123",
+                "product-category_id": "20",
+              },
+            }
+          ],
           brands: [
             {
               name: "UGG",
@@ -464,24 +420,24 @@ export default {
           new: null,
           author: null,
           sold: null,
-          // category: [
-          //   {
-          //     name: "Accessories",
-          //     slug: "accessories",
-          //     pivot: {
-          //       product_id: "124",
-          //       "product-category_id": "18",
-          //     },
-          //   },
-          //   {
-          //     name: "Smartwatches",
-          //     slug: "smartwatches",
-          //     pivot: {
-          //       product_id: "124",
-          //       "product-category_id": "25",
-          //     },
-          //   },
-          // ],
+          category: [
+            {
+              name: "Планшеты",
+              slug: "accessories",
+              pivot: {
+                product_id: "124",
+                "product-category_id": "18",
+              },
+            },
+            {
+              name: " Развлечения",
+              slug: "smartwatches",
+              pivot: {
+                product_id: "124",
+                "product-category_id": "25",
+              },
+            },
+          ],
           brands: [
             {
               name: "Geox",
@@ -646,32 +602,24 @@ export default {
           new: null,
           author: null,
           sold: null,
-          // category: [
-          //   {
-          //     name: "Accessories",
-          //     slug: "accessories",
-          //     pivot: {
-          //       product_id: "125",
-          //       "product-category_id": "18",
-          //     },
-          //   },
-          //   {
-          //     name: "Camcorders",
-          //     slug: "camcorders",
-          //     pivot: {
-          //       product_id: "125",
-          //       "product-category_id": "29",
-          //     },
-          //   },
-          //   {
-          //     name: "Cameras",
-          //     slug: "cameras",
-          //     pivot: {
-          //       product_id: "125",
-          //       "product-category_id": "28",
-          //     },
-          //   },
-          // ],
+          category: [
+            {
+              name: "Развлечения",
+              slug: "accessories",
+              pivot: {
+                product_id: "125",
+                "product-category_id": "18",
+              },
+            },
+            {
+              name: "Телевизоры",
+              slug: "camcorders",
+              pivot: {
+                product_id: "125",
+                "product-category_id": "29",
+              },
+            }
+          ],
           brands: [
             {
               name: "Geox",
@@ -867,7 +815,7 @@ export default {
     const onSwiper = (swiper) => {
       return swiper;
     };
-    const onSlideChange = () => {};
+    const onSlideChange = () => { };
     return {
       onSwiper,
       onSlideChange,
