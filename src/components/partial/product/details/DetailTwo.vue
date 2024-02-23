@@ -72,7 +72,7 @@
               :key="index"
             >
               {{ item.size }}
-            </option> 
+            </option>
           </select>
         </div>
 
@@ -90,46 +90,42 @@
 
     <div class="product-details-action">
       <div class="details-action-col">
+        <div class="quanty_name f-500 mr-5">Кол-во:</div>
         <quantity-input
           :product="product"
           @change-qty="changeQty"
           class="mr-3 mr-sm-4"
         ></quantity-input>
-        <a
-          href="#"
-          class="btn-product btn-cart ml-sm-2"
-          @click.prevent="addCart"
-        >
-          <!-- :class="{
+      </div>
+    </div>
+    <div class="details-action-wrapper">
+      <a href="#" class="btn-product btn-cart ml-sm-2" @click.prevent="addCart">
+        <!-- :class="{
             'btn-disabled':
               !canAddToCart(product, qty) ||
               (product.variants.length > 0 && !showVariationPrice),
           }" -->
-          <span>add to cart</span>
-        </a>
-      </div>
-
-      <div class="details-action-wrapper">
-        <a
-          href="#"
-          class="btn-product btn-wishlist"
-          title="Wishlist"
-          @click.prevent="addToWishlist({ product: product })"
-          v-if="!isInWishlist(product)"
-          key="notInWishlist"
-        >
-          <span>Add to Wishlist</span>
-        </a>
-        <router-link
-          to="/shop/wishlist"
-          class="btn-product btn-wishlist added-to-wishlist"
-          title="Wishlist"
-          v-else
-          key="inWishlist"
-        >
-          <span>Go to Wishlist</span>
-        </router-link>
-      </div>
+        <span>add to cart</span>
+      </a>
+      <a
+        href="#"
+        class="btn-product btn-wishlist"
+        title="Wishlist"
+        @click.prevent="addToWishlist({ product: product })"
+        v-if="!isInWishlist(product)"
+        key="notInWishlist"
+      >
+        <span>Add to Wishlist</span>
+      </a>
+      <router-link
+        to="/shop/wishlist"
+        class="btn-product btn-wishlist added-to-wishlist"
+        title="Wishlist"
+        v-else
+        key="inWishlist"
+      >
+        <span>Go to Wishlist</span>
+      </router-link>
     </div>
 
     <div class="product-details-footer">
