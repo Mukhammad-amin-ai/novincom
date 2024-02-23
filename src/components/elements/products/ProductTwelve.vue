@@ -37,7 +37,7 @@
       </div>
       <h3 class="product-title">
         <router-link :to="'/product/default/' + product.slug">{{
-          product.name
+          product.name 
         }}</router-link>
       </h3>
 
