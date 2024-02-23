@@ -89,7 +89,8 @@
         <div :class="isFullwidth ? 'container-fluid' : 'container'">
           <div class="header-left">
             <div class="dropdown category-dropdown">
-              <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы" style="justify-content: space-between;">
+              <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы"
+                style="justify-content: space-between;">
                 <div class="drop-custom">
                   <img src="../../../assets/newImg/icons/twotone-menu.svg" alt="">
                   Потратить бонусы
@@ -103,49 +104,49 @@
                     <li class="item-lead" :class="{
                       active: $route.query.category == 'electronics',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=electronics'">Electronics</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=electronics'">Электроника</router-link>
                     </li>
                     <li class="item-lead" :class="{ active: $route.query.category == 'gift-idea' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Gift Ideas</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Идеи подарков</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'beds' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=beds'">Beds</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=beds'">Кровати</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'lighting' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=lighting'">Lighting</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=lighting'">Освещение</router-link>
                     </li>
                     <li :class="{
                       active:
                         $route.query.category == 'sofas-and-sleeper-sofas',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Sofas & Sleeper
-                        sofas</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Диваны и спальные
+                        места</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'storage' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=storage'">Storage</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=storage'">Место хранения</router-link>
                     </li>
                     <li :class="{
                       active:
                         $route.query.category == 'armchairs-and-chaises',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Armchairs &
-                        Chaises</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Кресла и
+                        шезлонги</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'decoration' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=decoration'">Decoration</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=decoration'">Украшение</router-link>
                     </li>
                     <li :class="{
                       active: $route.query.category == 'kitchen-cabinets',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=kitchen-cabinets'">Kitchen Cabinets</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=kitchen-cabinets'">Кухонные шкафы</router-link>
                     </li>
                     <li :class="{
                       active: $route.query.category == 'coffee-and-tables',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=coffee-and-tables'">Coffee & Tables</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=coffee-and-tables'">Журнальные столики</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'furniture' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=furniture'">Outdoor Furniture</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=furniture'">Уличная мебель</router-link>
                     </li>
                   </ul>
                 </nav>

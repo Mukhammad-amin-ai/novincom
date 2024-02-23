@@ -235,7 +235,7 @@
       </li>
       <li :class="{ active: current == 'shop' }">
         <router-link to="/shop/sidebar/list" class="sf-with-ul">Спецпредложения</router-link>
-        <div class="megamenu megamenu-md">
+        <!-- <div class="megamenu megamenu-md">
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="menu-col">
@@ -342,7 +342,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </li>
       <li :class="{ active: current == 'product' }">
         <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress" class="sf-with-ul">Акции</router-link>
