@@ -24,7 +24,7 @@
       <div class="row" v-else key="grid">
         <template v-if="!loaded">
           <div
-            class="skel-pro"
+            class="skel-pro col"
             :class="gridClass"
             v-for="item in fakeArray"
             :key="item"
@@ -64,6 +64,9 @@ export default {
       if (this.type === "list" || this.type === "2cols") return "col-6";
       if (this.type === "3cols") return "col-6 col-md-4 col-lg-4";
       if (this.type === "4cols") return "col-6 col-md-4 col-lg-4 col-xl-3";
+      else {
+        return "col-4";
+      }
     },
     fakeArray: function () {
       let temp = [];
