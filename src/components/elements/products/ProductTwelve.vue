@@ -2,7 +2,7 @@
   <div class="product product-2">
     <figure class="product-media">
       <span class="product-label label-circle label-new" v-if="product.new">Новинка</span>
-      <span class="product-label label-circle label-sale" v-if="product.sale_price">Выгодно</span>
+      <span class="product-label label-circle label-sale" v-if="product.featured">Выгодно</span>
       <span class="product-label label-circle label-top" v-if="product.top">Топ</span>
       <span class="product-label label-circle label-out" v-if="product.stock === 0">Out Of Stock</span>
       <router-link :to="'/product/default/' + product.slug">
@@ -50,7 +50,7 @@
           {{ minPrice.toFixed(2) }}
         </div>
         <template v-else>
-          <div class="product-price" v-if="product.variants.length == 0">
+          <div class="product-price" v-if="product.variants.length >= 0">
             <span class="new-price">{{ minPrice.toFixed(2) }}</span>
             <span class="old-price">{{ maxPrice.toFixed(2) }}</span>
           </div>

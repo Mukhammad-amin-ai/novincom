@@ -3,7 +3,7 @@
     <div class="intro-slider-container mb-5">
       <carousel />
     </div>
-    
+
     <div class="container">
       <h2 class="title text-center mb-4">Каталог призов</h2>
       <div class="cat-blocks-container">
