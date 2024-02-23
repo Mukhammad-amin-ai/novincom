@@ -1,4 +1,3 @@
-
 <template>
   <footer class="footer">
     <div class="footer-middle">
@@ -6,17 +5,30 @@
         <div class="row">
           <div class="col-sm-6 col-lg-3">
             <div class="widget widget-about">
-              <img src="../../../assets/newImg/logotypes/logo.svg" class="footer-logo bg-transparent" alt="Footer Logo"
-                width="105" height="27" />
-              <p style="font-family: Gilroy-Medium !important;">
-                Подключите программу “Бонусы” к Вашей карте, оплачивайте ей покупки и получайте баллы
+              <img
+                src="../../../assets/newImg/logotypes/logo.svg"
+                class="footer-logo bg-transparent"
+                alt="Footer Logo"
+                width="105"
+                height="27"
+              />
+              <p style="font-family: Gilroy-Medium !important">
+                Подключите программу “Бонусы” к Вашей карте, оплачивайте ей
+                покупки и получайте баллы
               </p>
 
               <div class="widget-call">
                 <!-- <i class="icon-phone"></i> -->
-                <img src="../../../assets/newImg/icons/icon-tell.svg" alt="icon">
+                <img
+                  src="../../../assets/newImg/icons/icon-tell.svg"
+                  alt="icon"
+                />
                 Обратитья в банк
-                <a href="tel:#" style="font-family: Gilroy-Medium !important; font-size: 20px;">+7 800 250-70-07</a>
+                <a
+                  href="tel:#"
+                  style="font-family: Gilroy-Medium !important; font-size: 20px"
+                  >+7 800 250-70-07</a
+                >
               </div>
             </div>
           </div>
@@ -27,22 +39,44 @@
 
               <ul class="widget-list">
                 <li>
-                  <router-link to="https://novikom.ru/individuals/bonus-program/">О программе</router-link>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/individuals/bonus-program/"
+                    >О программе</a
+                  >
                 </li>
                 <li>
-                  <router-link to="https://novikom.ru/individuals/bonus-program/">Как программа работает</router-link>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/individuals/bonus-program/"
+                    >Как программа работает</a
+                  >
                 </li>
                 <li>
-                  <router-link to="https://novikom.ru/upload/docs/bonusi-pravila.pdf">Правила программы</router-link>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/upload/docs/bonusi-pravila.pdf"
+                    >Правила программы</a
+                  >
                 </li>
                 <li>
-                  <router-link to="https://novikom.ru/individuals/bonus-program/faq/ ">Вопросы и ответы</router-link>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/individuals/bonus-program/faq/ "
+                    >Вопросы и ответы</a
+                  >
                 </li>
                 <li>
-                  <router-link to="https://wikimybill.ru/page32603929.html ">Безопасность</router-link>
+                  <a
+                    target="_blank"
+                    href="https://wikimybill.ru/page32603929.html "
+                    >Безопасность</a
+                  >
                 </li>
                 <li>
-                  <router-link to="https://novikom.ru/">Официальный сайт АО АКБ “НОВИКОМБАНК”</router-link>
+                  <a target="_blank" href="https://novikom.ru/"
+                    >Официальный сайт АО АКБ “НОВИКОМБАНК”</a
+                  >
                 </li>
               </ul>
             </div>
@@ -54,10 +88,10 @@
 
               <ul class="widget-list">
                 <li>
-                  <a @click="downloadFile" style="cursor: pointer;">RuMarket</a>
+                  <a @click="downloadFile" style="cursor: pointer">RuMarket</a>
                 </li>
                 <li>
-                  <a @click="downloadFile" style="cursor: pointer;">RuStore</a>
+                  <a @click="downloadFile" style="cursor: pointer">RuStore</a>
                 </li>
                 <li>
                   <router-link to="#">NashMarket</router-link>
@@ -96,13 +130,18 @@
     </div>
 
     <div class="footer-bottom">
-      <div :class="isFullwidth ? 'container-fluid' : 'container'" class="pb-2 pt-2">
-        <p class="footer-copyright">
-          АО АКБ “Новикомбанк”
-        </p>
+      <div
+        :class="isFullwidth ? 'container-fluid' : 'container'"
+        class="pb-2 pt-2"
+      >
+        <p class="footer-copyright">АО АКБ “Новикомбанк”</p>
 
         <figure class="footer-payments">
-          <img src="../../../assets/newImg/logotypes/mir.jpg" alt="Payment methods" class="bg-transparent" />
+          <img
+            src="../../../assets/newImg/logotypes/mir.jpg"
+            alt="Payment methods"
+            class="bg-transparent"
+          />
         </figure>
       </div>
     </div>
@@ -156,4 +195,3 @@ export default {
   },
 };
 </script>
-  
