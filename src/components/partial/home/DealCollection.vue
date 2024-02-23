@@ -64,7 +64,7 @@
       </div>
     </div>
     <div class="more-container text-center mt-1 mb-5">
-      <router-link to="/shop/sidebar/3cols" class="btn btn-outline-dark-2 btn-round btn-more"
+      <router-link to="/flight-tickets" class="btn btn-outline-dark-2 btn-round btn-more"
         style="gap: 5px; font-family: Gilroy-Medium !important; font-weight: 600;">
         <span>Смотреть все направления</span>
         <img src="../../../assets/newImg/icons/bl_arrow-right.svg" alt="">
