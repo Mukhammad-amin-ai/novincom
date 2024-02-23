@@ -72,7 +72,7 @@
               :key="index"
             >
               {{ item.size }}
-            </option>
+            </option> 
           </select>
         </div>
 

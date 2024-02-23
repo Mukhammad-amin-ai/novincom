@@ -6,7 +6,11 @@
           <h2 class="title">Популярные товары</h2>
         </div>
         <div class="heading-right">
-          <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="trendy"></tabs>
+          <tabs
+            class="nav nav-pills nav-border-anim justify-content-center"
+            :data="tabsData"
+            id="trendy"
+          ></tabs>
         </div>
       </div>
       <!-- <div class="row">
@@ -18,37 +22,53 @@
         <div class="col-xl-5col d-none d-xl-block">
           <div class="banner">
             <router-link to="/shop/sidebar/list">
-              <img src="../../../assets/newImg/banner-trend.png" alt="banner" width="218" height="390" />
+              <img
+                src="../../../assets/newImg/banner-trend.png"
+                alt="banner"
+                width="218"
+                height="390"
+              />
             </router-link>
           </div>
         </div>
-        <div class="col-xl-4-5col ">
+        <div class="col-xl-4-5col">
           <div class="tab-content tab-content-carousel just-action-icons-sm">
             <div class="tab-pane p-0 fade show active" id="trendy-top-rated">
               <div class="swiper-carousel carousel-with-shadow swiper-1">
-                <swiper :breakpoints="{
-                  '320': {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  '576': {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                  },
+                <swiper
+                  :breakpoints="{
+                    '320': {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    '576': {
+                      slidesPerView: 3,
+                      spaceBetween: 20,
+                    },
 
-                  '768': {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                  },
-                  '1200': {
-                    slidesPerView: 5,
-                  },
-                  '1201': {
-                    slidesPerView: 4,
-                    spaceBetween: 35,
-                  },
-                }" :modules="modules" :navigation="false" :slidesPerView="1" :spaceBetween="10" class="row">
-                  <swiper-slide class="col" v-for="(product, index) in ratedProducts" :key="index">
+                    '768': {
+                      slidesPerView: 4,
+                      spaceBetween: 20,
+                    },
+                    '1200': {
+                      slidesPerView: 5,
+                    },
+                    '1201': {
+                      slidesPerView: 4,
+                      spaceBetween: 35,
+                    },
+                  }"
+                  :modules="modules"
+                  :navigation="false"
+                  :slidesPerView="1"
+                  :spaceBetween="10"
+                  class="row"
+                >
+                  <swiper-slide
+                    class=""
+                    v-for="(product, index) in ratedProducts"
+                    :key="index"
+                  >
                     <ProductTwelve :product="product" class="mb-3" />
                   </swiper-slide>
                 </swiper>
@@ -57,7 +77,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -138,7 +157,7 @@ export default {
     const onSwiper = (swiper) => {
       return swiper;
     };
-    const onSlideChange = () => { };
+    const onSlideChange = () => {};
     return {
       onSwiper,
       onSlideChange,
