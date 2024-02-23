@@ -249,6 +249,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 	color: inherit;
+	text-align: start;
 	&:hover,
 	&:focus {
 		color: $primary-color;
@@ -872,7 +873,7 @@
 	.ratings-container,
 	.product-nav,
 	.product-size  {
-		justify-content: center;
+		justify-content: start;
 	}
 }
 
@@ -1337,6 +1338,7 @@
 		font-size: 1.4rem;
 		font-weight: 500;
 		letter-spacing: .01em;
+		// text-align: start;
 		color: #333;
 	}
 	.old-price {

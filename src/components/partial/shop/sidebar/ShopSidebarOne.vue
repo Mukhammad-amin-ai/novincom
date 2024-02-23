@@ -2,20 +2,17 @@
   <div class="sidebar-shop" :class="isSidebar ? 'sidebar-filter' : 'sidebar'">
     <div :class="{ 'sidebar-filter-wrapper': isSidebar }">
       <div class="widget widget-clean">
-        <label>Filters:</label>
-        <a href="#" class="sidebar-filter-clear" @click.prevent="cleanAll"
-          >Clean All</a
-        >
+        <label>Фильтры:</label>
+        <a href="#" class="sidebar-filter-clear" @click.prevent="cleanAll">Очистить</a>
       </div>
 
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-1"
-            :class="{ collapsed: !toggleStates[0] }"
-            @click.prevent="toggleSlide(0)"
-            >Category</a
-          >
+          <a href="#widget-1" :class="{ collapsed: !toggleStates[0] }" @click.prevent="toggleSlide(0)"
+            style="display: flex; justify-content: space-between;">
+            Категории
+            <img src="../../../../assets/newImg/icons/arrow_down.svg" alt="">
+          </a>
         </h3>
 
         <!-- <vue-slide-toggle :open="toggleStates[0]" class="show" :duration="200">
@@ -43,12 +40,11 @@
 
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-2"
-            :class="{ collapsed: !toggleStates[1] }"
-            @click.prevent="toggleSlide(1)"
-            >Size</a
-          >
+          <a href="#widget-2" :class="{ collapsed: !toggleStates[1] }" @click.prevent="toggleSlide(1)"
+            style="display: flex; justify-content: space-between;">
+            Размер экрана
+            <img src="../../../../assets/newImg/icons/arrow_down.svg" alt="">
+          </a>
         </h3>
 
         <!-- <vue-slide-toggle :open="toggleStates[1]" class="show" :duration="200">
@@ -79,12 +75,12 @@
 
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-3"
-            :class="{ collapsed: !toggleStates[2] }"
-            @click.prevent="toggleSlide(2)"
-            >Colour</a
-          >
+          <a href="#widget-3" :class="{ collapsed: !toggleStates[2] }" @click.prevent="toggleSlide(2)"
+            style="display: flex; justify-content: space-between;">
+            Цвет
+            <img src="../../../../assets/newImg/icons/arrow_down.svg" alt="">
+
+          </a>
         </h3>
 
         <!-- <vue-slide-toggle :open="toggleStates[2]" class="show" :duration="200">
@@ -106,12 +102,11 @@
 
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-4"
-            :class="{ collapsed: !toggleStates[3] }"
-            @click.prevent="toggleSlide(3)"
-            >Brand</a
-          >
+          <a href="#widget-4" :class="{ collapsed: !toggleStates[3] }" @click.prevent="toggleSlide(3)"
+            style="display: flex; justify-content: space-between;">Бренд
+            <img src="../../../../assets/newImg/icons/arrow_down.svg" alt="">
+
+          </a>
         </h3>
 
         <!-- <vue-slide-toggle :open="toggleStates[3]" class="show" :duration="200">
@@ -139,8 +134,7 @@
           </div>
         </vue-slide-toggle> -->
       </div>
-
-      <div class="widget widget-collapsible">
+      <!-- <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
           <a
             href="#widget-5"
@@ -150,7 +144,7 @@
           >
         </h3>
 
-        <!-- <vue-slide-toggle :open="toggleStates[4]" class="show" :duration="200">
+        <vue-slide-toggle :open="toggleStates[4]" class="show" :duration="200">
           <div class="widget-body pt-0">
             <div class="filter-price">
               <div class="filter-price-text d-flex justify-content-between">
@@ -171,8 +165,8 @@
               ></vue-nouislider>
             </div>
           </div>
-        </vue-slide-toggle> -->
-      </div>
+        </vue-slide-toggle>
+      </div> -->
     </div>
   </div>
 </template>

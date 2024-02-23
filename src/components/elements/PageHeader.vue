@@ -1,5 +1,5 @@
 <template>
-    <div class="page-header text-center" v-lazy:background-image="'./images/page-header-bg.jpg'">
+    <div class="page-header text-center" style="background-image:url(/assets/images/bg-header.png) !important">
         <div class="container">
             <h1 class="page-title">
                 {{ title }}

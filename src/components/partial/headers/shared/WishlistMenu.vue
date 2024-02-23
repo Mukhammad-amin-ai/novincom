@@ -1,6 +1,6 @@
 <template>
   <div class="wishlist">
-    <router-link to="/shop/wishlist" title="Wishlist">
+    <router-link to="#" title="Wishlist">
       <div class="icon">
         <!-- <i class="icon-heart-o"></i> -->
         <img src="../../../../assets/newImg/icons/heart.svg" alt="heart">

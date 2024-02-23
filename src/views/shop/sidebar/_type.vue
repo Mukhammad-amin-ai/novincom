@@ -5,11 +5,14 @@
       <div class="container">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <router-link to="/">Home</router-link>
+            <router-link to="/">Главная</router-link>
           </li>
           <li class="breadcrumb-item">
-            <router-link to="/shop/sidebar/list">Shop</router-link>
+            <router-link to="/shop/sidebar/list">Товары</router-link>
           </li>
+          <!-- <li class="breadcrumb-item">
+            <router-link to="/shop/sidebar/3cols?category=electronics">Электроника</router-link>
+          </li> -->
           <li class="breadcrumb-item active">{{ pageTitle }}</li>
           <li class="breadcrumb-item" v-if="$route.query.searchTerm">
             <span>Search - {{ $route.query.searchTerm }}</span>
@@ -27,14 +30,14 @@
             <div class="toolbox">
               <div class="toolbox-left">
                 <div class="toolbox-info">
-                  Showing
+                  Показано  
                   <span>{{ products.length }} of {{ totalCount }}</span>
-                  Products
+                  Tоваров
                 </div>
               </div>
               <div class="toolbox-right">
                 <div class="toolbox-sort">
-                  <label for="sortby">Sort by:</label>
+                  <label for="sortby">Сортировка:</label>
                   <div class="select-custom">
                     <select
                       name="sortby"
@@ -43,7 +46,8 @@
                       @change.prevent="getProducts"
                       v-model="orderBy"
                     >
-                      <option value="default">Default</option>
+                      <option value="default">По умолчанию 
+                      </option>
                       <option value="featured">Most Popular</option>
                       <option value="rating">Most Rated</option>
                       <option value="new">Date</option>
@@ -247,3 +251,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.breadcrumb-item::before:nth-child(3){
+  content: none !important;
+}
+</style>

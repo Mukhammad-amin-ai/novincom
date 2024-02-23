@@ -1,6 +1,6 @@
 <template>
   <div class="dropdown compare-dropdown">
-    <a href="javascript:;" class="dropdown-toggle">
+    <a href="#" class="dropdown-toggle">
       <div class="icon">
         <!-- <i class="icon-random"></i> -->
         <img src="../../../../assets/newImg/icons/random.svg" alt="random">
