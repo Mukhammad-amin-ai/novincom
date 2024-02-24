@@ -4,10 +4,12 @@
     <div class="tab-content">
       <div class="tab-pane fade show active" id="tab1">
         <div class="product-desc-content">
-          <h3 class="info_text_title">{{ product.name }}</h3>
+          <h3 class="info_text_title">{{ product?.name }}</h3>
           <p class="mb-1"></p>
 
-          <div class="product_description_info"><b class="mr-2">1.</b>{{ product.short_desc }}</div>
+          <div class="product_description_info">
+            <b class="mr-2">1.</b>{{ product?.short_desc }}
+          </div>
         </div>
       </div>
 
