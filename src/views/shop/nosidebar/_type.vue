@@ -5,12 +5,13 @@
             <div :class="containerClass">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <nuxt-link to="/">Home</nuxt-link>
+                        <nuxt-link to="/">
+                            Главная</nuxt-link>
                     </li>
                     <li class="breadcrumb-item">
-                        <nuxt-link to="/shop/sidebar/list">Shop</nuxt-link>
+                        <nuxt-link to="/shop/sidebar/list">Товары</nuxt-link>
                     </li>
-                    <li class="breadcrumb-item active">{{ pageTitle }}</li>
+                    <li class="breadcrumb-item active">{{ category }}</li>
                     <li class="breadcrumb-item" v-if="$route.query.searchTerm">
                         <span>Search - {{ $route.query.searchTerm }}</span>
                     </li>
@@ -22,29 +23,26 @@
             <div :class="containerClass">
                 <div class="toolbox">
                     <div class="toolbox-left">
-                        <a href="#" class="sidebar-toggler mr-0 mr-md-5" @click.prevent="showSidebar">
-                            <i class="icon-bars"></i>Filters
+                        <a href="#" class="sidebar-toggler mr-0 mr-md-5" @click.prevent="showSidebar" style="font-family: Gilroy-Medium !important; gap: 5px; align-items: center;">
+                            <!-- <i class="icon-bars"></i> -->
+                            <img src="../../../assets/newImg/icons/menu.svg" alt="">
+                            Фильтры
                         </a>
                     </div>
 
                     <div class="toolbox-center">
                         <div class="toolbox-info">
-                            Showing
-                            <span>{{ products.length }} of {{ totalCount }}</span> Products
+                            Показано 
+                            <span>{{ products.length }} of {{ totalCount }}</span> товаров
                         </div>
                     </div>
                     <div class="toolbox-right">
                         <div class="toolbox-sort">
-                            <label for="sortby">Sort by:</label>
+                            <label for="sortby">Сортировка:</label>
                             <div class="select-custom">
-                                <select
-                                    name="sortby"
-                                    id="sortby"
-                                    class="form-control"
-                                    @change.prevent="getProducts"
-                                    v-model="orderBy"
-                                >
-                                    <option value="default">Default</option>
+                                <select name="sortby" id="sortby" class="form-control" @change.prevent="getProducts"
+                                    v-model="orderBy">
+                                    <option value="default">По умолчанию</option>
                                     <option value="featured">Most Popular</option>
                                     <option value="rating">Most Rated</option>
                                     <option value="new">Date</option>
@@ -54,26 +52,18 @@
                     </div>
                 </div>
 
-                <shop-list-three
-                    :products="products"
-                    :per-page="perPage"
-                    :loaded="loaded"
-                    :class="{loaded: loaded}"
-                    class="skeleton-body skel-shop-products"
-                ></shop-list-three>
+                <shop-list-three :products="products" :per-page="perPage" :loaded="loaded" :class="{ loaded: loaded }"
+                    class="skeleton-body skel-shop-products"></shop-list-three>
 
                 <div class="load-more-container text-center">
-                    <a
-                        href="#"
-                        class="btn btn-outline-darker btn-load-more"
-                        @click.prevent="loadMore"
-                        v-if="loadMoreLoading || hasMore"
-                    >
+                    <a href="#" class="btn btn-outline-darker btn-load-more" @click.prevent="loadMore"
+                        v-if="loadMoreLoading || hasMore">
                         More Products
-                        <i
+                        <img src="../../../assets/newImg/icons/refresh.svg" alt="">
+                        <!-- <i
                             class="icon-refresh"
                             :class="{'load-more-rotating' : loadMoreLoading}"
-                        ></i>
+                        ></i> -->
                     </a>
                 </div>
                 <div class="sidebar-filter-overlay" @click="hideSidebar"></div>
@@ -99,7 +89,7 @@ export default {
         ShopListThree,
         ShopSidebarOne
     },
-    data: function() {
+    data: function () {
         return {
             products: [],
             perPage: 8,
@@ -108,34 +98,43 @@ export default {
             orderBy: 'default',
             isSidebar: true,
             loaded: false,
-            loadMoreLoading: false
+            loadMoreLoading: false,
+            category: ""
         };
     },
     computed: {
         ...mapGetters('demo', ['currentDemo']),
-        pageTitle: function() {
+        pageTitle: function () {
             if (this.$route.params.type == 'boxed') return 'Boxed No Sidebar';
             else return 'Fullwidth No Sidebar';
         },
-        containerClass: function() {
+        containerClass: function () {
             if (this.$route.params.type == 'fullwidth')
                 return 'container-fluid';
             else return 'container';
         },
-        hasMore: function() {
+        hasMore: function () {
             return this.perPage <= this.totalCount;
         }
     },
     watch: {
-        $route: function() {
+        $route: function () {
             this.getProducts(true);
         }
     },
-    created: function() {
+    created: function () {
         this.getProducts();
+        this.category = this.$route.query.category;
+        this.$watch(
+            () => this.$route.query.category,
+            (newCategory) => {
+                this.category = newCategory;
+
+            }
+        );
     },
     methods: {
-        getProducts: async function(samePage = false, loadMore = false) {
+        getProducts: async function (samePage = false, loadMore = false) {
             if (!loadMore) this.loaded = false;
             await Repository.get(`${baseUrl}/shop`, {
                 params: {
@@ -155,7 +154,7 @@ export default {
                 })
                 .catch(error => ({ error: JSON.stringify(error) }));
         },
-        toggleSidebar: function() {
+        toggleSidebar: function () {
             if (
                 document
                     .querySelector('body')
@@ -171,19 +170,19 @@ export default {
             }
         },
 
-        showSidebar: function() {
+        showSidebar: function () {
             document
                 .querySelector('body')
                 .classList.add('sidebar-filter-active');
         },
 
-        hideSidebar: function() {
+        hideSidebar: function () {
             document
                 .querySelector('body')
                 .classList.remove('sidebar-filter-active');
         },
 
-        loadMore: function() {
+        loadMore: function () {
             if (this.perPage < this.totalCount) {
                 this.perPage += 4;
                 this.loadMoreLoading = true;

@@ -190,7 +190,7 @@
     <div class="container">
       <hr class="mb-0" />
       <div class="swiper-carousel brands-slider swiper-2 mb-5 mt-5">
-        <CaruselLogo/>
+        <CaruselLogo />
       </div>
     </div>
     <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
