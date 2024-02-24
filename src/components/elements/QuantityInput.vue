@@ -17,6 +17,7 @@
         class="text-center quantity_input"
         required
         placeholder
+        readonly
         v-model="current"
         @change="setCurrent($event)"
       />

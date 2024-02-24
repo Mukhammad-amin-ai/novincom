@@ -118,10 +118,10 @@ export default {
   },
 };
 </script>
-<style >
+<style>
 .swiper-button-next,
 .swiper-button-prev {
-  background: var(--blue) !important;
+  background: white !important;
   border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -129,9 +129,14 @@ export default {
   justify-content: center !important;
   align-items: center !important;
   border: 1px solid transparent;
-  color: white !important;
-
+  color: var(--grey) !important;
 }
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: white !important;
+  background: var(--blue) !important;
+}
+
 .swiper-button-next::after {
   position: absolute;
   top: 5%;
@@ -146,7 +151,7 @@ export default {
   position: absolute;
   top: 5%;
   left: 10%;
-  color: white !important;
+  color: var(--grey) !important;
   width: 10px;
   height: 10px;
   padding: 10px;
