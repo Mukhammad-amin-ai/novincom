@@ -200,13 +200,13 @@
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";
-import { VueSlideToggle } from "vue-slide-toggle";
+// import { VueSlideToggle } from "vue-slide-toggle";
 import QuantityInput from "@/components/elements/QuantityInput.vue";
 import { baseUrl } from "@/repositories/repository.js";
 import store from "@/store";
 export default {
   components: {
-    VueSlideToggle,
+    // VueSlideToggle,
     QuantityInput,
   },
   props: {

@@ -183,6 +183,10 @@ export default {
         this.pageTitle = "Grid 4 Columns";
         this.perPage = 12;
       }
+      else {
+        this.pageTitle = "Category";
+      
+      }
 
       this.loaded = false;
       await Repository.get(`${baseUrl}/shop`, {
