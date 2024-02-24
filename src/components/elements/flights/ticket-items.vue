@@ -257,6 +257,7 @@ export default {
   width: 100%;
   height: auto;
   display: flex;
+  align-items: center;
   gap: 10px;
   margin: 10px 0;
   cursor: pointer;

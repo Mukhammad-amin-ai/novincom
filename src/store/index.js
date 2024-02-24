@@ -4,6 +4,7 @@ import cart from "./cart";
 import compare from "./compare";
 import demo from "./demo";
 import wishlist from "./wishlist";
+import flight from "./flight";
 
 export default createStore({
   modules: {
@@ -11,5 +12,6 @@ export default createStore({
     compare,
     demo,
     wishlist,
+    flight
   },
 });

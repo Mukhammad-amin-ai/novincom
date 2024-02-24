@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-popup">
+    <div class="modal-popup" v-if="modalShow">
         <div class="fade-flight">
             <div class="modal-flight">
                 <div class="top-modal-flight">
@@ -114,7 +114,7 @@
                     </div>
                     <hr>
                     <div class="filter-btn">
-                        <button>Применить</button>
+                        <button @click="showFilter">Применить</button>
                     </div>
                 </div>
             </div>
@@ -122,11 +122,19 @@
     </div>
 </template>
 <script>
+import { mapGetters } from "vuex"
+import flight from '@/store/flight.js'
 import reusable from './reusable.vue';
 export default {
     components: {
         reusable
-    }
+    },
+    computed: {
+        modalShow() {
+            console.log(flight.state);
+        },
+        ...mapGetters('flight', ['showFilter']),
+    },
 }
 </script>
 <style scoped>
