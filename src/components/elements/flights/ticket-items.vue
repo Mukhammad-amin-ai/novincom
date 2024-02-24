@@ -1,16 +1,21 @@
 <template>
   <div class="flight-wrapper">
     <div class="cover">
-      <div class="flight-item">
+      <div class="flight-item" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-if="detailed">
         <div class="start-flight">
           <img src="../../../assets/newImg/logo-air.png" alt="">
           <h6>20:20 VOG</h6>
           <h6>07.02.2024</h6>
         </div>
         <div class="flight-line">
-          <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
-          <div class="line"></div>
-          <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+          <div class="wrap-flight">
+            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+            <div class="line"></div>
+            <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+          </div>
+          <div class="hour">
+            18 ч 10м
+          </div>
         </div>
         <div class="start-flight">
           <img src="../../../assets/newImg/logo-air.png" alt="">
@@ -21,7 +26,7 @@
           <h6>DP-6968</h6>
           <h6>Победа</h6>
         </div>
-        <div class="flight-passenger-info">
+        <div class="flight-passenger-info" v-if="info">
           <div class="top-icons">
             <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
             <img src="../../../assets/newImg/icons/arrows.svg" alt="">
@@ -29,19 +34,89 @@
           </div>
           <div class="bottom-info">
             <div class="item-bot">E</div>
+          </div>
+        </div>
+        <div class="detailed" v-else>
+          Подробнее
+          <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
+        </div>
+      </div>
+      <div class="flight-item detailed-info" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-else>
+        <div class="detailed-cover">
+          <div class="start-flight detailed-start">
+            <img src="../../../assets/newImg/logo-air.png" alt="">
+            <h6>20:20 VOG</h6>
+            <h6 style="white-space:nowrap;">29 февраля 2024</h6>
+            <h6>Восточный</h6>
+          </div>
+          <div class="flight-line">
+            <div class="wrap-flight">
+              <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+              <div class="line"></div>
+              <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+            </div>
+            <div class="hour">
+              18 ч 10м
+            </div>
+          </div>
+          <div class="start-flight detailed-start">
+            <img src="../../../assets/newImg/logo-air.png" alt="">
+            <h6>22:25 SVO</h6>
+            <h6 style="white-space:nowrap;">29 февраля 2024</h6>
+            <h6>Восточный</h6>
+          </div>
+          <div class="flight-info">
+            <h6>DP-6968</h6>
+            <h6>Победа</h6>
+          </div>
+          <div class="flight-passenger-info" :style="{ display: detailed ? 'block' : 'none' }" v-if="info">
+            <div class="top-icons">
+              <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+              <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+              <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
+            </div>
+            <div class="bottom-info">
+              <div class="item-bot">E</div>
+            </div>
+          </div>
+          <div class="detailed" :style="{ display: detailed ? 'block' : 'none' }" v-else>
+            Подробнее
+            <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
+          </div>
+        </div>
+        <div class="bottom-detailed">
+          <div class="bottom-item">
+            <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+            Багаж: Да
+          </div>
+          <div class="bottom-item">
+            <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+            Обмен: Да
+          </div>
+          <div class="bottom-item">
+            <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
+            Возврат: Да
           </div>
         </div>
       </div>
-      <div class="flight-item">
+      <div class="flight-item" @mouseover="goFrom" @mouseleave="goFromLeave" @click="toggleFlight" v-if="detailed">
         <div class="start-flight">
           <img src="../../../assets/newImg/logo-air.png" alt="">
           <h6>20:20 VOG</h6>
           <h6>07.02.2024</h6>
         </div>
         <div class="flight-line">
-          <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
-          <div class="line"></div>
-          <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+          <div class="wrap-flight">
+            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+            <div class="line"></div>
+            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+            <div class="line">
+            </div>
+            <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+          </div>
+          <div class="hour">
+            18 ч 10м
+          </div>
         </div>
         <div class="start-flight">
           <img src="../../../assets/newImg/logo-air.png" alt="">
@@ -52,7 +127,7 @@
           <h6>DP-6968</h6>
           <h6>Победа</h6>
         </div>
-        <div class="flight-passenger-info">
+        <div class="flight-passenger-info" v-if="info2">
           <div class="top-icons">
             <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
             <img src="../../../assets/newImg/icons/arrows.svg" alt="">
@@ -60,6 +135,69 @@
           </div>
           <div class="bottom-info">
             <div class="item-bot">E</div>
+          </div>
+        </div>
+        <div class="detailed" v-else>
+          <img src="../../../assets/newImg/icons/airplane3.svg" alt="">
+          Подробнее
+        </div>
+      </div>
+      <div class="flight-item detailed-info" @mouseover="goFrom" @mouseleave="goFromLeave" @click="toggleFlight" v-else>
+        <div class="detailed-cover">
+          <div class="start-flight detailed-start">
+            <img src="../../../assets/newImg/logo-air.png" alt="">
+            <h6>20:20 VOG</h6>
+            <h6>07.02.2024</h6>
+          </div>
+          <div class="flight-line">
+            <div class="wrap-flight">
+              <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+              <div class="line"></div>
+              <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+              <div class="line">
+              </div>
+              <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+            </div>
+            <div class="hour">
+              18 ч 10м
+            </div>
+          </div>
+          <div class="start-flight detailed-start">
+            <img src="../../../assets/newImg/logo-air.png" alt="">
+            <h6>22:25 SVO</h6>
+            <h6>07.02.2024</h6>
+          </div>
+          <div class="flight-info">
+            <h6>DP-6968</h6>
+            <h6>Победа</h6>
+          </div>
+          <div class="flight-passenger-info" :style="{ display: detailed ? 'block' : 'none' }" v-if="info2">
+            <div class="top-icons">
+              <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+              <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+              <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
+            </div>
+            <div class="bottom-info">
+              <div class="item-bot">E</div>
+            </div>
+          </div>
+          <div class="detailed" :style="{ display: detailed ? 'block' : 'none' }" v-else>
+            <img src="../../../assets/newImg/icons/airplane3.svg" alt="">
+            Подробнее
+          </div>
+        </div>
+        <div class="bottom-detailed">
+          <div class="bottom-item">
+            <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+            Багаж: Да
+          </div>
+          <div class="bottom-item">
+            <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+            Обмен: Да
+          </div>
+          <div class="bottom-item">
+            <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
+            Возврат: Да
           </div>
         </div>
       </div>
@@ -72,7 +210,30 @@
 
 <script >
 export default {
-
+  data() {
+    return {
+      info: true,
+      info2: true,
+      detailed: true,
+    }
+  },
+  methods: {
+    goTo() {
+      this.info = false
+    },
+    goToLeave() {
+      this.info = true
+    },
+    goFrom() {
+      this.info2 = false
+    },
+    goFromLeave() {
+      this.info2 = true
+    },
+    toggleFlight() {
+      this.detailed = !this.detailed
+    }
+  },
 }
 </script>
 
@@ -83,7 +244,7 @@ export default {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #EBEBEB;
-
+  gap: 20px;
 }
 
 .cover {
@@ -96,15 +257,52 @@ export default {
   width: 100%;
   height: auto;
   display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.detailed-cover {
+  width: 100%;
+  height: auto;
+  display: flex;
   align-items: center;
   gap: 10px;
   margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.detailed-info {
+  background-color: #f4f7ff;
+  flex-direction: column;
+  border-radius: .8rem;
+}
+
+.bottom-detailed {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background: #f8f9fa;
+  display: flex;
+  gap: 30px;
+}
+
+.bottom-item {
+  /* width: auto; */
+  display: flex;
+  gap: 5px;
 }
 
 .start-flight {
   width: 80px;
   height: auto;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.detailed-start {
+  width: 120px !important;
+
 }
 
 .start-flight h6 {
@@ -117,9 +315,24 @@ export default {
 .flight-line {
   width: 465px;
   height: auto;
+  /* display: flex; */
+  align-items: center;
+  gap: 5px;
+}
+
+.wrap-flight {
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   gap: 5px;
+  text-align: center;
+}
+
+.hour {
+  height: 0;
+  text-align: center;
+  line-height: 20px;
 }
 
 .line {
@@ -166,6 +379,18 @@ export default {
   width: 20px;
   height: auto;
   font-family: Gilroy-Medium !important;
+}
+
+.detailed {
+  padding: 10px;
+  height: 70px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  font-family: Gilroy-Medium !important;
+  font-size: 16px;
+  gap: 5px;
+  color: #005BAA;
 }
 
 .price-flight {
