@@ -23,7 +23,7 @@
         </div>
     </nav>
     <div class="container">
-        <div class="search-city">
+        <div class="search-city" @click="showSearch">
             <div class="search">
                 <img src="../assets/newImg/icons/search2.svg" alt="">
             </div>
@@ -39,6 +39,33 @@
                 <span>
                     1 пасс, любой
                 </span>
+            </div>
+        </div>
+        <div class="search-fielsd" v-if="search">
+            <div class="search-option">
+                <h6>Туда</h6>
+                <h6>Туда-обратно</h6>
+                <h6>Cложный перелет</h6>
+            </div>
+            <div class="search-form-field">
+                <input type="text" placeholder="Откуда">
+                <input type="text" placeholder="Куда">
+                <input type="date">
+                <div class="passenger">
+                    <div class="pax">
+                        <img src="../assets/newImg/icons/elder.svg" alt="elder">
+                        x 1
+                    </div>
+                    <div class="pax">
+                        <img src="../assets/newImg/icons/teen.svg" alt="teen">
+                        x 1
+                    </div>
+                    <div class="pax">
+                        <img src="../assets/newImg/icons/baby.svg" alt="baby">
+                        x 1
+                    </div>
+                </div>
+                <button class="search-btn">Искать</button>
             </div>
         </div>
         <div class="serach-result-field">
@@ -64,7 +91,8 @@ export default {
     },
     data() {
         return {
-            category: ""
+            category: "",
+            search: false
         }
     },
     created() {
@@ -76,6 +104,11 @@ export default {
 
             }
         );
+    },
+    methods: {
+        showSearch() {
+            this.search = !this.search
+        }
     },
 }
 
@@ -121,11 +154,80 @@ export default {
     gap: 5px;
 }
 
+.search-fielsd {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.search-option {
+    display: flex;
+    gap: 10px;
+}
+
+.search-form-field {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.search-form-field input {
+    cursor: pointer;
+}
+
+.search-form-field input[type="text"] {
+    padding: 16px 80px 16px 20px;
+    border-radius: 100px;
+    border: 1px solid #EBEBEB;
+    position: relative;
+}
+
+.search-form-field input[type="date"] {
+    padding: 16px 80px 16px 20px;
+    border-radius: 100px;
+    border: 1px solid #EBEBEB;
+    position: relative;
+}
+
+.passenger {
+    padding: 16px 80px 16px 20px;
+    border-radius: 100px;
+    border: 1px solid #EBEBEB;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.pax {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+    width: 60px;
+    padding: 0 5px;
+    border-right: 1px solid #000;
+}
+
+.search-btn {
+    width: 140px;
+    height: auto;
+    padding: 16px 37.5px;
+    font-family: Gilroy-Medium !important;
+    font-size: 16px;
+    border-radius: 100px;
+    color: #005BAA;
+    border: 1px solid #005BAA;
+}
+
 .serach-result-field {
     width: 100%;
     height: auto;
     margin: 50px 0;
 }
+
+
+
 
 .filter-btn {
     width: 220px;
