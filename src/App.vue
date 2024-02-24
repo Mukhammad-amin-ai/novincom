@@ -1,6 +1,6 @@
 <template>
   <div>
-    <modal/>
+    <!-- <modal/> -->
     <HeaderDefault/>
       <RouterView/>
     <FooterDefault/>
