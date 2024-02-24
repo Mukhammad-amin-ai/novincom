@@ -144,7 +144,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.10);
     position: fixed;
     z-index: 9999;
-
+    /* overflow-y: hidden; */
 }
 
 .fade-flight {
@@ -154,11 +154,20 @@ hr {
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
-    overflow-x: hidden;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+
+.fade-flight::-webkit-scrollbar {
+    display: none;
+}
+
+.fade-flight {
+    scrollbar-width: none;
 }
 
 .modal-flight {
-    margin-top: 300px;
+    margin-top: 350px;
     margin-bottom: 50px;
     width: 580px;
     height: auto;
