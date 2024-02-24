@@ -28,11 +28,11 @@
             slidesPerView: 5,
           },
           '1201': {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 35,
           },
         }" :modules="modules" :navigation="false" :pagination="true" :slidesPerView="1" :spaceBetween="10" class="row">
-          <swiper-slide class="" v-for="(product, index) in products.slice(0, 5)" :key="index">
+          <swiper-slide class="" v-for="(product, index) in products.slice(0, 6)" :key="index">
             <ProductTwelve :product="product" class="mb-3" />
           </swiper-slide>
         </swiper>
@@ -406,7 +406,7 @@ export default {
           until: null,
           stock: 100,
           top: true,
-          featured: true,
+          featured: null,
           new: null,
           author: null,
           sold: null,
@@ -690,47 +690,47 @@ export default {
         },
         {
           id: 126,
-          name: "Microsoft – Refurbish Xbox One S 500GB",
+          name: "Подарочный сертификат М.Видео",
           slug: "microsoft-refurbish-xbox-one-s-500gb",
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, ",
-          price: 279.99,
+          price: 3000.00,
           sale_price: null,
           review: 2,
           ratings: 0,
           until: null,
           stock: 100,
           top: true,
-          featured: true,
-          new: true,
+          featured: null,
+          new: null,
           author: null,
           sold: null,
-          category: [
-            {
-              name: "Accessories",
-              slug: "accessories",
-              pivot: {
-                product_id: "126",
-                "product-category_id": "18",
-              },
-            },
-            {
-              name: "Video Games",
-              slug: "video-games",
-              pivot: {
-                product_id: "126",
-                "product-category_id": "30",
-              },
-            },
-            {
-              name: "Entertainment",
-              slug: "entertainment",
-              pivot: {
-                product_id: "126",
-                "product-category_id": "23",
-              },
-            },
-          ],
+          // category: [
+          //   {
+          //     name: "Accessories",
+          //     slug: "accessories",
+          //     pivot: {
+          //       product_id: "126",
+          //       "product-category_id": "18",
+          //     },
+          //   },
+          //   {
+          //     name: "Video Games",
+          //     slug: "video-games",
+          //     pivot: {
+          //       product_id: "126",
+          //       "product-category_id": "30",
+          //     },
+          //   },
+          //   {
+          //     name: "Entertainment",
+          //     slug: "entertainment",
+          //     pivot: {
+          //       product_id: "126",
+          //       "product-category_id": "23",
+          //     },
+          //   },
+          // ],
           brands: [
             {
               name: "New Balance",
@@ -745,7 +745,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_5_1_dd9d0d7c58.jpg",
+              url: "../../../../public/assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "773",
@@ -754,7 +754,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_5_2_7cfd8f31c7.jpg",
+              url: "../../../../public/assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "772",
@@ -763,7 +763,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "/uploads/product_5_3_fdb59d93f8.jpg",
+              url: "../../../../public/assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "774",
@@ -774,7 +774,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_5_1_300x300_3dbc9b1611.jpg",
+              url: "../../../../public/assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "775",
@@ -783,7 +783,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_5_2_300x300_100e169228.jpg",
+              url: "../../../../public/assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "776",

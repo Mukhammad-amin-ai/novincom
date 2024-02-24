@@ -29,10 +29,7 @@
                                 <div class="col-sm-8">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-1.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-1.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -48,10 +45,7 @@
                                 <div class="col-sm-4">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-2.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-2.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -67,10 +61,7 @@
                                 <div class="col-sm-4">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-3.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-3.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -86,10 +77,7 @@
                                 <div class="col-sm-8">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-4.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-4.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -109,10 +97,7 @@
                                 <div class="col-sm-8">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-5.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-5.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -126,10 +111,7 @@
 
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-6.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-6.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -145,10 +127,7 @@
                                 <div class="col-sm-4">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-7.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-7.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -162,10 +141,7 @@
 
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/fullwidth-page/banner-8.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/fullwidth-page/banner-8.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -191,11 +167,7 @@
                         <label @click="closeSidebar">
                             <i class="icon-close"></i>Filters
                         </label>
-                        <a
-                            href="#"
-                            class="sidebar-filter-clear"
-                            @click.prevent="cleanAllFilter"
-                        >Clean All</a>
+                        <a href="#" class="sidebar-filter-clear" @click.prevent="cleanAllFilter">Clean All</a>
                     </div>
                     <div class="widget">
                         <h3 class="widget-title">Browse Category</h3>
@@ -204,11 +176,7 @@
                             <div class="filter-items filter-items-count">
                                 <div class="filter-item">
                                     <div class="custom-control custom-checkbox">
-                                        <input
-                                            type="checkbox"
-                                            class="custom-control-input"
-                                            id="cat-1"
-                                        />
+                                        <input type="checkbox" class="custom-control-input" id="cat-1" />
                                         <label class="custom-control-label" for="cat-1">Women</label>
                                     </div>
 
@@ -217,11 +185,7 @@
 
                                 <div class="filter-item">
                                     <div class="custom-control custom-checkbox">
-                                        <input
-                                            type="checkbox"
-                                            class="custom-control-input"
-                                            id="cat-2"
-                                        />
+                                        <input type="checkbox" class="custom-control-input" id="cat-2" />
                                         <label class="custom-control-label" for="cat-2">Men</label>
                                     </div>
 
@@ -230,11 +194,7 @@
 
                                 <div class="filter-item">
                                     <div class="custom-control custom-checkbox">
-                                        <input
-                                            type="checkbox"
-                                            class="custom-control-input"
-                                            id="cat-3"
-                                        />
+                                        <input type="checkbox" class="custom-control-input" id="cat-3" />
                                         <label class="custom-control-label" for="cat-3">Holiday Shop</label>
                                     </div>
 
@@ -243,11 +203,7 @@
 
                                 <div class="filter-item">
                                     <div class="custom-control custom-checkbox">
-                                        <input
-                                            type="checkbox"
-                                            class="custom-control-input"
-                                            id="cat-4"
-                                        />
+                                        <input type="checkbox" class="custom-control-input" id="cat-4" />
                                         <label class="custom-control-label" for="cat-4">Gifts</label>
                                     </div>
 
@@ -256,11 +212,7 @@
 
                                 <div class="filter-item">
                                     <div class="custom-control custom-checkbox">
-                                        <input
-                                            type="checkbox"
-                                            class="custom-control-input"
-                                            id="cat-5"
-                                        />
+                                        <input type="checkbox" class="custom-control-input" id="cat-5" />
                                         <label class="custom-control-label" for="cat-5">Homeware</label>
                                     </div>
 
@@ -269,16 +221,8 @@
 
                                 <div class="filter-item">
                                     <div class="custom-control custom-checkbox">
-                                        <input
-                                            type="checkbox"
-                                            class="custom-control-input"
-                                            id="cat-6"
-                                            checked="checked"
-                                        />
-                                        <label
-                                            class="custom-control-label"
-                                            for="cat-6"
-                                        >Grid Categories Fullwidth</label>
+                                        <input type="checkbox" class="custom-control-input" id="cat-6" checked="checked" />
+                                        <label class="custom-control-label" for="cat-6">Grid Categories Fullwidth</label>
                                     </div>
 
                                     <span class="item-count">13</span>
@@ -287,11 +231,7 @@
                                 <div class="sub-filter-items">
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-7"
-                                            />
+                                            <input type="checkbox" class="custom-control-input" id="cat-7" />
                                             <label class="custom-control-label" for="cat-7">Dresses</label>
                                         </div>
 
@@ -300,11 +240,7 @@
 
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-8"
-                                            />
+                                            <input type="checkbox" class="custom-control-input" id="cat-8" />
                                             <label class="custom-control-label" for="cat-8">T-shirts</label>
                                         </div>
 
@@ -313,11 +249,7 @@
 
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-9"
-                                            />
+                                            <input type="checkbox" class="custom-control-input" id="cat-9" />
                                             <label class="custom-control-label" for="cat-9">Bags</label>
                                         </div>
 
@@ -326,11 +258,7 @@
 
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-10"
-                                            />
+                                            <input type="checkbox" class="custom-control-input" id="cat-10" />
                                             <label class="custom-control-label" for="cat-10">Jackets</label>
                                         </div>
 
@@ -339,11 +267,7 @@
 
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-11"
-                                            />
+                                            <input type="checkbox" class="custom-control-input" id="cat-11" />
                                             <label class="custom-control-label" for="cat-11">Shoes</label>
                                         </div>
 
@@ -352,11 +276,7 @@
 
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-12"
-                                            />
+                                            <input type="checkbox" class="custom-control-input" id="cat-12" />
                                             <label class="custom-control-label" for="cat-12">Jumpers</label>
                                         </div>
 
@@ -365,11 +285,7 @@
 
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-13"
-                                            />
+                                            <input type="checkbox" class="custom-control-input" id="cat-13" />
                                             <label class="custom-control-label" for="cat-13">Jeans</label>
                                         </div>
 
@@ -378,15 +294,8 @@
 
                                     <div class="filter-item">
                                         <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                class="custom-control-input"
-                                                id="cat-14"
-                                            />
-                                            <label
-                                                class="custom-control-label"
-                                                for="cat-14"
-                                            >Sportwear</label>
+                                            <input type="checkbox" class="custom-control-input" id="cat-14" />
+                                            <label class="custom-control-label" for="cat-14">Sportwear</label>
                                         </div>
 
                                         <span class="item-count">0</span>
@@ -402,24 +311,24 @@
 </template>
 
 <script>
-import PageHeader from '~/components/elements/PageHeader';
+import PageHeader from '../../../components/elements/PageHeader.vue';
 
 export default {
     components: {
         PageHeader
     },
     methods: {
-        openSidebar: function() {
+        openSidebar: function () {
             document
                 .querySelector('body')
                 .classList.add('sidebar-filter-active');
         },
-        closeSidebar: function() {
+        closeSidebar: function () {
             document
                 .querySelector('body')
                 .classList.remove('sidebar-filter-active');
         },
-        cleanAllFilter: function() {
+        cleanAllFilter: function () {
             let allInputs = document.querySelectorAll(
                 '.sidebar-filter input[type=checkbox]'
             );

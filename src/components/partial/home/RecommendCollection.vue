@@ -234,75 +234,75 @@ export default {
             },
           ],
           variants: [
-            // {
-            //   id: 25,
-            //   color: "#3399cc",
-            //   color_name: "Blue",
-            //   price: 160.99,
-            //   pivot: {
-            //     product_id: "123",
-            //     component_id: "25",
-            //   },
-            //   size: [
-            //     {
-            //       id: 61,
-            //       name: "Large",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "25",
-            //         component_id: "61",
-            //       },
-            //     },
-            //     {
-            //       id: 62,
-            //       name: "Extra Large",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "25",
-            //         component_id: "62",
-            //       },
-            //     },
-            //   ],
-            // },
-            // {
-            //   id: 24,
-            //   color: "#ebebeb",
-            //   color_name: "Grey",
-            //   price: 150.99,
-            //   pivot: {
-            //     product_id: "123",
-            //     component_id: "24",
-            //   },
-            //   size: [
-            //     {
-            //       id: 60,
-            //       name: "Small",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "24",
-            //         component_id: "60",
-            //       },
-            //     },
-            //     {
-            //       id: 63,
-            //       name: "Medium",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "24",
-            //         component_id: "63",
-            //       },
-            //     },
-            //     {
-            //       id: 64,
-            //       name: "Large",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "24",
-            //         component_id: "64",
-            //       },
-            //     },
-            //   ],
-            // },
+            {
+              id: 25,
+              color: "#3399cc",
+              color_name: "Blue",
+              price: 10160.99,
+              pivot: {
+                product_id: "123",
+                component_id: "25",
+              },
+              size: [
+                {
+                  id: 61,
+                  name: "Large",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "25",
+                    component_id: "61",
+                  },
+                },
+                {
+                  id: 62,
+                  name: "Extra Large",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "25",
+                    component_id: "62",
+                  },
+                },
+              ],
+            },
+            {
+              id: 24,
+              color: "#ebebeb",
+              color_name: "Grey",
+              price: 10150.99,
+              pivot: {
+                product_id: "123",
+                component_id: "24",
+              },
+              size: [
+                {
+                  id: 60,
+                  name: "Small",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "24",
+                    component_id: "60",
+                  },
+                },
+                {
+                  id: 63,
+                  name: "Medium",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "24",
+                    component_id: "63",
+                  },
+                },
+                {
+                  id: 64,
+                  name: "Large",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "24",
+                    component_id: "64",
+                  },
+                },
+              ],
+            },
           ],
         },
         {
@@ -407,84 +407,84 @@ export default {
             },
           ],
           variants: [
-            // {
-            //   id: 26,
-            //   color: "#005BAA",
-            //   color_name: "Red",
-            //   price: 20214.99,
-            //   pivot: {
-            //     product_id: "124",
-            //     component_id: "26",
-            //   },
-            //   size: [
-            //     {
-            //       id: 65,
-            //       name: "Small",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "26",
-            //         component_id: "65",
-            //       },
-            //     },
-            //     {
-            //       id: 70,
-            //       name: "Medium",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "26",
-            //         component_id: "70",
-            //       },
-            //     },
-            //     {
-            //       id: 68,
-            //       name: "Large",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "26",
-            //         component_id: "68",
-            //       },
-            //     },
-            //   ],
-            // },
-            // {
-            //   id: 27,
-            //   color: "#005BAA",
-            //   color_name: "blue",
-            //   price:22217.99,
-            //   pivot: {
-            //     product_id: "124",
-            //     component_id: "27",
-            //   },
-            //   size: [
-            //     {
-            //       id: 69,
-            //       name: "Medium",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "27",
-            //         component_id: "69",
-            //       },
-            //     },
-            //     {
-            //       id: 66,
-            //       name: "Large",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "27",
-            //         component_id: "66",
-            //       },
-            //     },
-            //     {
-            //       id: 67,
-            //       name: "Extra Large",
-            //       slug: null,
-            //       pivot: {
-            //         components_variants_variant_id: "27",
-            //         component_id: "67",
-            //       },
-            //     },
-            //   ],
-            // },
+            {
+              id: 26,
+              color: "#005BAA",
+              color_name: "Red",
+              price: 20214.99,
+              pivot: {
+                product_id: "124",
+                component_id: "26",
+              },
+              size: [
+                {
+                  id: 65,
+                  name: "Small",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "26",
+                    component_id: "65",
+                  },
+                },
+                {
+                  id: 70,
+                  name: "Medium",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "26",
+                    component_id: "70",
+                  },
+                },
+                {
+                  id: 68,
+                  name: "Large",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "26",
+                    component_id: "68",
+                  },
+                },
+              ],
+            },
+            {
+              id: 27,
+              color: "#005BAA",
+              color_name: "blue",
+              price: 22217.99,
+              pivot: {
+                product_id: "124",
+                component_id: "27",
+              },
+              size: [
+                {
+                  id: 69,
+                  name: "Medium",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "27",
+                    component_id: "69",
+                  },
+                },
+                {
+                  id: 66,
+                  name: "Large",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "27",
+                    component_id: "66",
+                  },
+                },
+                {
+                  id: 67,
+                  name: "Extra Large",
+                  slug: null,
+                  pivot: {
+                    components_variants_variant_id: "27",
+                    component_id: "67",
+                  },
+                },
+              ],
+            },
           ],
         },
         {
@@ -493,8 +493,8 @@ export default {
           slug: "gopro-hero7-black-hd-waterproof-action",
           short_desc:
             "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
-          price: 3000,
-          sale_price: null,
+          price: 10130.00,
+          sale_price: 13160.00,
           review: 2,
           ratings: 4,
           until: null,
@@ -599,84 +599,84 @@ export default {
             },
           ],
           variants: [
-            {
-              id: 26,
-              color: "#005BAA",
-              color_name: "Red",
-              price: 10130.00,
-              pivot: {
-                product_id: "124",
-                component_id: "26",
-              },
-              size: [
-                {
-                  id: 65,
-                  name: "Small",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "26",
-                    component_id: "65",
-                  },
-                },
-                {
-                  id: 70,
-                  name: "Medium",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "26",
-                    component_id: "70",
-                  },
-                },
-                {
-                  id: 68,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "26",
-                    component_id: "68",
-                  },
-                },
-              ],
-            },
-            {
-              id: 27,
-              color: "#005BAA",
-              color_name: "blue",
-              price:13160.00,
-              pivot: {
-                product_id: "124",
-                component_id: "27",
-              },
-              size: [
-                {
-                  id: 69,
-                  name: "Medium",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "27",
-                    component_id: "69",
-                  },
-                },
-                {
-                  id: 66,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "27",
-                    component_id: "66",
-                  },
-                },
-                {
-                  id: 67,
-                  name: "Extra Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "27",
-                    component_id: "67",
-                  },
-                },
-              ],
-            },
+            // {
+            //   id: 26,
+            //   color: "#005BAA",
+            //   color_name: "Red",
+            //   price: 10130.00,
+            //   pivot: {
+            //     product_id: "124",
+            //     component_id: "26",
+            //   },
+            //   size: [
+            //     {
+            //       id: 65,
+            //       name: "Small",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "65",
+            //       },
+            //     },
+            //     {
+            //       id: 70,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "70",
+            //       },
+            //     },
+            //     {
+            //       id: 68,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "68",
+            //       },
+            //     },
+            //   ],
+            // },
+            // {
+            //   id: 27,
+            //   color: "#005BAA",
+            //   color_name: "blue",
+            //   price:13160.00,
+            //   pivot: {
+            //     product_id: "124",
+            //     component_id: "27",
+            //   },
+            //   size: [
+            //     {
+            //       id: 69,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "69",
+            //       },
+            //     },
+            //     {
+            //       id: 66,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "66",
+            //       },
+            //     },
+            //     {
+            //       id: 67,
+            //       name: "Extra Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "67",
+            //       },
+            //     },
+            //   ],
+            // },
           ],
         },
         {
@@ -903,8 +903,8 @@ export default {
           slug: "canon-eos-5d-mark-iv-dslr-camera",
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, ",
-          price: 10399.99,
-          sale_price: 12359.99,
+          price: 10359.99,
+          sale_price: 12399.99,
           review: 2,
           ratings: 0,
           until: null,
@@ -982,7 +982,86 @@ export default {
               },
             },
           ],
-          variants: [],
+          variants: [
+            // {
+            //   id: 26,
+            //   color: "#005BAA",
+            //   color_name: "Red",
+            //   price: 10130.00,
+            //   pivot: {
+            //     product_id: "124",
+            //     component_id: "26",
+            //   },
+            //   size: [
+            //     {
+            //       id: 65,
+            //       name: "Small",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "65",
+            //       },
+            //     },
+            //     {
+            //       id: 70,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "70",
+            //       },
+            //     },
+            //     {
+            //       id: 68,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "26",
+            //         component_id: "68",
+            //       },
+            //     },
+            //   ],
+            // },
+            // {
+            //   id: 27,
+            //   color: "#005BAA",
+            //   color_name: "blue",
+            //   price: 13160.00,
+            //   pivot: {
+            //     product_id: "124",
+            //     component_id: "27",
+            //   },
+            //   size: [
+            //     {
+            //       id: 69,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "69",
+            //       },
+            //     },
+            //     {
+            //       id: 66,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "66",
+            //       },
+            //     },
+            //     {
+            //       id: 67,
+            //       name: "Extra Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "27",
+            //         component_id: "67",
+            //       },
+            //     },
+            //   ],
+            // },
+          ],
         },
         {
           id: 129,

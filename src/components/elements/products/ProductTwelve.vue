@@ -42,7 +42,7 @@
       </h3>
 
       <div class="product-price" v-if="product.stock == 0" key="outPrice">
-        <span class="out-price">${{ product.price.toFixed(2) }}</span>
+        <span class="out-price">{{ product.price.toFixed(2) }}</span>
       </div>
 
       <template v-else>
@@ -50,11 +50,11 @@
           {{ minPrice.toFixed(2) }}
         </div>
         <template v-else>
-          <div class="product-price" v-if="product.variants.length >= 0">
+          <div class="product-price" v-if="product.variants.length == 0">
             <span class="new-price">{{ minPrice.toFixed(2) }}</span>
             <span class="old-price">{{ maxPrice.toFixed(2) }}</span>
           </div>
-          <div class="product-price" v-else>
+          <div class="product-price" v-else >
             {{ minPrice.toFixed(2) }}&ndash;{{ maxPrice.toFixed(2) }}
           </div>
         </template>

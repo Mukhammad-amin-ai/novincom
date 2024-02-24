@@ -87,7 +87,7 @@ export default {
           slug: 'apple-11"-ipad-pro-with-wi-fi-256-gb',
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ",
-          price: 3000.0,
+          price: null,
           sale_price: null,
           review: 2,
           ratings: 5,
@@ -591,8 +591,8 @@ export default {
           slug: "gopro-hero7-black-hd-waterproof-action",
           short_desc:
             "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
-          price: 3000,
-          sale_price: null,
+          price: 30000.99,
+          sale_price: 40499.99,
           review: 2,
           ratings: 4,
           until: null,
@@ -689,75 +689,75 @@ export default {
             },
           ],
           variants: [
-            {
-              id: 25,
-              color: "#ef837b",
-              color_name: "Red",
-              price: 30000.99,
-              pivot: {
-                product_id: "123",
-                component_id: "25",
-              },
-              size: [
-                {
-                  id: 61,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "25",
-                    component_id: "61",
-                  },
-                },
-                {
-                  id: 62,
-                  name: "Extra Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "25",
-                    component_id: "62",
-                  },
-                },
-              ],
-            },
-            {
-              id: 24,
-              color: "#ebebeb",
-              color_name: "Grey",
-              price: 40499.99,
-              pivot: {
-                product_id: "123",
-                component_id: "24",
-              },
-              size: [
-                {
-                  id: 60,
-                  name: "Small",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "24",
-                    component_id: "60",
-                  },
-                },
-                {
-                  id: 63,
-                  name: "Medium",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "24",
-                    component_id: "63",
-                  },
-                },
-                {
-                  id: 64,
-                  name: "Large",
-                  slug: null,
-                  pivot: {
-                    components_variants_variant_id: "24",
-                    component_id: "64",
-                  },
-                },
-              ],
-            },
+            // {
+            //   id: 25,
+            //   color: "#ef837b",
+            //   color_name: "Red",
+            //   price: 30000.99,
+            //   pivot: {
+            //     product_id: "123",
+            //     component_id: "25",
+            //   },
+            //   size: [
+            //     {
+            //       id: 61,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "25",
+            //         component_id: "61",
+            //       },
+            //     },
+            //     {
+            //       id: 62,
+            //       name: "Extra Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "25",
+            //         component_id: "62",
+            //       },
+            //     },
+            //   ],
+            // },
+            // {
+            //   id: 24,
+            //   color: "#ebebeb",
+            //   color_name: "Grey",
+            //   price: 40499.99,
+            //   pivot: {
+            //     product_id: "123",
+            //     component_id: "24",
+            //   },
+            //   size: [
+            //     {
+            //       id: 60,
+            //       name: "Small",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "24",
+            //         component_id: "60",
+            //       },
+            //     },
+            //     {
+            //       id: 63,
+            //       name: "Medium",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "24",
+            //         component_id: "63",
+            //       },
+            //     },
+            //     {
+            //       id: 64,
+            //       name: "Large",
+            //       slug: null,
+            //       pivot: {
+            //         components_variants_variant_id: "24",
+            //         component_id: "64",
+            //       },
+            //     },
+            //   ],
+            // },
           ],
         },
       ],
