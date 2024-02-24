@@ -190,39 +190,7 @@
     <div class="container">
       <hr class="mb-0" />
       <div class="swiper-carousel brands-slider swiper-2 mb-5 mt-5">
-        <swiper :slidesPerView="3" :navigation="true" :spaceBetween="30" :freeMode="true" :modules="modules"
-          class="mySwiper">
-          <swiper-slide>
-            <router-link to="#" style="cursor: pointer;">
-              <img src="../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="">
-            </router-link>
-          </swiper-slide>
-          <swiper-slide>
-            <router-link to="#" style="cursor: pointer;">
-              <img src="../assets/newImg/logotypes/ozon.png" alt="">
-            </router-link>
-          </swiper-slide>
-          <swiper-slide>
-            <router-link to="#" style="cursor: pointer;">
-              <img src="../assets/newImg/logotypes/xiaomi.png" alt="">
-            </router-link>
-          </swiper-slide>
-          <swiper-slide>
-            <router-link to="#" style="cursor: pointer;">
-              <img src="../assets/newImg/logotypes/десткий мир.png" alt="">
-            </router-link>
-          </swiper-slide>
-          <swiper-slide>
-            <router-link to="#" style="cursor: pointer;">
-              <img src="../assets/newImg/logotypes/аэрофлот.png" alt="">
-            </router-link>
-          </swiper-slide>
-          <swiper-slide>
-            <router-link to="#" style="cursor: pointer;">
-              <img src="../assets/newImg/logotypes/РЖД.png" alt="">
-            </router-link>
-          </swiper-slide>
-        </swiper>
+        <CaruselLogo/>
       </div>
     </div>
     <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
@@ -316,7 +284,6 @@
 </template>
 <script>
 import { mapGetters } from "vuex";
-import { FreeMode, Pagination, Navigation } from 'swiper';
 
 import NewCollection from "../components/partial/home/NewCollection.vue";
 import DealCollection from "../components/partial/home/DealCollection.vue";
@@ -332,12 +299,8 @@ import {
 } from "../utilities/carousel";
 import { homeData } from "../utilities/data";
 import Carousel from "@/components/elements/Carousel.vue";
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import CaruselLogo from '../components/elements/Carusel-logo.vue'
 
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import "swiper/css/navigation";
 
 export default {
   components: {
@@ -346,8 +309,7 @@ export default {
     TrendyCollection,
     NewCollection,
     Carousel,
-    Swiper,
-    SwiperSlide,
+    CaruselLogo
   },
   data: function () {
     return {
@@ -423,12 +385,7 @@ export default {
         })
         .catch((error) => ({ error: JSON.stringify(error) }));
     },
-  },
-  setup() {
-    return {
-      modules: [FreeMode, Pagination, Navigation],
-    };
-  },
+  }
 };
 </script>
 <style scoped>

@@ -121,7 +121,7 @@ export default {
 <style >
 .swiper-button-next,
 .swiper-button-prev {
-  background: var(--blue);
+  background: var(--blue) !important;
   border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -129,12 +129,13 @@ export default {
   justify-content: center !important;
   align-items: center !important;
   border: 1px solid transparent;
+  color: white !important;
+
 }
 .swiper-button-next::after {
   position: absolute;
   top: 5%;
   left: 20%;
-  color: white !important;
   width: 10px;
   height: 10px;
   padding: 10px;
