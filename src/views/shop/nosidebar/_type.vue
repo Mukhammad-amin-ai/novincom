@@ -113,7 +113,7 @@ export default {
     },
     computed: {
         ...mapGetters('demo', ['currentDemo']),
-        pageTitle: function() {
+        pageTitle() {
             if (this.$route.params.type == 'boxed') return 'Boxed No Sidebar';
             else return 'Fullwidth No Sidebar';
         },
