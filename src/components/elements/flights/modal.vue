@@ -1,25 +1,140 @@
 <template>
     <div class="modal-popup">
-        <div class="modal-flight">
-            <div class="top-modal-flight">
-                <h3>Фильтры и сортировка</h3>
-                <button class="close-modal">
-                    <img src="../../../assets/newImg/icons/modal-close.svg" alt="modal">
-                </button>
-            </div>
-            <div class="cities">
-                
+        <div class="fade-flight">
+            <div class="modal-flight">
+                <div class="top-modal-flight">
+                    <h3>Фильтры и сортировка</h3>
+                    <button class="close-modal">
+                        <img src="../../../assets/newImg/icons/modal-close.svg" alt="modal">
+                    </button>
+                </div>
+                <div class="flight active">
+                    Москва
+                    <reusable color="#fff" />
+                    Волгоград
+                </div>
+                <div class="flight">
+                    Волгоград
+                    <reusable color="#000" />
+                    Москва
+                </div>
+                <div class="add-info">
+                    <div class="time">
+                        <h4>Время вылета</h4>
+                        <div class="time-info">
+                            <div class="time-start">
+                                01:00
+                            </div>
+                            <div class="time-line">
+                                <div class="line"></div>
+                            </div>
+                            <div class="time-end">
+                                22:45
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h4>Время прилета</h4>
+                        <div class="time-info">
+                            <div class="time-start">
+                                01:00
+                            </div>
+                            <div class="time-line">
+                                <div class="line"></div>
+                            </div>
+                            <div class="time-end">
+                                22:45
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flight-check">
+                        <div class="departure">
+                            <h5>Вылет</h5>
+                            <div class="dep-check">
+                                <input type="checkbox">
+                                <h6>Шереметьево</h6>
+                            </div>
+                        </div>
+                        <div class="arrival">
+                            <h5>Прибытие</h5>
+                            <div class="dep-check">
+                                <input type="checkbox">
+                                <h6>Шереметьево</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="time">
+                        <h4>Длительность</h4>
+                        <div class="time-info">
+                            <div class="time-start">
+                                01:00
+                            </div>
+                            <div class="time-line">
+                                <div class="line"></div>
+                            </div>
+                            <div class="time-end">
+                                22:45
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="time-variants">
+                        <div class="variant">
+                            <h5>Варианты пересадок</h5>
+                            <div class="dep-check">
+                                <input type="checkbox">
+                                <h6>Без пересадок</h6>
+                            </div>
+                            <div class="dep-check">
+                                <input type="checkbox">
+                                <h6>Одна пересадка</h6>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <h5>Опции возврата и багажа</h5>
+                            <div class="dep-check">
+                                <input type="checkbox">
+                                <h6>Без возврата билета</h6>
+                            </div>
+                            <div class="dep-check">
+                                <input type="checkbox">
+                                <h6>Без багажа</h6>
+                            </div>
+                            <div class="dep-check">
+                                <input type="checkbox">
+                                <h6>С багажом</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="sort">
+                        <span class="title-span">Сортировка:</span> <span>Дешевле</span> <span>Быстрее</span>
+                    </div>
+                    <hr>
+                    <div class="filter-btn">
+                        <button>Применить</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+import reusable from './reusable.vue';
 export default {
-
+    components: {
+        reusable
+    }
 }
 </script>
 <style scoped>
-.modal-popup{
+hr {
+    margin: 2rem auto 2rem !important;
+}
+
+.modal-popup {
     width: 100vw;
     max-width: 100%;
     height: 100vh;
@@ -27,30 +142,176 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.10);
-    position:fixed;
+    position: fixed;
     z-index: 9999;
+
 }
 
-.modal-flight{
+.fade-flight {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-flight {
+    margin-top: 300px;
+    margin-bottom: 50px;
     width: 580px;
-    height: 700px;
+    height: auto;
     background-color: #fff;
     border-radius: 12px;
 }
 
-.top-modal-flight{
+.top-modal-flight {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
 }
 
-.top-modal-flight h3{
+.top-modal-flight h3 {
     font-family: Gilroy-SemiBold !important;
     font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0 !important;
 }
-.close-modal{
+
+.close-modal {
     background-color: transparent;
     border: none;
+}
+
+.flight {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #000;
+    justify-content: center;
+    font-family: Gilroy-Medium !important;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.active {
+    background-color: #005BAA !important;
+    color: #fff;
+}
+
+.add-info {
+    padding: 20px 30px;
+}
+
+.time {
+    padding: 10px 0;
+}
+
+.time h4 {
+    margin-bottom: 0 !important;
+    font-family: Gilroy-Medium !important;
+}
+
+.time-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.time-start,
+.time-end {
+    padding: 2px 23px;
+    border-radius: 100px;
+    font-family: Gilroy-Medium !important;
+    background-color: #F4F7FF;
+    border: 1px solid #777777;
+}
+
+.time-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    height: 0px;
+    border-bottom: 3px solid #000;
+}
+
+.flight-check {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.departure h5,
+.arrival h5 {
+    font-family: Gilroy-Medium !important;
+    font-size: 18px;
+}
+
+.dep-check {
+    display: flex;
+    gap: 5px;
+}
+
+.dep-check input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #F4F7FF;
+}
+
+.dep-check h6 {
+    font-size: 16px;
+}
+
+.time-variants {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.variant h5,
+.options h5 {
+    font-family: Gilroy-SemiBold !important;
+    font-size: 18px;
+}
+
+.sort {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.sort .title-span {
+    font-family: Gilroy-SemiBold !important;
+}
+
+.filter-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-btn button {
+    padding: 16px 24px;
+    border-radius: 100px;
+    background-color: #005BAA;
+    color: #fff;
+    font-family: Gilroy-Medium !important;
 }
 </style>
