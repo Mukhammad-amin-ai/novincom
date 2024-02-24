@@ -19,7 +19,7 @@
         <li class="breadcrumb-item active">{{ current }}</li>
       </ol>
 
-      <nav class="product-pager ml-auto" aria-label="Product">
+      <!-- <nav class="product-pager ml-auto" aria-label="Product">
         <router-link
           :to="prevProduct.slug"
           class="product-pager-link product-pager-prev"
@@ -60,7 +60,7 @@
             <h3 class="product-name">{{ nextProduct.name }}</h3>
           </div>
         </router-link>
-      </nav>
+      </nav> -->
     </div>
   </nav>
 </template>

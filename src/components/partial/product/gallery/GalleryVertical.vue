@@ -18,14 +18,14 @@
           :height="product.pictures[currentIndex].height"
         />
 
-        <a
+        <!-- <a
           href="#"
           id="btn-product-gallery"
           class="btn-product-gallery"
           @click.prevent="openLightBox"
         >
           <i class="icon-arrows"></i>
-        </a>
+        </a> -->
       </figure>
 
       <div id="product-zoom-gallery" class="product-image-gallery">

@@ -29,11 +29,11 @@
           </div>
         </div>
 
-        <info-one></info-one>
+        <info-one :product="product"></info-one>
 
-        <related-products-one
+        <!-- <related-products-one
           :products="relatedProducts"
-        ></related-products-one>
+        ></related-products-one> -->
       </div>
     </div>
   </main>
