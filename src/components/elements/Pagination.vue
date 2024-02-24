@@ -2,43 +2,30 @@
   <nav aria-label="Page navigation" v-if="shouldRender">
     <ul class="pagination justify-content-center">
       <li class="page-item" :class="{ disabled: currentPage < 2 }">
-        <router-link
-          class="page-link page-link-prev"
-          :to="getPageUrl(currentPage - 1)"
-        >
-          <span aria-hidden="true">
-            <i class="icon-long-arrow-left"></i> </span
-          >Prev
+        <router-link class="page-link page-link-prev" :to="getPageUrl(currentPage - 1)" style="gap: 5px;">
+          <span aria-hidden="true" >
+            <img src="../../assets/newImg/icons/left.svg" alt="">
+            <!-- <i class="icon-long-arrow-left"></i> -->
+          </span>В начало
         </router-link>
       </li>
 
       <template v-if="pagesToBeShown.length">
-        <li
-          class="page-item"
-          v-for="page in pagesToBeShown"
-          :key="`page-${page}`"
-        >
-          <router-link
-            class="page-link"
-            exact-active-class="active"
-            :to="getPageUrl(page)"
-            >{{ page }}</router-link
-          >
+        <li class="page-item" v-for="page in pagesToBeShown" :key="`page-${page}`">
+          <router-link class="page-link" exact-active-class="active" :to="getPageUrl(page)">{{ page }}</router-link>
         </li>
       </template>
 
       <li class="page-item-total pl-3" v-if="lastPage > 3">
-        of {{ lastPage }}
+        из {{ lastPage }}
       </li>
 
       <li class="page-item" :class="{ disabled: currentPage === lastPage }">
-        <router-link
-          class="page-link page-link-next"
-          :to="getPageUrl(currentPage + 1)"
-        >
-          Next
+        <router-link class="page-link page-link-next" :to="getPageUrl(currentPage + 1)" style="gap: 5px;">
+          Дальше
           <span aria-hidden="true">
-            <i class="icon-long-arrow-right"></i>
+            <!-- <i class="icon-long-arrow-right"></i> -->
+            <img src="../../assets/newImg/icons/right.svg" alt="">
           </span>
         </router-link>
       </li>

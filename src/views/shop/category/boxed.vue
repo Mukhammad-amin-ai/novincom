@@ -26,10 +26,7 @@
                         <div class="col-md-6">
                             <div class="banner banner-cat banner-badge">
                                 <nuxt-link to="/shop/sidebar/list">
-                                    <img
-                                        v-lazy="'./images/category/boxed/banner-1.jpg'"
-                                        alt="Banner"
-                                    />
+                                    <img v-lazy="'./images/category/boxed/banner-1.jpg'" alt="Banner" />
                                 </nuxt-link>
 
                                 <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -43,10 +40,7 @@
 
                             <div class="banner banner-cat banner-badge">
                                 <nuxt-link to="/shop/sidebar/list">
-                                    <img
-                                        v-lazy="'./images/category/boxed/banner-2.jpg'"
-                                        alt="Banner"
-                                    />
+                                    <img v-lazy="'./images/category/boxed/banner-2.jpg'" alt="Banner" />
                                 </nuxt-link>
 
                                 <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -64,10 +58,7 @@
                                 <div class="col-sm-6">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/boxed/banner-3.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/boxed/banner-3.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -83,10 +74,7 @@
                                 <div class="col-sm-6">
                                     <div class="banner banner-cat banner-badge">
                                         <nuxt-link to="/shop/sidebar/list">
-                                            <img
-                                                v-lazy="'./images/category/boxed/banner-4.jpg'"
-                                                alt="Banner"
-                                            />
+                                            <img v-lazy="'./images/category/boxed/banner-4.jpg'" alt="Banner" />
                                         </nuxt-link>
 
                                         <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -102,10 +90,7 @@
 
                             <div class="banner banner-cat banner-badge">
                                 <nuxt-link to="/shop/sidebar/list">
-                                    <img
-                                        v-lazy="'./images/category/boxed/banner-5.jpg'"
-                                        alt="Banner"
-                                    />
+                                    <img v-lazy="'./images/category/boxed/banner-5.jpg'" alt="Banner" />
                                 </nuxt-link>
 
                                 <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -121,10 +106,7 @@
                         <div class="col-sm-6 col-md-3">
                             <div class="banner banner-cat banner-badge">
                                 <nuxt-link to="/shop/sidebar/list">
-                                    <img
-                                        v-lazy="'./images/category/boxed/banner-6.jpg'"
-                                        alt="Banner"
-                                    />
+                                    <img v-lazy="'./images/category/boxed/banner-6.jpg'" alt="Banner" />
                                 </nuxt-link>
 
                                 <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -140,10 +122,7 @@
                         <div class="col-sm-6 col-md-3 order-md-last">
                             <div class="banner banner-cat banner-badge">
                                 <nuxt-link to="/shop/sidebar/list">
-                                    <img
-                                        v-lazy="'./images/category/boxed/banner-8.jpg'"
-                                        alt="Banner"
-                                    />
+                                    <img v-lazy="'./images/category/boxed/banner-8.jpg'" alt="Banner" />
                                 </nuxt-link>
 
                                 <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -159,10 +138,7 @@
                         <div class="col-md-6">
                             <div class="banner banner-cat banner-badge">
                                 <nuxt-link to="/shop/sidebar/list">
-                                    <img
-                                        v-lazy="'./images/category/boxed/banner-7.jpg'"
-                                        alt="Banner"
-                                    />
+                                    <img v-lazy="'./images/category/boxed/banner-7.jpg'" alt="Banner" />
                                 </nuxt-link>
 
                                 <nuxt-link class="banner-link" to="/shop/sidebar/3cols">
@@ -195,12 +171,12 @@ export default {
         ShopSidebarTwo
     },
     methods: {
-        openSidebar: function() {
+        openSidebar: function () {
             document
                 .querySelector('body')
                 .classList.add('sidebar-filter-active');
         },
-        closeSidebar: function() {
+        closeSidebar: function () {
             document
                 .querySelector('body')
                 .classList.remove('sidebar-filter-active');

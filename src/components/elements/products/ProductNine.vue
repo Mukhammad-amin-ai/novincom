@@ -7,9 +7,9 @@
       <span class="product-label label-out" v-if="product.stock === 0">Out Of Stock</span> -->
 
       <router-link :to="'/product/default/' + product.slug">
-        <img :src="`${baseUrl}${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
+        <img :src="`${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
           :height="product.sm_pictures[0].height" class="product-image" />
-        <img :src="`${baseUrl}${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
+        <img :src="`${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
           :height="product.sm_pictures[1].height" class="product-image-hover" v-if="product.sm_pictures[1]" />
       </router-link>
 
@@ -48,7 +48,7 @@
     </figure>
 
     <div class="product-body">
-      <div class="product-cat">
+      <div class="product-cat" style="text-align: start;">
         <span v-for="(cat, index) of product.category" :key="index">
           <router-link :to="{ path: '/shop/sidebar/list', query: { category: cat.slug } }">{{ cat.name }}</router-link>
           {{ index < product.category.length - 1 ? "," : "" }} </span>

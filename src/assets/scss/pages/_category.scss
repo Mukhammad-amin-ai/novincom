@@ -272,11 +272,11 @@
 				margin-top: -.7rem;
 			}
 
-			&.collapsed {
-				&:after {
-					content: '\e802';
-				}
-			}
+			// &.collapsed {
+			// 	// &:after {
+			// 	// 	// content: '\e802';
+			// 	// }
+			// }
 
 			&:focus {
 				outline: none !important;
