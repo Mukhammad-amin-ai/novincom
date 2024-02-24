@@ -1,38 +1,13 @@
 <template>
   <div class="product-details-tab">
-    <tabs class="nav-pills justify-content-center" :data="tabsData"></tabs>
+    <!-- <tabs class="nav-pills justify-content-center" :data="tabsData"></tabs> -->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="tab1">
         <div class="product-desc-content">
-          <h3>Product Information</h3>
-          <p class="mb-1">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-            Suspendisse urna viverra non, semper suscipit, posuere a, pede.
-            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-            mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus
-            ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
-            ligula vulputate sem tristique cursus.
-          </p>
-          <ul>
-            <li>
-              Nunc nec porttitor turpis. In eu risus enim. In vitae mollis elit.
-            </li>
-            <li>Vivamus finibus vel mauris ut vehicula.</li>
-            <li>
-              Nullam a magna porttitor, dictum risus nec, faucibus sapien.
-            </li>
-          </ul>
+          <h3 class="info_text_title">{{ product.name }}</h3>
+          <p class="mb-1"></p>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-            Suspendisse urna viverra non, semper suscipit, posuere a, pede.
-            Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-            mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus
-            ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
-            ligula vulputate sem tristique cursus.
-          </p>
+          <div class="product_description_info"><b class="mr-2">1.</b>{{ product.short_desc }}</div>
         </div>
       </div>
 
@@ -166,6 +141,9 @@ import Tabs from "@/components/elements/Tabs.vue";
 export default {
   components: {
     Tabs,
+  },
+  props: {
+    product: Object,
   },
   data: function () {
     return {
