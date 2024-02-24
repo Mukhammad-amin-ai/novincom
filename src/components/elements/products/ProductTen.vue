@@ -136,7 +136,7 @@
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";
-import { baseUrl } from "~/repositories/repository";
+import { baseUrl } from "../../../repositories/repository.js";
 export default {
   props: {
     product: Object,
@@ -176,7 +176,7 @@ export default {
     ...mapActions("wishlist", ["addToWishlist"]),
     quickView: function () {
       this.$modal.show(
-        () => import("~/components/elements/modals/QuickViewModal"),
+        () => import("../modals/QuickViewModal.vue"),
         {
           product: this.product,
         },

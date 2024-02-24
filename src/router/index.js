@@ -65,13 +65,13 @@ const router = createRouter({
     {
       path: "/shop/nosidebar/fullwidth",
       name: "category show fullwidth",
-      component: () => import("@/views/shop/category/fullwidth.vue"),
+      component: () => import("@/views/shop/nosidebar/_type.vue"),
     },
-    {
-      path: "/shop/nosidebar/fullwidth",
-      name: "category show fullwidth",
-      component: () => import("@/views/shop/category/fullwidth.vue"),
-    },
+    // {
+    //   path: "/shop/nosidebar/fullwidth",
+    //   name: "category show fullwidth",
+    //   component: () => import("@/views/shop/category/fullwidth.vue"),
+    // },
     {
       path: "/shop/fullwidth",
       name: "category fullwidth",

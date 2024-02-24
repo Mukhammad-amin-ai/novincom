@@ -85,12 +85,13 @@
 <script>
 import { mapGetters } from 'vuex';
 
-import PageHeader from '~/components/elements/PageHeader';
-import ShopListThree from '~/components/partial/shop/list/ShopListThree';
-import ShopSidebarOne from '~/components/partial/shop/sidebar/ShopSidebarOne';
+import PageHeader from '../../../components/elements/PageHeader.vue';
 
-import Repository, { baseUrl } from '~/repositories/repository.js';
-import { scrollToPageContent } from '~/utilities/common';
+import ShopListThree from '../../../components/partial/shop/list/ShopListThree.vue';
+import ShopSidebarOne from '../../../components/partial/shop/sidebar/ShopSidebarOne.vue';
+
+import Repository, { baseUrl } from '../../../repositories/repository.js';
+import { scrollToPageContent } from '../../../utilities/common.js';
 
 export default {
     components: {
