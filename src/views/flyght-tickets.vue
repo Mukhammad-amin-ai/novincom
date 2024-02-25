@@ -105,11 +105,6 @@ export default {
             }
         );
     },
-    methods: {
-        showSearch() {
-            this.search = !this.search
-        }
-    },
     computed: {
         modalShow() {
             return this.$store.getters['flight/showFilter'];
@@ -118,6 +113,9 @@ export default {
     methods: {
         toggleFilter() {
             this.$store.dispatch('flight/toggleFilter');
+        },
+        showSearch() {
+            this.search = !this.search
         }
     },
 }
