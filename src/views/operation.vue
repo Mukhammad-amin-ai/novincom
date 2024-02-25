@@ -1,103 +1,141 @@
 <template>
-    <PageHeader :title="pageTitle" :subtitle="category" />
-    <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <router-link to="/">Главная</router-link>
-                </li>
-                <li class="breadcrumb-item">
-                    <router-link to="/shop/sidebar/list">Личный кабинет</router-link>
-                </li>
-                <li class="breadcrumb-item active">
-                    <router-link to="/shop/sidebar/list">Операции</router-link>
-                </li>
-                <!-- <li class="breadcrumb-item ">{{ pageTitle }}</li> -->
-                <li class="breadcrumb-item" v-if="$route.query.searchTerm">
-                    <span>Search - {{ $route.query.searchTerm }}</span>
-                </li>
-            </ol>
-        </div>
-    </nav>
+  <PageHeader :title="pageTitle" :subtitle="category" />
+  <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
     <div class="container">
-        <div class="search-city" @click="showSearch">
-            <div class="search">
-                <img src="../assets/newImg/icons/search2.svg" alt="">
-            </div>
-            <div class="result">
-                <span>
-                    01.12.2023 –20.12.2023
-                </span>
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="date">
-                01.12.2023 –16.12.2023
-            </button>
-            <button class="show">
-                Показать
-            </button>
-        </div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <router-link to="/">Главная</router-link>
+        </li>
+        <li class="breadcrumb-item">
+          <router-link to="/shop/sidebar/list">Личный кабинет</router-link>
+        </li>
+        <li class="breadcrumb-item active">
+          <router-link to="/shop/sidebar/list">Операции</router-link>
+        </li>
+        <!-- <li class="breadcrumb-item ">{{ pageTitle }}</li> -->
+        <li class="breadcrumb-item" v-if="$route.query.searchTerm">
+          <span>Search - {{ $route.query.searchTerm }}</span>
+        </li>
+      </ol>
     </div>
+  </nav>
+  <div class="operation_page">
+    <div class="container">
+      <div class="search-city" @click="showSearch">
+        <div class="search">
+          <img src="../assets/newImg/icons/search2.svg" alt="" />
+        </div>
+        <div class="result">
+          <span> 01.12.2023 –20.12.2023 </span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="date">01.12.2023 –16.12.2023</button>
+        <button class="show">Показать</button>
+      </div>
+    </div>
+    <div class="container">
+      <div
+        v-for="operation in operations"
+        :key="operation"
+        class="operation_line"
+      >
+        <div>{{ operation.date }}</div>
+        <div>{{ operation.id }}</div>
+        <div>{{ operation.order_id }}</div>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script setup>
-import PageHeader from '@/components/elements/PageHeader.vue';
+<script>
+import PageHeader from "@/components/elements/PageHeader.vue";
 
+export default {
+  data() {
+    return {
+      operations: [
+        {
+          date: "13.12.2023",
+          id: "-105,82 –",
+          order_id: "Заказ 999313705-14",
+        },
+        {
+          date: "13.12.2023",
+          id: "-100,00 –",
+          order_id: "Заказ 999313705-14",
+        },
+      ],
+    };
+  },
+  components: {
+    PageHeader,
+  },
+};
 </script>
 
 <style scoped>
+.operation_page {
+  margin-bottom: 6rem;
+}
+.operation_line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--grey);
+}
 .search-city {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #EBEBEB;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: .5rem;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .search-city:hover {
-    background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .search {
-    width: 20%;
-    height: 100%;
+  width: 20%;
+  height: 100%;
 }
 
 .result {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
 }
 
 .buttons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
 }
 
 .buttons .date {
-    padding: 20px 94px 20px 30px;
-    border: 1px solid #EBEBEB;
-    border-radius: 100px;
-    font-size: 16px;
+  padding: 20px 94px 20px 30px;
+  border: 1px solid #ebebeb;
+  border-radius: 100px;
+  font-size: 16px;
 }
-.buttons .show{
-    padding: 20px 105px;
-    border: 1px solid #005BAA;
-    border-radius: 100px;
-    color: #005BAA;
-    font-size: 16px;
-    font-family: Gilroy-Medium !important;
-
+.buttons .show {
+  padding: 20px 105px;
+  border: 1px solid #005baa;
+  border-radius: 100px;
+  color: #005baa;
+  font-size: 16px;
+  font-family: Gilroy-Medium !important;
 }
 </style>
