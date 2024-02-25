@@ -21,37 +21,45 @@
   </nav>
   <div class="operation_page">
     <div class="container">
-      <div class="search-city" @click="showSearch">
-        <div class="search">
-          <img src="../assets/newImg/icons/search2.svg" alt="" />
-        </div>
-        <div class="result">
-          <span> 01.12.2023 –20.12.2023 </span>
-        </div>
-      </div>
-      <div class="buttons">
-        <button class="date">01.12.2023 –16.12.2023</button>
-        <button class="show">Показать</button>
-      </div>
-    </div>
-    <div class="container">
       <div
-        v-for="operation in operations"
+        v-for="(operation, index) in operations"
         :key="operation"
         class="operation_line_parent d-flex flex-column"
-        @click="openOperation(operation.id)"
       >
         <div class="operation_line">
           <div>{{ operation.date }}</div>
-          <div>{{ operation.id }}</div>
-          <div>{{ operation.order_id }}</div>
+          <div>{{ operation.price }}</div>
+          <div class="d-flex justify-end ml-auto cursor-pointer">
+            <img
+              v-if="new_operations.includes(operation.id)"
+              src="@/assets/newImg/icons/minus.svg"
+              alt=""
+              @click="closeMenu(operation.id)"
+            />
+            <img
+              v-else
+              @click="openOperation(operation.id)"
+              src="@/assets/newImg/icons/plus.svg"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="buttons" v-if="new_operations.includes(operation.id)">
-          <button class="date">01.12.2023 –16.12.2023</button>
-          <router-link :to="'operation/' + operation.id">
-            <button class="show">Показать</button>
-          </router-link>
-        </div>
+        <Transition name="slide-fade">
+          <div
+            class="inside_operation"
+            v-if="new_operations.includes(operation.id)"
+          >
+            <div
+              class="operation_line border-0"
+              v-for="item in operation.operation_about"
+              :key="item"
+            >
+              <div></div>
+              <div>{{ operation.price }}</div>
+              <div>{{ item.title }}</div>
+            </div>
+          </div>
+        </Transition>
       </div>
     </div>
   </div>
@@ -65,23 +73,70 @@ export default {
     return {
       operations: [
         {
-          date: "13.12.2023",
-          id: "-105,82 –",
+          date: "26.10.2023",
+          id: 1,
+          price: "600,00 –",
           order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
         },
         {
-          date: "13.12.2023",
-          id: "-100,00 –",
+          date: "25.10.2023",
+          id: 2,
+          price: "700,00 –",
           order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "25.10.2023",
+          id: 3,
+          price: "800,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
         },
       ],
       new_operations: [],
       open: false,
+      pageTitle: "Операции",
+      category: "Операции",
     };
   },
   methods: {
     openOperation(id) {
       this.new_operations.push(id);
+    },
+    closeMenu(id) {
+      const existId = this.operations.findIndex((item) => item.id === id);
+      if (existId !== -1) {
+        this.new_operations.splice(existId, 1);
+      }
+      console.log(existId, id);
     },
   },
   components: {
@@ -91,6 +146,10 @@ export default {
 </script>
 
 <style scoped>
+.inside_operation {
+  display: flex;
+  flex-direction: column;
+}
 .operation_page {
   margin-bottom: 6rem;
 }
