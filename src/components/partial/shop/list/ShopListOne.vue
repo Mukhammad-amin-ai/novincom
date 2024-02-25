@@ -3,7 +3,6 @@
     <p class="no-results" v-if="products.length === 0 && loaded">
       No products matching your selection.
     </p>
-
     <template v-else>
       <div v-if="type == 'list'" key="list">
         <template v-if="!loaded">
@@ -1334,7 +1333,7 @@ export default {
   },
   computed: {
     type: function () {
-      return this.$route.params.type;
+      return this.$route.params.loyaut;
     },
     gridClass: function () {
       if (this.type === "list" || this.type === "2cols") return "col-6";

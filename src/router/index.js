@@ -33,6 +33,11 @@ const router = createRouter({
       component: () => import("@/views/shop/sidebar/_type.vue"),
     },
     {
+      path: "/shop/sidebar/:loyaut",
+      name: "param layout",
+      component: () => import("@/views/shop/sidebar/_type.vue"),
+    },
+    {
       path: "/shop/sidebar/4cols",
       name: "category show with 4cols",
       component: () => import("@/views/shop/sidebar/_type.vue"),
