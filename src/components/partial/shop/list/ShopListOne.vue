@@ -15,7 +15,8 @@
       </div>
       <div class="row" v-else key="grid">
         <template v-if="!loaded">
-          <div class="skel-pro col" :class="gridClass" v-for="item in fakeArray" :key="item"></div>
+          <div class="skel-pro col" :class="gridClass" v-for="item in fakeArray" :key="item">
+          </div>
         </template>
         <template v-else>
           <div :class="gridClass" v-for="(product, index) in products" :key="index">

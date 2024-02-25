@@ -143,6 +143,7 @@ export default {
     cursor: pointer;
     padding: 0.5rem;
     border-radius: .5rem;
+    user-select: none;
 }
 
 .search-city:hover {

@@ -212,6 +212,7 @@
 // import { VueSlideToggle } from "vue-slide-toggle";
 // import VueSlider from "vue-slider-component";
 // import "vue-slider-component/theme/default.css";
+import ProductNine from "@/components/elements/products/ProductNine.vue";
 import Slider from "@vueform/slider";
 import { shopData } from "@/utilities/data.js";
 

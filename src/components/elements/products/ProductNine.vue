@@ -83,14 +83,14 @@
           </div>
         </template>
       </template>
-
+<!-- 
       <div class="ratings-container">
         <div class="ratings">
           <div class="ratings-val" :style="{ width: product.ratings * 20 + '%' }"></div>
           <span class="tooltip-text">{{ product.ratings.toFixed(2) }}</span>
         </div>
         <span class="ratings-text">( {{ product.review }} Reviews )</span>
-      </div>
+      </div> -->
 
       <!-- <div class="product-nav product-nav-dots" v-if="product.variants.length > 0">
         <div class="row no-gutters">
