@@ -165,7 +165,7 @@
         <!-- <vue-slide-toggle :open="toggleStates[3]" class="show" :duration="200">
         </vue-slide-toggle>  -->
       </div>
-      <div class="widget widget-collapsible">
+      <!-- <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
           <a
             href="#widget-5"
@@ -188,21 +188,22 @@
                 >
               </div>
 
-              <!-- <input type="range" /> -->
-              <!-- <vue-nouislider
+              <input type="range" />
+              <vue-nouislider
                 :config="priceSliderConfig"
                 :values="priceValues"
                 id="price-slider"
                 v-if="loaded"
-              ></vue-nouislider> -->
-              <!-- <vue-slider v-model="priceValues"></vue-slider> -->
+              ></vue-nouislider>
+               <vue-slider v-model="priceValues"></vue-slider>
               <Slider v-model="priceValues" />
             </div>
           </div>
+       
         </div>
-        <!-- <vue-slide-toggle :open="toggleStates[4]" class="show" :duration="200">
-        </vue-slide-toggle> -->
-      </div>
+        <vue-slide-toggle :open="toggleStates[4]" class="show" :duration="200">
+        </vue-slide-toggle>
+      </div> -->
     </div>
   </div>
 </template>

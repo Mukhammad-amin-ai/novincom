@@ -1,10 +1,6 @@
 <template>
   <main class="main">
-    <breadcrumb
-      :prev-product="prevProduct"
-      :next-product="nextProduct"
-      current="Centered"
-    ></breadcrumb>
+    <breadcrumb :prev-product="prevProduct" :next-product="nextProduct" current="Centered"></breadcrumb>
 
     <div class="page-content">
       <div class="container skeleton-body">
