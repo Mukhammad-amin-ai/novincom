@@ -29,3 +29,7 @@
   transform: translateY(20px);
   opacity: 0;
 }
+
+.n-card__content {
+  padding: 0 !important;
+}
