@@ -30,6 +30,14 @@
                 </span>
             </div>
         </div>
+        <div class="buttons">
+            <button class="date">
+                01.12.2023 –16.12.2023
+            </button>
+            <button class="show">
+                Показать
+            </button>
+        </div>
     </div>
 </template>
 
@@ -68,4 +76,28 @@ import PageHeader from '@/components/elements/PageHeader.vue';
     gap: 5px;
 }
 
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.buttons .date {
+    padding: 20px 94px 20px 30px;
+    border: 1px solid #EBEBEB;
+    border-radius: 100px;
+    font-size: 16px;
+}
+.buttons .show{
+    padding: 20px 105px;
+    border: 1px solid #005BAA;
+    border-radius: 100px;
+    color: #005BAA;
+    font-size: 16px;
+    font-family: Gilroy-Medium !important;
+
+}
 </style>
