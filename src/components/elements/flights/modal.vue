@@ -1,10 +1,10 @@
 <template>
-    <div class="modal-popup" v-if="modalShow">
+    <div class="modal-popup" v-if="$store.getters['flight/showFilter']">
         <div class="fade-flight">
             <div class="modal-flight">
                 <div class="top-modal-flight">
                     <h3>Фильтры и сортировка</h3>
-                    <button class="close-modal">
+                    <button class="close-modal" @click="toggleFilter">
                         <img src="../../../assets/newImg/icons/modal-close.svg" alt="modal">
                     </button>
                 </div>
@@ -123,7 +123,7 @@
 </template>
 <script>
 import { mapGetters } from "vuex"
-import flight from '@/store/flight.js'
+// import flight from '@/store/flight.js'
 import reusable from './reusable.vue';
 export default {
     components: {
@@ -131,9 +131,13 @@ export default {
     },
     computed: {
         modalShow() {
-            console.log(flight.state);
-        },
-        ...mapGetters('flight', ['showFilter']),
+            return this.$store.getters['flight/showFilter'];
+        }
+    },
+    methods: {
+        toggleFilter() {
+            this.$store.dispatch('flight/toggleFilter');
+        }
     },
 }
 </script>

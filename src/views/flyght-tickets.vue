@@ -75,7 +75,7 @@
         </div>
     </div>
     <div class="filter">
-        <button class="filter-btn">
+        <button class="filter-btn" @click="toggleFilter">
             <img src="../assets/newImg/icons/filter.svg" alt="">
             Фильтры и сортировка
         </button>
@@ -108,6 +108,16 @@ export default {
     methods: {
         showSearch() {
             this.search = !this.search
+        }
+    },
+    computed: {
+        modalShow() {
+            return this.$store.getters['flight/showFilter'];
+        }
+    },
+    methods: {
+        toggleFilter() {
+            this.$store.dispatch('flight/toggleFilter');
         }
     },
 }
