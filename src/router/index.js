@@ -127,6 +127,11 @@ const router = createRouter({
       name: "operation",
       component: operationVue,
     },
+    {
+      path: "/operation/:id",
+      name: "operation show",
+      component: () => import("@/views/operation/operation_id.vue"),
+    },
   ],
 });
 
