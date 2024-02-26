@@ -35,12 +35,8 @@
       </div>
     </div>
     <div class="container">
-      <div
-        v-for="operation in operations"
-        :key="operation"
-        class="operation_line_parent d-flex flex-column"
-        @click="openOperation(operation.id)"
-      >
+      <div v-for="operation in operations" :key="operation" class="operation_line_parent d-flex flex-column"
+        @click="openOperation(operation.id)">
         <div class="operation_line">
           <div>{{ operation.date }}</div>
           <div>{{ operation.id }}</div>
@@ -94,6 +90,7 @@ export default {
 .operation_page {
   margin-bottom: 6rem;
 }
+
 .operation_line {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -102,6 +99,7 @@ export default {
   padding: 10px 0;
   border-bottom: 1px solid var(--grey);
 }
+
 .search-city {
   width: 100%;
   height: 40px;
@@ -145,13 +143,51 @@ export default {
   border: 1px solid #ebebeb;
   border-radius: 100px;
   font-size: 16px;
+  white-space: nowrap;
 }
+
 .buttons .show {
   padding: 20px 105px;
   border: 1px solid #005baa;
   border-radius: 100px;
   color: #005baa;
   font-size: 16px;
+  white-space: nowrap;
   font-family: Gilroy-Medium !important;
+}
+
+@media screen and (max-width:610px) {
+  .buttons .date {
+    padding: 10px 50px 10px 20px;
+  }
+
+  .buttons .show {
+    padding: 10px 80px;
+  }
+}
+
+@media screen and (max-width:610px) {
+  .buttons .date {
+    padding: 10px 40px;
+  }
+
+  .buttons .show {
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .operation_line {
+    gap: 0;
+  }
+}
+@media screen and (max-width:375px){
+  .buttons .date {
+    padding: 10px 20px;
+  }
+
+  .buttons .show {
+    padding: 10px 20px;
+  }
 }
 </style>

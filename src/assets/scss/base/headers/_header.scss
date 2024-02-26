@@ -1434,6 +1434,9 @@
 			max-width: 180px;
 		}
 	}
+	.header-center {
+		display: none;
+	}
 }
 
 @include mq('sm', 'max') {
