@@ -1,13 +1,6 @@
 <template>
   <n-modal v-model:show="showModal">
-    <n-card
-      style="width: 600px"
-      title=""
-      :bordered="false"
-      size="huge"
-      role="dialog"
-      aria-modal="true"
-    >
+    <n-card style="width: 600px" title="" :bordered="false" size="huge" role="dialog" aria-modal="true">
       <template #header-extra>
         <div @click="toggleFilter" style="cursor: pointer">
           <img src="../../../assets/newImg/icons/modal-close.svg" alt="modal" />
@@ -126,10 +119,7 @@
         <div class="top-modal-flight">
           <h3>Фильтры и сортировка</h3>
           <button class="close-modal" @click="toggleFilter">
-            <img
-              src="../../../assets/newImg/icons/modal-close.svg"
-              alt="modal"
-            />
+            <img src="../../../assets/newImg/icons/modal-close.svg" alt="modal" />
           </button>
         </div>
         <div class="flight active">
@@ -369,6 +359,7 @@ hr {
   font-family: Gilroy-Medium !important;
   background-color: #f4f7ff;
   border: 1px solid #777777;
+  white-space: nowrap;
 }
 
 .time-line {
@@ -451,5 +442,21 @@ hr {
   background-color: #005baa;
   color: #fff;
   font-family: Gilroy-Medium !important;
+}
+
+
+@media screen and (max-width:768px) {
+ 
+
+  .variant h5,
+  .options h5 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width:425px) {
+ .add-info {
+    padding: 10px;
+  }
 }
 </style>
