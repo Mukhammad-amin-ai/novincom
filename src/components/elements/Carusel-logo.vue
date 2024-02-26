@@ -62,10 +62,7 @@ export default {
   .carousel .swiper-button-next {
     display: none;
     background-color: transparent !important;
-
-
   }
-
   .carousel .swiper-button-prev {
     display: none;
     background-color: transparent !important;

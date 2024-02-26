@@ -96,7 +96,7 @@
       <div class="header-bottom sticky-header">
         <div :class="isFullwidth ? 'container-fluid' : 'container'">
           <div class="header-left">
-            <div class="dropdown category-dropdown">
+            <div class="dropdown category-dropdown" style="border-top-right-radius: .8rem; border-top-left-radius: .8rem;">
               <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы"
                 style="justify-content: space-between;">
                 <div class="drop-custom">

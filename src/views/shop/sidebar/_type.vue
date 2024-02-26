@@ -47,8 +47,7 @@
                   </div>
                 </div>
                 <div class="toolbox-layout">
-                  <router-link :to="{ name: 'param layout', params: { loyaut: 'list' } }" class="btn-layout"
-                    :class="{ active: type === 'list' }">
+                  <router-link to="/shop/sidebar/list" class="btn-layout" :class="{ active: type === 'list' }">
                     <svg width="16" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="10" height="4" />
@@ -56,7 +55,7 @@
                       <rect x="6" y="6" width="10" height="4" />
                     </svg>
                   </router-link>
-                  <router-link :to="{ name: 'param layout', params: { loyaut: '2cols' } }" class="btn-layout" :class="{ active: type === '2cols' }">
+                  <router-link to="/shop/sidebar/2cols" class="btn-layout" :class="{ active: type === '2cols' }">
                     <svg width="10" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -64,7 +63,7 @@
                       <rect x="6" y="6" width="4" height="4" />
                     </svg>
                   </router-link>
-                  <router-link :to="{ name: 'param layout', params: { loyaut: '3cols' } }" class="btn-layout" :class="{ active: type === '3cols' }">
+                  <router-link to="/shop/sidebar/3cols" class="btn-layout" :class="{ active: type === '3cols' }">
                     <svg width="16" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -74,7 +73,7 @@
                       <rect x="12" y="6" width="4" height="4" />
                     </svg>
                   </router-link>
-                  <router-link :to="{ name: 'param layout', params: { loyaut: '4cols' } }" class="btn-layout" :class="{ active: type === '4cols' }">
+                  <router-link to="/shop/sidebar/4cols" class="btn-layout" :class="{ active: type === '4cols' }">
                     <svg width="22" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -172,7 +171,7 @@ export default {
     paramsShow() {
       console.log('Hello');
       this.type = this.$route.params.loyaut
-      console.log(this.$route.params.loyaut);
+      console.log(this.$route);
     },
     getProducts: async function (samePage = false) {
       this.type = this.$route.params.type;

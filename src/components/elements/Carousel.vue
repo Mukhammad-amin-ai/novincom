@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div class="container items-center">
-      <swiper :loop="true" :modules="modules" :navigation="true" :slides-per-view="1" :space-between="150"
+      <swiper :loop="true" :modules="modules" :navigation="showPagination" :pagination="true" :slides-per-view="1" :space-between="150"
         @slideChange="onSlideChange" @swiper="onSwiper" :autoplay="{
           delay: 2500,
           disableOnInteraction: false,
@@ -51,6 +51,7 @@ import "swiper/css/scrollbar";
 export default {
   data() {
     return {
+      showPagination:true,
       url: "slider-product",
       data: [
         {
@@ -78,6 +79,9 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+  },
+  mounted() {
+    
   },
   setup() {
     const onSwiper = (swiper) => {
