@@ -96,7 +96,8 @@
       <div class="header-bottom sticky-header">
         <div :class="isFullwidth ? 'container-fluid' : 'container'">
           <div class="header-left">
-            <div class="dropdown category-dropdown" style="border-top-right-radius: .8rem; border-top-left-radius: .8rem;">
+            <div class="dropdown category-dropdown"
+              style="border-top-right-radius: .8rem; border-top-left-radius: .8rem; overflow:hidden;">
               <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы"
                 style="justify-content: space-between;">
                 <div class="drop-custom">
@@ -231,6 +232,10 @@ export default {
   font-size: 14px;
   font-family: Gilroy-Medium !important;
   color: #777777 !important;
+}
+
+.logIn:hover{
+  color: #3399ff !important;
 }
 
 .drop-custom {

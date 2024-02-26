@@ -1,7 +1,6 @@
 <template>
   <div class="carousel">
-    <swiper :slidesPerView="4" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true" class="mySwiper"
-      :autoplay="true">
+    <swiper :slidesPerView="4" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true" class="mySwiper">
       <swiper-slide>
         <router-link to="#" style="cursor: pointer">
           <img src="../../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="" />
@@ -37,7 +36,7 @@
 </template>
 
 <script>
-import { FreeMode, Pagination, Autoplay, Navigation } from "swiper";
+import { FreeMode, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 import "swiper/css";
@@ -51,7 +50,7 @@ export default {
   },
   setup() {
     return {
-      modules: [FreeMode, Pagination, Autoplay, Navigation],
+      modules: [FreeMode, Pagination, Navigation],
     };
   },
 };
@@ -63,6 +62,7 @@ export default {
     display: none;
     background-color: transparent !important;
   }
+
   .carousel .swiper-button-prev {
     display: none;
     background-color: transparent !important;
