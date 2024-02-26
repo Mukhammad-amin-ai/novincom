@@ -607,8 +607,8 @@
   </div>
 </template>
 <script>
-import Tabs from "~/components/elements/Tabs";
-import { mobileMenu } from "~/utilities/common.js";
+import Tabs from "@/components/elements/Tabs.vue";
+import { mobileMenu } from "@/utilities/common.js";
 export default {
   components: {
     Tabs,
