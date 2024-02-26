@@ -122,7 +122,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/ipad.png",
+              url: "./assets/images/ipad.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "756",
@@ -131,7 +131,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/ipad.png",
+              url: "./assets/images/ipad.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "757",
@@ -217,7 +217,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/ipad_2.png",
+              url: "./assets/images/ipad_2.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "761",
@@ -226,7 +226,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/ipad_2.png",
+              url: "./assets/images/ipad_2.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "760",
@@ -390,7 +390,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/watch.png",
+              url: "./assets/images/watch.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "765",
@@ -399,7 +399,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/watch.png",
+              url: "./assets/images/watch.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "764",
@@ -573,7 +573,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/go_pro.png",
+              url: "./assets/images/go_pro.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "769",
@@ -582,7 +582,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/go_pro.png",
+              url: "./assets/images/go_pro.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "771",
@@ -591,7 +591,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/go_pro.png",
+              url: "./assets/images/go_pro.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "770",
@@ -765,7 +765,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/xbox.png",
+              url: "./assets/images/xbox.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "775",
@@ -774,7 +774,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/xbox.png",
+              url: "./assets/images/xbox.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "776",
@@ -783,7 +783,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/xbox.png",
+              url: "./assets/images/xbox.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "777",
@@ -870,7 +870,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/sony.png",
+              url: "./assets/images/sony.png",
               pivot: {
                 related_id: "127",
                 upload_file_id: "781",
@@ -879,7 +879,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/sony.png",
+              url: "./assets/images/sony.png",
               pivot: {
                 related_id: "127",
                 upload_file_id: "782",
@@ -888,7 +888,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/sony.png",
+              url: "./assets/images/sony.png",
               pivot: {
                 related_id: "127",
                 upload_file_id: "783",
@@ -966,7 +966,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/canon.png",
+              url: "./assets/images/canon.png",
               pivot: {
                 related_id: "128",
                 upload_file_id: "786",
@@ -975,7 +975,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/canon.png",
+              url: "./assets/images/canon.png",
               pivot: {
                 related_id: "128",
                 upload_file_id: "787",
@@ -1140,7 +1140,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/google.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "129",
                 upload_file_id: "790",
@@ -1149,7 +1149,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/google.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "129",
                 upload_file_id: "791",
@@ -1158,6 +1158,7 @@ export default {
           ],
           variants: [],
         },
+        // ======== //
         {
           id: 130,
           name: "Home Smart Speaker with Google Assistant",
