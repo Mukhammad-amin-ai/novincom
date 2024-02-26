@@ -1,19 +1,71 @@
 <template>
   <div>
-    <modal/>
-    <HeaderDefault/>
-      <RouterView/>
-    <FooterDefault/>
+    <modal />
+    <HeaderDefault />
+    <RouterView />
+    <button
+      id="scroll-top"
+      ref="scrollTop"
+      title="Back to Top"
+      @click.prevent="scrollTop"
+    >
+      <i class="icon-arrow-up"></i>
+    </button>
+    <FooterDefault />
+    <div class="mobile-menu-overlay" @click="hideMobileMenu"></div>
+    <mobile-menu></mobile-menu>
   </div>
 </template>
-<script setup>
-import HeaderDefault from './components/partial/headers/HeaderDefault.vue';
-import FooterDefault from './components/partial/footers/FooterDefault.vue';
-import modal from './components/elements/flights/modal.vue';
+<script>
+import HeaderDefault from "./components/partial/headers/HeaderDefault.vue";
+import FooterDefault from "./components/partial/footers/FooterDefault.vue";
+import modal from "./components/elements/flights/modal.vue";
+import MobileMenu from "./components/partial/home/MobileMenu.vue";
+import { isSafariBrowser, isEdgeBrowser } from "@/utilities/common.js";
 
-
+export default {
+  data() {},
+  components: {
+    HeaderDefault,
+    FooterDefault,
+    modal,
+    MobileMenu,
+  },
+  mounted: function () {
+    let scrollTop = this.$refs.scrollTop;
+    document.addEventListener(
+      "scroll",
+      function () {
+        if (window.pageYOffset >= 400) {
+          scrollTop.classList.add("show");
+        } else {
+          scrollTop.classList.remove("show");
+        }
+      },
+      false
+    );
+  },
+  methods: {
+    scrollTop: function () {
+      if (isSafariBrowser() || isEdgeBrowser()) {
+        let pos = window.pageYOffset;
+        let timerId = setInterval(() => {
+          if (pos <= 0) clearInterval(timerId);
+          window.scrollBy(0, -120);
+          pos -= 120;
+        }, 1);
+      } else {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    },
+    hideMobileMenu: function () {
+      document.querySelector("body").classList.remove("mmenu-active");
+    },
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
