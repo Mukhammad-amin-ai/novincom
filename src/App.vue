@@ -3,13 +3,9 @@
     <modal />
     <HeaderDefault />
     <RouterView />
-    <button
-      id="scroll-top"
-      ref="scrollTop"
-      title="Back to Top"
-      @click.prevent="scrollTop"
-    >
-      <i class="icon-arrow-up"></i>
+    <button id="scroll-top" ref="scrollTop" title="Back to Top" @click.prevent="scrollTop">
+      <!-- <i class="icon-arrow-up"></i> -->
+      <img src="./assets/newImg/icons/arrow-up.svg" alt="">
     </button>
     <FooterDefault />
     <div class="mobile-menu-overlay" @click="hideMobileMenu"></div>
@@ -24,7 +20,7 @@ import MobileMenu from "./components/partial/home/MobileMenu.vue";
 import { isSafariBrowser, isEdgeBrowser } from "@/utilities/common.js";
 
 export default {
-  data() {},
+  data() { },
   components: {
     HeaderDefault,
     FooterDefault,
@@ -68,4 +64,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#scroll-top {
+  width: 64px;
+  height: 64px;
+  background-color: #005BAA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+</style>
