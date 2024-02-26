@@ -56,7 +56,7 @@
                 <!-- @click.prevent="openSignInModal" -->
 
                 <li>
-                  <router-link to="/sign_up">
+                  <router-link to="/sign_up" class="callhov">
                     <span class="logIn">
                       <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
                       Выход
@@ -166,7 +166,7 @@
           </div>
           <div class="header-right overflow-hidden">
             <!-- <i class="la la-lightbulb-o"></i> -->
-            <p class="text-truncate" style="display: flex; gap:5px;font-family: Gilroy-Medium !important;">
+            <p class="text-truncate" style="display: flex; gap:5px;font-family: Gilroy-Medium !important; color: #000;">
               <img src="../../../assets/newImg/icons/user_icon.svg" alt="user">
               Александр: 3300.00
               <!-- <span class="highlight">&nbsp;Up to 30% Off</span> -->
@@ -220,19 +220,23 @@ export default {
   display: flex;
   gap: 5px;
   font-size: 14px;
-  font-family: Gilroy-Medium;
+  font-family: Gilroy-Medium !important;
+
 }
 
 .logIn {
   display: flex;
+  align-items: center;
   gap: 5px;
   font-size: 14px;
-  font-family: Gilroy-Medium;
+  font-family: Gilroy-Medium !important;
+  color: #777777 !important;
 }
 
 .drop-custom {
   display: flex;
   align-items: center;
+  font-family: Gilroy-Medium !important;
   gap: 10px;
 }
 </style>

@@ -5,7 +5,7 @@
         <h2 class="title">Популярные сертификаты</h2>
       </div>
       <div class="heading-right">
-        <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="new"></tabs>
+        <tabs class="nav nav-pills nav-border-anim justify-content-center"  :data="tabsData" id="new"></tabs>
       </div>
     </div>
     <div class="tab-content tab-content-carousel just-action-icons-sm">

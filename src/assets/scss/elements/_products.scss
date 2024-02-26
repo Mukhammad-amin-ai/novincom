@@ -245,6 +245,7 @@
 
 .product-title a {
     display: -webkit-box;
+    font-family: Gilroy-Medium !important;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -279,6 +280,7 @@
 
 .product-price {
 	display: flex;
+    font-family: Gilroy-Medium !important;
 	align-items: center;
 	flex-flow: wrap;
 	font-weight: 400;

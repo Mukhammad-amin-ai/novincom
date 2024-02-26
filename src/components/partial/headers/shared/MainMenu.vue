@@ -1,6 +1,7 @@
 <template>
   <nav class="main-nav">
     <ul class="menu sf-arrows">
+      <!-- :  -->
       <li class="megamenu-container" :class="{ active: current == '/' }">
         <router-link to="/" class="sf-with-ul">Главная</router-link>
         <!-- <div class="megamenu demo">
@@ -233,7 +234,8 @@
           </div>
         </div> -->
       </li>
-      <li :class="{ active: current == 'shop' }">
+      <!-- :class="{ active: current == 'shop' }" -->
+      <li>
         <router-link to="/shop/sidebar/list" class="sf-with-ul">Спецпредложения</router-link>
         <!-- <div class="megamenu megamenu-md">
           <div class="row no-gutters">
@@ -344,7 +346,8 @@
           </div>
         </div> -->
       </li>
-      <li :class="{ active: current == 'product' }">
+      <!-- :class="{ active: current == 'product' }" -->
+      <li>
         <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress" class="sf-with-ul">Акции</router-link>
         <!-- <div class="megamenu megamenu-sm">
           <div class="row no-gutters">

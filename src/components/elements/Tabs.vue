@@ -1,12 +1,8 @@
 <template>
     <ul class="nav">
         <li class="nav-item" v-for="(tab, index) in tabs" :key="index">
-            <a
-                class="nav-link"
-                :href="getUrl(tab)"
-                :class="{'active bg-white': tab.active}"
-                @click.prevent="tabClick(tab)"
-            >{{ tab.title }}</a>
+            <a class="nav-link" :href="getUrl(tab)" :class="{ 'active bg-white': tab.active }"
+                style="font-family: Gilroy-Medium !important;" @click.prevent="tabClick(tab)">{{ tab.title }}</a>
         </li>
     </ul>
 </template>
@@ -16,21 +12,21 @@ export default {
         id: String,
         data: Array
     },
-    data: function() {
+    data: function () {
         return {
             tabs: [...this.data]
         };
     },
     computed: {},
     methods: {
-        getUrl: function(tab) {
+        getUrl: function (tab) {
             if (this.id) {
                 return '#' + this.id + '-' + tab.id;
             } else {
                 return '#' + tab.id;
             }
         },
-        tabClick: function(tab) {
+        tabClick: function (tab) {
             if (tab.active) {
                 return;
             }

@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { FreeMode, Pagination, Autoplay } from "swiper";
+import { FreeMode, Pagination, Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 import "swiper/css";
@@ -51,7 +51,7 @@ export default {
   },
   setup() {
     return {
-      modules: [FreeMode, Pagination, Autoplay],
+      modules: [FreeMode, Pagination, Autoplay, Navigation],
     };
   },
 };
@@ -61,10 +61,16 @@ export default {
 @media (max-width: 576px) {
   .carousel .swiper-button-next {
     display: none;
+    background-color: transparent !important;
+
+
   }
 
   .carousel .swiper-button-prev {
     display: none;
+    background-color: transparent !important;
   }
+
+
 }
 </style>
