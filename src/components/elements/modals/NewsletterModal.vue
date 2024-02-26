@@ -1,5 +1,5 @@
 <template>
-    <div class="container newsletter-popup-container" id="newsletter-popup-form">
+    <!-- <div class="container newsletter-popup-container" id="newsletter-popup-form">
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="row no-gutters bg-white newsletter-popup-content">
@@ -65,33 +65,33 @@
         <button title="Close (Esc)" type="button" class="mfp-close" @click="closeModal">
             <span>×</span>
         </button>
-    </div>
+    </div> -->
 </template>
 <script>
-import { mapMutations } from 'vuex';
-export default {
-    data: function() {
-        return {
-            checkState: false
-        };
-    },
-    watch: {
-        $route: function() {
-            this.$emit('close');
-        }
-    },
-    methods: {
-        ...mapMutations('demo', { hideNewsletter: 'HIDE_NEWSLETTER' }),
-        changeCheck: function() {
-            this.checkState = !this.checkState;
-        },
-        closeModal: function() {
-            if (this.checkState) {
-                this.hideNewsletter();
-            }
+// import { mapMutations } from 'vuex';
+// export default {
+//     data: function() {
+//         return {
+//             checkState: false
+//         };
+//     },
+//     watch: {
+//         $route: function() {
+//             this.$emit('close');
+//         }
+//     },
+//     methods: {
+//         ...mapMutations('demo', { hideNewsletter: 'HIDE_NEWSLETTER' }),
+//         changeCheck: function() {
+//             this.checkState = !this.checkState;
+//         },
+//         closeModal: function() {
+//             if (this.checkState) {
+//                 this.hideNewsletter();
+//             }
 
-            this.$emit('close');
-        }
-    }
-};
+//             this.$emit('close');
+//         }
+//     }
+// };
 </script>

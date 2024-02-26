@@ -1,5 +1,5 @@
 <template>
-    <div class="video-modal bg-white m-3" id="video-modal">
+    <!-- <div class="video-modal bg-white m-3" id="video-modal">
         <button class="close" type="button" @click="$emit('close')">
             <span>
                 <i class="icon-close"></i>
@@ -11,5 +11,5 @@
             title="youtube"
             class="mfp-iframe"
         ></iframe>
-    </div>
+    </div> -->
 </template>

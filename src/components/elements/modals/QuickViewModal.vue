@@ -1,5 +1,5 @@
 <template>
-    <div class="quickView-container m-4">
+    <!-- <div class="quickView-container m-4">
         <div class="quickView-content horizontal skeleton-body">
             <div class="row skel-pro-single skel-quickview m-0" :class="{loaded: loaded}">
                 <div class="col-lg-6 p-0 pr-2">
@@ -75,53 +75,53 @@
         <button title="Close (Esc)" type="button" class="mfp-close" @click="$emit('close')">
             <span>×</span>
         </button>
-    </div>
+    </div> -->
 </template>
 <script>
-import DetailOne from '~/components/partial/product/details/DetailOne';
-import { carouselSettingSingle } from '~/utilities/carousel';
-import { baseUrl } from '~/repositories/repository';
-import { getIndex } from '~/utilities/common';
+// import DetailOne from '~/components/partial/product/details/DetailOne';
+// import { carouselSettingSingle } from '~/utilities/carousel';
+// import { baseUrl } from '~/repositories/repository';
+// import { getIndex } from '~/utilities/common';
 
-export default {
-    components: {
-        DetailOne
-    },
-    props: {
-        product: Object
-    },
-    data: function() {
-        return {
-            baseUrl: baseUrl,
-            carouselSetting: {
-                ...carouselSettingSingle,
-                loop: false
-            },
-            loaded: false,
-            currentIndex: 0
-        };
-    },
-    watch: {
-        $route: function() {
-            this.$modal.hideAll();
-        }
-    },
-    mounted: function() {
-        setTimeout(() => {
-            this.loaded = true;
-        }, 300);
-    },
-    methods: {
-        changePicture: function(index) {
-            this.currentIndex = index;
-            this.swiper1.slideTo(this.currentIndex, 1000, false);
-        },
-        slideChange: function() {
-            var activeSlide = document.querySelector(
-                '.quickView-content .swiper-slide-active'
-            );
-            this.currentIndex = getIndex(activeSlide);
-        }
-    }
-};
+// export default {
+//     components: {
+//         DetailOne
+//     },
+//     props: {
+//         product: Object
+//     },
+//     data: function() {
+//         return {
+//             baseUrl: baseUrl,
+//             carouselSetting: {
+//                 ...carouselSettingSingle,
+//                 loop: false
+//             },
+//             loaded: false,
+//             currentIndex: 0
+//         };
+//     },
+//     watch: {
+//         $route: function() {
+//             this.$modal.hideAll();
+//         }
+//     },
+//     mounted: function() {
+//         setTimeout(() => {
+//             this.loaded = true;
+//         }, 300);
+//     },
+//     methods: {
+//         changePicture: function(index) {
+//             this.currentIndex = index;
+//             this.swiper1.slideTo(this.currentIndex, 1000, false);
+//         },
+//         slideChange: function() {
+//             var activeSlide = document.querySelector(
+//                 '.quickView-content .swiper-slide-active'
+//             );
+//             this.currentIndex = getIndex(activeSlide);
+//         }
+//     }
+// };
 </script>
