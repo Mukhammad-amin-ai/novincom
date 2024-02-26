@@ -132,11 +132,10 @@ export default {
       this.new_operations.push(id);
     },
     closeMenu(id) {
-      const existId = this.operations.findIndex((item) => item.id === id);
-      if (existId !== -1) {
-        this.new_operations.splice(existId, 1);
+      const existIndex = this.new_operations.indexOf(id);
+      if (existIndex !== -1) {
+        this.new_operations.splice(existIndex, 1);
       }
-      console.log(existId, id);
     },
   },
   components: {
