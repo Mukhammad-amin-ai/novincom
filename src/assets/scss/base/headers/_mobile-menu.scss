@@ -208,7 +208,7 @@
 
 	&::after {
 		font-family: "molla";
-		content: '\f110';
+		// content: '\f110';
 		display: inline-block;
 	}
 
@@ -231,7 +231,7 @@
 	.form-control {
 		height: 36px;
 		margin-bottom: 0;
-		-webkit-appearance: none;
+		// -webkit-appearance: none;
 		font-size: 1.2rem;
 		line-height: 1.5;
 		padding: .8rem 1.5rem;

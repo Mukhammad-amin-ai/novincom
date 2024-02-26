@@ -480,6 +480,8 @@ export default {
   font-size: 14px !important;
 }
 
+
+
 @media screen and (max-width: 468px) {
   .cta-border .cta-img {
     display: none !important;

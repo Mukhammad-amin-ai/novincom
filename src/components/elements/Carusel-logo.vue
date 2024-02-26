@@ -1,20 +1,10 @@
 <template>
-  <div>
-    <swiper
-      :slidesPerView="4"
-      :spaceBetween="30"
-      :freeMode="true"
-      :modules="modules"
-      :navigation="true"
-      class="mySwiper"
-      :autoplay="true"
-    >
+  <div class="carousel">
+    <swiper :slidesPerView="4" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true" class="mySwiper"
+      :autoplay="true">
       <swiper-slide>
         <router-link to="#" style="cursor: pointer">
-          <img
-            src="../../assets/newImg/logotypes/bosch-logo-simple 1.png"
-            alt=""
-          />
+          <img src="../../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="" />
         </router-link>
       </swiper-slide>
       <swiper-slide>
@@ -67,4 +57,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (max-width: 576px) {
+  .carousel .swiper-button-next {
+    display: none;
+  }
+
+  .carousel .swiper-button-prev {
+    display: none;
+  }
+}
+</style>

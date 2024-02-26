@@ -451,4 +451,6 @@ export default {
   .flight-passenger-info {
     display: none;
   }
-}</style>
+}
+
+</style>

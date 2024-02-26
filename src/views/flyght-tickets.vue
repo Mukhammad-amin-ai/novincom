@@ -250,17 +250,40 @@ export default {
 }
 
 @media screen and (max-width:1024px) {
-    .search-form-field{
+    .search-form-field {
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width:768px) {
-    .search-form-field{
+    .search-form-field {
         flex-direction: column;
     }
-    .search-btn{
+
+    .search-btn {
         width: 100%;
     }
 }
+
+@media screen and (max-width:640px) {
+    .result {
+        width: 80%;
+    }
+
+    .search {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .result {
+        width: 90%;
+    }
+}
+@media screen and (max-width:435px){
+    .result span{
+        font-size: 11px;
+    }
+}
+
 </style>
