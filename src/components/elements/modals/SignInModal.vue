@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-body m-3">
+    <!-- <div class="modal-body m-3">
         <button type="button" class="close" @click="$emit('close')">
             <span aria-hidden="true">
                 <i class="icon-close"></i>
@@ -141,28 +141,28 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 <script>
-import Tabs from '~/components/elements/Tabs';
-export default {
-    components: {
-        Tabs
-    },
-    data: function() {
-        return {
-            tabsData: [
-                {
-                    id: 'sign-in',
-                    title: 'Sign In',
-                    active: true
-                },
-                {
-                    id: 'register',
-                    title: 'Register'
-                }
-            ]
-        };
-    }
-};
+// import Tabs from '~/components/elements/Tabs';
+// export default {
+//     components: {
+//         Tabs
+//     },
+//     data: function() {
+//         return {
+//             tabsData: [
+//                 {
+//                     id: 'sign-in',
+//                     title: 'Sign In',
+//                     active: true
+//                 },
+//                 {
+//                     id: 'register',
+//                     title: 'Register'
+//                 }
+//             ]
+//         };
+//     }
+// };
 </script>
