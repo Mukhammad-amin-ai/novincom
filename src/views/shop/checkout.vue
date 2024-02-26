@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <main class="main">
         <page-header title="Checkout" subtitle="Shop"></page-header>
         <nav class="breadcrumb-nav">
@@ -328,4 +328,4 @@ export default {
         }
     }
 };
-</script>
+</script> -->

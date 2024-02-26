@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <main class="main">
         <page-header title="Shopping Cart" subtitle="Shop"></page-header>
         <nav class="breadcrumb-nav">
@@ -287,4 +287,4 @@ export default {
         }
     }
 };
-</script>
+</script> -->

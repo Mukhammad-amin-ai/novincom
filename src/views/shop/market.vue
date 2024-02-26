@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <main class="main shop-market">
     <page-header title="Shop Market" subtitle="Shop"></page-header>
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
@@ -28,10 +28,10 @@
                   <div class="swiper-slide">
                     <div class="banner banner-poster">
                       <a href="#">
-                        <!-- <img
+                        <img
                           src="~/static/images/market/slider/slider-1.jpg"
                           alt="Banner"
-                        /> -->
+                        />
                       </a>
 
                       <div class="banner-content banner-content-right">
@@ -53,10 +53,10 @@
                   <div class="swiper-slide">
                     <div class="banner banner-poster">
                       <a href="#">
-                        <!-- <img
+                        <img
                           src="~/static/images/market/slider/slider-2.jpg"
                           alt="Banner"
-                        /> -->
+                        />
                       </a>
 
                       <div class="banner-content">
@@ -91,65 +91,65 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="#" class="brand">
-                      <!-- <img
+                      <img
                         v-lazy="'./images/brands/1.png'"
                         class="bg-white"
                         alt="Brand"
-                      /> -->
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="brand">
-                      <!-- <img
+                      <img
                         v-lazy="'./images/brands/2.png'"
                         class="bg-white"
                         alt="Brand"
-                      /> -->
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="brand">
-                      <!-- <img
+                      <img
                         v-lazy="'./images/brands/3.png'"
                         class="bg-white"
                         alt="Brand"
-                      /> -->
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="brand">
-                      <!-- <img
+                      <img
                         v-lazy="'./images/brands/4.png'"
                         class="bg-white"
                         alt="Brand"
-                      /> -->
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="brand">
-                      <!-- <img
+                      <img
                         v-lazy="'./images/brands/5.png'"
                         class="bg-white"
                         alt="Brand"
-                      /> -->
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="brand">
-                      <!-- <img
+                      <img
                         v-lazy="'./images/brands/6.png'"
                         class="bg-white"
                         alt="Brand"
-                      /> -->
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" class="brand">
-                      <!-- <img
+                      <img
                         v-lazy="'./images/brands/1.png'"
                         class="bg-white"
                         alt="Brand"
-                      /> -->
+                      />
                     </a>
                   </div>
                 </div>
@@ -169,10 +169,10 @@
                   <a href="javascript:;" class="cat-block">
                     <figure>
                       <span>
-                        <!-- <img
+                        <img
                           v-lazy="'./images/market/cats/1.jpg'"
                           alt="Category image"
-                        /> -->
+                        />
                       </span>
                     </figure>
 
@@ -184,10 +184,10 @@
                   <a href="javascript:;" class="cat-block">
                     <figure>
                       <span>
-                        <!-- <img
+                        <img
                           v-lazy="'./images/market/cats/2.jpg'"
                           alt="Category image"
-                        /> -->
+                        />
                       </span>
                     </figure>
 
@@ -199,10 +199,10 @@
                   <a href="javascript:;" class="cat-block">
                     <figure>
                       <span>
-                        <!-- <img
+                        <img
                           v-lazy="'./images/market/cats/3.jpg'"
                           alt="Category image"
-                        /> -->
+                        />
                       </span>
                     </figure>
 
@@ -214,10 +214,10 @@
                   <a href="javascript:;" class="cat-block">
                     <figure>
                       <span>
-                        <!-- <img
+                        <img
                           v-lazy="'./images/market/cats/4.jpg'"
                           alt="Category image"
-                        /> -->
+                        />
                       </span>
                     </figure>
 
@@ -229,10 +229,10 @@
                   <a href="javascript:;" class="cat-block">
                     <figure>
                       <span>
-                        <!-- <img
+                        <img
                           v-lazy="'./images/market/cats/5.jpg'"
                           alt="Category image"
-                        /> -->
+                        />
                       </span>
                     </figure>
 
@@ -244,10 +244,10 @@
                   <a href="javascript:;" class="cat-block">
                     <figure>
                       <span>
-                        <!-- <img
+                        <img
                           v-lazy="'./images/market/cats/6.jpg'"
                           alt="Category image"
-                        /> -->
+                        />
                       </span>
                     </figure>
 
@@ -259,10 +259,10 @@
                   <a href="javascript:;" class="cat-block">
                     <figure>
                       <span>
-                        <!-- <img
+                        <img
                           v-lazy="'./images/market/cats/7.jpg'"
                           alt="Category image"
-                        /> -->
+                        />
                       </span>
                     </figure>
 
@@ -438,4 +438,4 @@ export default {
     },
   },
 };
-</script>
+</script> -->

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <main class="main">
         <page-header title="Wishlist" subtitle="Shop"></page-header>
         <nav class="breadcrumb-nav">
@@ -185,4 +185,4 @@ export default {
         ...mapActions('wishlist', ['removeFromWishlist', 'moveToCart'])
     }
 };
-</script>
+</script> -->
