@@ -2,14 +2,14 @@
   <div class="product-gallery product-gallery-vertical" v-if="product">
     <div class="row m-0">
       <figure class="product-main-image">
-        <span class="product-label label-new" v-if="product.new">New</span>
+        <!-- <span class="product-label label-new" v-if="product.new">New</span>
         <span class="product-label label-sale" v-if="product.sale_price"
           >Sale</span
         >
         <span class="product-label label-top" v-if="product.top">Top</span>
         <span class="product-label label-out" v-if="product.stock === 0"
           >Out Of Stock</span
-        >
+        > -->
         <img
           id="product-zoom"
           :src="`${baseUrl}${product.pictures[currentIndex].url}`"
