@@ -404,4 +404,51 @@ export default {
   color: #005BAA;
   border: 1px solid #005BAA;
 }
-</style>
+
+@media screen and (max-width:990px) {
+  .flight-wrapper {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+
+  .flight-line {
+    width: 30% !important;
+  }
+}
+
+@media screen and (max-width:780px) {
+  .flight-info {
+    /* display: none; */
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .flight-item{
+    justify-content: space-between;
+  }
+  .detailed-cover{
+    justify-content: space-between;
+  }
+  .detailed{
+    display: none;
+  }
+  .flight-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .price-flight {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .flight-info {
+    display: none;
+  }
+
+  .flight-passenger-info {
+    display: none;
+  }
+}</style>

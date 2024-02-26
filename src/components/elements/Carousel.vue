@@ -129,7 +129,7 @@ export default {
   justify-content: center !important;
   align-items: center !important;
   border: 1px solid transparent;
-  color: var(--grey) !important;
+  color: var(--black) !important;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {

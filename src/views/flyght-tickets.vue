@@ -165,7 +165,7 @@ export default {
 
 .search-fielsd {
     width: 100%;
-    height: 100px;
+    height: auto;
     margin-top: 20px;
 }
 
@@ -247,5 +247,20 @@ export default {
     justify-content: space-between;
     font-family: Gilroy-SemiBold !important;
     font-size: 16px;
+}
+
+@media screen and (max-width:1024px) {
+    .search-form-field{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .search-form-field{
+        flex-direction: column;
+    }
+    .search-btn{
+        width: 100%;
+    }
 }
 </style>
