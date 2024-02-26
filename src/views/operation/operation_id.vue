@@ -22,7 +22,7 @@
   <div class="operation_page">
     <div class="container">
       <div
-        v-for="(operation, index) in operations"
+        v-for="operation in operations"
         :key="operation"
         class="operation_line_parent d-flex flex-column"
       >
