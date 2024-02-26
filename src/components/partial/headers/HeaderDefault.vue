@@ -13,10 +13,15 @@
         <div class="header-right">
           <ul class="top-menu">
             <li>
-              <a href="#">Links</a>
+              <!-- @click.prevent="openSignInModal" -->
+              <a href="#signin-modal">
+                <span class="logIn">
+                  <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
+                  Выход
+                </span></a>
               <ul>
-                <!-- <li>
-                  <div class="header-dropdown">
+                <li>
+                  <!-- <div class="header-dropdown">
                     <a href="#">USD</a>
                     <div class="header-menu">
                       <ul>
@@ -28,9 +33,9 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> -->
                 </li>
-                <li>
+                <!-- <li>
                   <div class="header-dropdown">
                     <a href="#">English</a>
                     <div class="header-menu">
@@ -48,12 +53,15 @@
                     </div>
                   </div>
                 </li> -->
+                <!-- @click.prevent="openSignInModal" -->
+
                 <li>
-                  <a href="#signin-modal" @click.prevent="openSignInModal">
+                  <router-link to="/sign_up">
                     <span class="logIn">
                       <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
                       Выход
-                    </span> </a>
+                    </span>
+                  </router-link>
                 </li>
               </ul>
             </li>

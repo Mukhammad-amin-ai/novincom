@@ -21,6 +21,7 @@
 .header-right {
 	margin-left: auto;
 	align-self: stretch;
+	overflow: hidden;
 }
 
 .header-center {
@@ -1286,7 +1287,7 @@
 			display: flex;
 			align-items: center;
 			align-self: stretch;
-			padding-right: 2.2rem;
+			// padding-right: 2.2rem;
 
 			> a {
 				display: block;
@@ -1296,7 +1297,7 @@
 
 			&::after {
 				font-family: "molla";
-				content: '\f110';
+				// content: '\f110';
 				position: absolute;
 				right: 0;
 				top: 50%;

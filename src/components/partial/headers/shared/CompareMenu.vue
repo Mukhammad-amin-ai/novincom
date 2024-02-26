@@ -8,6 +8,7 @@
       <p>Сравнить</p>
     </a>
 
+    
     <!-- <div
       class="dropdown-menu dropdown-menu-right"
       v-if="compareList.length > 0"

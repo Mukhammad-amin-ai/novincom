@@ -391,4 +391,10 @@ export default {
 .icon-box-content p {
   font-size: 14px !important;
 }
+
+@media screen and (max-width:1024px) {
+  
+}
+
+
 </style>
