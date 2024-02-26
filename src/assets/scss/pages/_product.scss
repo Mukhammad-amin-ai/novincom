@@ -629,10 +629,11 @@
 	.tab-content {
 		border: 1px solid #dadada;
 		margin-top: -1px;
-		border-radius: .3rem;
+		border-radius: 1.2rem;
 
 		.tab-pane {
 			padding: 2.7rem 3rem;
+			
 		}
 	}
 }
@@ -1078,8 +1079,8 @@
 		}
 
 		.product-main-image {
-			flex: 0 0 80%;
-			max-width: 80%;
+			flex: 0 0 100%;
+			max-width: 100%;
 		}
 
 		.product-image-gallery {

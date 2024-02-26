@@ -9,7 +9,6 @@
               <div class="skel-product-gallery"></div>
               <gallery-vertical :product="product"></gallery-vertical>
             </div>
-
             <div class="col-md-6">
               <div class="entry-summary row">
                 <div class="col-md-12">

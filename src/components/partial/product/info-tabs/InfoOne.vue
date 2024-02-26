@@ -8,7 +8,7 @@
           <p class="mb-1"></p>
 
           <div class="product_description_info">
-            <b class="mr-2">1.</b>{{ product?.short_desc }}
+            <b class="mr-2"></b>{{ product?.short_desc }}
           </div>
         </div>
       </div>

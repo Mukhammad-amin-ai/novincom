@@ -93,17 +93,10 @@
           {{ product.price.toFixed(2) }}
         </div>
         <div class="down_img">
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M5.72865 8.72779L1.74615 4.54804C1.67967 4.4783 1.64258 4.38564 1.64258 4.28929C1.64258 4.19294 1.67967 4.10028 1.74615 4.03054L1.75065 4.02604C1.78288 3.99211 1.82167 3.9651 1.86467 3.94664C1.90767 3.92818 1.95398 3.91866 2.00077 3.91866C2.04757 3.91866 2.09388 3.92818 2.13688 3.94664C2.17987 3.9651 2.21867 3.99211 2.2509 4.02604L6.0009 7.96204L9.7494 4.02604C9.78163 3.99211 9.82042 3.9651 9.86342 3.94664C9.90642 3.92818 9.95273 3.91866 9.99952 3.91866C10.0463 3.91866 10.0926 3.92818 10.1356 3.94664C10.1786 3.9651 10.2174 3.99211 10.2496 4.02604L10.2541 4.03054C10.3206 4.10028 10.3577 4.19294 10.3577 4.28929C10.3577 4.38564 10.3206 4.4783 10.2541 4.54804L6.27165 8.72779C6.23663 8.76455 6.1945 8.79381 6.14783 8.81381C6.10117 8.83381 6.05092 8.84412 6.00015 8.84412C5.94938 8.84412 5.89913 8.83381 5.85246 8.81381C5.80579 8.79381 5.76367 8.76455 5.72865 8.72779Z"
-              fill="#333333"
-            />
+              fill="#333333" />
           </svg>
         </div>
       </div>
@@ -116,32 +109,21 @@
     <div class="product-details-action">
       <div class="details-action-col">
         <div class="quanty_name f-500 mr-5">Кол-во:</div>
-        <quantity-input
-          :product="product"
-          @change-qty="changeQty"
-          class="mr-3 mr-sm-4"
-        ></quantity-input>
+        <quantity-input :product="product" @change-qty="changeQty" class="mr-3 mr-sm-4"></quantity-input>
       </div>
     </div>
     <div class="details-action-wrapper">
       <div class="btn-product_add ml-sm-2" @click.prevent="addCart">
         <img src="@/assets/newImg/product/cart.svg" alt="" />
 
-        <span>Добавить в корзину</span>
+        <span style="font-family:Gilroy-Medium !important;">Добавить в корзину</span>
       </div>
       <div class="btn-product_add_wish ml-sm-2" @click.prevent="addToWishlist">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="25"
-          height="24"
-          viewBox="0 0 256 256"
-        >
-          <path
-            fill="var(--blue)"
-            d="M223 57a58.07 58.07 0 0 0-81.92-.1L128 69.05l-13.09-12.19A58 58 0 0 0 33 139l89.35 90.66a8 8 0 0 0 11.4 0L223 139a58 58 0 0 0 0-82m-11.35 70.76L128 212.6l-83.7-84.92a42 42 0 0 1 59.4-59.4l.2.2l18.65 17.35a8 8 0 0 0 10.9 0l18.65-17.35l.2-.2a42 42 0 1 1 59.36 59.44Z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 256 256">
+          <path fill="var(--blue)"
+            d="M223 57a58.07 58.07 0 0 0-81.92-.1L128 69.05l-13.09-12.19A58 58 0 0 0 33 139l89.35 90.66a8 8 0 0 0 11.4 0L223 139a58 58 0 0 0 0-82m-11.35 70.76L128 212.6l-83.7-84.92a42 42 0 0 1 59.4-59.4l.2.2l18.65 17.35a8 8 0 0 0 10.9 0l18.65-17.35l.2-.2a42 42 0 1 1 59.36 59.44Z" />
         </svg>
-        <span>Добавить в избранное</span>
+        <span style="font-family:Gilroy-Medium !important;">Добавить в избранное</span>
       </div>
     </div>
 
@@ -162,36 +144,16 @@
 
       <div class="social-icons social-icons-sm">
         <span class="share-text mr-4">Поделиться:</span>
-        <a
-          href="javascript:;"
-          class="social-icon"
-          title="Facebook"
-          target="_blank"
-        >
+        <a href="javascript:;" class="social-icon" title="Facebook">
           <img src="@/assets/newImg/product/copy.svg" alt="" />
         </a>
-        <a
-          href="javascript:;"
-          class="social-icon"
-          title="Twitter"
-          target="_blank"
-        >
+        <a href="javascript:;" class="social-icon" title="Twitter">
           <img src="@/assets/newImg/product/vk.svg" alt="" />
         </a>
-        <a
-          href="javascript:;"
-          class="social-icon"
-          title="Instagram"
-          target="_blank"
-        >
+        <a href="javascript:;" class="social-icon" title="Instagram">
           <img src="@/assets/newImg/product/ok.svg" alt="" />
         </a>
-        <a
-          href="javascript:;"
-          class="social-icon"
-          title="Pinterest"
-          target="_blank"
-        >
+        <a href="javascript:;" class="social-icon" title="Pinterest">
           <img src="@/assets/newImg/product/tg.svg" alt="" />
         </a>
       </div>

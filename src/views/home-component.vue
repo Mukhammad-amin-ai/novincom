@@ -8,7 +8,7 @@
       <div class="cat-blocks-container">
         <div class="row">
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/product/default/" class="cat-block">
+            <router-link to="/product/default/apple-smart-folio-for-11-inch-ipad-pro" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_1.png" alt="Category" class="bg-transparent" />

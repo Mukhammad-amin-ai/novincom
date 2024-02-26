@@ -28,23 +28,7 @@
         </a> -->
       </figure>
 
-      <div id="product-zoom-gallery" class="product-image-gallery">
-        <a
-          class="product-gallery-item h-100 h-lg-auto carousel-dot"
-          :class="{ active: currentIndex == index }"
-          href="#"
-          v-for="(smPicture, index) in product.sm_pictures"
-          :key="index"
-          @click.prevent="changePicture(index)"
-        >
-          <img
-            :src="`${baseUrl}${smPicture.url}`"
-            :width="smPicture.width"
-            :height="smPicture.height"
-            alt="product side"
-          />
-        </a>
-      </div>
+    <!-- .product-details-tab .tab-content .tab-pane -->
 
       <!-- <light-box
         ref="lightbox"

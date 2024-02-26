@@ -1,20 +1,14 @@
 <template>
   <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
-    <div
-      :class="
-        'd-flex align-items-center ' +
-        (fullWidth ? 'container-fluid' : 'container')
-      "
-    >
+    <div :class="'d-flex align-items-center ' +
+      (fullWidth ? 'container-fluid' : 'container')
+      ">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <router-link to="/">Home</router-link>
+          <router-link to="/">Главная</router-link>
         </li>
         <li class="breadcrumb-item">
-          <router-link
-            to="/product/default/dark-yellow-lace-cut-out-swing-dress"
-            >Product</router-link
-          >
+          <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress">Товары</router-link>
         </li>
         <li class="breadcrumb-item active">{{ current }}</li>
       </ol>
