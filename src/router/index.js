@@ -57,11 +57,11 @@ const router = createRouter({
       name: "category show with list",
       component: () => import("@/views/shop/sidebar/_type.vue"),
     },
-    {
-      path: "/shop/market",
-      name: "category show market",
-      component: () => import("@/views/shop/market.vue"),
-    },
+    // {
+    //   path: "/shop/market",
+    //   name: "category show market",
+    //   component: () => import("@/views/shop/market.vue"),
+    // },
     {
       path: "/shop/nosidebar/boxed",
       name: "category show boxed",
@@ -92,40 +92,30 @@ const router = createRouter({
       name: "shop category boxed",
       component: () => import("@/views/shop/category/boxed.vue"),
     },
-    {
-      path: "/shop/dashboard",
-      name: "shop dashboard",
-      component: () => import("@/views/shop/dashboard.vue"),
-    },
-    {
-      path: "/shop/cart",
-      name: "category show cart",
-      component: () => import("@/views/shop/cart.vue"),
-    },
-    {
-      path: "/shop/wishlist",
-      name: "category show wishlist",
-      component: () => import("@/views/shop/wishlist.vue"),
-    },
-    {
-      path: "/shop/checkout",
-      name: "category show checkout",
-      component: () => import("@/views/shop/checkout.vue"),
-    },
-    {
-      path: "/tickets_search_results",
-      name: "tickets search results",
-      component: loginVue,
-    },
+    // {
+    //   path: "/shop/dashboard",
+    //   name: "shop dashboard",
+    //   component: () => import("@/views/shop/dashboard.vue"),
+    // },
+    // {
+    //   path: "/shop/cart",
+    //   name: "category show cart",
+    //   component: () => import("@/views/shop/cart.vue"),
+    // },
+    // {
+    //   path: "/shop/wishlist",
+    //   name: "category show wishlist",
+    //   component: () => import("@/views/shop/wishlist.vue"),
+    // },
+    // {
+    //   path: "/shop/checkout",
+    //   name: "category show checkout",
+    //   component: () => import("@/views/shop/checkout.vue"),
+    // },
     {
       path: "/flight-tickets",
       name: "flight tickets",
       component: flyghtTicketsVue,
-    },
-    {
-      path: "/catalog",
-      name: "catalog",
-      component: loginVue,
     },
     {
       path: "/operation",
