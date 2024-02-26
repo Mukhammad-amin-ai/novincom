@@ -1,6 +1,7 @@
 <template>
   <div>
     <modal />
+    <calendar/>
     <HeaderDefault />
     <RouterView />
     <button id="scroll-top" ref="scrollTop" title="Back to Top" @click.prevent="scrollTop">
@@ -18,6 +19,7 @@ import FooterDefault from "./components/partial/footers/FooterDefault.vue";
 import modal from "./components/elements/flights/modal.vue";
 import MobileMenu from "./components/partial/home/MobileMenu.vue";
 import { isSafariBrowser, isEdgeBrowser } from "@/utilities/common.js";
+import  calendar from './components/elements/vcalendar/vdatepicker.vue'
 
 export default {
   data() { },
@@ -26,6 +28,7 @@ export default {
     FooterDefault,
     modal,
     MobileMenu,
+    calendar
   },
   mounted: function () {
     let scrollTop = this.$refs.scrollTop;

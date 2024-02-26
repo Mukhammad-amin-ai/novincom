@@ -5,8 +5,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import Sticky from "vue-sticky-directive";
+import VCalendar from 'v-calendar';
+import 'v-calendar/style.css';
 const app = createApp(App);
 app.use(Sticky);
 app.use(router);
 app.use(store);
+app.use(VCalendar, {})
 app.mount("#app");

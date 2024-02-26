@@ -6,7 +6,6 @@
           <img src="../../../assets/newImg/icons/modal-close.svg" alt="modal" />
         </div>
       </template>
-
       <div class="top-modal-flight">
         <h3>Фильтры и сортировка</h3>
         <button class="close-modal" @click="toggleFilter">
@@ -113,7 +112,7 @@
       </div>
     </n-card>
   </n-modal>
-  <div class="modal-popup d-none">
+  <!-- <div class="modal-popup d-none">
     <div class="fade-flight">
       <div class="modal-flight">
         <div class="top-modal-flight">
@@ -222,7 +221,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
 import { mapGetters } from "vuex";

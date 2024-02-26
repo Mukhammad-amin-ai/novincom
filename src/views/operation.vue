@@ -20,8 +20,9 @@
     </div>
   </nav>
   <div class="operation_page">
+    <!-- <VDatePicker v-model="date" mode="date" /> -->
     <div class="container">
-      <div class="search-city" @click="showSearch">
+      <div class="search-city" @click="toggleFilter">
         <div class="search">
           <img src="../assets/newImg/icons/search2.svg" alt="" />
         </div>
@@ -55,7 +56,7 @@
 
 <script>
 import PageHeader from "@/components/elements/PageHeader.vue";
-
+import VDatePicker from 'v-calendar'
 export default {
   data() {
     return {
@@ -75,9 +76,17 @@ export default {
       open: false,
     };
   },
+  computed: {
+    modalShow() {
+      return this.$store.getters['calendar/shCalendar'];
+    }
+  },
   methods: {
     openOperation(id) {
       this.new_operations.push(id);
+    },
+    toggleFilter() {
+      this.$store.dispatch('calendar/toggleCalendar');
     },
   },
   components: {
@@ -181,7 +190,8 @@ export default {
     gap: 0;
   }
 }
-@media screen and (max-width:375px){
+
+@media screen and (max-width:375px) {
   .buttons .date {
     padding: 10px 20px;
   }
