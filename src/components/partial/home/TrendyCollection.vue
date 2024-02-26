@@ -158,7 +158,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/watch.png",
+              url: "./assets/images/watch.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "756",
@@ -167,7 +167,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/watch.png",
+              url: "./assets/images/watch.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "757",
@@ -295,7 +295,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "../../../../public/assets/images/Frame_5.png",
+              url: "./assets/images/Frame_5.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "758",
@@ -304,7 +304,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "../../../../public/assets/images/Frame_5.png",
+              url: "./assets/images/Frame_5.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "759",
@@ -315,7 +315,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_5.png",
+              url: "./assets/images/Frame_5.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "761",
@@ -324,7 +324,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_5.png",
+              url: "./assets/images/Frame_5.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "760",
@@ -468,7 +468,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "../../../../public/assets/images/watch_2.png",
+              url: "./assets/images/watch_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "762",
@@ -477,7 +477,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "../../../../public/assets/images/watch_2.png",
+              url: "./assets/images/watch_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "763",
@@ -488,7 +488,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/watch_2.png",
+              url: "./assets/images/watch_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "765",
@@ -497,7 +497,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/watch_2.png",
+              url: "./assets/images/watch_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "764",
@@ -634,7 +634,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "../../../../public/assets/images/google.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "766",
@@ -643,7 +643,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "../../../../public/assets/images/google.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "767",
@@ -652,7 +652,7 @@ export default {
             {
               width: "600",
               height: "600",
-              url: "../../../../public/assets/images/Frame_3.png",
+              url: "./assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "768",
@@ -663,7 +663,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/google.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "769",
@@ -672,7 +672,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/google.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "771",
@@ -681,7 +681,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_3.png",
+              url: "./assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "770",

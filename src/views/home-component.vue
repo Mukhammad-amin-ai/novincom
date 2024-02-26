@@ -377,7 +377,7 @@ import NewCollection from "../components/partial/home/NewCollection.vue";
 import DealCollection from "../components/partial/home/DealCollection.vue";
 import TrendyCollection from "../components/partial/home/TrendyCollection.vue";
 import RecommendCollection from "../components/partial/home/RecommendCollection.vue";
-import NewsletterModal from "../components/elements/modals/NewsletterModal.vue";
+// import NewsletterModal from "../components/elements/modals/NewsletterModal.vue";
 
 import Repository, { baseUrl } from "../repositories/repository.js";
 import { attrFilter } from "../utilities/common";

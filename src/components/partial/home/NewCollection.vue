@@ -210,7 +210,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_5.png",
+              url: "./assets/images/Frame_5.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "756",
@@ -219,7 +219,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_5.png",
+              url: "./assets/images/Frame_5.png",
               pivot: {
                 related_id: "122",
                 upload_file_id: "757",
@@ -305,7 +305,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_1.png",
+              url: "./assets/images/Frame_1.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "761",
@@ -314,7 +314,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_1.png",
+              url: "./assets/images/Frame_1.png",
               pivot: {
                 related_id: "123",
                 upload_file_id: "760",
@@ -478,7 +478,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_2.png",
+              url: "./assets/images/Frame_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "765",
@@ -487,7 +487,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_2.png",
+              url: "./assets/images/Frame_2.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "764",
@@ -661,7 +661,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_3.png",
+              url: "./assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "769",
@@ -670,7 +670,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_3.png",
+              url: "./assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "771",
@@ -679,7 +679,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_3.png",
+              url: "./assets/images/Frame_3.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "770",
@@ -774,7 +774,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_4.png",
+              url: "./assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "775",
@@ -783,7 +783,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "../../../../public/assets/images/Frame_4.png",
+              url: "./assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "776",
@@ -792,7 +792,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_5_3_300x300_39035ca6ee.jpg",
+              url: "./assets/images/Frame_4.png",
               pivot: {
                 related_id: "126",
                 upload_file_id: "777",
@@ -814,7 +814,7 @@ export default {
           until: null,
           stock: 100,
           top: true,
-          featured: true,
+          featured: null,
           new: null,
           author: null,
           sold: null,
@@ -879,7 +879,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_6_1_300x300_7baa1cb292.jpg",
+              url: "./assets/images/Frame_4.png",
               pivot: {
                 related_id: "127",
                 upload_file_id: "781",
@@ -888,7 +888,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_6_2_300x300_b12d6f87d6.jpg",
+              url: "./assets/images/Frame_4.png",
               pivot: {
                 related_id: "127",
                 upload_file_id: "782",
@@ -897,7 +897,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "/uploads/product_6_3_300x300_4fca36ffef.jpg",
+              url: "./assets/images/Frame_4.png",
               pivot: {
                 related_id: "127",
                 upload_file_id: "783",
@@ -906,6 +906,7 @@ export default {
           ],
           variants: [],
         },
+        
         {
           id: 128,
           name: "Canon – EOS 5D Mark IV DSLR Camera",
