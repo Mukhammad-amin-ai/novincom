@@ -392,9 +392,25 @@ export default {
   font-size: 14px !important;
 }
 
-@media screen and (max-width:1024px) {
-  
+
+@media screen and (max-width:468px) {
+
+  .cta-border .cta-img {
+    display: none !important;
+    top: 50px !important;
+  }
+
+  .cta-border {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta .btn:not(.btn-block) {
+    width: 100%;
+  }
 }
-
-
 </style>
