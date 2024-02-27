@@ -14,7 +14,7 @@
           <ul class="top-menu">
             <li>
               <!-- @click.prevent="openSignInModal" -->
-              <a href="#signin-modal">
+              <a href="/sign_up">
                 <span class="logIn">
                   <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
                   Выход
@@ -203,13 +203,13 @@ export default {
     },
   },
   methods: {
-    openSignInModal: function () {
-      this.$modal.show(
-        () => import("../../elements/modals/SignInModal.vue"),
-        {},
-        { width: "575", height: "auto", adaptive: true }
-      );
-    },
+    // openSignInModal: function () {
+    //   this.$modal.show(
+    //     () => import("../../elements/modals/SignInModal.vue"),
+    //     {},
+    //     { width: "575", height: "auto", adaptive: true }
+    //   );
+    // },
     openMobileMenu: function () {
       document.querySelector("body").classList.add("mmenu-active");
     },
