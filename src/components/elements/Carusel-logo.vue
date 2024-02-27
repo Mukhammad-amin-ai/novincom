@@ -1,6 +1,7 @@
 <template>
   <div class="carousel">
-    <swiper :slidesPerView="4" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true" class="mySwiper">
+    <swiper :slidesPerView="4" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true" class="mySwiper"
+      style="padding: 10px;">
       <swiper-slide>
         <router-link to="#" style="cursor: pointer">
           <img src="../../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="" />

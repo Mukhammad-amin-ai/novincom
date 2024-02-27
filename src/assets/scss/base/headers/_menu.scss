@@ -68,7 +68,7 @@
 		&.megamenu-md {
 			left: -10rem;
 			right: auto;
-			width: 694px;
+			// width: 694px;
 		}
 
 		> ul,
@@ -210,6 +210,7 @@
 		}
 
 		li a {
+			white-space: nowrap;
 			padding-right: 0;
 			padding-left: 0;
 		}
@@ -228,6 +229,7 @@
 	}
 
 	.menu-col {
+		// width: 200px;
 		padding-left: 3rem;
 		padding-right: 3rem;
 		margin-top: 2.2rem;
@@ -235,6 +237,7 @@
 	}
 
 	.menu-title {
+		white-space: nowrap;
 		color: #333;
 		font-weight: 400;
 		font-size: 1.4rem;
@@ -443,9 +446,10 @@
 }
 
 @include mq('1200px', 'max') {
-	.menu .megamenu.megamenu-md {
-		width: 654px;
-	}
+	// .menu .megamenu.megamenu-md {
+	// 	// width: 200px;
+		
+	// }
 
 	.main-nav .menu > li > ul {
 		left: -7.3rem;

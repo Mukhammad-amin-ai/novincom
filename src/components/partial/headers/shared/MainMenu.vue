@@ -236,15 +236,16 @@
       </li>
       <!-- :class="{ active: current == 'shop' }" -->
       <li>
-        <router-link to="/shop/sidebar/list" class="sf-with-ul">Спецпредложения</router-link>
-        <!-- <div class="megamenu megamenu-md">
-          <div class="row no-gutters">
+        <router-link to="/shop/sidebar/list" class="sf-with-ul" style="display: flex; gap: 10px;">Спецпредложения
+          <img src="../../../../assets/newImg/icons/arrow_down.svg" alt="">
+        </router-link>
+        <div class="megamenu megamenu-md">
+          <div class="no-gutters" style="margin: 0 !important; display: unset !important;">
             <div class="col-md-8">
               <div class="menu-col">
-                <div class="row">
+                <div class="">
                   <div class="col-md-6">
                     <div class="menu-title">Shop with sidebar</div>
-
                     <ul>
                       <li>
                         <router-link to="/shop/sidebar/list">Shop List</router-link>
@@ -285,7 +286,7 @@
                     </ul>
                   </div>
 
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                     <div class="menu-title">Product Category</div>
 
                     <ul>
@@ -320,12 +321,12 @@
                         <a href="#">Lookbook</a>
                       </li>
                     </ul>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
               <div class="banner banner-overlay">
                 <router-link to="/shop/sidebar/list" class="banner banner-menu">
                   <img :src="'./images/menu/banner-1.jpg'" alt="Banner" width="218" height="314" />
@@ -342,9 +343,9 @@
                   </div>
                 </router-link>
               </div>
-            </div>
+            </div> -->
           </div>
-        </div> -->
+        </div>
       </li>
       <!-- :class="{ active: current == 'product' }" -->
       <li>

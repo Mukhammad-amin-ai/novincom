@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div class="container items-center">
-      <swiper :loop="true" :modules="modules" :navigation="showPagination"  :slides-per-view="1" :space-between="150"
+      <swiper :loop="true" :modules="modules" :navigation="showPagination" :slides-per-view="1" :space-between="150"
         @slideChange="onSlideChange" @swiper="onSwiper" :autoplay="{
           delay: 2500,
           disableOnInteraction: false,
@@ -20,7 +20,6 @@
               <div class="swiper-item-content">
                 {{ slide.name }}
               </div>
-
               <div class="w-100 d-flex justify-content-start">
                 <router-link to="/sign_up" class="auth-btn text-white mb-2" style="white-space: nowrap;">Вход /
                   Регистрация
@@ -51,7 +50,7 @@ import "swiper/css/scrollbar";
 export default {
   data() {
     return {
-      showPagination:true,
+      showPagination: true,
       url: "slider-product",
       data: [
         {
@@ -81,7 +80,7 @@ export default {
     SwiperSlide,
   },
   mounted() {
-    
+
   },
   setup() {
     const onSwiper = (swiper) => {
@@ -97,6 +96,10 @@ export default {
 };
 </script>
 <style>
+.right-swiper-item {
+  margin-right: 158px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   background: white !important;

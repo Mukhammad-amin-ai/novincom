@@ -16,8 +16,8 @@
               <!-- @click.prevent="openSignInModal" -->
               <a href="/sign_up">
                 <span class="logIn">
-                  <!-- <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#"> -->
-                  Вход / Регистрация
+                  <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
+                  Выход
                 </span></a>
               <ul>
                 <li>
@@ -57,8 +57,8 @@
                 <li>
                   <router-link to="/sign_up" class="callhov">
                     <span class="logIn">
-                      <!-- <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#"> -->
-                      Вход / Регистрация
+                      <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
+                      Выход
                     </span>
                   </router-link>
                 </li>
@@ -112,35 +112,34 @@
                     <li class="item-lead" :class="{
                       active: $route.query.category == 'electronics',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=electronics'">Электроника</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=electronics'">Подарочные сертификаты</router-link>
                     </li>
                     <li class="item-lead" :class="{ active: $route.query.category == 'gift-idea' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Идеи подарков</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Трэвел-сервисы</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'beds' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=beds'">Кровати</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=beds'">Авиабилеты </router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'lighting' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=lighting'">Освещение</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=lighting'">ЖД билеты</router-link>
                     </li>
                     <li :class="{
                       active:
                         $route.query.category == 'sofas-and-sleeper-sofas',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Диваны и спальные
-                        места</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Отели </router-link>
                     </li>
-                    <li :class="{ active: $route.query.category == 'storage' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=storage'">Место хранения</router-link>
+                    <li style="background-color: #f9f9f9;" :class="{ active: $route.query.category == 'storage' }">
+                      <router-link :to="'/shop/sidebar/3cols?category=storage'">Товары </router-link>
                     </li>
-                    <li :class="{
+                    <li style="background-color: #f9f9f9;" :class="{
                       active:
                         $route.query.category == 'armchairs-and-chaises',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Кресла и
-                        шезлонги</router-link>
+                      <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Благотворительность
+                      </router-link>
                     </li>
-                    <li :class="{ active: $route.query.category == 'decoration' }">
+                    <!-- <li :class="{ active: $route.query.category == 'decoration' }">
                       <router-link :to="'/shop/sidebar/3cols?category=decoration'">Украшение</router-link>
                     </li>
                     <li :class="{
@@ -155,7 +154,7 @@
                     </li>
                     <li :class="{ active: $route.query.category == 'furniture' }">
                       <router-link :to="'/shop/sidebar/3cols?category=furniture'">Уличная мебель</router-link>
-                    </li>
+                    </li> -->
                   </ul>
                 </nav>
               </div>
