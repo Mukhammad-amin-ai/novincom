@@ -8,7 +8,7 @@
               <img src="../../../assets/newImg/logotypes/logo.svg" class="footer-logo bg-transparent" alt="Footer Logo"
                 width="105" height="27" />
               <p style="font-family: Gilroy-Medium !important">
-                Подключите программу “Бонусы” к Вашей карте, оплачивайте ей
+                Подключите программу “Бонусы” к Вашей карте, оплачивайте ей <br>
                 покупки и получайте баллы
               </p>
 
@@ -21,7 +21,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3 custom1">
             <div class="widget">
               <h4 class="widget-title">О программе</h4>
 
@@ -47,17 +47,16 @@
               </ul>
             </div>
           </div>
-
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3 custom2">
             <div class="widget">
               <h4 class="widget-title">Скачать приложение</h4>
 
               <ul class="widget-list">
                 <li>
-                  <a @click="downloadFile" style="cursor: pointer">RuMarket</a>
+                  <a href="javascript:;" @click="downloadFile" style="cursor: pointer">RuMarket</a>
                 </li>
                 <li>
-                  <a @click="downloadFile" style="cursor: pointer">RuStore</a>
+                  <a href="javascript:;" @click="downloadFile" style="cursor: pointer">RuStore</a>
                 </li>
                 <li>
                   <router-link to="#">NashMarket</router-link>
@@ -65,8 +64,7 @@
               </ul>
             </div>
           </div>
-
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3 custom3">
             <div class="widget">
               <h4 class="widget-title">Мой аккаунт</h4>
               <ul class="widget-list">
@@ -154,3 +152,18 @@ export default {
   },
 };
 </script>
+<style scoped>
+.custom1{
+  flex: 0 0 30% ;
+  white-space: nowrap;
+}
+.custom2{
+  flex: 0 0 20%;
+  margin-left: 90px;
+
+}
+.custom3{
+  flex: 0 0 10%;
+  margin-left: 35px;
+}
+</style>

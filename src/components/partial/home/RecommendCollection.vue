@@ -6,7 +6,7 @@
       </div>
 
       <div class="heading-right">
-        <router-link to="shop/sidebar/3cols" class="title-link" style="display: flex; gap: 5px; color:#777777 ;">
+        <router-link to="shop/sidebar/3cols" class="title-link">
           Смотреть все предложения
           <!-- <i class="icon-long-arrow-right"></i> -->
           <img src="../../../assets/newImg/icons/br_arrow-right.svg" alt="">
@@ -1922,3 +1922,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.title-link {
+  display: flex;
+  gap: 5px;
+  color: #777777;
+}
+
+.title-link:hover {
+  color: #005BAA !important;
+}</style>

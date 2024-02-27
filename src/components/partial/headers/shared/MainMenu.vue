@@ -245,43 +245,60 @@
               <div class="menu-col">
                 <div class="">
                   <div class="col-md-6">
-                    <div class="menu-title">Shop with sidebar</div>
+                    <!-- <div class="menu-title">Shop with sidebar</div> -->
                     <ul>
                       <li>
-                        <router-link to="/shop/sidebar/list">Shop List</router-link>
+                        <router-link to="/shop/sidebar/list">Одежда, обувь, аксессуары</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/2cols">Shop Grid 2 Columns</router-link>
+                        <router-link to="/shop/sidebar/2cols">Электроника и бытовая техника</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Shop Grid 3 Columns</router-link>
+                        <router-link to="/shop/sidebar/3cols">Мебель и товары для дома</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/4cols">Shop Grid 4 Columns</router-link>
+                        <router-link to="/shop/sidebar/4cols">SКосметика, гигиена, аптеки</router-link>
                       </li>
                       <li>
                         <router-link to="/shop/market">
-                          <span>
+                          <!-- <span>
                             Shop Market
                             <span class="tip tip-new">New</span>
-                          </span>
+                          </span> -->
+                          Игрушки и товары для детей
                         </router-link>
                       </li>
                     </ul>
 
-                    <div class="menu-title">Shop no sidebar</div>
+                    <!-- <div class="menu-title">Shop no sidebar</div> -->
 
                     <ul>
                       <li>
                         <router-link to="/shop/nosidebar/boxed">
-                          <span>
+                          <!-- <span>
                             Shop Boxed No Sidebar
                             <span class="tip tip-hot">Hot</span>
-                          </span>
+                          </span> -->
+                          Книги
                         </router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/nosidebar/fullwidth">Shop Fullwidth No Sidebar</router-link>
+                        <router-link to="/shop/nosidebar/fullwidth">Товары для животных</router-link>
+                      </li>
+                      <li>
+                        <router-link to="/shop/nosidebar/fullwidth">Спортивные товары </router-link>
+                      </li>
+                      <li>
+                        <router-link to="/shop/nosidebar/fullwidth">Хобби и канцтовары</router-link>
+                      </li>
+                      <li>
+                        <router-link to="/shop/nosidebar/fullwidth">Маркетплэйсы</router-link>
+                      </li>
+                      <li>
+                        <router-link to="/shop/nosidebar/fullwidth">DIY и товары для сада</router-link>
+                      </li>
+                      <li>
+                        <router-link to="/shop/nosidebar/fullwidth"> Ювелирные изделия</router-link>
                       </li>
                     </ul>
                   </div>
