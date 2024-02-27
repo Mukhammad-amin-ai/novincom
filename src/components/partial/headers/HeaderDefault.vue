@@ -245,7 +245,7 @@ export default {
   gap: 10px;
 }
 
-.category-dropdown:hover{
+.category-dropdown:hover {
   background-color: transparent !important;
 }
 </style>

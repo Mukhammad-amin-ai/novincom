@@ -3,230 +3,105 @@
     <div :class="{ 'sidebar-filter-wrapper': isSidebar }">
       <div class="widget widget-clean">
         <label>Фильтры:</label>
-        <a href="#" class="sidebar-filter-clear" @click.prevent="cleanAll"
-          >Очистить</a
-        >
+        <a href="#" class="sidebar-filter-clear" @click.prevent="cleanAll">Очистить</a>
       </div>
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-1"
-            :class="{ collapsed: !toggleStates[0] }"
-            @click.prevent="toggleSlide(0)"
-            style="display: flex; justify-content: space-between"
-          >
+          <a href="#widget-1" :class="{ collapsed: !toggleStates[0] }" @click.prevent="toggleSlide(0)"
+            style="display: flex; justify-content: space-between">
             Категории
-
-            <img
-              :class="{ rotated_icon: toggleStates[0] }"
-              src="../../../../assets/newImg/icons/arrow_down.svg"
-              alt=""
-            />
+            <img :class="{ rotated_icon: toggleStates[0] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
         </h3>
         <Transition name="slide-fade">
           <div v-if="toggleStates[0]" class="show" :duration="200">
             <div class="widget-body pt-0">
               <div class="filter-items filter-items-count">
-                <div
-                  class="filter-item"
-                  v-for="(category, index) in filterData.categories"
-                  :key="index"
-                >
-                  <router-link
-                    :to="{
-                      path: $route.path,
-                      query: { category: category.slug },
-                    }"
-                    :class="{ active: categorySelected(category) }"
-                    >{{ category.name }}</router-link
-                  >
+                <div class="filter-item" v-for="(category, index) in filterData.categories" :key="index">
+                  <router-link :to="{
+                    path: $route.path,
+                    query: { category: category.slug },
+                  }" :class="{ active: categorySelected(category) }">{{ category.name }}</router-link>
                   <span class="item-count">{{ category.count }}</span>
                 </div>
               </div>
             </div>
           </div>
         </Transition>
-        <!-- <vue-slide-toggle :open="toggleStates[0]" class="show" :duration="200">
-        </vue-slide-toggle> -->
       </div>
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-2"
-            :class="{ collapsed: !toggleStates[1] }"
-            @click.prevent="toggleSlide(1)"
-            style="display: flex; justify-content: space-between"
-          >
+          <a href="#widget-2" :class="{ collapsed: !toggleStates[1] }" @click.prevent="toggleSlide(1)"
+            style="display: flex; justify-content: space-between">
             Размер экрана
-            <img
-              :class="{ rotated_icon: toggleStates[1] }"
-              src="../../../../assets/newImg/icons/arrow_down.svg"
-              alt=""
-            />
+            <img :class="{ rotated_icon: toggleStates[1] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
         </h3>
         <Transition name="slide-fade">
           <div v-if="toggleStates[1]" class="show" :duration="200">
             <div class="widget-body pt-0">
               <div class="filter-items">
-                <div
-                  class="filter-item"
-                  v-for="(item, index) in filterData.sizes"
-                  :key="index"
-                >
+                <div class="filter-item" v-for="(item, index) in filterData.sizes" :key="index">
                   <div class="custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      :id="'size-' + index"
-                      @click="setSizeFilter(item)"
-                      :checked="sizeChecked(item)"
-                    />
-                    <label
-                      class="custom-control-label"
-                      :for="'size-' + index"
-                      >{{ item.slug }}</label
-                    >
+                    <input type="checkbox" class="custom-control-input" :id="'size-' + index" @click="setSizeFilter(item)"
+                      :checked="sizeChecked(item)" />
+                    <label class="custom-control-label" :for="'size-' + index">{{ item.slug }}</label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </Transition>
-        <!-- <vue-slide-toggle :open="toggleStates[1]" class="show" :duration="200">
-        </vue-slide-toggle>  -->
       </div>
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-3"
-            :class="{ collapsed: !toggleStates[2] }"
-            @click.prevent="toggleSlide(2)"
-            style="display: flex; justify-content: space-between"
-          >
+          <a href="#widget-3" :class="{ collapsed: !toggleStates[2] }" @click.prevent="toggleSlide(2)"
+            style="display: flex; justify-content: space-between">
             Цвет
-            <img
-              :class="{ rotated_icon: toggleStates[2] }"
-              src="../../../../assets/newImg/icons/arrow_down.svg"
-              alt=""
-            />
+            <img :class="{ rotated_icon: toggleStates[2] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
         </h3>
-
         <Transition name="slide-fade">
           <div v-if="toggleStates[2]" class="show" :duration="200">
             <div class="widget-body pt-0">
               <div class="filter-colors">
-                <router-link
-                  :to="getColorUrl(item)"
-                  :style="{ 'background-color': item.color }"
-                  v-for="(item, index) in filterData.colors"
-                  :key="index"
-                  :class="{ selected: colorSelected(item) }"
-                >
+                <router-link :to="getColorUrl(item)" :style="{ 'background-color': item.color }"
+                  v-for="(item, index) in filterData.colors" :key="index" :class="{ selected: colorSelected(item) }">
                   <span class="sr-only">{{ item.color_name }}</span>
                 </router-link>
               </div>
             </div>
           </div>
         </Transition>
-        <!-- <vue-slide-toggle :open="toggleStates[2]" class="show" :duration="200">
-        </vue-slide-toggle> -->
       </div>
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
-          <a
-            href="#widget-4"
-            :class="{ collapsed: !toggleStates[3] }"
-            @click.prevent="toggleSlide(3)"
-            style="display: flex; justify-content: space-between"
-            >Бренд
-            <img
-              :class="{ rotated_icon: toggleStates[3] }"
-              src="../../../../assets/newImg/icons/arrow_down.svg"
-              alt=""
-            />
+          <a href="#widget-4" :class="{ collapsed: !toggleStates[3] }" @click.prevent="toggleSlide(3)"
+            style="display: flex; justify-content: space-between">Бренд
+            <img :class="{ rotated_icon: toggleStates[3] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
         </h3>
         <Transition name="slide-fade">
           <div v-if="toggleStates[3]" class="show" :duration="200">
             <div class="widget-body pt-0">
               <div class="filter-items">
-                <div
-                  class="filter-item"
-                  v-for="(item, index) in filterData.brands"
-                  :key="index"
-                >
+                <div class="filter-item" v-for="(item, index) in filterData.brands" :key="index">
                   <div class="custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      :id="'brand-' + index"
-                      @click="setBrandFilter(item)"
-                      :checked="brandChecked(item)"
-                    />
-                    <label
-                      class="custom-control-label"
-                      :for="'brand-' + index"
-                      >{{ item.brand }}</label
-                    >
+                    <input type="checkbox" class="custom-control-input" :id="'brand-' + index"
+                      @click="setBrandFilter(item)" :checked="brandChecked(item)" />
+                    <label class="custom-control-label" :for="'brand-' + index">{{ item.brand }}</label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </Transition>
-        <!-- <vue-slide-toggle :open="toggleStates[3]" class="show" :duration="200">
-        </vue-slide-toggle>  -->
       </div>
-      <!-- <div class="widget widget-collapsible">
-        <h3 class="widget-title mb-2">
-          <a
-            href="#widget-5"
-            :class="{ collapsed: !toggleStates[4] }"
-            @click.prevent="toggleSlide(4)"
-            >Price</a
-          >
-        </h3>
-
-        <div v-if="toggleStates[4]" class="show" :duration="200">
-          <div class="widget-body pt-0">
-            <div class="filter-price">
-              <div class="filter-price-text d-flex justify-content-between">
-                <span>
-                  Price Range:
-                  <span id="filter-price-range">{{ priceRangeText }}</span>
-                </span>
-                <router-link :to="priceFilterRoute" class="pr-2"
-                  >Filter</router-link
-                >
-              </div>
-
-              <input type="range" />
-              <vue-nouislider
-                :config="priceSliderConfig"
-                :values="priceValues"
-                id="price-slider"
-                v-if="loaded"
-              ></vue-nouislider>
-               <vue-slider v-model="priceValues"></vue-slider>
-              <Slider v-model="priceValues" />
-            </div>
-          </div>
-       
-        </div>
-        <vue-slide-toggle :open="toggleStates[4]" class="show" :duration="200">
-        </vue-slide-toggle>
-      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-// import { VueSlideToggle } from "vue-slide-toggle";
-// import VueSlider from "vue-slider-component";
-// import "vue-slider-component/theme/default.css";
 import Slider from "@vueform/slider";
 import { shopData } from "@/utilities/data.js";
 
@@ -253,8 +128,6 @@ export default {
   },
   components: {
     Slider,
-    // VueSlideToggle,
-    // VueSlider,
   },
   computed: {
     priceRangeText: function () {
