@@ -27,7 +27,6 @@ import { isSafariBrowser, isEdgeBrowser } from "@/utilities/common.js";
 import calendar from "./components/elements/vcalendar/vdatepicker.vue";
 
 export default {
-  data() {},
   components: {
     HeaderDefault,
     FooterDefault,
