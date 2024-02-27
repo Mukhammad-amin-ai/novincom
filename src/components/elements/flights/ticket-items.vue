@@ -344,10 +344,12 @@ export default {
   border-radius: .4rem;
   background-color: #005BAA;
   color: #fff;
+  white-space: nowrap;
 }
 
 .tol2 {
   left: -137px;
+  white-space: nowrap;
 }
 
 .tol3 {
@@ -370,6 +372,12 @@ export default {
 
   .flight-line {
     width: 30% !important;
+  }
+
+
+
+  .tol3 {
+    left: 0px;
   }
 }
 

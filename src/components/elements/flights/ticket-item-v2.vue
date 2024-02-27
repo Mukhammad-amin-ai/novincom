@@ -354,10 +354,12 @@ export default {
     border-radius: .4rem;
     background-color: #005BAA;
     color: #fff;
+    white-space: nowrap;
 }
 
 .tol2 {
     left: -137px;
+    white-space: nowrap;
 }
 
 .tol3 {
@@ -380,6 +382,15 @@ export default {
     .flight-line {
         width: 30% !important;
     }
+
+    .tooltip-flight {
+        left: -135px;
+    }
+
+
+    .tol3 {
+        left: 0;
+    }
 }
 
 @media screen and (max-width:780px) {
@@ -388,6 +399,7 @@ export default {
         padding: 0 !important;
         margin: 0 !important;
     }
+
 }
 
 @media screen and (max-width:768px) {
