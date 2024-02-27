@@ -16,7 +16,9 @@
   font-family: Gilroy-Medium, sans-serif !important;
 }
 
-* transition */ .slide-fade-enter-active {
+/* transition */
+
+.slide-fade-enter-active {
   transition: all 0.3s linear;
 }
 
