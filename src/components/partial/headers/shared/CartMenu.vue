@@ -113,5 +113,9 @@ p {
   font-family: Gilroy-Regular;
   font-size: 12px;
 }
+.dropdown-toggle:hover svg path{
+  fill: #005BAA;
+}
+
 </style>
 
