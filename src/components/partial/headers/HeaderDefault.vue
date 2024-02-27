@@ -54,7 +54,6 @@
                   </div>
                 </li> -->
                 <!-- @click.prevent="openSignInModal" -->
-
                 <li>
                   <router-link to="/sign_up" class="callhov">
                     <span class="logIn">
@@ -99,7 +98,7 @@
             <div class="dropdown category-dropdown"
               style="border-top-right-radius: .8rem; border-top-left-radius: .8rem;">
               <a href="javascript:;" class="dropdown-toggle" title="Потратить бонусы"
-                style="justify-content: space-between;">
+                style="justify-content: space-between; border-top-right-radius: .8rem; border-top-left-radius: .8rem;">
                 <div class="drop-custom">
                   <img src="../../../assets/newImg/icons/twotone-menu.svg" alt="">
                   Потратить бонусы
