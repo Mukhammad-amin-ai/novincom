@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div class="container items-center">
-      <swiper :loop="true" :modules="modules" :navigation="showPagination" :pagination="true" :slides-per-view="1" :space-between="150"
+      <swiper :loop="true" :modules="modules" :navigation="showPagination"  :slides-per-view="1" :space-between="150"
         @slideChange="onSlideChange" @swiper="onSwiper" :autoplay="{
           delay: 2500,
           disableOnInteraction: false,
@@ -91,7 +91,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar],
+      modules: [Navigation, Scrollbar],
     };
   },
 };
