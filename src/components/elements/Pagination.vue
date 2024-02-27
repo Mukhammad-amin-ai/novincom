@@ -3,16 +3,16 @@
     <ul class="pagination justify-content-center">
       <li class="page-item" :class="{ disabled: currentPage < 2 }">
         <router-link class="page-link page-link-prev" :to="getPageUrl(currentPage - 1)" style="gap: 5px;">
-          <span aria-hidden="true" >
+          <span aria-hidden="true">
             <img src="../../assets/newImg/icons/left.svg" alt="">
             <!-- <i class="icon-long-arrow-left"></i> -->
           </span>В начало
         </router-link>
       </li>
-
       <template v-if="pagesToBeShown.length">
-        <li class="page-item" v-for="page in pagesToBeShown" :key="`page-${page}`">
-          <router-link class="page-link" exact-active-class="active" :to="getPageUrl(page)">{{ page }}</router-link>
+        <li class="page-item" v-for="(page, index) in pagesToBeShown" :key="`page-${page}`">
+          <router-link class="page-link" :class="{ active: index === activeIndex }" :to="getPageUrl(page)">{{ page
+          }}</router-link>
         </li>
       </template>
 
@@ -37,6 +37,11 @@ export default {
   props: {
     perPage: Number,
     total: Number,
+  },
+  data() {
+    return {
+      activeIndex: 0
+    }
   },
   computed: {
     shouldRender: function () {

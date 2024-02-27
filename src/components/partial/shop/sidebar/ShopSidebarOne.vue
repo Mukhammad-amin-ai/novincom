@@ -86,7 +86,7 @@
           <div v-if="toggleStates[3]" class="show" :duration="200">
             <div class="widget-body pt-0">
               <div class="filter-items" v-for="(item, index) in filterData.brands" :key="index">
-                <div class="filter-item">
+                <div class="filter-item" style="cursor: pointer;">
                   {{ item.brand }}
                   <!-- <div class="custom-control custom-checkbox"> -->
                   <!-- <input type="checkbox" class="custom-control-input" :id="'brand-' + index"
