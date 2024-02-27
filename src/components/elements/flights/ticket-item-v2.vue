@@ -4,15 +4,32 @@
             <img src="../../../assets/newImg/logo-air.png" alt="">
             <h6>20:20 VOG</h6>
             <h6>07.02.2024</h6>
+
         </div>
         <div class="flight-line">
+            <div class="tooltip-flight" v-if="tooltip">
+                Пересадка: Россия,
+                Шереметьево (SVO)
+                <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div>
+            <div class="tooltip-flight tol2" v-if="tooltip2">
+                Вылет: Россия,
+                Шереметьево (SVO)
+                <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div>
+            <div class="tooltip-flight tol3" v-if="tooltip3">
+                Прибытие: Россия,
+                Шереметьево (SVO)
+                <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div>
             <div class="wrap-flight">
-                <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+                <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2" src="../../../assets/newImg/icons/ellipse.svg" alt="">
                 <div class="line"></div>
-                <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+                <img @mouseover="tooltipFunc" @mouseleave="tooltipClose" src="../../../assets/newImg/icons/ellipse.svg"
+                    alt="">
                 <div class="line">
                 </div>
-                <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+                <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3" src="../../../assets/newImg/icons/airplane.svg" alt="">
             </div>
             <div class="hour">
                 18 ч 10м
@@ -104,13 +121,16 @@
 </template>
 <script>
 export default {
-    props:{
-        detailed:Boolean
+    props: {
+        detailed: Boolean
     },
     data() {
         return {
             info: true,
             info2: true,
+            tooltip: false,
+            tooltip2: false,
+            tooltip3: false,
             // detailed: true,
         }
     },
@@ -129,6 +149,24 @@ export default {
         },
         toggleFlight() {
             this.detailed = !this.detailed
+        },
+        tooltipFunc() {
+            this.tooltip = true
+        },
+        tooltipClose() {
+            this.tooltip = false
+        },
+        tooltipFunc2() {
+            this.tooltip2 = true
+        },
+        tooltipClose2() {
+            this.tooltip2 = false
+        },
+        tooltipFunc3() {
+            this.tooltip3 = true
+        },
+        tooltipClose3() {
+            this.tooltip3 = false
         }
     },
 }
@@ -195,6 +233,7 @@ export default {
     width: 80px;
     height: auto;
     /* text-align: center; */
+    position: relative;
 }
 
 .detailed-start {
@@ -210,6 +249,7 @@ export default {
 }
 
 .flight-line {
+    position: relative;
     width: 465px;
     height: auto;
     /* display: flex; */
@@ -299,6 +339,32 @@ export default {
     border-radius: 100px;
     color: #005BAA;
     border: 1px solid #005BAA;
+}
+
+.tooltip-flight {
+    position: absolute;
+    padding: 15px 20px;
+    z-index: 999;
+    left: 70px;
+    top: -60px;
+    border-radius: .4rem;
+    background-color: #005BAA;
+    color: #fff;
+}
+
+.tol2 {
+    left: -137px;
+}
+
+.tol3 {
+    white-space: nowrap;
+    left: 300px;
+}
+
+.corner {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
 }
 
 @media screen and (max-width:990px) {
