@@ -406,7 +406,7 @@ export default {
           review: 2,
           ratings: 4,
           until: null,
-          stock: 100,
+          stock: null,
           top: true,
           featured: null,
           new: null,
@@ -480,7 +480,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "./assets/images/watch_2.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "765",
@@ -489,7 +489,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "./assets/images/watch_2.png",
+              url: "./assets/images/google.png",
               pivot: {
                 related_id: "124",
                 upload_file_id: "764",
@@ -655,7 +655,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "./assets/images/google.png",
+              url: "./assets/images/watch_2.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "769",
@@ -664,7 +664,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "./assets/images/google.png",
+              url: "./assets/images/watch_2.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "771",
@@ -673,7 +673,7 @@ export default {
             {
               width: "300",
               height: "300",
-              url: "./assets/images/Frame_3.png",
+              url: "./assets/images/watch_2.png",
               pivot: {
                 related_id: "125",
                 upload_file_id: "770",

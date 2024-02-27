@@ -27,7 +27,9 @@
       <div class="product-price" v-if="product.stock == 0" key="outPrice">
         <span class="out-price">{{ product.price.toFixed(2) }}</span>
       </div>
-
+      <div class="product-price" v-if="product.stock == null" >
+        {{ product.price.toFixed(2) }} Бонусов
+      </div>
       <template v-else>
         <div class="product-price" v-if="minPrice == maxPrice">
           от {{ minPrice.toFixed(2) }} Бонусов
