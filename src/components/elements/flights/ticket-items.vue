@@ -8,10 +8,22 @@
           <h6>07.02.2024</h6>
         </div>
         <div class="flight-line">
+          <div class="tooltip-flight tol2" v-if="tooltip5">
+            Вылет: Россия,
+            Шереметьево (SVO)
+            <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+          </div>
+          <div class="tooltip-flight tol3" v-if="tooltip6">
+            Прибытие: Россия,
+            Шереметьево (SVO)
+            <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+          </div>
           <div class="wrap-flight">
-            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+            <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2" src="../../../assets/newImg/icons/ellipse.svg"
+              alt="">
             <div class="line"></div>
-            <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+            <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3" src="../../../assets/newImg/icons/airplane.svg"
+              alt="">
           </div>
           <div class="hour">
             18 ч 10м
@@ -99,7 +111,7 @@
           </div>
         </div>
       </div>
-      <ticketItemV2 :detailed="detailed"/>
+      <ticketItemV2 :detailed="detailed" />
     </div>
     <button class="price-flight">
       1000.00
@@ -118,6 +130,8 @@ export default {
       info: true,
       info2: true,
       detailed: true,
+      tooltip5: false,
+      tooltip6: false,
     }
   },
   methods: {
@@ -135,6 +149,18 @@ export default {
     },
     toggleFlight() {
       this.detailed = !this.detailed
+    },
+    tooltipFunc2() {
+      this.tooltip5 = true
+    },
+    tooltipClose2() {
+      this.tooltip5 = false
+    },
+    tooltipFunc3() {
+      this.tooltip6 = true
+    },
+    tooltipClose3() {
+      this.tooltip6 = false
     }
   },
 }
@@ -222,6 +248,7 @@ export default {
   /* display: flex; */
   align-items: center;
   gap: 5px;
+  position: relative;
 }
 
 .wrap-flight {
@@ -308,6 +335,33 @@ export default {
   border: 1px solid #005BAA;
 }
 
+.tooltip-flight {
+  position: absolute;
+  padding: 15px 20px;
+  z-index: 999;
+  left: 70px;
+  top: -60px;
+  border-radius: .4rem;
+  background-color: #005BAA;
+  color: #fff;
+}
+
+.tol2 {
+  left: -137px;
+}
+
+.tol3 {
+  white-space: nowrap;
+  left: 300px;
+}
+
+.corner {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+}
+
+
 @media screen and (max-width:990px) {
   .flight-wrapper {
     width: 90% !important;
@@ -357,5 +411,4 @@ export default {
   .flight-passenger-info {
     display: none;
   }
-}
-</style>
+}</style>
