@@ -111,7 +111,7 @@
           </div>
         </div>
       </div>
-      <ticketItemV2 :detailed="detailed" />
+      <ticketItemV2 :detailed="detailed" @update:detailed="toggleFlight" />
     </div>
     <button class="price-flight">
       1000.00
@@ -411,4 +411,5 @@ export default {
   .flight-passenger-info {
     display: none;
   }
-}</style>
+}
+</style>

@@ -23,13 +23,15 @@
                 <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
             </div>
             <div class="wrap-flight">
-                <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2" src="../../../assets/newImg/icons/ellipse.svg" alt="">
+                <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2" src="../../../assets/newImg/icons/ellipse.svg"
+                    alt="">
                 <div class="line"></div>
                 <img @mouseover="tooltipFunc" @mouseleave="tooltipClose" src="../../../assets/newImg/icons/ellipse.svg"
                     alt="">
                 <div class="line">
                 </div>
-                <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3" src="../../../assets/newImg/icons/airplane.svg" alt="">
+                <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3" src="../../../assets/newImg/icons/airplane.svg"
+                    alt="">
             </div>
             <div class="hour">
                 18 ч 10м
@@ -131,7 +133,7 @@ export default {
             tooltip: false,
             tooltip2: false,
             tooltip3: false,
-            // detailed: true,
+            isDetailed: this.detailed,
         }
     },
     methods: {
@@ -148,7 +150,9 @@ export default {
             this.info2 = true
         },
         toggleFlight() {
-            this.detailed = !this.detailed
+            this.isDetailed = !this.isDetailed
+            this.$emit('update:detailed', this.isDetailed);
+
         },
         tooltipFunc() {
             this.tooltip = true
