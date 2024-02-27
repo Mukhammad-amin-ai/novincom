@@ -132,6 +132,9 @@ const router = createRouter({
       component: () => import("@/views/operation/operation_id.vue"),
     },
   ],
+  scrollBehavior() {
+    return { top: 0 };
+  },
 });
 
 export default router;

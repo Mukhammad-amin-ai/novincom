@@ -1,12 +1,17 @@
 <template>
   <div>
     <modal />
-    <calendar/>
+    <calendar />
     <HeaderDefault />
     <RouterView />
-    <button id="scroll-top" ref="scrollTop" title="Back to Top" @click.prevent="scrollTop">
+    <button
+      id="scroll-top"
+      ref="scrollTop"
+      title="Back to Top"
+      @click.prevent="scrollTop"
+    >
       <!-- <i class="icon-arrow-up"></i> -->
-      <img src="./assets/newImg/icons/arrow-up.svg" alt="">
+      <img src="./assets/newImg/icons/arrow-up.svg" alt="" />
     </button>
     <FooterDefault />
     <div class="mobile-menu-overlay" @click="hideMobileMenu"></div>
@@ -19,16 +24,15 @@ import FooterDefault from "./components/partial/footers/FooterDefault.vue";
 import modal from "./components/elements/flights/modal.vue";
 import MobileMenu from "./components/partial/home/MobileMenu.vue";
 import { isSafariBrowser, isEdgeBrowser } from "@/utilities/common.js";
-import  calendar from './components/elements/vcalendar/vdatepicker.vue'
+import calendar from "./components/elements/vcalendar/vdatepicker.vue";
 
 export default {
-  data() { },
   components: {
     HeaderDefault,
     FooterDefault,
     modal,
     MobileMenu,
-    calendar
+    calendar,
   },
   mounted: function () {
     let scrollTop = this.$refs.scrollTop;
@@ -71,7 +75,7 @@ export default {
 #scroll-top {
   width: 64px;
   height: 64px;
-  background-color: #005BAA;
+  background-color: #005baa;
   display: flex;
   justify-content: center;
   align-items: center;
