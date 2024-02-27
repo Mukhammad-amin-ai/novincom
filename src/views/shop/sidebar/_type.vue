@@ -23,7 +23,10 @@
     <div class="page-content">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 skeleton-body skel-shop-products" :class="{ loaded: loaded }">
+          <div
+            class="col-lg-9 skeleton-body skel-shop-products"
+            :class="{ loaded: loaded }"
+          >
             <div class="toolbox">
               <div class="toolbox-left">
                 <div class="toolbox-info">
@@ -36,10 +39,14 @@
                 <div class="toolbox-sort">
                   <label for="sortby">Сортировка:</label>
                   <div class="select-custom">
-                    <select name="sortby" id="sortby" class="form-control" @change.prevent="getProducts"
-                      v-model="orderBy">
-                      <option value="default">По умолчанию
-                      </option>
+                    <select
+                      name="sortby"
+                      id="sortby"
+                      class="form-control"
+                      @change.prevent="getProducts"
+                      v-model="orderBy"
+                    >
+                      <option value="default">По умолчанию</option>
                       <option value="featured">Most Popular</option>
                       <option value="rating">Most Rated</option>
                       <option value="new">Date</option>
@@ -47,7 +54,11 @@
                   </div>
                 </div>
                 <div class="toolbox-layout">
-                  <router-link to="/shop/sidebar/list" class="btn-layout" :class="{ active: type === 'list' }">
+                  <router-link
+                    to="/shop/sidebar/list"
+                    class="btn-layout"
+                    :class="{ active: type === 'list' }"
+                  >
                     <svg width="16" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="10" height="4" />
@@ -55,7 +66,11 @@
                       <rect x="6" y="6" width="10" height="4" />
                     </svg>
                   </router-link>
-                  <router-link to="/shop/sidebar/2cols" class="btn-layout" :class="{ active: type === '2cols' }">
+                  <router-link
+                    to="/shop/sidebar/2cols"
+                    class="btn-layout"
+                    :class="{ active: type === '2cols' }"
+                  >
                     <svg width="10" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -63,7 +78,11 @@
                       <rect x="6" y="6" width="4" height="4" />
                     </svg>
                   </router-link>
-                  <router-link to="/shop/sidebar/3cols" class="btn-layout" :class="{ active: type === '3cols' }">
+                  <router-link
+                    to="/shop/sidebar/3cols"
+                    class="btn-layout"
+                    :class="{ active: type === '3cols' }"
+                  >
                     <svg width="16" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -73,7 +92,11 @@
                       <rect x="12" y="6" width="4" height="4" />
                     </svg>
                   </router-link>
-                  <router-link to="/shop/sidebar/4cols" class="btn-layout" :class="{ active: type === '4cols' }">
+                  <router-link
+                    to="/shop/sidebar/4cols"
+                    class="btn-layout"
+                    :class="{ active: type === '4cols' }"
+                  >
                     <svg width="22" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -88,12 +111,20 @@
                 </div>
               </div>
             </div>
-            <shop-list-one :products="products" :per-page="perPage" :loaded="loaded"></shop-list-one>
+            <shop-list-one
+              :products="products"
+              :per-page="perPage"
+              :loaded="loaded"
+            ></shop-list-one>
             <pagination :per-page="perPage" :total="totalCount"></pagination>
           </div>
           <aside class="col-lg-3 order-lg-first" sticky-container>
             <div v-sticky="!isSidebar" sticky-offset="{ top: 69 }">
-              <button class="sidebar-fixed-toggler" @click="toggleSidebar" v-if="isSidebar">
+              <button
+                class="sidebar-fixed-toggler"
+                @click="toggleSidebar"
+                v-if="isSidebar"
+              >
                 <i class="icon-cog"></i>
               </button>
               <div class="sidebar-filter-overlay" @click="hideSidebar"></div>
@@ -136,7 +167,7 @@ export default {
       orderBy: "default",
       isSidebar: true,
       loaded: false,
-      category: ""
+      category: "",
     };
   },
   computed: {
@@ -158,7 +189,7 @@ export default {
     );
   },
   mounted: function () {
-    this.paramsShow()
+    this.paramsShow();
     this.resizeHandler();
     window.addEventListener("resize", this.resizeHandler, {
       passive: true,
@@ -169,9 +200,8 @@ export default {
   },
   methods: {
     paramsShow() {
-      console.log('Hello');
-      this.type = this.$route.params.loyaut
-      console.log(this.$route);
+      console.log("Hello");
+      this.type = this.$route.params.loyaut;
     },
     getProducts: async function (samePage = false) {
       this.type = this.$route.params.type;
@@ -187,10 +217,8 @@ export default {
       } else if (this.type == "4cols") {
         this.pageTitle = "Grid 4 Columns";
         this.perPage = 12;
-      }
-      else {
+      } else {
         this.pageTitle = "Category";
-
       }
 
       this.loaded = false;
@@ -233,7 +261,6 @@ export default {
       if (window.innerWidth > 991) this.isSidebar = false;
       else this.isSidebar = true;
     },
-
   },
 };
 </script>
