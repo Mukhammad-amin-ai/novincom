@@ -16,17 +16,19 @@
   font-family: Gilroy-Medium, sans-serif !important;
 }
 
-* transition */ .slide-fade-enter-active {
-  transition: all 0.2s ease-out;
+/* transition */
+
+.slide-fade-enter-active {
+  transition: all 0.3s linear;
 }
 
 .slide-fade-leave-active {
-  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.3s linear;
 }
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  transform: translateY(20px);
+  transform: translateY(-20px);
   opacity: 0;
 }
 
