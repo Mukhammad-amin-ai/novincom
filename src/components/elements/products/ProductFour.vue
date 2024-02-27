@@ -209,15 +209,15 @@ export default {
     ...mapActions("cart", ["addToCart"]),
     ...mapActions("wishlist", ["addToWishlist"]),
     ...mapActions("compare", ["addToCompare"]),
-    quickView: function () {
-      this.$modal.show(
-        () => import("~/components/elements/modals/QuickViewModal"),
-        {
-          product: this.product,
-        },
-        { width: "1030", height: "auto", adaptive: true }
-      );
-    },
+    // quickView: function () {
+    //   this.$modal.show(
+    //     () => import("~/components/elements/modals/QuickViewModal"),
+    //     {
+    //       product: this.product,
+    //     },
+    //     { width: "1030", height: "auto", adaptive: true }
+    //   );
+    // },
     mouseOverHandler: function () {
       let animDiff =
         this.$el.offsetHeight -

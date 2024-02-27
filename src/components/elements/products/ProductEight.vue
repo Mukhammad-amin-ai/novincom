@@ -3,10 +3,6 @@
     <div class="row pr-2">
       <div class="col-lg-3 col-md-3 col-6">
         <figure class="product-media">
-          <!-- <span class="product-label label-new" v-if="product.new">New</span>
-          <span class="product-label label-sale" v-if="product.sale_price">Sale</span>
-          <span class="product-label label-top" v-if="product.top">Top</span>
-          <span class="product-label label-out" v-if="product.stock === 0">Out Of Stock</span> -->
           <router-link :to="'/product/default/' + product.slug">
             <img :src="`${baseUrl}${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
               :height="product.sm_pictures[0].height" class="product-image" />
@@ -68,56 +64,12 @@
             </div>
             <span class="ratings-text">( {{ product.review }} Reviews )</span>
           </div>
-
-          <!-- <div class="product-action">
-            <button
-              class="btn-product btn-quickview"
-              title="Quick view"
-              @click.prevent="quickView({ product: product })"
-            >
-              <span>quick view</span>
-            </button>
-            <router-link
-              to="/shop/wishlist"
-              class="btn-product btn-wishlist added-to-wishlist"
-              v-if="isInWishlist(product)"
-              key="inWishlist"
-            >
-              <span>wishlist</span>
-            </router-link>
-            <a
-              href="javascript:;"
-              class="btn-product btn-wishlist"
-              @click.prevent="addToWishlist({ product: product })"
-              v-else
-              key="notInWishlist"
-            >
-              <span>wishlist</span>
-            </a>
-          </div> -->
-
-          <!-- <router-link
-            :to="'/product/default/' + product.slug"
-            class="btn-product btn-cart btn-select"
-            v-if="product.variants.length > 0"
-          >
-            <span>select options</span>
-          </router-link>
-          <button
-            class="btn-product btn-cart"
-            :class="{ 'btn-disabled': !canAddToCart(product, 1) }"
-            @click.prevent="addToCart({ product: product })"
-            v-else
-          >
-            <span>add to cart</span>
-          </button> -->
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import { mapGetters, mapActions } from "vuex";
 import { baseUrl } from "@/repositories/repository.js";
 export default {
   props: {
@@ -129,44 +81,6 @@ export default {
       maxPrice: 0,
       minPrice: 99999,
     };
-  },
-  computed: {
-    // ...mapGetters("cart", ["canAddToCart"]),
-    // ...mapGetters("wishlist", ["isInWishlist"]),
-    // ...mapGetters("compare", ["isInCompare"]),
-  },
-
-  // created: function () {
-  //   let min = this.minPrice;
-  //   let max = this.maxPrice;
-  //   this.product.variants.map((item) => {
-  //     if (min > item.price) min = item.price;
-  //     if (max < item.price) max = item.price;
-  //   }, []);
-
-  //   if (this.product.variants.length == 0) {
-  //     min = this.product.sale_price
-  //       ? this.product.sale_price
-  //       : this.product.price;
-  //     max = this.product.price;
-  //   }
-
-  //   this.minPrice = min;
-  //   this.maxPrice = max;
-  // },
-  methods: {
-    // ...mapActions("cart", ["addToCart"]),
-    // ...mapActions("wishlist", ["addToWishlist"]),
-    // ...mapActions("compare", ["addToCompare"]),
-    // quickView: function () {
-    //   this.$modal.show(
-    //     () => import("@/components/elements/modals/QuickViewModal.vue"),
-    //     {
-    //       product: this.product,
-    //     },
-    //     { width: "1030", height: "auto", adaptive: true }
-    //   );
-    // },
   },
 };
 </script>

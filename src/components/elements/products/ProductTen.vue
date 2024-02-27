@@ -136,15 +136,15 @@ export default {
   methods: {
     ...mapActions("cart", ["addToCart"]),
     ...mapActions("wishlist", ["addToWishlist"]),
-    quickView: function () {
-      this.$modal.show(
-        () => import("../modals/QuickViewModal.vue"),
-        {
-          product: this.product,
-        },
-        { width: "1030", height: "auto", adaptive: true }
-      );
-    },
+    // quickView: function () {
+    //   this.$modal.show(
+    //     () => import("../modals/QuickViewModal.vue"),
+    //     {
+    //       product: this.product,
+    //     },
+    //     { width: "1030", height: "auto", adaptive: true }
+    //   );
+    // },
   },
 };
 </script>
