@@ -4,7 +4,7 @@
       <div class="icon">
         <!-- <i class="icon-shopping-cart"></i> -->
         <img src="../../../../assets/newImg/icons/cart.svg" alt="cart">
-        <span class="cart-count">{{ qtyTotal }}</span>
+        <span class="cart-count">0</span>
       </div>
       <p>Корзина</p>
     </router-link>

@@ -4,7 +4,7 @@
       <div class="icon">
         <!-- <i class="icon-heart-o"></i> -->
         <img src="../../../../assets/newImg/icons/heart.svg" alt="heart">
-        <span class="wishlist-count badge">{{ wishlistQty }}</span>
+        <span class="wishlist-count badge">0</span>
       </div>
       <p>Избранное</p>
     </router-link>
