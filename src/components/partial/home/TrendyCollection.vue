@@ -9,15 +9,10 @@
           <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="trendy"></tabs>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="col" v-for="(product, index) in ratedProducts" :key="index">
-          <product-twelve :product="product" class="mb-3"></product-twelve>
-        </div>
-      </div> -->
       <div class="row">
         <div class="col-xl-5col d-none d-xl-block">
           <div class="banner">
-            <router-link to="/shop/sidebar/list">
+            <router-link to="/shop/sidebar/3cols">
               <img src="../../../assets/newImg/banner-trend.png" alt="banner" width="218" height="390" />
             </router-link>
           </div>
@@ -75,9 +70,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 export default {
-  // props: {
-  //   products: Array,
-  // },
   data: function () {
     return {
       products: [

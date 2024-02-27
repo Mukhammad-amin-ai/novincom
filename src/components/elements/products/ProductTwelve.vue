@@ -11,23 +11,6 @@
         <img :src="`${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
           :height="product.sm_pictures[1].height" class="product-image-hover" v-if="product.sm_pictures[1]" />
       </router-link>
-      <!-- <div class="product-action-vertical" v-if="product.stock !== 0">
-        <router-link to="/shop/wishlist" class="btn-product-icon btn-wishlist added-to-wishlist"
-          v-if="isInWishlist(product)" key="inWishlist">
-          <span>go to wishlist</span>
-        </router-link>
-        <a href="javascript:;" class="btn-product-icon btn-wishlist" @click.prevent="addToWishlist({ product: product })"
-          v-else key="notInWishlist">
-          <span>add to wishlist</span>
-        </a>
-      </div> -->
-      <!-- <div class="product-action product-action-dark" v-if="product.stock !== 0">
-        <router-link :to="'/product/default/' + product.slug" class="btn-product btn-cart btn-select text-center"
-          v-if="product.variants.length > 0"></router-link>
-        <button class="btn-product btn-cart" @click.prevent="addToCart({ product: product })" v-else></button>
-        <button class="btn-product btn-quickview" title="Quick view"
-          @click.prevent="quickView({ product: product })"></button>
-      </div> -->
     </figure>
     <div class="product-body">
       <div class="product-cat">
@@ -47,10 +30,10 @@
 
       <template v-else>
         <div class="product-price" v-if="minPrice == maxPrice">
-          {{ minPrice.toFixed(2) }}
+          от {{ minPrice.toFixed(2) }} Бонусов
         </div>
         <template v-else>
-          <div class="product-price" v-if="product.variants.length == 0">
+          <div class="product-price" v-if="product.variants.length == 0" >
             <span class="new-price">{{ minPrice.toFixed(2) }}</span>
             <span class="old-price">{{ maxPrice.toFixed(2) }}</span>
           </div>
@@ -59,14 +42,8 @@
           </div>
         </template>
       </template>
-
-      <!-- <div class="ratings-container">
-        <div class="ratings">
-          <div class="ratings-val" :style="{ width: product.ratings * 20 + '%' }"></div>
-          <span class="tooltip-text">{{ product.ratings.toFixed(2) }}</span>
-        </div>
-        <span class="ratings-text">( {{ product.review }} Reviews )</span>
-      </div> -->
+      <div class="mb-4"></div>
+      
     </div>
   </div>
 </template>
