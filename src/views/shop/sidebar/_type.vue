@@ -31,11 +31,13 @@
               </div>
               <div class="toolbox-right">
                 <div class="toolbox-sort">
-                  <label for="sortby">Сортировка:</label>
+                  <label for="sortby" style="font-family: Gilroy-Medium !important;">Сортировка:</label>
                   <div class="select-custom">
                     <select name="sortby" id="sortby" class="form-control" @change.prevent="getProducts"
                       v-model="orderBy">
-                      <option value="default">По умолчанию</option>
+                      <option value="default">По умолчанию
+                        <!-- <pre>   &#8964;</pre> -->
+                      </option>
                       <option value="featured">Most Popular</option>
                       <option value="rating">Most Rated</option>
                       <option value="new">Date</option>

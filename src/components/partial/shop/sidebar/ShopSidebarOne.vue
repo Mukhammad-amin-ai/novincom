@@ -8,7 +8,7 @@
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
           <a href="#widget-1" :class="{ collapsed: !toggleStates[0] }" @click.prevent="toggleSlide(0)"
-            style="display: flex; justify-content: space-between">
+            style="display: flex; justify-content: space-between; font-family: Gilroy-Medium !important;">
             Категории
             <img :class="{ rotated_icon: toggleStates[0] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
@@ -32,7 +32,7 @@
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
           <a href="#widget-2" :class="{ collapsed: !toggleStates[1] }" @click.prevent="toggleSlide(1)"
-            style="display: flex; justify-content: space-between">
+            style="display: flex; justify-content: space-between ;font-family: Gilroy-Medium !important;">
             Размер экрана
             <img :class="{ rotated_icon: toggleStates[1] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
@@ -56,7 +56,7 @@
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
           <a href="#widget-3" :class="{ collapsed: !toggleStates[2] }" @click.prevent="toggleSlide(2)"
-            style="display: flex; justify-content: space-between">
+            style="display: flex; justify-content: space-between; font-family: Gilroy-Medium !important;">
             Цвет
             <img :class="{ rotated_icon: toggleStates[2] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
@@ -74,23 +74,24 @@
           </div>
         </Transition>
       </div>
-      <div class="widget widget-collapsible">
+      <div class="widget widget-collapsible" style="border-bottom: 1px solid #ebebeb;">
         <h3 class="widget-title mb-2">
           <a href="#widget-4" :class="{ collapsed: !toggleStates[3] }" @click.prevent="toggleSlide(3)"
-            style="display: flex; justify-content: space-between">Бренд
+            style="display: flex; justify-content: space-between;font-family: Gilroy-Medium !important;">Бренд
             <img :class="{ rotated_icon: toggleStates[3] }" src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
           </a>
         </h3>
         <Transition name="slide-fade">
           <div v-if="toggleStates[3]" class="show" :duration="200">
             <div class="widget-body pt-0">
-              <div class="filter-items">
-                <div class="filter-item" v-for="(item, index) in filterData.brands" :key="index">
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" :id="'brand-' + index"
-                      @click="setBrandFilter(item)" :checked="brandChecked(item)" />
-                    <label class="custom-control-label" :for="'brand-' + index">{{ item.brand }}</label>
-                  </div>
+              <div class="filter-items" v-for="(item, index) in filterData.brands" :key="index">
+                <div class="filter-item">
+                  {{ item.brand }}
+                  <!-- <div class="custom-control custom-checkbox"> -->
+                  <!-- <input type="checkbox" class="custom-control-input" :id="'brand-' + index"
+                      @click="setBrandFilter(item)" :checked="brandChecked(item)" /> -->
+                  <!-- <label class="custom-control-label" :for="'brand-' + index">{{ item.brand }}</label> -->
+                  <!-- </div> -->
                 </div>
               </div>
             </div>

@@ -233,23 +233,23 @@ export const shopData = {
   sizes: [
     {
       size: "Extra Small",
-      slug: "XS",
+      slug: "4.7”",
     },
     {
       size: "Small",
-      slug: "S",
+      slug: "5.5”",
     },
     {
       size: "Medium",
-      slug: "M",
+      slug: "5.8”",
     },
     {
       size: "Large",
-      slug: "L",
+      slug: "6.1”",
     },
     {
       size: "Extra Large",
-      slug: "XL",
+      slug: "6.5”",
     },
   ],
 
@@ -286,74 +286,74 @@ export const shopData = {
 
   brands: [
     {
-      brand: "Next",
+      brand: "Apple",
       slug: "next",
     },
     {
-      brand: "River Island",
+      brand: "Sony",
       slug: "river-island",
     },
     {
-      brand: "Geox",
+      brand: "Microsoft",
       slug: "geox",
     },
     {
-      brand: "New Balance",
+      brand: "Cannon",
       slug: "nex-balance",
     },
-    {
-      brand: "UGG",
-      slug: "ugg",
-    },
-    {
-      brand: "F&F",
-      slug: "f-and-f",
-    },
-    {
-      brand: "Nike",
-      slug: "nike",
-    },
+    // {
+    //   brand: "UGG",
+    //   slug: "ugg",
+    // },
+    // {
+    //   brand: "F&F",
+    //   slug: "f-and-f",
+    // },
+    // {
+    //   brand: "Nike",
+    //   slug: "nike",
+    // },
   ],
 
   categories: [
     {
-      name: "Мебель",
-      slug: "Мебель",
+      name: "Все для дома и дачи",
+      slug: "Все-для-Дома",
       count: 8,
     },
     {
-      name: "Журнальные столики",
-      slug: "Журнальные-столики",
+      name: "Дети",
+      slug: "Дети",
       count: 1,
     },
     {
-      name: "Освещение",
-      slug: "Освещение",
+      name: "Зоотовары",
+      slug: "Зоотовары",
       count: 3,
     },
     {
-      name: "Украшение",
-      slug: "Украшение",
+      name: "Красота и здоровье",
+      slug: "Красота-и-здоровье",
       count: 5,
+    },
+    {
+      name: "Мебель",
+      slug: "Мебель",
+      count: 1,
+    },
+    {
+      name: "Спорт и отдых",
+      slug: "Спорт-и-отдых",
+      count: 2,
+    },
+    {
+      name: "Хобби",
+      slug: "Хобби",
+      count: 3,
     },
     {
       name: "Электроника",
       slug: "Электроника",
-      count: 1,
-    },
-    {
-      name: "Кровати",
-      slug: "Кровати",
-      count: 2,
-    },
-    {
-      name: "Кресла и шезлонги",
-      slug: "Кресла-и-шезлонги",
-      count: 3,
-    },
-    {
-      name: "Диваны и спальные места",
-      slug: "Диваны-и-спальные-места",
       count: 1,
     },
   ],
