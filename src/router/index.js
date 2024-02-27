@@ -37,35 +37,6 @@ const router = createRouter({
       name: "param layout",
       component: () => import("@/views/shop/sidebar/_type.vue"),
     },
-    // {
-    //   path: "/shop/sidebar/4cols",
-    //   params: { loyaut: '4cols' },
-    //   name: "category show with 4cols",
-    //   component: () => import("@/views/shop/sidebar/_type.vue"),
-    // },
-    // {
-    //   path: "/shop/sidebar/3cols",
-    //   params: { loyaut: '3cols' },
-    //   name: "category show with 3cols",
-    //   component: () => import("@/views/shop/sidebar/_type.vue"),
-    // },
-    // {
-    //   path: "/shop/sidebar/2cols",
-    //   params: { loyaut: '2cols' },
-    //   name: "category show with 2cols",
-    //   component: () => import("@/views/shop/sidebar/_type.vue"),
-    // },
-    // {
-    //   path: "/shop/sidebar/list",
-    //   params: { loyaut: 'list' },
-    //   name: "category show with list",
-    //   component: () => import("@/views/shop/sidebar/_type.vue"),
-    // },
-    // {
-    //   path: "/shop/market",
-    //   name: "category show market",
-    //   component: () => import("@/views/shop/market.vue"),
-    // },
     {
       path: "/shop/nosidebar/boxed",
       name: "category show boxed",
@@ -76,11 +47,6 @@ const router = createRouter({
       name: "category show fullwidth",
       component: () => import("@/views/shop/nosidebar/_type.vue"),
     },
-    // {
-    //   path: "/shop/nosidebar/fullwidth",
-    //   name: "category show fullwidth",
-    //   component: () => import("@/views/shop/category/fullwidth.vue"),
-    // },
     {
       path: "/shop/fullwidth",
       name: "category fullwidth",
@@ -96,26 +62,6 @@ const router = createRouter({
       name: "shop category boxed",
       component: () => import("@/views/shop/category/boxed.vue"),
     },
-    // {
-    //   path: "/shop/dashboard",
-    //   name: "shop dashboard",
-    //   component: () => import("@/views/shop/dashboard.vue"),
-    // },
-    // {
-    //   path: "/shop/cart",
-    //   name: "category show cart",
-    //   component: () => import("@/views/shop/cart.vue"),
-    // },
-    // {
-    //   path: "/shop/wishlist",
-    //   name: "category show wishlist",
-    //   component: () => import("@/views/shop/wishlist.vue"),
-    // },
-    // {
-    //   path: "/shop/checkout",
-    //   name: "category show checkout",
-    //   component: () => import("@/views/shop/checkout.vue"),
-    // },
     {
       path: "/flight-tickets",
       name: "flight tickets",
