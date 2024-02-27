@@ -25,13 +25,13 @@
               <div class="toolbox-left">
                 <div class="toolbox-info">
                   Показано
-                  <span>{{ products.length }} of {{ totalCount }}</span>
+                  <span style="font-family:Gilroy-Medium !important">{{ products.length }} of {{ totalCount }}</span>
                   Tоваров
                 </div>
               </div>
               <div class="toolbox-right">
                 <div class="toolbox-sort">
-                  <label for="sortby" style="font-family: Gilroy-Medium !important;">Сортировка:</label>
+                  <label for="sortby" style="font-family: Gilroy-Medium !important; font-size: 14px;">Сортировка:</label>
                   <div class="select-custom">
                     <select name="sortby" id="sortby" class="form-control" @change.prevent="getProducts"
                       v-model="orderBy">
