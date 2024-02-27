@@ -288,7 +288,6 @@ import NewCollection from "../components/partial/home/NewCollection.vue";
 import DealCollection from "../components/partial/home/DealCollection.vue";
 import TrendyCollection from "../components/partial/home/TrendyCollection.vue";
 import RecommendCollection from "../components/partial/home/RecommendCollection.vue";
-// import NewsletterModal from "../components/elements/modals/NewsletterModal.vue";
 
 import Repository, { baseUrl } from "../repositories/repository.js";
 import { attrFilter } from "../utilities/common";
@@ -358,19 +357,6 @@ export default {
   created: function () {
     this.getProducts();
   },
-  // mounted: function () {
-  //   if (this.newsletterShow) {
-  //     setTimeout(() => {
-  //       if (this.$route.path == "/" && this.newsletterShow) {
-  //         this.$modal.show(
-  //           NewsletterModal,
-  //           {},
-  //           { width: "970", height: "auto", adaptive: true }
-  //         );
-  //       }
-  //     }, 8000);
-  //   }
-  // },
   methods: {
     getProducts: async function () {
       this.loaded = true;

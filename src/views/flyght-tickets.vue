@@ -15,7 +15,6 @@
                 <li class="breadcrumb-item active">
                     <router-link to="/shop/sidebar/list">Результаты поиска авиабилетов</router-link>
                 </li>
-                <!-- <li class="breadcrumb-item ">{{ pageTitle }}</li> -->
                 <li class="breadcrumb-item" v-if="$route.query.searchTerm">
                     <span>Search - {{ $route.query.searchTerm }}</span>
                 </li>

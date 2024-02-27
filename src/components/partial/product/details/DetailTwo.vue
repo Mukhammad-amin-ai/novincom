@@ -1,89 +1,6 @@
 <template>
   <div class="product-details" v-if="product">
     <h1 class="product-title f-500">{{ product.name }}</h1>
-
-    <!-- <div class="ratings-container">
-      <div class="ratings">
-        <div
-          class="ratings-val"
-          :style="{ width: product.ratings * 20 + '%' }"
-        ></div>
-        <span class="tooltip-text">{{ product.ratings.toFixed(2) }}</span>
-      </div>
-      <span class="ratings-text mt-0">( {{ product.review }} Reviews )</span>
-    </div> -->
-
-    <!-- <div class="product-price" v-if="product.stock == 0" key="outPrice">
-      <span class="out-price">${{ product.price.toFixed(2) }}</span>
-    </div>
-
-    <template v-else>
-      <div class="product-price" v-if="minPrice == maxPrice">
-        ${{ minPrice.toFixed(2) }}
-      </div>
-      <template v-else>
-        <div class="product-price" v-if="product.variants.length == 0">
-          <span class="new-price">${{ minPrice.toFixed(2) }}</span>
-          <span class="old-price">${{ maxPrice.toFixed(2) }}</span>
-        </div>
-        <div class="product-price" v-else>
-          ${{ minPrice.toFixed(2) }} - ${{ maxPrice.toFixed(2) }}
-        </div>
-      </template>
-    </template> -->
-
-    <!--  <template v-if="product.variants.length > 0">
-      <div class="details-filter-row details-row-size">
-        <label>Color:</label>
-
-        <div class="product-nav product-nav-dots">
-          <a
-            href="#"
-            :class="{
-              active: item.color == selectedVariant.color,
-              disabled: item.disabled,
-            }"
-            :style="{ 'background-color': item.color }"
-            v-for="(item, index) in colorArray"
-            :key="index"
-            @click.prevent="selectColor(item)"
-          ></a>
-        </div>
-      </div>
-
-      <div class="details-filter-row details-row-size">
-        <label for="size">Size:</label>
-        <div class="select-custom">
-          <select
-            name="size"
-            id="size"
-            class="form-control"
-            v-model="selectedVariant.size"
-            @change="selectSize"
-          >
-            <option value="null">Select a size</option>
-            <option
-              :value="item.size"
-              v-for="(item, index) in sizeArray"
-              :key="index"
-            >
-              {{ item.size }}
-            </option>
-          </select>
-        </div>
-
-        <a href="javascript:;" class="size-guide mr-4">
-          <i class="icon-th-list"></i>size guide
-        </a>
-        <a href="#" @click.prevent="clearSelection" v-if="showClear">clear</a>
-      </div>
-      <vue-slide-toggle :open="showVariationPrice">
-        <div class="product-price">
-          ${{ selectedVariant.price ? selectedVariant.price.toFixed(2) : 0 }}
-        </div>
-      </vue-slide-toggle>
-    </template> -->
-
     <div class="product-details-action">
       <div class="details-action-col">
         <div class="quanty_name f-500 mr-4">Номинал:</div>
@@ -115,7 +32,6 @@
     <div class="details-action-wrapper">
       <div class="btn-product_add ml-sm-2" @click.prevent="addCart">
         <img src="@/assets/newImg/product/cart.svg" alt="" />
-
         <span style="font-family:Gilroy-Medium !important;">Добавить в корзину</span>
       </div>
       <div class="btn-product_add_wish ml-sm-2" @click.prevent="addToWishlist">
@@ -131,17 +47,6 @@
       <p class="content_text">{{ product.short_desc }}</p>
     </div>
     <div class="product-details-footer">
-      <!-- <div class="product-cat">
-        <span>Category:</span>
-        <span v-for="(cat, index) of product.category" :key="index">
-          <router-link
-            :to="{ path: '/shop/sidebar/list', query: { category: cat.slug } }"
-            >{{ cat.name }}</router-link
-          >
-          {{ index < product.category.length - 1 ? "," : "" }}
-        </span>
-      </div> -->
-
       <div class="social-icons social-icons-sm">
         <span class="share-text mr-4">Поделиться:</span>
         <a href="javascript:;" class="social-icon" title="Facebook">
@@ -161,14 +66,12 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapActions } from "vuex";
-// import { VueSlideToggle } from "vue-slide-toggle";
+import { mapGetters } from "vuex";
 import QuantityInput from "@/components/elements/QuantityInput.vue";
 import { baseUrl } from "@/repositories/repository.js";
 import store from "@/store";
 export default {
   components: {
-    // VueSlideToggle,
     QuantityInput,
   },
   props: {
@@ -195,8 +98,6 @@ export default {
     };
   },
   computed: {
-    // ...mapGetters("cart", ["canAddToCart"]),
-    // ...mapGetters("wishlist", ["isInWishlist"]),
     ...mapGetters("compare", ["isInCompare"]),
     showClear() {
       return this.selectedVariant.color || this.selectedVariant.size
@@ -239,9 +140,6 @@ export default {
     this.refreshSelectableGroup();
   },
   methods: {
-    // ...mapActions("cart", ["addToCart"]),
-    // ...mapActions("wishlist", ["addToWishlist"]),
-    // ...mapActions("compare", ["addToCompare"]),
     isInWishlist(product) {
       store.commit("isInWishlist", product);
     },

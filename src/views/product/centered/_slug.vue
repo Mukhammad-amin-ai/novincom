@@ -24,10 +24,6 @@
         </div>
 
         <info-one :product="product"></info-one>
-
-        <!-- <related-products-one
-          :products="relatedProducts"
-        ></related-products-one> -->
       </div>
     </div>
   </main>

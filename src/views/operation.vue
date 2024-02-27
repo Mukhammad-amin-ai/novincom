@@ -20,7 +20,6 @@
     </div>
   </nav>
   <div class="operation_page">
-    <!-- <VDatePicker v-model="date" mode="date" /> -->
     <div class="container">
       <div class="search-city" @click="toggleFilter">
         <div class="search">
@@ -56,7 +55,6 @@
 
 <script>
 import PageHeader from "@/components/elements/PageHeader.vue";
-import VDatePicker from 'v-calendar'
 export default {
   data() {
     return {

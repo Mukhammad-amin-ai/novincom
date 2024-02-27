@@ -23,8 +23,8 @@
             <div :class="containerClass">
                 <div class="toolbox">
                     <div class="toolbox-left">
-                        <a href="#" class="sidebar-toggler mr-0 mr-md-5" @click.prevent="showSidebar" style="font-family: Gilroy-Medium !important; gap: 5px; align-items: center;">
-                            <!-- <i class="icon-bars"></i> -->
+                        <a href="#" class="sidebar-toggler mr-0 mr-md-5" @click.prevent="showSidebar"
+                            style="font-family: Gilroy-Medium !important; gap: 5px; align-items: center;">
                             <img src="../../../assets/newImg/icons/menu.svg" alt="">
                             Фильтры
                         </a>
@@ -32,7 +32,7 @@
 
                     <div class="toolbox-center">
                         <div class="toolbox-info">
-                            Показано 
+                            Показано
                             <span>{{ products.length }} of {{ totalCount }}</span> товаров
                         </div>
                     </div>
@@ -60,10 +60,6 @@
                         v-if="loadMoreLoading || hasMore">
                         More Products
                         <img src="../../../assets/newImg/icons/refresh.svg" alt="">
-                        <!-- <i
-                            class="icon-refresh"
-                            :class="{'load-more-rotating' : loadMoreLoading}"
-                        ></i> -->
                     </a>
                 </div>
                 <div class="sidebar-filter-overlay" @click="hideSidebar"></div>

@@ -1,7 +1,6 @@
 <template>
     <main class="main">
         <breadcrumb :prev-product="prevProduct" :next-product="nextProduct" current="Default"></breadcrumb>
-
         <div class="page-content">
             <div class="container skeleton-body">
                 <div class="product-details-top">
