@@ -2,8 +2,9 @@
   <div class="sidebar-shop" :class="isSidebar ? 'sidebar-filter' : 'sidebar'">
     <div :class="{ 'sidebar-filter-wrapper': isSidebar }">
       <div class="widget widget-clean">
-        <label>Фильтры:</label>
-        <a href="#" class="sidebar-filter-clear" @click.prevent="cleanAll">Очистить</a>
+        <label style="font-family: Gilroy-Medium !important;">Фильтры:</label>
+        <a href="#" class="sidebar-filter-clear" 
+          @click.prevent="cleanAll">Очистить</a>
       </div>
       <div class="widget widget-collapsible">
         <h3 class="widget-title mb-2">
