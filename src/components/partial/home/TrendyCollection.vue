@@ -43,7 +43,7 @@
                     spaceBetween: 35,
                   },
                 }" :modules="modules" :navigation="false" :slidesPerView="1" :spaceBetween="10" class="row">
-                  <swiper-slide class="" v-for="(product, index) in ratedProducts" :key="index">
+                  <swiper-slide v-for="(product, index) in ratedProducts" :key="index">
                     <ProductTwelve :product="product" class="mb-3" />
                   </swiper-slide>
                 </swiper>
@@ -816,4 +816,10 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.swiper-carousel .swiper .swiper-wrapper .swiper-slide{
+  width: 220px !important;
+  margin-right: 20px !important;
+}
+
+</style>

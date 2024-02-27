@@ -111,31 +111,31 @@
                     <li class="item-lead" :class="{
                       active: $route.query.category == 'electronics',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=electronics'">Подарочные сертификаты</router-link>
+                      <router-link to="/product/default/apple-smart-folio-for-11-inch-ipad-pro">Подарочные сертификаты</router-link>
                     </li>
                     <li class="item-lead" :class="{ active: $route.query.category == 'gift-idea' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Трэвел-сервисы</router-link>
+                      <router-link to="#">Трэвел-сервисы</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'beds' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=beds'">Авиабилеты </router-link>
+                      <router-link to="/flight-tickets">Авиабилеты </router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'lighting' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=lighting'">ЖД билеты</router-link>
+                      <router-link to="/flight-tickets">ЖД билеты</router-link>
                     </li>
                     <li :class="{
                       active:
                         $route.query.category == 'sofas-and-sleeper-sofas',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Отели </router-link>
+                      <router-link to="/flight-tickets">Отели </router-link>
                     </li>
                     <li style="background-color: #f9f9f9;" :class="{ active: $route.query.category == 'storage' }">
-                      <router-link :to="'/shop/sidebar/3cols?category=storage'">Товары </router-link>
+                      <router-link to="/shop/sidebar/3cols">Товары </router-link>
                     </li>
                     <li style="background-color: #f9f9f9;" :class="{
                       active:
                         $route.query.category == 'armchairs-and-chaises',
                     }">
-                      <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Благотворительность
+                      <router-link to="#">Благотворительность
                       </router-link>
                     </li>
                     <!-- <li :class="{ active: $route.query.category == 'decoration' }">
