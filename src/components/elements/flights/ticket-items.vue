@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-      <ticketItemV2/>
+      <ticketItemV2 :detailed="detailed"/>
     </div>
     <button class="price-flight">
       1000.00

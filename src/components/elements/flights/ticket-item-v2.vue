@@ -104,11 +104,14 @@
 </template>
 <script>
 export default {
+    props:{
+        detailed:Boolean
+    },
     data() {
         return {
             info: true,
             info2: true,
-            detailed: true,
+            // detailed: true,
         }
     },
     methods: {
