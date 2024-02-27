@@ -16,8 +16,8 @@
               <!-- @click.prevent="openSignInModal" -->
               <a href="/sign_up">
                 <span class="logIn">
-                  <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
-                  Выход
+                  <!-- <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#"> -->
+                  Вход / Регистрация
                 </span></a>
               <ul>
                 <li>
@@ -58,8 +58,8 @@
                 <li>
                   <router-link to="/sign_up" class="callhov">
                     <span class="logIn">
-                      <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#">
-                      Выход
+                      <!-- <img src="../../../assets/newImg/icons/logIn-icon.svg" alt="#"> -->
+                      Вход / Регистрация
                     </span>
                   </router-link>
                 </li>
