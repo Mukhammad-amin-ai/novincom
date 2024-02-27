@@ -39,3 +39,7 @@
 .cursor-pointer {
   cursor: pointer !important;
 }
+
+.rotated_icon {
+  transform: rotate(180deg);
+}
