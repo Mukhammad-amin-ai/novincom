@@ -5,22 +5,10 @@
         <!-- <i class="icon-close"></i> -->
         <img src="../../../assets/newImg/icons/modal-close.svg" alt="" />
       </span>
-      <form
-        action="#"
-        method="get"
-        class="mobile-search"
-        @submit.prevent="submitSearchForm"
-      >
+      <form action="#" method="get" class="mobile-search" @submit.prevent="submitSearchForm">
         <label for="mobile-search" class="sr-only">Поиск</label>
-        <input
-          type="text"
-          class="form-control"
-          name="mobile-search"
-          id="mobile-search"
-          v-model="searchTerm"
-          placeholder="Поиск по каталогу..."
-          required
-        />
+        <input type="text" class="form-control" name="mobile-search" id="mobile-search" v-model="searchTerm"
+          placeholder="Поиск по каталогу..." required />
         <button class="btn btn-primary" type="submit">
           <!-- <i class="icon-search"></i> -->
           <img src="../../../assets/newImg/icons/search.svg" alt="" />
@@ -32,185 +20,117 @@
           <nav class="mobile-nav">
             <ul class="mobile-menu">
               <li class="active">
-                <router-link to="/" class="sf-with-ul">Home</router-link>
+                <router-link to="/" class="sf-with-ul">Главная</router-link>
                 <ul>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-1"
-                      >01 - furniture store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-1">01 - furniture store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-2"
-                      >02 - furniture store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-2">02 - furniture store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-3"
-                      >03 - electronic store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-3">03 - electronic store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-4"
-                      >04 - electronic store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-4">04 - electronic store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-5"
-                      >05 - fashion store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-5">05 - fashion store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-6"
-                      >06 - fashion store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-6">06 - fashion store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-7"
-                      >07 - fashion store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-7">07 - fashion store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-8"
-                      >08 - fashion store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-8">08 - fashion store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-9"
-                      >09 - fashion store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-9">09 - fashion store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-10"
-                      >10 - shoes store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-10">10 - shoes store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-11"
-                      >11 - furniture simple store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-11">11 - furniture simple store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-12"
-                      >12 - fashion simple store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-12">12 - fashion simple store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-13"
-                      >13 - market</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-13">13 - market</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-14"
-                      >14 - market fullwidth</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-14">14 - market fullwidth</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-15"
-                      >15 - lookbook 1</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-15">15 - lookbook 1</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-16"
-                      >16 - lookbook 2</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-16">16 - lookbook 2</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-17"
-                      >17 - fashion store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-17">17 - fashion store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-18"
-                      >18 - fashion store (with sidebar)</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-18">18 - fashion store (with sidebar)</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-19"
-                      >19 - games store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-19">19 - games store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-20"
-                      >20 - book store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-20">20 - book store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-21"
-                      >21 - sport store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-21">21 - sport store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-22"
-                      >22 - tools store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-22">22 - tools store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-23"
-                      >23 - fashion left navigation store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-23">23 - fashion left navigation store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-24"
-                      >24 - extreme sport store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-24">24 - extreme sport store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-25"
-                      >25 - jewelry store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-25">25 - jewelry store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-26"
-                      >26 - market store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-26">26 - market store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-28"
-                      >27 - fashion store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-28">27 - fashion store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-29"
-                      >28 - food market store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-29">28 - food market store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-30"
-                      >29 - t-shirts store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-30">29 - t-shirts store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-31"
-                      >30 - headphones store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-31">30 - headphones store</a>
                   </li>
                   <li>
-                    <a href="https://d-themes.com/vue/molla/demo-32"
-                      >31 - yoga store</a
-                    >
+                    <a href="https://d-themes.com/vue/molla/demo-32">31 - yoga store</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <router-link to="/shop/sidebar/list">Shop</router-link>
+                <router-link to="/shop/sidebar/list">Спецпредложения</router-link>
                 <ul>
                   <li>
                     <router-link to="/shop/sidebar/list">Shop List</router-link>
                   </li>
                   <li>
-                    <router-link to="/shop/sidebar/2cols"
-                      >Shop Grid 2 Columns</router-link
-                    >
+                    <router-link to="/shop/sidebar/2cols">Shop Grid 2 Columns</router-link>
                   </li>
                   <li>
-                    <router-link to="/shop/sidebar/3cols"
-                      >Shop Grid 3 Columns</router-link
-                    >
+                    <router-link to="/shop/sidebar/3cols">Shop Grid 3 Columns</router-link>
                   </li>
                   <li>
-                    <router-link to="/shop/sidebar/4cols"
-                      >Shop Grid 4 Columns</router-link
-                    >
+                    <router-link to="/shop/sidebar/4cols">Shop Grid 4 Columns</router-link>
                   </li>
                   <li>
                     <router-link to="/shop/nosidebar/boxed">
@@ -221,14 +141,10 @@
                     </router-link>
                   </li>
                   <li>
-                    <router-link to="/shop/nosidebar/fullwidth"
-                      >Shop Fullwidth No Sidebar</router-link
-                    >
+                    <router-link to="/shop/nosidebar/fullwidth">Shop Fullwidth No Sidebar</router-link>
                   </li>
                   <li>
-                    <router-link to="/shop/category/boxed"
-                      >Product Category Boxed</router-link
-                    >
+                    <router-link to="/shop/category/boxed">Product Category Boxed</router-link>
                   </li>
                   <li>
                     <router-link to="/shop/category/fullwidth">
@@ -253,11 +169,8 @@
                 </ul>
               </li>
               <li>
-                <router-link
-                  to="/product/default/dark-yellow-lace-cut-out-swing-dress"
-                  class="sf-with-ul"
-                  >Product</router-link
-                >
+                <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress"
+                  class="sf-with-ul">Акции</router-link>
                 <!-- <ul>
                   <li>
                     <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress">Default</router-link>
@@ -520,63 +433,38 @@
           <nav class="mobile-cats-nav">
             <ul class="mobile-cats-menu">
               <li class="item-cats-lead">
-                <router-link :to="'/shop/sidebar/3cols?category=electronics'"
-                  >Electronics</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=electronics'">Электроника</router-link>
               </li>
               <li class="item-cats-lead">
-                <router-link :to="'/shop/sidebar/3cols?category=gift-idea'"
-                  >Gift Ideas</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Идеи подарков</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=beds'"
-                  >Beds</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=beds'">Кровати</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=lighting'"
-                  >Lighting</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=lighting'">Lighting</router-link>
               </li>
               <li>
-                <router-link
-                  :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'"
-                  >Sofas & Sleeper sofas</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Диваны и спальные
+                  места</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=storage'"
-                  >Storage</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=storage'">Место хранения</router-link>
               </li>
               <li>
-                <router-link
-                  :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'"
-                  >Armchairs & Chaises</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Кресла и шезлонги</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=decoration'"
-                  >Decoration</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=decoration'">Украшение</router-link>
               </li>
               <li>
-                <router-link
-                  :to="'/shop/sidebar/3cols?category=kitchen-cabinets'"
-                  >Kitchen Cabinets</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=kitchen-cabinets'">Кухонные шкафы</router-link>
               </li>
               <li>
-                <router-link
-                  :to="'/shop/sidebar/3cols?category=coffee-and-tables'"
-                  >Coffee & Tables</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=coffee-and-tables'">Журнальные столики</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=furniture'"
-                  >Outdoor Furniture</router-link
-                >
+                <router-link :to="'/shop/sidebar/3cols?category=furniture'">Уличная мебель</router-link>
               </li>
             </ul>
           </nav>
@@ -597,12 +485,12 @@ export default {
       tabsData: [
         {
           id: "mobile-nav",
-          title: "MENU",
+          title: "Mеню",
           active: true,
         },
         {
           id: "mobile-categories",
-          title: "CATEGORIES",
+          title: "Kатегории",
         },
       ],
       searchTerm: "",

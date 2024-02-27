@@ -1416,6 +1416,9 @@
   .header-bottom {
     display: none;
   }
+  .header-center {
+    display: none;
+  }
 }
 
 @include mq("xs", "max") {
@@ -1438,9 +1441,6 @@
       flex: 0 0 180px;
       max-width: 180px;
     }
-  }
-  .header-center {
-    display: none;
   }
 }
 
