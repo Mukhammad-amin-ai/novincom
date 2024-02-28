@@ -1,48 +1,46 @@
-<template >
+<template>
     <div class="flight-wrapper">
         <div class="cover">
             <div class="flight-item" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-if="detailed">
                 <div class="start-flight">
-                    <img :src="data.img1" alt="">
-                    <h6>{{ data.address1 }}</h6>
-                    <h6>{{ data.data1 }}</h6>
+                    <img src="/assets/images/ticet-logo2.png" alt="">
+                    <h6>20:20 VOG</h6>
+                    <h6>07.02.2024</h6>
                 </div>
                 <div class="flight-line">
-                    <div class="tooltip-flight tol2" v-if="tooltip5">
-                        Вылет: Россия,
-                        Шереметьево (SVO)
-                        <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
-                    </div>
-                    <div class="tooltip-flight tol3" v-if="tooltip6">
-                        Прибытие: Россия,
-                        Шереметьево (SVO)
-                        <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
-                    </div>
+                    <!-- <div class="tooltip-flight tol2" v-if="tooltip5">
+              Вылет: Россия,
+              Шереметьево (SVO)
+              <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div>
+            <div class="tooltip-flight tol3" v-if="tooltip6">
+              Прибытие: Россия,
+              Шереметьево (SVO)
+              <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div> -->
                     <div class="wrap-flight">
-                        <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2"
-                            src="../../../assets/newImg/icons/ellipse.svg" alt="">
+                        <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
                         <div class="line"></div>
-                        <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3"
-                            src="../../../assets/newImg/icons/airplane.svg" alt="">
+                        <img src="../../../assets/newImg/icons/airplane.svg" alt="">
                     </div>
                     <div class="hour">
-                        {{ data.time }}
+                        2 ч 5м
                     </div>
                 </div>
                 <div class="start-flight">
-                    <img :src="data.img2" alt="">
-                    <h6>{{ data.address2 }}</h6>
-                    <h6>{{ data.data2 }}</h6>
+                    <img src="/assets/images/ticet-logo3.png" alt="">
+                    <h6>22:25 SVO</h6>
+                    <h6>07.02.2024</h6>
                 </div>
                 <div class="flight-info">
-                    <h6>{{ data.addition }}</h6>
-                    <h6>{{ data.addName }}</h6>
+                    <h6>DP-6968</h6>
+                    <h6>Победа</h6>
                 </div>
                 <div class="flight-passenger-info" v-if="info">
                     <div class="top-icons">
-                        <img :src="data.icons1" alt="">
-                        <img :src="data.icons2" alt="">
-                        <img :src="data.icons3" alt="">
+                        <img src="/assets/bagaj-close.svg" alt="">
+                        <img src="/assets/arrows.svg" alt="">
+                        <img src="/assets/resycle-close.svg" alt="">
                     </div>
                     <div class="bottom-info">
                         <div class="item-bot">E</div>
@@ -50,6 +48,114 @@
                 </div>
                 <div class="detailed" v-else>
                     <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
+                    Подробнее
+                </div>
+            </div>
+            <div class="flight-item detailed-info" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-else>
+                <div class="detailed-cover">
+                    <div class="start-flight detailed-start">
+                        <img src="../../../assets/newImg/logo-air.png" alt="">
+                        <h6>20:20 VOG</h6>
+                        <h6 style="white-space:nowrap;">29 февраля 2024</h6>
+                        <h6>Восточный</h6>
+                    </div>
+                    <div class="flight-line">
+                        <div class="wrap-flight">
+                            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+                            <div class="line"></div>
+                            <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+                        </div>
+                        <div class="hour">
+                            18 ч 10м
+                        </div>
+                    </div>
+                    <div class="start-flight detailed-start">
+                        <img src="../../../assets/newImg/logo-air.png" alt="">
+                        <h6>22:25 SVO</h6>
+                        <h6 style="white-space:nowrap;">29 февраля 2024</h6>
+                        <h6>Восточный</h6>
+                    </div>
+                    <div class="flight-info">
+                        <h6>DP-6968</h6>
+                        <h6>Победа</h6>
+                    </div>
+                    <div class="flight-passenger-info" :style="{ display: detailed ? 'block' : 'none' }" v-if="info">
+                        <div class="top-icons">
+                            <img src="/assets/bagaj-close.svg" alt="">
+                        <img src="/assets/arrows.svg" alt="">
+                        <img src="/assets/resycle-close.svg" alt="">
+                        </div>
+                        <div class="bottom-info">
+                            <div class="item-bot">E</div>
+                        </div>
+                    </div>
+                    <div class="detailed" :style="{ display: detailed ? 'block' : 'none' }" v-else>
+                        Подробнее
+                        <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
+                    </div>
+                </div>
+                <div class="bottom-detailed">
+                    <div class="bottom-item">
+                        <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+                        Багаж: Да
+                    </div>
+                    <div class="bottom-item">
+                        <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+                        Обмен: Да
+                    </div>
+                    <div class="bottom-item">
+                        <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
+                        Возврат: Да
+                    </div>
+                </div>
+            </div>
+            <div class="flight-item" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-if="detailed">
+                <div class="start-flight">
+                    <img src="/assets/images/ticet-logo2.png" alt="">
+                    <h6>7:25 SVO</h6>
+                    <h6>10.02.2024</h6>
+                </div>
+                <div class="flight-line">
+                    <!-- <div class="tooltip-flight tol2" v-if="tooltip5">
+              Вылет: Россия,
+              Шереметьево (SVO)
+              <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div>
+            <div class="tooltip-flight tol3" v-if="tooltip6">
+              Прибытие: Россия,
+              Шереметьево (SVO)
+              <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div> -->
+                    <div class="wrap-flight">
+                        <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+                        <div class="line"></div>
+                        <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+                    </div>
+                    <div class="hour">
+                        2 ч 20м
+                    </div>
+                </div>
+                <div class="start-flight">
+                    <img src="/assets/images/ticet-logo3.png" alt="">
+                    <h6>09:45 SVO</h6>
+                    <h6>10.02.2024</h6>
+                </div>
+                <div class="flight-info">
+                    <h6>DP-6969</h6>
+                    <h6>Победа</h6>
+                </div>
+                <div class="flight-passenger-info" v-if="info">
+                    <div class="top-icons">
+                        <img src="/assets/bagaj-close.svg" alt="">
+                        <img src="/assets/arrows.svg" alt="">
+                        <img src="/assets/resycle-close.svg" alt="">
+                    </div>
+                    <div class="bottom-info">
+                        <div class="item-bot">E</div>
+                    </div>
+                </div>
+                <div class="detailed" v-else>
+                    <img src="../../../assets/newImg/icons/airplane3.svg" alt="">
                     Подробнее
                 </div>
             </div>
@@ -111,148 +217,26 @@
                     </div>
                 </div>
             </div>
-            <div class="flight-item" @mouseover="goFrom" @mouseleave="goFromLeave" @click="toggleFlight" v-if="detailed">
-                <div class="start-flight">
-                    <img :src="data.img3" alt="">
-                    <h6>{{ data.address3 }}</h6>
-                    <h6>{{ data.data3 }}</h6>
-                </div>
-                <div class="flight-line">
-                    <div class="tooltip-flight" v-if="tooltip">
-                        Пересадка: Россия, <br>
-                        Шереметьево (SVO)
-                        <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
-                    </div>
-                    <div class="tooltip-flight tol2" v-if="tooltip2">
-                        Вылет: Россия,
-                        Шереметьево (SVO)
-                        <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
-                    </div>
-                    <div class="tooltip-flight tol3" v-if="tooltip3">
-                        Прибытие: Россия,
-                        Шереметьево (SVO)
-                        <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
-                    </div>
-                    <div class="wrap-flight">
-                        <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2"
-                            src="../../../assets/newImg/icons/ellipse.svg" alt="">
-                        <div class="line"></div>
-                        <img @mouseover="tooltipFunc" @mouseleave="tooltipClose"
-                            src="../../../assets/newImg/icons/ellipse.svg" alt="">
-                        <div class="line">
-                        </div>
-                        <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3"
-                            src="../../../assets/newImg/icons/airplane.svg" alt="">
-                    </div>
-                    <div class="hour">
-                        {{ data.time2 }}
-                    </div>
-                </div>
-                <div class="start-flight">
-                    <img :src="data.img4" alt="">
-                    <h6>{{ data.address4 }}</h6>
-                    <h6>{{ data.data4 }}</h6>
-                </div>
-                <div class="flight-info">
-                    <h6>{{ data.addition2 }}</h6>
-                    <h6>{{ data.addName2 }}</h6>
-                </div>
-                <div class="flight-passenger-info" v-if="info2">
-                    <div class="top-icons">
-                        <img :src="data.icons21" alt="">
-                        <img :src="data.icons22" alt="">
-                        <img :src="data.icons23" alt="">
-                    </div>
-                    <div class="bottom-info">
-                        <div class="item-bot">E</div>
-                    </div>
-                </div>
-                <div class="detailed" v-else>
-                    <img src="../../../assets/newImg/icons/airplane3.svg" alt="">
-                    Подробнее
-                </div>
-            </div>
-            <div class="flight-item detailed-info" @mouseover="goFrom" @mouseleave="goFromLeave" @click="toggleFlight"
-                v-else>
-                <div class="detailed-cover">
-                    <div class="start-flight detailed-start">
-                        <img src="../../../assets/newImg/logo-air.png" alt="">
-                        <h6>20:20 VOG</h6>
-                        <h6>07.02.2024</h6>
-                    </div>
-                    <div class="flight-line">
-                        <div class="wrap-flight">
-                            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
-                            <div class="line"></div>
-                            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
-                            <div class="line">
-                            </div>
-                            <img src="../../../assets/newImg/icons/airplane.svg" alt="">
-                        </div>
-                        <div class="hour">
-                            18 ч 10м
-                        </div>
-                    </div>
-                    <div class="start-flight detailed-start">
-                        <img src="../../../assets/newImg/logo-air.png" alt="">
-                        <h6>22:25 SVO</h6>
-                        <h6>07.02.2024</h6>
-                    </div>
-                    <div class="flight-info">
-                        <h6>DP-6968</h6>
-                        <h6>Победа</h6>
-                    </div>
-                    <div class="flight-passenger-info" :style="{ display: detailed ? 'block' : 'none' }" v-if="info2">
-                        <div class="top-icons">
-                            <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
-                            <img src="../../../assets/newImg/icons/arrows.svg" alt="">
-                            <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
-                        </div>
-                        <div class="bottom-info">
-                            <div class="item-bot">E</div>
-                        </div>
-                    </div>
-                    <div class="detailed" :style="{ display: detailed ? 'block' : 'none' }" v-else>
-                        <img src="../../../assets/newImg/icons/airplane3.svg" alt="">
-                        Подробнее
-                    </div>
-                </div>
-                <div class="bottom-detailed">
-                    <div class="bottom-item">
-                        <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
-                        Багаж: Да
-                    </div>
-                    <div class="bottom-item">
-                        <img src="../../../assets/newImg/icons/arrows.svg" alt="">
-                        Обмен: Да
-                    </div>
-                    <div class="bottom-item">
-                        <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
-                        Возврат: Да
-                    </div>
-                </div>
-            </div>
         </div>
         <button class="price-flight">
-            {{ data.price }}
+            7248.00-
         </button>
     </div>
 </template>
-<script>
+  
+<script >
+import ticketItemV2 from './ticket-item-v2.vue'
 export default {
-    props: {
-        detailed: Boolean,
-        data: Array
+    components: {
+        ticketItemV2
     },
     data() {
         return {
             info: true,
             info2: true,
-            tooltip: false,
-            tooltip2: false,
-            tooltip3: false,
             detailed: true,
-            isDetailed: this.detailed,
+            // tooltip5: false,
+            // tooltip6: false,
         }
     },
     mounted() {
@@ -275,31 +259,24 @@ export default {
             this.info2 = true
         },
         toggleFlight() {
-            this.isDetailed = !this.isDetailed
-            this.$emit('update:detailed', this.isDetailed);
-
-        },
-        tooltipFunc() {
-            this.tooltip = true
-        },
-        tooltipClose() {
-            this.tooltip = false
+            this.detailed = !this.detailed
         },
         tooltipFunc2() {
-            this.tooltip2 = true
+            this.tooltip5 = true
         },
         tooltipClose2() {
-            this.tooltip2 = false
+            this.tooltip5 = false
         },
         tooltipFunc3() {
-            this.tooltip3 = true
+            this.tooltip6 = true
         },
         tooltipClose3() {
-            this.tooltip3 = false
+            this.tooltip6 = false
         }
     },
 }
 </script>
+  
 <style scoped>
 .flight-wrapper {
     width: 100%;
@@ -362,7 +339,6 @@ export default {
     width: 80px;
     height: auto;
     /* text-align: center; */
-    position: relative;
 }
 
 .detailed-start {
@@ -378,12 +354,12 @@ export default {
 }
 
 .flight-line {
-    position: relative;
     width: 465px;
     height: auto;
     /* display: flex; */
     align-items: center;
     gap: 5px;
+    position: relative;
 }
 
 .wrap-flight {
@@ -474,8 +450,8 @@ export default {
     position: absolute;
     padding: 15px 20px;
     z-index: 999;
-    left: 135px;
-    top: -90px;
+    left: 70px;
+    top: -60px;
     border-radius: .4rem;
     background-color: #005BAA;
     color: #fff;
@@ -484,14 +460,12 @@ export default {
 
 .tol2 {
     left: -137px;
-    top: -60px;
     white-space: nowrap;
 }
 
 .tol3 {
     white-space: nowrap;
     left: 300px;
-    top: -60px;
 }
 
 .corner {
@@ -499,6 +473,7 @@ export default {
     bottom: -10px;
     left: 50%;
 }
+
 
 @media screen and (max-width:990px) {
     .flight-wrapper {
@@ -510,13 +485,10 @@ export default {
         width: 30% !important;
     }
 
-    .tooltip-flight {
-        left: -135px;
-    }
 
 
     .tol3 {
-        left: 0;
+        left: 0px;
     }
 }
 
@@ -526,7 +498,6 @@ export default {
         padding: 0 !important;
         margin: 0 !important;
     }
-
 }
 
 @media screen and (max-width:768px) {

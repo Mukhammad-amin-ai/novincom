@@ -242,7 +242,13 @@ export default {
       // tooltip6: false,
     }
   },
+  mounted() {
+    this.dataShow()
+  },
   methods: {
+    dataShow() {
+      console.log(this.data);
+    },
     goTo() {
       this.info = false
     },

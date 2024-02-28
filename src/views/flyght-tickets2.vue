@@ -68,7 +68,7 @@
         </div>
         <div class="serach-result-field">
             <ticket v-for="item in data" :data="item" />
-            <ticketItems v-for="item in data2" :data="item" />
+            <defaultT />
         </div>
     </div>
     <div class="filter">
@@ -79,15 +79,16 @@
     </div>
 </template>
 <script>
-import PageHeader from '@/components/elements/PageHeader.vue';
+import PageHeader from '@/components/elements/PageHeader.vue'
+import defaultT from '@/components/elements/flights/default.vue'
 import ticket from '@/components/elements/flights/ticet-v2.vue'
-import ticketItems from '@/components/elements/flights/ticket-items.vue';   
 import headerDef from '@/components/partial/headers/HeaderDefault.vue'
 export default {
     components: {
         PageHeader,
         ticket,
-        headerDef
+        headerDef,
+        defaultT
     },
     data() {
         return {
@@ -149,35 +150,7 @@ export default {
                     icons23: "/assets/round-arrows.svg",
                 },
             ],
-            data2: [
-                {
-                    img1: '/assets/images/ticet-logo2.png',
-                    address1: "20:20 VOG",
-                    data1: "07.02.2024",
-                    img2: '/assets/images/ticet-logo3.png',
-                    address2: "22:25 SVO",
-                    data2: "07.02.2024",
-                    time: "2 ч 5м",
-                    addition: "DP-6968",
-                    addName: "Победа",
-                    img3: '/assets/images/ticet-logo2.png',
-                    address3: "7:25 SVO",
-                    data3: "10.02.2024",
-                    img4: '/assets/images/ticet-logo3.png',
-                    address4: "09:20 SVO",
-                    data4: "10.02.2024",
-                    time2: "2 ч 15м",
-                    addition2: "DP-6969",
-                    addName2: "Победа",
-                    price: "7248.00-",
-                    icons1: "/assets/bagaj-close.svg",
-                    icons2: "/assets/arrows.svg",
-                    icons3: "/assets/resycle-close.svg",
-                    icons21: "/assets/bagaj-close.svg",
-                    icons22: "/assets/arrows.svg",
-                    icons23: "/assets/resycle-close.svg",
-                },
-            ]
+
         }
     },
     created() {
