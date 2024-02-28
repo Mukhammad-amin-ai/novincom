@@ -6,14 +6,59 @@
           <h2 class="title">Популярные товары</h2>
         </div>
         <div class="heading-right">
-          <tabs class="nav nav-pills nav-border-anim justify-content-center" :data="tabsData" id="trendy"></tabs>
+          <tabs
+            class="nav nav-pills nav-border-anim justify-content-center"
+            :data="tabsData"
+            id="trendy"
+          ></tabs>
         </div>
       </div>
       <div class="row">
         <div class="col-xl-5col d-none d-xl-block">
           <div class="banner">
+            <!-- shop/sidebar/3cols -->
             <router-link to="/shop/sidebar/3cols">
-              <img src="../../../assets/newImg/banner-trend.png" alt="banner" width="218" height="390" />
+              <div class="top_product_card">
+                <div class="top_product_card_heading">
+                  <div class="top_card_title">Smart Phone</div>
+                  <div class="top_card_description">
+                    iPhone XS <br />
+                    5.8-inch display
+                  </div>
+                  <div class="top_card_price_parent">
+                    <div class="top_card_price_start">from</div>
+                    <div class="top_card_price">999</div>
+                  </div>
+                </div>
+                <div class="top_product_card_body">
+                  <img
+                    class="iPhone_img"
+                    src="@/assets/newImg/product/iPhone.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="top_product_card_footer">
+                  <div class="top_product_buy_noew">
+                    Купить сейчас
+
+                    <svg
+                      class="ml-1"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1 7.9999C1 7.86729 1.05268 7.74011 1.14645 7.64635C1.24021 7.55258 1.36739 7.4999 1.5 7.4999H13.293L10.146 4.3539C10.0521 4.26001 9.99937 4.13267 9.99937 3.9999C9.99937 3.86712 10.0521 3.73979 10.146 3.6459C10.2399 3.55201 10.3672 3.49927 10.5 3.49927C10.6328 3.49927 10.7601 3.55201 10.854 3.6459L14.854 7.6459C14.9006 7.69234 14.9375 7.74752 14.9627 7.80827C14.9879 7.86901 15.0009 7.93413 15.0009 7.9999C15.0009 8.06567 14.9879 8.13079 14.9627 8.19153C14.9375 8.25228 14.9006 8.30745 14.854 8.3539L10.854 12.3539C10.7601 12.4478 10.6328 12.5005 10.5 12.5005C10.3672 12.5005 10.2399 12.4478 10.146 12.3539C10.0521 12.26 9.99937 12.1327 9.99937 11.9999C9.99937 11.8671 10.0521 11.7398 10.146 11.6459L13.293 8.4999H1.5C1.36739 8.4999 1.24021 8.44722 1.14645 8.35345C1.05268 8.25968 1 8.13251 1 7.9999Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </router-link>
           </div>
         </div>
@@ -21,29 +66,39 @@
           <div class="tab-content tab-content-carousel just-action-icons-sm">
             <div class="tab-pane p-0 fade show active" id="trendy-top-rated">
               <div class="swiper-carousel carousel-with-shadow swiper-1">
-                <swiper :breakpoints="{
-                  '320': {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  '576': {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                  },
+                <swiper
+                  :breakpoints="{
+                    '320': {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    '576': {
+                      slidesPerView: 3,
+                      spaceBetween: 20,
+                    },
 
-                  '768': {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                  },
-                  '1200': {
-                    slidesPerView: 5,
-                  },
-                  '1201': {
-                    slidesPerView: 4,
-                    spaceBetween: 35,
-                  },
-                }" :modules="modules" :navigation="false" :slidesPerView="1" :spaceBetween="10" class="row">
-                  <swiper-slide v-for="(product, index) in ratedProducts" :key="index">
+                    '768': {
+                      slidesPerView: 4,
+                      spaceBetween: 20,
+                    },
+                    '1200': {
+                      slidesPerView: 5,
+                    },
+                    '1201': {
+                      slidesPerView: 4,
+                      spaceBetween: 35,
+                    },
+                  }"
+                  :modules="modules"
+                  :navigation="false"
+                  :slidesPerView="1"
+                  :spaceBetween="10"
+                  class="row"
+                >
+                  <swiper-slide
+                    v-for="(product, index) in ratedProducts"
+                    :key="index"
+                  >
                     <ProductTwelve :product="product" class="mb-3" />
                   </swiper-slide>
                 </swiper>
@@ -106,7 +161,7 @@ export default {
                 product_id: "122",
                 "product-category_id": "21",
               },
-            }
+            },
           ],
           brands: [
             {
@@ -263,7 +318,7 @@ export default {
                 product_id: "123",
                 "product-category_id": "20",
               },
-            }
+            },
           ],
           brands: [
             {
@@ -610,7 +665,7 @@ export default {
                 product_id: "125",
                 "product-category_id": "29",
               },
-            }
+            },
           ],
           brands: [
             {
@@ -807,7 +862,7 @@ export default {
     const onSwiper = (swiper) => {
       return swiper;
     };
-    const onSlideChange = () => { };
+    const onSlideChange = () => {};
     return {
       onSwiper,
       onSlideChange,
@@ -817,9 +872,8 @@ export default {
 };
 </script>
 <style scoped>
-.swiper-carousel .swiper .swiper-wrapper .swiper-slide{
+.swiper-carousel .swiper .swiper-wrapper .swiper-slide {
   width: 220px !important;
   margin-right: 20px !important;
 }
-
 </style>
