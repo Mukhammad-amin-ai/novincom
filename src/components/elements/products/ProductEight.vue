@@ -44,7 +44,7 @@
           <div class="product-content">
             <p>{{ product.short_desc }}</p>
           </div>
-          <div
+          <!-- <div
             class="product-nav product-nav-dots"
             v-if="product.variants.length > 0"
           >
@@ -58,7 +58,7 @@
                 <span class="sr-only">Color name</span>
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-lg-3 col-md-3 col-6 order-md-last order-lg-last">
@@ -126,6 +126,24 @@ export default {
       }
       return stars;
     },
+  },
+  created: function () {
+    let min = this.minPrice;
+    let max = this.maxPrice;
+    this.product.variants.map((item) => {
+      if (min > item.price) min = item.price;
+      if (max < item.price) max = item.price;
+    }, []);
+
+    if (this.product.variants.length == 0) {
+      min = this.product.sale_price
+        ? this.product.sale_price
+        : this.product.price;
+      max = this.product.price;
+    }
+
+    this.minPrice = min;
+    this.maxPrice = max;
   },
 };
 </script>
