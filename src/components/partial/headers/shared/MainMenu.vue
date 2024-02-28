@@ -257,7 +257,7 @@
                         <router-link to="/shop/sidebar/3cols">Мебель и товары для дома</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">SКосметика, гигиена, аптеки</router-link>
+                        <router-link to="/shop/sidebar/3cols">Косметика, гигиена, аптеки</router-link>
                       </li>
                       <li>
                         <router-link to="/shop/sidebar/3cols">
