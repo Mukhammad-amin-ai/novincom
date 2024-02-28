@@ -1,6 +1,6 @@
 <template>
   <HeaderDefaultVue/>
-  <PageHeader title="Операции" :subtitle="category" />
+  <PageHeader title="Операции" subtitle="Личный кабинет" />
   <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
     <div class="container">
       <ol class="breadcrumb">
