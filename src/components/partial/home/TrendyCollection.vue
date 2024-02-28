@@ -20,14 +20,14 @@
             <router-link to="/shop/sidebar/3cols">
               <div class="top_product_card">
                 <div class="top_product_card_heading">
-                  <div class="top_card_title">Smart Phone</div>
+                  <div class="top_card_title">Смартфон</div>
                   <div class="top_card_description">
                     iPhone XS <br />
                     5.8-inch display
                   </div>
                   <div class="top_card_price_parent">
                     <div class="top_card_price_start">from</div>
-                    <div class="top_card_price">999</div>
+                    <div class="top_card_price">83 456.78 Бонусов</div>
                   </div>
                 </div>
                 <div class="top_product_card_body">
