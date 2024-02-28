@@ -2,17 +2,32 @@
   <div class="product product-7 text-center">
     <figure class="product-media">
       <router-link :to="'/product/default/' + product.slug">
-        <img :src="`${baseUrl}${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
-          :height="product.sm_pictures[0].height" class="product-image" />
-        <img :src="`${baseUrl}${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
-          :height="product.sm_pictures[1].height" class="product-image-hover" v-if="product.sm_pictures[1]" />
+        <img
+          :src="`${baseUrl}${product.sm_pictures[0].url}`"
+          alt="Product"
+          :width="product.sm_pictures[0].width"
+          :height="product.sm_pictures[0].height"
+          class="product-image"
+        />
+        <img
+          :src="`${baseUrl}${product.sm_pictures[1].url}`"
+          alt="Product"
+          :width="product.sm_pictures[1].width"
+          :height="product.sm_pictures[1].height"
+          class="product-image-hover"
+          v-if="product.sm_pictures[1]"
+        />
       </router-link>
     </figure>
     <div class="product-body">
-      <div class="product-cat" style="text-align: start;">
+      <div class="product-cat" style="text-align: start">
         <span v-for="(cat, index) of product.category" :key="index">
-          <router-link :to="{ path: '/shop/sidebar/list', query: { category: cat.slug } }">{{ cat.name }}</router-link>
-          {{ index < product.category.length - 1 ? "," : "" }} </span>
+          <router-link
+            :to="{ path: '/shop/sidebar/list', query: { category: cat.slug } }"
+            >{{ cat.name }}</router-link
+          >
+          {{ index < product.category.length - 1 ? "," : "" }}
+        </span>
       </div>
       <h3 class="product-title">
         <router-link :to="'/product/default/' + product.slug">{{
@@ -35,6 +50,24 @@
             {{ minPrice.toFixed(2) }}&ndash;{{ maxPrice.toFixed(2) }}
           </div>
         </template>
+        <div class="ratings-container d-flex justify-start">
+          <div class="ratings_star">
+            <svg
+              v-for="(star, index) in totalStars"
+              :key="index"
+              :fill="star.color"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.70897 11.5823C2.41947 11.7308 2.09097 11.4705 2.14947 11.1383L2.77197 7.59076L0.129717 5.07376C-0.117033 4.83826 0.0112166 4.40776 0.341967 4.36126L4.01547 3.83926L5.65347 0.594009C5.80122 0.301509 6.20097 0.301509 6.34872 0.594009L7.98672 3.83926L11.6602 4.36126C11.991 4.40776 12.1192 4.83826 11.8717 5.07376L9.23022 7.59076L9.85272 11.1383C9.91122 11.4705 9.58272 11.7308 9.29322 11.5823L5.99997 9.89026L2.70897 11.5823Z"
+              />
+            </svg>
+          </div>
+          <div class="ratings-text">( {{ product.review }} Reviews )</div>
+        </div>
       </template>
     </div>
   </div>
@@ -55,9 +88,15 @@ export default {
     };
   },
   computed: {
-    // ...mapGetters("cart", ["canAddToCart"]),
-    // ...mapGetters("wishlist", ["isInWishlist"]),
-    // ...mapGetters("compare", ["isInCompare"]),
+    totalStars() {
+      const filledStars = this.product?.ratings;
+      const totalStars = 5;
+      const stars = [];
+      for (let i = 0; i < totalStars; i++) {
+        stars.push({ color: i < filledStars ? "#FCB941" : "#EBEBEB" });
+      }
+      return stars;
+    },
   },
 
   created: function () {
