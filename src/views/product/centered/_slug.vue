@@ -1,6 +1,10 @@
 <template>
   <main class="main">
-    <breadcrumb :prev-product="prevProduct" :next-product="nextProduct" current="Centered"></breadcrumb>
+    <breadcrumb
+      :prev-product="prevProduct"
+      :next-product="nextProduct"
+      current="Centered"
+    ></breadcrumb>
     <div class="page-content">
       <div class="container skeleton-body">
         <div class="product-details-top">
@@ -41,7 +45,119 @@ import Repository, { baseUrl } from "@/repositories/repository.js";
 export default {
   data: function () {
     return {
-      product: null,
+      product: {
+        id: 126,
+        name: "Подарочный сертификат М.Видео",
+        slug: "Подарочный сертификат М.Видео",
+        short_desc:
+          "Подарочные сертификаты ОZОN вызовут бурю эмоций у деловых, занятых людей и тех, кто проживает в отдаленных уголках страны. Ведь совершать покупки в этом маркетплейсе можно не выходя из дома, что наиболее удобно тем, кто не может выкроить время на шопинг или тем, у кого рядом нет специализированного магазина. Подарочные сертификаты OZON помогут сэкономить время на выборе уникального и полезного подарка.",
+        price: 500000,
+        sale_price: null,
+        review: 2,
+        ratings: 0,
+        until: null,
+        stock: 100,
+        top: true,
+        featured: true,
+        new: true,
+        author: null,
+        sold: null,
+        category: [
+          {
+            name: "Accessories",
+            slug: "accessories",
+            pivot: {
+              product_id: "126",
+              "product-category_id": "18",
+            },
+          },
+          {
+            name: "Video Games",
+            slug: "video-games",
+            pivot: {
+              product_id: "126",
+              "product-category_id": "30",
+            },
+          },
+          {
+            name: "Entertainment",
+            slug: "entertainment",
+            pivot: {
+              product_id: "126",
+              "product-category_id": "23",
+            },
+          },
+        ],
+        brands: [
+          {
+            name: "New Balance",
+            slug: "new-balance",
+            pivot: {
+              product_id: "126",
+              brand_id: "22",
+            },
+          },
+        ],
+        pictures: [
+          {
+            width: "600",
+            height: "600",
+            url: "/",
+            pivot: {
+              related_id: "126",
+              upload_file_id: "773",
+            },
+          },
+          {
+            width: "600",
+            height: "600",
+            url: "/assets/images/show.svg",
+            pivot: {
+              related_id: "126",
+              upload_file_id: "772",
+            },
+          },
+          {
+            width: "600",
+            height: "600",
+            url: "/uploads/product_5_3_fdb59d93f8.jpg",
+            pivot: {
+              related_id: "126",
+              upload_file_id: "774",
+            },
+          },
+        ],
+        sm_pictures: [
+          {
+            width: "300",
+            height: "300",
+            url: "/uploads/product_5_1_300x300_3dbc9b1611.jpg",
+            pivot: {
+              related_id: "126",
+              upload_file_id: "775",
+            },
+          },
+          {
+            width: "300",
+            height: "300",
+            url: "/uploads/product_5_2_300x300_100e169228.jpg",
+            pivot: {
+              related_id: "126",
+              upload_file_id: "776",
+            },
+          },
+          {
+            width: "300",
+            height: "300",
+            url: "/uploads/product_5_3_300x300_39035ca6ee.jpg",
+            pivot: {
+              related_id: "126",
+              upload_file_id: "777",
+            },
+          },
+        ],
+        variants: [],
+      },
       prevProduct: null,
       nextProduct: null,
       relatedProducts: [],
@@ -59,7 +175,7 @@ export default {
     ...mapGetters("demo", ["currentDemo"]),
   },
   created: function () {
-    this.getProduct();
+    // this.getProduct();
   },
   methods: {
     getProduct: async function () {
