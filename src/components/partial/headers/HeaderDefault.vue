@@ -111,7 +111,7 @@
                     <li class="item-lead" :class="{
                       active: $route.query.category == 'electronics',
                     }">
-                      <router-link to="/product/default/apple-smart-folio-for-11-inch-ipad-pro">Подарочные
+                      <router-link to="/product/default/">Подарочные
                         сертификаты</router-link>
                     </li>
                     <li class="item-lead" :class="{ active: $route.query.category == 'gift-idea' }">
@@ -211,6 +211,11 @@ export default {
   border-top-left-radius: .8rem;
 }
 
+.dropdown-menu:hover .category-dropdown .dropdown-toggle {
+  color: #fff !important;
+
+}
+
 .hover-close {
   display: none;
 }
@@ -253,6 +258,10 @@ export default {
   gap: 10px;
 }
 
+.drop-custom:hover {
+  color: #fff;
+}
+
 .category-dropdown {
   border-top-right-radius: .8rem;
   border-top-left-radius: .8rem;
@@ -260,6 +269,7 @@ export default {
 
 .category-dropdown:hover {
   background-color: transparent !important;
+  color: #fff !important;
 }
 
 .category-dropdown:hover svg path {
