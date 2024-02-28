@@ -1716,9 +1716,9 @@ export default {
     ...mapGetters("demo", ["currentDemo"]),
   },
   watch: {
-    $route: function () {
-      this.getProducts(true);
-    },
+    // $route: function () {
+    //   this.getProducts(true);
+    // },
   },
   // created: function () {
   //   // this.getProducts();
