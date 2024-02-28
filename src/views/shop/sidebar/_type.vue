@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <page-header :title="pageTitle" :subtitle="category"></page-header>
+    <page-header title="Электроника" :subtitle="category"></page-header>
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
       <div class="container">
         <ol class="breadcrumb">
@@ -10,7 +10,7 @@
           <li class="breadcrumb-item">
             <router-link to="/shop/sidebar/list">Товары</router-link>
           </li>
-          <li class="breadcrumb-item active">{{ category }}</li>
+          <li class="breadcrumb-item active">Электроника</li>
           <li class="breadcrumb-item" v-if="$route.query.searchTerm">
             <span>Search - {{ $route.query.searchTerm }}</span>
           </li>
@@ -25,7 +25,7 @@
               <div class="toolbox-left">
                 <div class="toolbox-info">
                   Показано
-                  <span style="font-family:Gilroy-Medium !important">{{ products.length }} of {{ totalCount }}</span>
+                  <span style="font-family:Gilroy-Medium !important">9 из 50</span>
                   Tоваров
                 </div>
               </div>
@@ -38,9 +38,8 @@
                       <option value="default">По умолчанию
                         <!-- <pre>   &#8964;</pre> -->
                       </option>
-                      <option value="featured">Most Popular</option>
-                      <option value="rating">Most Rated</option>
-                      <option value="new">Date</option>
+                      <option value="featured">Цена по возрастанию</option>
+                      <option value="rating">Цена по убыванию</option>
                     </select>
                   </div>
                 </div>
@@ -134,7 +133,7 @@ export default {
       // products: [],
       perPage: 5,
       type: "list",
-      totalCount: 0,
+      totalCount: 30,
       orderBy: "default",
       isSidebar: true,
       loaded: true,

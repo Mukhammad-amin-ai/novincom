@@ -208,12 +208,13 @@ small.form-text {
   background-image: none;
   font-size: 1rem;
   font-family: "molla";
-  // content: '\ec2d';
+  content: '\2714';
   line-height: 1;
   text-align: center;
   opacity: 0;
   margin-top: 0.1rem;
   visibility: hidden;
+  font-weight: 900;
   transition: opacity 0.01s;
 }
 

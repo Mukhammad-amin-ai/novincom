@@ -10,7 +10,10 @@
         <li class="breadcrumb-item">
           <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress">Товары</router-link>
         </li>
-        <li class="breadcrumb-item active">{{ current }}</li>
+        <li class="breadcrumb-item">
+          <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress">Электроника</router-link>
+        </li>
+        <li class="breadcrumb-item active">Подарочный сертификат М.Видео</li>
       </ol>
 
       <!-- <nav class="product-pager ml-auto" aria-label="Product">

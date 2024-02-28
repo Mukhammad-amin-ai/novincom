@@ -1,10 +1,22 @@
 <template>
   <main class="main">
-    <breadcrumb
-      :prev-product="prevProduct"
-      :next-product="nextProduct"
-      current="Centered"
-    ></breadcrumb>
+    <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2" style="border-top: 0.1rem solid rgba(235, 235, 235, 0.55);">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <router-link to="/">Главная</router-link>
+          </li>
+          <li class="breadcrumb-item">
+            <router-link to="/shop/sidebar/list">Товары</router-link>
+          </li>
+          <li class="breadcrumb-item">Электроника</li>
+          <li class="breadcrumb-item active">Подарочный сертификат М.Видео</li>
+          <!-- <li class="breadcrumb-item" v-if="$route.query.searchTerm">
+            <span>Search - {{ $route.query.searchTerm }}</span>
+          </li> -->
+        </ol>
+      </div>
+    </nav>
     <div class="page-content">
       <div class="container skeleton-body">
         <div class="product-details-top">

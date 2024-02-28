@@ -111,11 +111,11 @@
   padding: 16px 10px;
   gap: 10px;
 }
-.btn-product_add_wish:hover {
+/* .btn-product_add_wish:hover {
   border: 1px solid var(--blue);
   color: var(--blue);
   border-radius: 50px;
-}
+} */
 
 .heart_icon svg path {
   fill: var(--blue);

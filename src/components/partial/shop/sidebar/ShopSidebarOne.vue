@@ -3,7 +3,7 @@
     <div :class="{ 'sidebar-filter-wrapper': isSidebar }">
       <div class="widget widget-clean">
         <label style="font-family: Gilroy-Medium !important;">Фильтры:</label>
-        <a href="#" class="sidebar-filter-clear" 
+        <a href="#" class="sidebar-filter-clear" style="font-size: 14px !important; "
           @click.prevent="cleanAll">Очистить</a>
       </div>
       <div class="widget widget-collapsible">
