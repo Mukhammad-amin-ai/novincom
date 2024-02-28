@@ -87,12 +87,11 @@
             <div class="widget-body pt-0">
               <div class="filter-items" v-for="(item, index) in filterData.brands" :key="index">
                 <div class="filter-item" style="cursor: pointer;">
-                  {{ item.brand }}
-                  <!-- <div class="custom-control custom-checkbox"> -->
-                  <!-- <input type="checkbox" class="custom-control-input" :id="'brand-' + index"
-                      @click="setBrandFilter(item)" :checked="brandChecked(item)" /> -->
-                  <!-- <label class="custom-control-label" :for="'brand-' + index">{{ item.brand }}</label> -->
-                  <!-- </div> -->
+                  <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" :id="'brand-' + index"
+                      @click="setBrandFilter(item)" :checked="brandChecked(item)" />
+                  <label class="custom-control-label" :for="'brand-' + index">{{ item.brand }}</label>
+                  </div>
                 </div>
               </div>
             </div>
