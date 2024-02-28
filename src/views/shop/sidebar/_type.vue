@@ -127,7 +127,7 @@ export default {
   },
   data: function () {
     return {
-      // products: [],
+      products: [],
       perPage: 5,
       type: "list",
       totalCount: 0,
