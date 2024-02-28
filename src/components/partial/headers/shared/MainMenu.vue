@@ -300,6 +300,9 @@
                       <li>
                         <router-link to="/shop/sidebar/3cols"> Ювелирные изделия</router-link>
                       </li>
+                      <li>
+                        <router-link to="/shop/sidebar/without">Without</router-link>
+                      </li>
                     </ul>
                   </div>
 
