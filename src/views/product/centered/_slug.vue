@@ -1,6 +1,7 @@
 <template>
+  <headerProduct/>
   <main class="main">
-    <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2" style="border-top: 0.1rem solid rgba(235, 235, 235, 0.55);">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav mb-6" style="border-top: 0.1rem solid rgba(235, 235, 235, 0.55);">
       <div class="container">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -53,6 +54,7 @@ import InfoOne from "@/components/partial/product/info-tabs/InfoOne.vue";
 import Breadcrumb from "@/components/partial/product/BreadCrumb.vue";
 import RelatedProductsOne from "@/components/partial/product/related/RelatedProductsOne.vue";
 import Repository, { baseUrl } from "@/repositories/repository.js";
+import headerProduct from "@/components/partial/headers/HeaderDefault.vue";
 
 export default {
   data: function () {
@@ -182,6 +184,7 @@ export default {
     Breadcrumb,
     GalleryVertical,
     RelatedProductsOne,
+    headerProduct
   },
   computed: {
     ...mapGetters("demo", ["currentDemo"]),

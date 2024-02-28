@@ -1,5 +1,6 @@
 <template>
-  <PageHeader :title="pageTitle" :subtitle="category" />
+  <HeaderDefaultVue/>
+  <PageHeader title="Операции" :subtitle="category" />
   <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
     <div class="container">
       <ol class="breadcrumb">
@@ -55,6 +56,7 @@
 
 <script>
 import PageHeader from "@/components/elements/PageHeader.vue";
+import HeaderDefaultVue from "@/components/partial/headers/HeaderDefault.vue";
 export default {
   data() {
     return {
@@ -89,6 +91,7 @@ export default {
   },
   components: {
     PageHeader,
+    HeaderDefaultVue
   },
 };
 </script>

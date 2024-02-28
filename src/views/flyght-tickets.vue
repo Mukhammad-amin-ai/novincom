@@ -1,5 +1,6 @@
 <template>
-    <PageHeader :title="pageTitle" :subtitle="category" />
+    <headerDef/>
+    <PageHeader title="Авиабилеты" :subtitle="category" />
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
         <div class="container">
             <ol class="breadcrumb">
@@ -83,10 +84,12 @@
 <script>
 import PageHeader from '@/components/elements/PageHeader.vue';
 import ticket from '@/components/elements/flights/ticket-items.vue'
+import  headerDef from '@/components/partial/headers/HeaderDefault.vue'
 export default {
     components: {
         PageHeader,
-        ticket
+        ticket,
+        headerDef
     },
     data() {
         return {

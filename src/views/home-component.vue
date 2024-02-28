@@ -1,4 +1,5 @@
 <template>
+  <headerDef/>
   <div class="main home-page">
     <div class="intro-slider-container mb-5">
       <carousel />
@@ -307,6 +308,7 @@ import {
 import { homeData } from "../utilities/data";
 import Carousel from "@/components/elements/Carousel.vue";
 import CaruselLogo from "../components/elements/Carusel-logo.vue";
+import headerDef from '@/components/partial/headers/HeaderDefault.vue'
 
 export default {
   components: {
@@ -316,6 +318,7 @@ export default {
     NewCollection,
     Carousel,
     CaruselLogo,
+    headerDef
   },
   data: function () {
     return {

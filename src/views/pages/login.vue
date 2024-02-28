@@ -1,4 +1,5 @@
 <template>
+    <headerCatalog/>
     <main class="main">
         <nav aria-label="breadcrumb" style="border-top: 0.1rem solid rgba(235, 235, 235, 0.55); padding: 16px 0;">
             <div class="container">
@@ -58,9 +59,11 @@
 </template>
 <script>
 import Tabs from '../../components/elements/Tabs.vue';
+import headerCatalog from '@/components/partial/headers/headerCatalog.vue';
 export default {
     components: {
-        Tabs
+        Tabs,
+        headerCatalog
     },
     data: function () {
         return {
