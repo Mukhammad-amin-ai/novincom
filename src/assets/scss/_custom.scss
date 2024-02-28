@@ -280,7 +280,7 @@ $text-color: #ef837b;
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: #005baa;
       background-color: $primary-color;
       text-decoration: none !important;
     }
@@ -361,6 +361,7 @@ $text-color: #ef837b;
     figure {
       span:after {
         opacity: 1;
+        background: #ddd;
       }
     }
   }
