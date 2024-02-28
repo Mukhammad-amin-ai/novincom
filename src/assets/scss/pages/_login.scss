@@ -101,9 +101,9 @@
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: -0.025em;
-
   p {
-    margin-bottom: 2.7rem;
+    margin-bottom: 1.7rem;
+    color: black !important;
   }
 }
 
@@ -167,9 +167,9 @@
 }
 
 @include mq("md") {
-  .form-box {
-    padding: 3.7rem 6rem 6.4rem;
-  }
+  // .form-box {
+  //   padding: 3.7rem 6rem 6.4rem;
+  // }
 
   .form-tab .nav.nav-pills .nav-link {
     font-size: 2.4rem;

@@ -1,19 +1,19 @@
 <template>
     <main class="main">
-        <nav class="breadcrumb-nav border-0 mb-0">
+        <nav aria-label="breadcrumb" style="border-top: 0.1rem solid rgba(235, 235, 235, 0.55); padding: 16px 0;">
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <router-link to="/">Главна</router-link>
+                        <router-link to="/">Главная</router-link>
                     </li>
                     <li class="breadcrumb-item active">Вход</li>
                 </ol>
             </div>
         </nav>
-        <div class="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17"
-            style="background-image:url(./assets/images/form_sig_up.jpg) !important">
+        <div class="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17" 
+            style="background-image:url(./assets/images/form_sig_up.jpg) !important; height: 720px;">
             <div class="container">
-                <div class="form-box">
+                <div class="form-box" style="width: 420px; height: 380px; margin-left: 31%; margin-top: 4%;">
                     <div class="form-tab">
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="sign_in">
@@ -34,14 +34,14 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <a href="javascript:;" class="btn btn-login btn-g"
-                                                style="border-radius: 100px !important; font-family: Gilroy-Regular !important; font-size: 13px;">
+                                                style="border-radius: 100px !important; font-family: Gilroy-Regular !important; font-size: 13px; color:#777777;">
                                                 <!-- <i class="icon-google"></i> -->
                                                 По номеру телефона
                                             </a>
                                         </div>
                                         <div class="col-sm-6">
                                             <a href="javascript:;" class="btn btn-login btn-f"
-                                                style="border-radius: 100px !important; font-family: Gilroy-Regular !important; font-size: 13px;">
+                                                style="border-radius: 100px !important; font-family: Gilroy-Regular !important; font-size: 13px; color:#777777;">
                                                 <!-- <i class="icon-facebook-f"></i> -->
                                                 По номеру участника
                                             </a>
