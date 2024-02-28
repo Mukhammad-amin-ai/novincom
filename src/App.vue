@@ -10,7 +10,6 @@
       title="Back to Top"
       @click.prevent="scrollTop"
     >
-      <!-- <i class="icon-arrow-up"></i> -->
       <img src="./assets/newImg/icons/arrow-up.svg" alt="" />
     </button>
     <FooterDefault />

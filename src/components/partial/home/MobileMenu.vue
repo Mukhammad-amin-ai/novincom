@@ -10,7 +10,6 @@
         <input type="text" class="form-control" name="mobile-search" id="mobile-search" v-model="searchTerm"
           placeholder="Поиск по каталогу..." required />
         <button class="btn btn-primary" type="submit">
-          <!-- <i class="icon-search"></i> -->
           <img src="../../../assets/newImg/icons/search.svg" alt="" />
         </button>
       </form>
@@ -118,7 +117,7 @@
                 </ul>
               </li>
               <li>
-                <router-link to="/shop/sidebar/list">Спецпредложения</router-link>
+                <router-link to="/shop/sidebar/3cols">Спецпредложения</router-link>
                 <ul>
                   <li>
                     <router-link to="/shop/sidebar/list">Shop List</router-link>
@@ -154,278 +153,12 @@
                       </span>
                     </router-link>
                   </li>
-                  <!-- <li>
-                    <router-link to="/shop/cart">Cart</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/shop/checkout">Checkout</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/shop/wishlist">Wishlist</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/shop/dashboard">My Account</router-link>
-                  </li> -->
                 </ul>
               </li>
               <li>
                 <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress"
                   class="sf-with-ul">Акции</router-link>
-                <!-- <ul>
-                  <li>
-                    <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress">Default</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/product/centered/beige-ring-handle-circle-cross-body-bag">Centered</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/product/extended/yellow-tie-strap-block-heel-sandals">
-                      <span>
-                        Extended Info
-                        <span class="tip tip-new">New</span>
-                      </span>
-                    </router-link>
-                  </li>
-                  <li>
-                    <router-link to="/product/gallery/beige-metal-hoop-tote-bag">Gallery</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/product/sticky/brown-faux-fur-longline-coat">Sticky Info</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/product/sidebar/beige-v-neck-button-cardigan">Boxed With Sidebar</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/product/fullwidth/black-faux-leather-chain-trim-sandals">Full Width</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/product/masonry/black-denim-dungaree-dress">Masonry Sticky Info</router-link>
-                  </li>
-                </ul> -->
               </li>
-              <!-- <li>
-                <router-link to="/pages/about">Pages</router-link>
-                <ul>
-                  <li>
-                    <router-link to="/pages/about" class="sf-with-ul"
-                      >About</router-link
-                    >
-
-                    <ul>
-                      <li>
-                        <router-link to="/pages/about">About 01</router-link>
-                      </li>
-                      <li>
-                        <router-link to="/pages/about-2">About 02</router-link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <router-link to="/pages/contact" class="sf-with-ul"
-                      >Contact</router-link
-                    >
-
-                    <ul>
-                      <li>
-                        <router-link to="/pages/contact"
-                          >Contact 01</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/pages/contact-2"
-                          >Contact 02</router-link
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <router-link to="/pages/login">Login</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/pages/faq">FAQs</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/pages/404">Error 404</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/pages/coming-soon"
-                      >Coming Soon</router-link
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <router-link to="/blog/classic" class="sf-with-ul"
-                  >Blog</router-link
-                >
-                <ul>
-                  <li>
-                    <router-link to="/blog/classic">Classic</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/blog/listing">Listing</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/blog/grid/grid-2">Grid</router-link>
-                    <ul>
-                      <li>
-                        <router-link to="/blog/grid/grid-2"
-                          >Grid 2 columns</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/blog/grid/grid-3"
-                          >Grid 3 columns</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/blog/grid/grid-4"
-                          >Grid 4 columns</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/blog/grid-sidebar"
-                          >Grid sidebar</router-link
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <router-link to="/blog/masonry/masonry-2"
-                      >Masonry</router-link
-                    >
-                    <ul>
-                      <li>
-                        <router-link to="/blog/masonry/masonry-2"
-                          >Masonry 2 columns</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/blog/masonry/masonry-3"
-                          >Masonry 3 columns</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/blog/masonry/masonry-4"
-                          >Masonry 4 columns</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/blog/masonry-sidebar"
-                          >Masonry sidebar</router-link
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <router-link to="/blog/mask/grid">Mask</router-link>
-                    <ul>
-                      <li>
-                        <router-link to="/blog/mask/grid"
-                          >Blog mask grid</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link to="/blog/mask/masonry"
-                          >Blog mask masonry</router-link
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <router-link
-                      to="/blog/single/default/cras-ornare-tristique-elit."
-                      >Single Post</router-link
-                    >
-                    <ul>
-                      <li>
-                        <router-link
-                          to="/blog/single/default/cras-ornare-tristique-elit."
-                          >Default with sidebar</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link
-                          to="/blog/single/fullwidth/fusce-pellentesque-suscipit."
-                          >Fullwidth no sidebar</router-link
-                        >
-                      </li>
-                      <li>
-                        <router-link
-                          to="/blog/single/sidebar/utaliquam-sollicitzdvudin-leo."
-                          >Fullwidth with sidebar</router-link
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <router-link to="/elements" class="sf-with-ul"
-                  >Elements</router-link
-                >
-
-                <ul>
-                  <li>
-                    <router-link to="/elements/products">Products</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/elements/typography"
-                      >Typography</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/elements/titles">Titles</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/elements/banners">Banners</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/elements/categories"
-                      >Product Category</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/elements/video-banners"
-                      >Video Banners</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/elements/buttons">Buttons</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/elements/accordions"
-                      >Accordions</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/elements/tabs">Tabs</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/elements/testimonials"
-                      >Testimonials</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/elements/blog-posts"
-                      >Blog Posts</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/elements/portfolio"
-                      >Portfolio</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/elements/cta">Call to Action</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/elements/icon-boxes"
-                      >Icon Boxes</router-link
-                    >
-                  </li>
-                </ul>
-              </li> -->
             </ul>
           </nav>
         </div>
@@ -433,28 +166,27 @@
           <nav class="mobile-cats-nav">
             <ul class="mobile-cats-menu">
               <li class="item-cats-lead">
-                <router-link :to="'/shop/sidebar/3cols?category=electronics'">Электроника</router-link>
+                <router-link to="/product/default/">Подарочные сертификаты</router-link>
               </li>
               <li class="item-cats-lead">
-                <router-link :to="'/shop/sidebar/3cols?category=gift-idea'">Идеи подарков</router-link>
+                <router-link to="#">Трэвел-сервисы</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=beds'">Кровати</router-link>
+                <router-link to="/flight-tickets">Авиабилеты</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=lighting'">Lighting</router-link>
+                <router-link to="/flight-tickets">ЖД билеты</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=sofas-and-sleeper-sofas'">Диваны и спальные
-                  места</router-link>
+                <router-link to="/flight-tickets">Отели</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=storage'">Место хранения</router-link>
+                <router-link to="/shop/sidebar/3cols">Товары</router-link>
               </li>
               <li>
-                <router-link :to="'/shop/sidebar/3cols?category=armchairs-and-chaises'">Кресла и шезлонги</router-link>
+                <router-link to="#">Благотворительность </router-link>
               </li>
-              <li>
+              <!-- <li>
                 <router-link :to="'/shop/sidebar/3cols?category=decoration'">Украшение</router-link>
               </li>
               <li>
@@ -465,7 +197,7 @@
               </li>
               <li>
                 <router-link :to="'/shop/sidebar/3cols?category=furniture'">Уличная мебель</router-link>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
