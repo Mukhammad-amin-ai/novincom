@@ -55,7 +55,8 @@
             <div class="search-form-field">
                 <input type="text" placeholder="Откуда">
                 <input type="text" placeholder="Куда">
-                <input type="date">
+                <input type="text" placeholder="07.02.2024 – 10.02.2024">
+                <!-- <input type="date"> -->
                 <div class="passenger">
                     <div class="pax">
                         <img src="../assets/newImg/icons/elder.svg" alt="elder">
