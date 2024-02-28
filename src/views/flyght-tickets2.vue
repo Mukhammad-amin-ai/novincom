@@ -1,6 +1,6 @@
 <template>
     <headerDef />
-    <PageHeader title="Авиабилеты" :subtitle="category" />
+    <PageHeader title="Авиабилеты" subtitle="Путешествия" />
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
         <div class="container">
             <ol class="breadcrumb">
