@@ -17,9 +17,6 @@
                     <router-link to="/shop/sidebar/list" style="color:#000!important;">Результаты поиска
                         авиабилетов</router-link>
                 </li>
-                <!-- <li class="breadcrumb-item" v-if="$route.query.searchTerm">
-                    <span>Search - {{ $route.query.searchTerm }}</span>
-                </li> -->
             </ol>
         </div>
     </nav>

@@ -40,9 +40,9 @@
         </div>
         <div class="flight-passenger-info" v-if="info">
           <div class="top-icons">
-            <img :src="data.icons1" alt="">
-            <img :src="data.icons2" alt="">
-            <img :src="data.icons3" alt="">
+            <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+            <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+            <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
           </div>
           <div class="bottom-info">
             <div class="item-bot">E</div>
@@ -113,9 +113,9 @@
       </div>
       <div class="flight-item" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-if="detailed">
         <div class="start-flight">
-          <img :src="data.img3" alt="">
-          <h6>{{ data.address3 }}</h6>
-          <h6>{{ data.data3 }}</h6>
+          <img src="../../../assets/newImg/logo-air.png" alt="">
+          <h6>20:20 VOG</h6>
+          <h6>07.02.2024</h6>
         </div>
         <div class="flight-line">
           <div class="tooltip-flight tol2" v-if="tooltip5">
@@ -136,23 +136,23 @@
               alt="">
           </div>
           <div class="hour">
-            {{ data.time2 }}
+            18 ч 10м
           </div>
         </div>
         <div class="start-flight">
-          <img :src="data.img4" alt="">
-          <h6>{{ data.address4 }}</h6>
-          <h6>{{ data.data4 }}</h6>
+          <img src="../../../assets/newImg/logo-air.png" alt="">
+          <h6>22:25 SVO</h6>
+          <h6>07.02.2024</h6>
         </div>
         <div class="flight-info">
-          <h6>{{ data.addition2 }}</h6>
-          <h6>{{ data.addName2 }}</h6>
+          <h6>DP-6968</h6>
+          <h6>Победа</h6>
         </div>
         <div class="flight-passenger-info" v-if="info">
           <div class="top-icons">
-            <img :src="data.icons21" alt="">
-            <img :src="data.icons22" alt="">
-            <img :src="data.icons23" alt="">
+            <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+            <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+            <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
           </div>
           <div class="bottom-info">
             <div class="item-bot">E</div>
@@ -224,7 +224,7 @@
       <!-- <ticketItemV2 :detailed="detailed" @update:detailed="toggleFlight" /> -->
     </div>
     <button class="price-flight">
-      {{ data.price }}
+      6439.00-
     </button>
   </div>
 </template>
