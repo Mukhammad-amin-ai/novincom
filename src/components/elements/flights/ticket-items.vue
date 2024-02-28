@@ -8,7 +8,7 @@
           <h6>{{ data.data1 }}</h6>
         </div>
         <div class="flight-line">
-          <div class="tooltip-flight tol2" v-if="tooltip5">
+          <!-- <div class="tooltip-flight tol2" v-if="tooltip5">
             Вылет: Россия,
             Шереметьево (SVO)
             <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
@@ -17,13 +17,11 @@
             Прибытие: Россия,
             Шереметьево (SVO)
             <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
-          </div>
+          </div> -->
           <div class="wrap-flight">
-            <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2" src="../../../assets/newImg/icons/ellipse.svg"
-              alt="">
+            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
             <div class="line"></div>
-            <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3" src="../../../assets/newImg/icons/airplane.svg"
-              alt="">
+            <img src="../../../assets/newImg/icons/airplane.svg" alt="">
           </div>
           <div class="hour">
             {{ data.time }}
@@ -118,7 +116,7 @@
           <h6>{{ data.data3 }}</h6>
         </div>
         <div class="flight-line">
-          <div class="tooltip-flight tol2" v-if="tooltip5">
+          <!-- <div class="tooltip-flight tol2" v-if="tooltip5">
             Вылет: Россия,
             Шереметьево (SVO)
             <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
@@ -127,13 +125,11 @@
             Прибытие: Россия,
             Шереметьево (SVO)
             <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
-          </div>
+          </div> -->
           <div class="wrap-flight">
-            <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2" src="../../../assets/newImg/icons/ellipse.svg"
-              alt="">
+            <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
             <div class="line"></div>
-            <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3" src="../../../assets/newImg/icons/airplane.svg"
-              alt="">
+            <img src="../../../assets/newImg/icons/airplane.svg" alt="">
           </div>
           <div class="hour">
             {{ data.time2 }}
@@ -242,8 +238,8 @@ export default {
       info: true,
       info2: true,
       detailed: true,
-      tooltip5: false,
-      tooltip6: false,
+      // tooltip5: false,
+      // tooltip6: false,
     }
   },
   methods: {

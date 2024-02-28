@@ -68,7 +68,7 @@
         </div>
         <div class="serach-result-field">
             <ticket v-for="item in data" :data="item" />
-
+            <ticketItems v-for="item in data2" :data="item" />
         </div>
     </div>
     <div class="filter">
@@ -80,7 +80,8 @@
 </template>
 <script>
 import PageHeader from '@/components/elements/PageHeader.vue';
-import ticket from '@/components/elements/flights/ticket-items.vue'
+import ticket from '@/components/elements/flights/ticet-v2.vue'
+import ticketItems from '@/components/elements/flights/ticket-items.vue';   
 import headerDef from '@/components/partial/headers/HeaderDefault.vue'
 export default {
     components: {
@@ -104,8 +105,8 @@ export default {
                     addition: "DP-6968",
                     addName: "Победа",
                     img3: '/assets/images/ticet-logo3.png',
-                    address3: "7:25 SVO",
-                    data3: "10.02.2024",
+                    address3: "16:10 IST",
+                    data3: "24.03.2024",
                     img4: '/assets/images/ticet-logo3.png',
                     address4: "09:40 SVO",
                     data4: "10.02.2024",
@@ -147,6 +148,8 @@ export default {
                     icons22: "/assets/arrows.svg",
                     icons23: "/assets/round-arrows.svg",
                 },
+            ],
+            data2: [
                 {
                     img1: '/assets/images/ticet-logo2.png',
                     address1: "20:20 VOG",

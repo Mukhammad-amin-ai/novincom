@@ -1,10 +1,119 @@
 <template >
+    <div class="flight-item" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-if="detailed">
+        <div class="start-flight">
+            <img :src="data.img1" alt="">
+            <h6>{{ data.address1 }}</h6>
+            <h6>{{ data.data1 }}</h6>
+        </div>
+        <div class="flight-line">
+            <div class="tooltip-flight tol2" v-if="tooltip5">
+                Вылет: Россия,
+                Шереметьево (SVO)
+                <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div>
+            <div class="tooltip-flight tol3" v-if="tooltip6">
+                Прибытие: Россия,
+                Шереметьево (SVO)
+                <img class="corner" src="../../../assets/newImg/icons/Polygon.svg" alt="">
+            </div>
+            <div class="wrap-flight">
+                <img @mouseover="tooltipFunc2" @mouseleave="tooltipClose2" src="../../../assets/newImg/icons/ellipse.svg"
+                    alt="">
+                <div class="line"></div>
+                <img @mouseover="tooltipFunc3" @mouseleave="tooltipClose3" src="../../../assets/newImg/icons/airplane.svg"
+                    alt="">
+            </div>
+            <div class="hour">
+                {{ data.time }}
+            </div>
+        </div>
+        <div class="start-flight">
+            <img :src="data.img2" alt="">
+            <h6>{{ data.address2 }}</h6>
+            <h6>{{ data.data2 }}</h6>
+        </div>
+        <div class="flight-info">
+            <h6>{{ data.addition }}</h6>
+            <h6>{{ data.addName }}</h6>
+        </div>
+        <div class="flight-passenger-info" v-if="info">
+            <div class="top-icons">
+                <img :src="data.icons1" alt="">
+                <img :src="data.icons2" alt="">
+                <img :src="data.icons3" alt="">
+            </div>
+            <div class="bottom-info">
+                <div class="item-bot">E</div>
+            </div>
+        </div>
+        <div class="detailed" v-else>
+            <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
+            Подробнее
+        </div>
+    </div>
+    <div class="flight-item detailed-info" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-else>
+        <div class="detailed-cover">
+            <div class="start-flight detailed-start">
+                <img src="../../../assets/newImg/logo-air.png" alt="">
+                <h6>20:20 VOG</h6>
+                <h6 style="white-space:nowrap;">29 февраля 2024</h6>
+                <h6>Восточный</h6>
+            </div>
+            <div class="flight-line">
+                <div class="wrap-flight">
+                    <img src="../../../assets/newImg/icons/ellipse.svg" alt="">
+                    <div class="line"></div>
+                    <img src="../../../assets/newImg/icons/airplane.svg" alt="">
+                </div>
+                <div class="hour">
+                    18 ч 10м
+                </div>
+            </div>
+            <div class="start-flight detailed-start">
+                <img src="../../../assets/newImg/logo-air.png" alt="">
+                <h6>22:25 SVO</h6>
+                <h6 style="white-space:nowrap;">29 февраля 2024</h6>
+                <h6>Восточный</h6>
+            </div>
+            <div class="flight-info">
+                <h6>DP-6968</h6>
+                <h6>Победа</h6>
+            </div>
+            <div class="flight-passenger-info" :style="{ display: detailed ? 'block' : 'none' }" v-if="info">
+                <div class="top-icons">
+                    <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+                    <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+                    <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
+                </div>
+                <div class="bottom-info">
+                    <div class="item-bot">E</div>
+                </div>
+            </div>
+            <div class="detailed" :style="{ display: detailed ? 'block' : 'none' }" v-else>
+                Подробнее
+                <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
+            </div>
+        </div>
+        <div class="bottom-detailed">
+            <div class="bottom-item">
+                <img src="../../../assets/newImg/icons/Group-class.svg" alt="">
+                Багаж: Да
+            </div>
+            <div class="bottom-item">
+                <img src="../../../assets/newImg/icons/arrows.svg" alt="">
+                Обмен: Да
+            </div>
+            <div class="bottom-item">
+                <img src="../../../assets/newImg/icons/round-arrows.svg" alt="">
+                Возврат: Да
+            </div>
+        </div>
+    </div>
     <div class="flight-item" @mouseover="goFrom" @mouseleave="goFromLeave" @click="toggleFlight" v-if="detailed">
         <div class="start-flight">
             <img src="../../../assets/newImg/logo-air.png" alt="">
             <h6>20:20 VOG</h6>
             <h6>07.02.2024</h6>
-
         </div>
         <div class="flight-line">
             <div class="tooltip-flight" v-if="tooltip">
