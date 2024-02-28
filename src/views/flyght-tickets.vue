@@ -71,7 +71,9 @@
                         x 1
                     </div>
                 </div>
-                <button class="search-btn">Искать</button>
+                <router-link to="/flight-tickets2">
+                    <button class="search-btn">Искать</button>
+                </router-link>
             </div>
         </div>
         <div class="serach-result-field">

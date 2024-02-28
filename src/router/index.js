@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/home-component.vue";
 import loginVue from "@/views/pages/login.vue";
 import flyghtTicketsVue from "@/views/flyght-tickets.vue";
+import flyghtTicketsVue2 from "@/views/flyght-tickets2.vue";
 import operationVue from "@/views/operation.vue";
 
 const router = createRouter({
@@ -71,6 +72,11 @@ const router = createRouter({
       path: "/flight-tickets",
       name: "flight tickets",
       component: flyghtTicketsVue,
+    },
+    {
+      path: "/flight-tickets2",
+      name: "flight tickets2",
+      component: flyghtTicketsVue2,
     },
     {
       path: "/operation",

@@ -49,8 +49,8 @@
           </div>
         </div>
         <div class="detailed" v-else>
-          Подробнее
           <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
+          Подробнее
         </div>
       </div>
       <div class="flight-item detailed-info" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-else>
@@ -159,8 +159,8 @@
           </div>
         </div>
         <div class="detailed" v-else>
+          <img src="../../../assets/newImg/icons/airplane3.svg" alt="">
           Подробнее
-          <img src="../../../assets/newImg/icons/airplane2.svg" alt="">
         </div>
       </div>
       <div class="flight-item detailed-info" @mouseover="goTo" @mouseleave="goToLeave" @click="toggleFlight" v-else>
@@ -221,7 +221,6 @@
           </div>
         </div>
       </div>
-      <!-- <ticketItemV2 :detailed="detailed" @update:detailed="toggleFlight" /> -->
     </div>
     <button class="price-flight">
       {{ data.price }}
