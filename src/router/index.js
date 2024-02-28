@@ -38,6 +38,11 @@ const router = createRouter({
       component: () => import("@/views/shop/sidebar/_type.vue"),
     },
     {
+      path: "/shop/sidebar/without",
+      name:"without",
+      component: () => import("@/views/shop/sidebar/_type2.vue"),
+    },
+    {
       path: "/shop/nosidebar/boxed",
       name: "category show boxed",
       component: () => import("@/views/shop/nosidebar/_type.vue"),
