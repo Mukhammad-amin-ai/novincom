@@ -12,7 +12,7 @@
         > -->
         <img
           id="product-zoom"
-          src="../../../../assets/newImg/cat_1.png"
+          src="/assets/images/show.svg"
           alt="product"
           width="800"
           height="800"
@@ -28,7 +28,7 @@
         </a> -->
       </figure>
 
-    <!-- .product-details-tab .tab-content .tab-pane -->
+      <!-- .product-details-tab .tab-content .tab-pane -->
 
       <!-- <light-box
         ref="lightbox"
