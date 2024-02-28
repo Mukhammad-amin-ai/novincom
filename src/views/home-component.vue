@@ -365,6 +365,10 @@ export default {
   },
   created: function () {
     this.getProducts();
+    this.setLocal()
+  },
+  mounted() {
+    this.getProducts();
   },
   methods: {
     getProducts: async function () {
@@ -378,6 +382,9 @@ export default {
         })
         .catch((error) => ({ error: JSON.stringify(error) }));
     },
+    setLocal() {
+      localStorage.setItem('showLogin', true)
+    }
   },
 };
 </script>

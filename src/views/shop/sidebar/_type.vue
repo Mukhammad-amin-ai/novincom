@@ -1,4 +1,5 @@
 <template>
+  <headerCatalog/>
   <main class="main">
     <page-header title="Электроника" :subtitle="category"></page-header>
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
@@ -109,7 +110,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Sticky from "vue-sticky-directive";
-
+import headerCatalog from '@/components/partial/headers/headerCatalog.vue'
 import PageHeader from "@/components/elements/PageHeader.vue";
 import ShopListOne from "@/components/partial/shop/list/ShopListOne.vue";
 import ShopSidebarOne from "@/components/partial/shop/sidebar/ShopSidebarOne.vue";
@@ -121,6 +122,7 @@ import { scrollToPageContent } from "@/utilities/common";
 export default {
   components: {
     PageHeader,
+    headerCatalog,
     ShopListOne,
     ShopSidebarOne,
     Pagination,
@@ -1736,6 +1738,7 @@ export default {
   //   );
   // },
   mounted: function () {
+    this.localChange();
     this.paramsShow();
     this.resizeHandler();
     window.addEventListener("resize", this.resizeHandler, {
@@ -1747,8 +1750,12 @@ export default {
   },
   methods: {
     paramsShow() {
-      console.log(this.$route);
+      // console.log(this.$route);
       this.type = this.$route.params.loyaut;
+    },
+    localChange() {
+      console.log(this.$route);
+      localStorage.setItem('showLogin', false)
     },
     // getProducts: async function (samePage = false) {
     //   this.type = this.$route.params.type;
