@@ -1,7 +1,7 @@
 <template>
   <div class="product product-7 text-center">
     <figure class="product-media">
-      <router-link :to="'/product/default/' + product.slug">
+      <router-link to="/product/default/">
         <img :src="`${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
           :height="product.sm_pictures[0].height" class="product-image" />
         <img :src="`${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
@@ -15,7 +15,7 @@
           {{ index < product.category.length - 1 ? "," : "" }} </span>
       </div>
       <h3 class="product-title">
-        <router-link :to="'/product/default/' + product.slug">{{
+        <router-link to="/product/default/">{{
           product.name
         }}</router-link>
       </h3>

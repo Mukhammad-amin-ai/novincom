@@ -3,7 +3,7 @@
     <div class="row pr-2">
       <div class="col-lg-3 col-md-3 col-6">
         <figure class="product-media">
-          <router-link :to="'/product/default/' + product.slug">
+          <router-link to="/product/default/">
             <img :src="`${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
               :height="product.sm_pictures[0].height" class="product-image" />
             <img :src="`${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
@@ -23,7 +23,7 @@
               {{ index < product.category.length - 1 ? "," : "" }} </span>
           </div>
           <h3 class="product-title">
-            <router-link :to="'/product/default/' + product.slug">{{
+            <router-link to="/product/default/">{{
               product.name
             }}</router-link>
           </h3>
