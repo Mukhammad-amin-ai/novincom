@@ -64,7 +64,7 @@
               :key="item"
             >
               <div></div>
-              <div>{{ operation.price }}</div>
+              <div>{{ item.price }}</div>
               <div>{{ item.title }}</div>
             </div>
           </div>
