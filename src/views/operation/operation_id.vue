@@ -27,8 +27,16 @@
         class="operation_line_parent d-flex flex-column"
       >
         <div class="operation_line">
-          <div>{{ operation.date }}</div>
-          <div>{{ operation.price }}</div>
+          <div
+            :class="new_operations.includes(operation.id) ? 'blue_text' : null"
+          >
+            {{ operation.date }}
+          </div>
+          <div
+            :class="new_operations.includes(operation.id) ? 'blue_text' : null"
+          >
+            {{ operation.price }}
+          </div>
           <div class="d-flex justify-end ml-auto cursor-pointer">
             <img
               v-if="new_operations.includes(operation.id)"
@@ -105,8 +113,120 @@ export default {
           ],
         },
         {
-          date: "25.10.2023",
+          date: "24.10.2023",
           id: 3,
+          price: "800,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "23.10.2023",
+          id: 4,
+          price: "600,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "22.10.2023",
+          id: 5,
+          price: "700,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "21.10.2023",
+          id: 6,
+          price: "800,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "20.10.2023",
+          id: 7,
+          price: "600,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "19.10.2023",
+          id: 8,
+          price: "700,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "18.10.2023",
+          id: 9,
+          price: "800,00 –",
+          order_id: "Заказ 999313705-14",
+          operation_about: [
+            {
+              price: "100,00 –",
+              title: "В подарок",
+            },
+            {
+              price: "600,00 –",
+              title: "В подарок",
+            },
+          ],
+        },
+        {
+          date: "17.10.2023",
+          id: 10,
           price: "800,00 –",
           order_id: "Заказ 999313705-14",
           operation_about: [
@@ -145,6 +265,9 @@ export default {
 </script>
 
 <style scoped>
+.blue_text {
+  color: #005baa;
+}
 .inside_operation {
   display: flex;
   flex-direction: column;
