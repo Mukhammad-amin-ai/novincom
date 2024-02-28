@@ -248,19 +248,19 @@
                     <!-- <div class="menu-title">Shop with sidebar</div> -->
                     <ul>
                       <li>
-                        <router-link to="/shop/sidebar/list">Одежда, обувь, аксессуары</router-link>
+                        <router-link to="/shop/sidebar/3cols">Одежда, обувь, аксессуары</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/2cols">Электроника и бытовая техника</router-link>
+                        <router-link to="/shop/sidebar/3cols">Электроника и бытовая техника</router-link>
                       </li>
                       <li>
                         <router-link to="/shop/sidebar/3cols">Мебель и товары для дома</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/4cols">SКосметика, гигиена, аптеки</router-link>
+                        <router-link to="/shop/sidebar/3cols">SКосметика, гигиена, аптеки</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/market">
+                        <router-link to="/shop/sidebar/3cols">
                           <!-- <span>
                             Shop Market
                             <span class="tip tip-new">New</span>
@@ -274,7 +274,7 @@
 
                     <ul>
                       <li>
-                        <router-link to="/shop/nosidebar/boxed">
+                        <router-link to="/shop/sidebar/3cols">
                           <!-- <span>
                             Shop Boxed No Sidebar
                             <span class="tip tip-hot">Hot</span>
@@ -283,22 +283,22 @@
                         </router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/nosidebar/fullwidth">Товары для животных</router-link>
+                        <router-link to="/shop/sidebar/3cols">Товары для животных</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/nosidebar/fullwidth">Спортивные товары </router-link>
+                        <router-link to="/shop/sidebar/3cols">Спортивные товары </router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/nosidebar/fullwidth">Хобби и канцтовары</router-link>
+                        <router-link to="/shop/sidebar/3cols">Хобби и канцтовары</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/nosidebar/fullwidth">Маркетплэйсы</router-link>
+                        <router-link to="/shop/sidebar/3cols">Маркетплэйсы</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/nosidebar/fullwidth">DIY и товары для сада</router-link>
+                        <router-link to="/shop/sidebar/3cols">DIY и товары для сада</router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/nosidebar/fullwidth"> Ювелирные изделия</router-link>
+                        <router-link to="/shop/sidebar/3cols"> Ювелирные изделия</router-link>
                       </li>
                     </ul>
                   </div>

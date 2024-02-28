@@ -111,7 +111,8 @@
                     <li class="item-lead" :class="{
                       active: $route.query.category == 'electronics',
                     }">
-                      <router-link to="/product/default/apple-smart-folio-for-11-inch-ipad-pro">Подарочные сертификаты</router-link>
+                      <router-link to="/product/default/apple-smart-folio-for-11-inch-ipad-pro">Подарочные
+                        сертификаты</router-link>
                     </li>
                     <li class="item-lead" :class="{ active: $route.query.category == 'gift-idea' }">
                       <router-link to="#">Трэвел-сервисы</router-link>
