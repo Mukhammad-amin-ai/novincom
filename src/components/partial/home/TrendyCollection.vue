@@ -26,7 +26,7 @@
                     5.8-inch display
                   </div>
                   <div class="top_card_price_parent">
-                    <div class="top_card_price_start">from</div>
+                    <!-- <div class="top_card_price_start"></div> -->
                     <div class="top_card_price">83 456.78 Бонусов</div>
                   </div>
                 </div>
