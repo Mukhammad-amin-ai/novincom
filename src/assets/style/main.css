@@ -43,3 +43,86 @@
 .rotated_icon {
   transform: rotate(180deg);
 }
+
+.top_product_card {
+  width: 100%;
+  background: white;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+
+.top_product_card_heading {
+  padding: 16px 0 0 16px;
+}
+
+.top_card_title {
+  font-family: Gilroy-Regular, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #777777 !important;
+}
+
+.top_card_description {
+  font-family: Gilroy-Medium, sans-serif !important;
+  font-size: 16px;
+  font-weight: 500 !important;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 4px;
+  color: #333 !important;
+}
+
+.top_card_price_parent {
+  display: flex;
+  margin-top: 4px;
+}
+
+.top_card_price_start {
+  font-family: Gilroy-Regular, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #777777 !important;
+}
+
+.top_card_price {
+  font-family: Gilroy-Medium, sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 4px;
+}
+
+.top_product_card_footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #005baa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0;
+  font-family: Gilroy-Medium, sans-serif !important;
+
+  font-size: 14px !important;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+.iPhone_img {
+  height: 268px;
+}
