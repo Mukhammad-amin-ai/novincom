@@ -4,16 +4,41 @@
     <div class="tab-content">
       <div class="tab-pane fade show active" id="tab1">
         <div class="product-desc-content">
-          <h3 class="info_text_title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h3>
+          <h3 class="info_text_title">Как воспользоваться сертификатом</h3>
           <p class="mb-1"></p>
-
           <div class="product_description_info">
-            <b class="mr-2"></b> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Laborum enim culpa doloremque, voluptatibus
-            temporibus delectus vitae eius obcaecati veritatis. Reiciendis
-            fugiat ad earum tenetur asperiores rem, possimus est deleniti nemo!
+            <p>1. Зарегистрируйтесь на сайте или в приложении Ozon.</p>
+            <p>
+              2. Перейдите в личный кабинет, выберите раздел “Кодовые слова и
+              сертификаты” и примените код активации.
+            </p>
+            <p>
+              3. Через 10-15 минут номинал сертификата зачислится на ваш
+              Ozon.Счет. Потратьте средства на покупки!
+            </p>
+          </div>
+        </div>
+        <p class="mb-4"></p>
+
+        <div class="product-desc-content">
+          <h3 class="info_text_title">Ограничения использования</h3>
+          <p class="mb-1"></p>
+          <div class="product_description_info">
+            <p>1. Можно активировать не более 3 сертификатов в сутки.</p>
+            <p>2. Нельзя использовать при оплате в кредит.</p>
+            <p>
+              3. На сумму сертификата можно заказывать всё, в том числе авиа- и
+              Ж/Д билеты. Нельзя оплачивать только товары из разделов
+              “Подарочные
+              <br />
+              сертификаты” и “Цифровые книги”.
+            </p>
+            <p>
+              4. Частичная и полная оплата с пользовательского счета не будет
+              предложена при выборе оплаты при получении. С 01.03.23
+              воспользоваться <br />
+              сертификатами Ozon на территории Казахстана и Беларусии нельзя!
+            </p>
           </div>
         </div>
       </div>
@@ -177,3 +202,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.product_description_info {
+  font-family: Gilroy-Regular, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 22px !important;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333 !important;
+}
+</style>
