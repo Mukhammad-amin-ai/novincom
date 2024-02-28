@@ -4,11 +4,13 @@
     <div class="tab-content">
       <div class="tab-pane fade show active" id="tab1">
         <div class="product-desc-content">
-          <h3 class="info_text_title">{{ product?.name }}</h3>
+          <h3 class="info_text_title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
           <p class="mb-1"></p>
 
           <div class="product_description_info">
-            <b class="mr-2"></b>{{ product?.short_desc }}
+            <b class="mr-2"></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum enim culpa doloremque,
+            voluptatibus temporibus delectus vitae eius obcaecati veritatis. Reiciendis fugiat ad earum tenetur asperiores
+            rem, possimus est deleniti nemo!
           </div>
         </div>
       </div>

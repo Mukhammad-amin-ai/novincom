@@ -5,7 +5,7 @@
       <span class="product-label label-circle label-sale" v-if="product.featured">Выгодно</span>
       <span class="product-label label-circle label-top" v-if="product.top">Топ</span>
       <span class="product-label label-circle label-out" v-if="product.stock === 0">Out Of Stock</span>
-      <router-link :to="'/product/default/' + product.slug">
+      <router-link to="/product/default/">
         <img :src="`${product.sm_pictures[0].url}`" alt="Product" :width="product.sm_pictures[0].width"
           :height="product.sm_pictures[0].height" class="product-image" />
         <img :src="`${product.sm_pictures[1].url}`" alt="Product" :width="product.sm_pictures[1].width"
@@ -28,7 +28,7 @@
         <span class="out-price">{{ formatNumber(product.price) }}</span>
       </div>
       <div class="product-price" style="gap:5px;" v-if="product.stock == null">
-        {{ product.price.toFixed(2) }} <span style="font-size: 13px;font-family: Gilroy-Medium !important;">
+        {{ formatNumber(product.price.toFixed(2)) }} <span style="font-size: 13px;font-family: Gilroy-Medium !important;">
           Бонусов</span>
       </div>
       <template v-else>

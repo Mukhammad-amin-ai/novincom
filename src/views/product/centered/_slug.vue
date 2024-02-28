@@ -45,7 +45,7 @@ export default {
       prevProduct: null,
       nextProduct: null,
       relatedProducts: [],
-      loaded: false,
+      loaded: true,
     };
   },
   components: {
@@ -63,7 +63,7 @@ export default {
   },
   methods: {
     getProduct: async function () {
-      this.loaded = false;
+      this.loaded = true;
       await Repository.get(`${baseUrl}/products/${this.$route.params.slug}`, {
         params: { demo: this.currentDemo },
       })

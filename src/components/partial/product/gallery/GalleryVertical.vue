@@ -12,10 +12,10 @@
         > -->
         <img
           id="product-zoom"
-          :src="`${baseUrl}${product.pictures[currentIndex].url}`"
+          src="../../../../assets/newImg/cat_1.png"
           alt="product"
-          :width="product.pictures[currentIndex].width"
-          :height="product.pictures[currentIndex].height"
+          width="800"
+          height="800"
         />
 
         <!-- <a
