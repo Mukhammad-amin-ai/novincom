@@ -1,5 +1,5 @@
 <template>
-  <HeaderDefaultVue/>
+  <HeaderDefaultVue />
   <PageHeader title="Операции" subtitle="Личный кабинет" />
   <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
     <div class="container">
@@ -36,8 +36,12 @@
       </div>
     </div>
     <div class="container">
-      <div v-for="operation in operations" :key="operation" class="operation_line_parent d-flex flex-column"
-        @click="openOperation(operation.id)">
+      <div
+        v-for="operation in operations"
+        :key="operation"
+        class="operation_line_parent d-flex flex-column"
+        @click="openOperation(operation.id)"
+      >
         <div class="operation_line">
           <div>{{ operation.date }}</div>
           <div>{{ operation.id }}</div>
@@ -45,7 +49,7 @@
         </div>
         <div class="buttons" v-if="new_operations.includes(operation.id)">
           <button class="date">01.12.2023 –16.12.2023</button>
-          <router-link :to="'operation/' + operation.id">
+          <router-link :to="'operation/' + operation.order_id">
             <button class="show">Показать</button>
           </router-link>
         </div>
@@ -78,20 +82,20 @@ export default {
   },
   computed: {
     modalShow() {
-      return this.$store.getters['calendar/shCalendar'];
-    }
+      return this.$store.getters["calendar/shCalendar"];
+    },
   },
   methods: {
     openOperation(id) {
       this.new_operations.push(id);
     },
     toggleFilter() {
-      this.$store.dispatch('calendar/toggleCalendar');
+      this.$store.dispatch("calendar/toggleCalendar");
     },
   },
   components: {
     PageHeader,
-    HeaderDefaultVue
+    HeaderDefaultVue,
   },
 };
 </script>
@@ -108,6 +112,24 @@ export default {
   gap: 20px;
   padding: 10px 0;
   border-bottom: 1px solid var(--grey);
+}
+.operation_line div {
+  font-family: Gilroy-Regular, sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333;
+}
+.result span {
+  font-family: Gilroy-Regular, sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333;
 }
 
 .search-city {
@@ -154,6 +176,7 @@ export default {
   border-radius: 100px;
   font-size: 16px;
   white-space: nowrap;
+  color: #777 !important;
 }
 
 .buttons .show {
@@ -166,7 +189,7 @@ export default {
   font-family: Gilroy-Medium !important;
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width: 610px) {
   .buttons .date {
     padding: 10px 50px 10px 20px;
   }
@@ -176,7 +199,7 @@ export default {
   }
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width: 610px) {
   .buttons .date {
     padding: 10px 40px;
   }
@@ -186,13 +209,13 @@ export default {
   }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .operation_line {
     gap: 0;
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
   .buttons .date {
     padding: 10px 20px;
   }
