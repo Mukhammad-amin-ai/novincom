@@ -6,21 +6,33 @@
       </div>
 
       <div class="heading-right">
-        <router-link to="shop/sidebar/3cols" class="title-link">
+        <router-link to="shop/sidebar/without" class="title-link">
           Смотреть все предложения
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M1 7.9999C1 7.86729 1.05268 7.74011 1.14645 7.64635C1.24021 7.55258 1.36739 7.4999 1.5 7.4999H13.293L10.146 4.3539C10.0521 4.26001 9.99937 4.13267 9.99937 3.9999C9.99937 3.86712 10.0521 3.73979 10.146 3.6459C10.2399 3.55201 10.3672 3.49927 10.5 3.49927C10.6328 3.49927 10.7601 3.55201 10.854 3.6459L14.854 7.6459C14.9006 7.69234 14.9375 7.74752 14.9627 7.80827C14.9879 7.86901 15.0009 7.93413 15.0009 7.9999C15.0009 8.06567 14.9879 8.13079 14.9627 8.19153C14.9375 8.25228 14.9006 8.30745 14.854 8.3539L10.854 12.3539C10.7601 12.4478 10.6328 12.5005 10.5 12.5005C10.3672 12.5005 10.2399 12.4478 10.146 12.3539C10.0521 12.26 9.99937 12.1327 9.99937 11.9999C9.99937 11.8671 10.0521 11.7398 10.146 11.6459L13.293 8.4999H1.5C1.36739 8.4999 1.24021 8.44722 1.14645 8.35345C1.05268 8.25968 1 8.13251 1 7.9999Z"
-              fill="#777777" />
+              fill="#777777"
+            />
           </svg>
-
         </router-link>
       </div>
     </div>
 
     <div class="products">
       <div class="row justify-content-center">
-        <div class="col-6 col-md-4 col-lg-3" v-for="(product, index) in products.slice(0, 8)" :key="index">
+        <div
+          class="col-6 col-md-4 col-lg-3"
+          v-for="(product, index) in products.slice(0, 8)"
+          :key="index"
+        >
           <product-twelve :product="product"></product-twelve>
         </div>
       </div>
@@ -82,7 +94,7 @@ export default {
                 product_id: "122",
                 "product-category_id": "27",
               },
-            }
+            },
           ],
           brands: [
             {
@@ -150,7 +162,7 @@ export default {
           slug: "apple-smart-folio-for-11-inch-ipad-pro",
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, ",
-          price: 3000.00,
+          price: 3000.0,
           sale_price: null,
           review: 2,
           ratings: 4,
@@ -497,8 +509,8 @@ export default {
           slug: "gopro-hero7-black-hd-waterproof-action",
           short_desc:
             "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
-          price: 10130.00,
-          sale_price: 13160.00,
+          price: 10130.0,
+          sale_price: 13160.0,
           review: 2,
           ratings: 4,
           until: null,
@@ -1108,7 +1120,7 @@ export default {
                 product_id: "129",
                 "product-category_id": "27",
               },
-            }
+            },
           ],
           brands: [
             {
@@ -1922,7 +1934,7 @@ export default {
           variants: [],
         },
       ],
-    }
+    };
   },
 };
 </script>
@@ -1936,10 +1948,10 @@ export default {
 }
 
 .title-link:hover {
-  color: #005BAA !important;
+  color: #005baa !important;
 }
 
 .title-link:hover svg path {
-  fill: #005BAA !important;
+  fill: #005baa !important;
 }
 </style>
