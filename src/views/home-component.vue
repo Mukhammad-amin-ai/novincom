@@ -250,7 +250,7 @@
     <div class="mb-6"></div>
     <div class="container">
       <div
-        class="cta cta-border mb-5"
+        class="cta cta-border ctaFL mb-5"
         style="background-image: url(../assets/newImg/box.png)"
       >
         <img
@@ -518,12 +518,14 @@ export default {
 }
 
 @media screen and (max-width: 468px) {
-  .cta{
+  .cat-block-title{
+    height: 30px !important;
+  }
+  .ctaFL{
     height: 248px !important;
   }
   .cta-border .cta-img {
-    /* display: none !important; */
-    top: -10px !important;
+    top: -50px !important;
     left: -40px !important;
   }
   .cta-img {
@@ -545,7 +547,8 @@ export default {
   }
 
   .cta .btn:not(.btn-block) {
-    width: 100%;
+    width: 50%;
   }
 }
+
 </style>
