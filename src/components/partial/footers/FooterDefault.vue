@@ -153,17 +153,35 @@ export default {
 };
 </script>
 <style scoped>
-.custom1{
-  flex: 0 0 30% ;
+.custom1 {
+  flex: 0 0 30%;
   white-space: nowrap;
 }
-.custom2{
+
+.custom2 {
   flex: 0 0 20%;
   margin-left: 90px;
 
 }
-.custom3{
+
+.custom3 {
   flex: 0 0 10%;
   margin-left: 35px;
+}
+
+
+@media screen and (max-width:768px) {
+
+  .custom2,
+  .custom3 {
+    flex: 0 0 50%;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width:768px) {
+  .custom2,
+  .custom3 {
+    flex: 0 0 100%;
+  }
 }
 </style>

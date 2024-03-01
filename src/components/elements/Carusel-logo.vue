@@ -1,7 +1,28 @@
 <template>
   <div class="carousel">
-    <swiper :slidesPerView="4" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true" class="mySwiper"
-      style="padding: 10px;">
+    <swiper :breakpoints="{
+      '320': {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      '576': {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+
+      '768': {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      '1200': {
+        slidesPerView: 4,
+      },
+      '1201': {
+        slidesPerView: 5,
+        spaceBetween: 35,
+      },
+    }" :slidesPerView="5" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true"
+      class="mySwiper" style="padding: 10px;">
       <swiper-slide>
         <router-link to="#" style="cursor: pointer">
           <img src="../../assets/newImg/logotypes/bosch-logo-simple 1.png" alt="" />

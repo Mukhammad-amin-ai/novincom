@@ -1942,4 +1942,13 @@ export default {
 .title-link:hover svg path {
   fill: #005BAA !important;
 }
+
+
+@media screen and (max-width:768px) {
+  .heading-right{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 </style>
