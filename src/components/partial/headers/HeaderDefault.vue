@@ -70,7 +70,7 @@
         <div class="header-left">
           <button class="mobile-menu-toggler" @click="openMobileMenu">
             <span class="sr-only">Toggle mobile menu</span>
-            <img src="../../../assets/newImg/icons/menu.svg" alt="" />
+            <img class="mobile-menu-cos" src="../../../assets/newImg/icons/menu.svg" alt="" />
           </button>
           <router-link to="/" class="logo">
             <img src="../../../assets/newImg/logotypes/logo.svg" class="bg-transparent" alt="Molla Logo" width="105"
@@ -294,4 +294,11 @@ export default {
   font-family: Gilroy-Medium !important;
   color: #000;
 }
+
+
+.mobile-menu-cos{
+  width: 50px;
+  height: 50px;
+}
+
 </style>
