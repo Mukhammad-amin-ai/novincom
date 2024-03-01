@@ -51,9 +51,15 @@ p {
 }
 
 @media screen and (max-width:468px) {
-    .cart-dropdown{
-      display: none !important;
-    }
+  .cart-dropdown {
+    display: none !important;
+  }
 }
 
+@media screen and (max-width:320px) {
+  .cart-dropdown {
+    display: flex !important;
+
+  }
+}
 </style>

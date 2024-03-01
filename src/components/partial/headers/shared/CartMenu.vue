@@ -122,6 +122,10 @@ p {
       display: none !important;
     }
 }
-
+@media screen and (max-width:320px) {
+  .cart-dropdown {
+    display: flex !important;
+  }
+}
 </style>
 
