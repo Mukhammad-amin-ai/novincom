@@ -14,6 +14,7 @@
           disableOnInteraction: false,
         }"
         :draggable="true"
+        :pagination="true"
       >
         <swiper-slide v-for="slide in data" :key="slide.id">
           <div class="container swiper-item swiper_custom_item items-center">
@@ -165,7 +166,7 @@ export default {
 
 @media (max-width: 576px) {
   .carousel .swiper-button-next {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 96% !important;
     bottom: 7px !important;
@@ -175,7 +176,7 @@ export default {
   }
 
   .carousel .swiper-button-prev {
-    display: none;
+    /* display: none; */
     position: absolute;
     width: 32px !important;
     height: 32px !important;
@@ -190,7 +191,7 @@ export default {
     position: absolute;
     top: 25%;
     left: 13px !important;
-    color: white !important;
+    color: #eee !important;
     width: 8px;
     height: 8px;
     padding: 0 !important;
@@ -201,7 +202,7 @@ export default {
     top: 25%;
     right: 13px !important;
     left: auto !important;
-    color: #fff !important;
+    color: #eee !important;
     width: 8px !important;
     padding: 0px !important;
   }
