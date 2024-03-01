@@ -518,9 +518,21 @@ export default {
 }
 
 @media screen and (max-width: 468px) {
+  .cta{
+    height: 248px !important;
+  }
   .cta-border .cta-img {
-    display: none !important;
-    top: 50px !important;
+    /* display: none !important; */
+    top: -10px !important;
+    left: -40px !important;
+  }
+  .cta-img {
+    width: 258px !important;
+    height: 168px !important;
+  }
+
+  .cta-text p{
+    text-align: end;
   }
 
   .cta-border {
