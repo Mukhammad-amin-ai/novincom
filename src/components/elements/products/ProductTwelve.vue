@@ -116,12 +116,13 @@ export default {
 };
 </script>
 <style scoped>
-
-
 @media screen and (max-width:425px) {
-  .product-title{
+  .product-title {
     text-overflow: ellipsis;
   }
-}
 
+  .product {
+    height: 318.15px;
+  }
+}
 </style>
