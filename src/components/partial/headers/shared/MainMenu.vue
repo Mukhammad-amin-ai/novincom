@@ -236,11 +236,18 @@
       </li>
       <!-- :class="{ active: current == 'shop' }" -->
       <li>
-        <router-link to="/shop/sidebar/list" class="sf-with-ul" style="display: flex; gap: 10px;">Спецпредложения
-          <img src="../../../../assets/newImg/icons/arrow_down.svg" alt="">
+        <router-link
+          to="/shop/sidebar/without"
+          class="sf-with-ul"
+          style="display: flex; gap: 10px"
+          >Спецпредложения
+          <img src="../../../../assets/newImg/icons/arrow_down.svg" alt="" />
         </router-link>
         <div class="megamenu megamenu-md">
-          <div class="no-gutters" style="margin: 0 !important; display: unset !important;">
+          <div
+            class="no-gutters"
+            style="margin: 0 !important; display: unset !important"
+          >
             <div class="col-md-8">
               <div class="menu-col">
                 <div class="">
@@ -248,16 +255,24 @@
                     <!-- <div class="menu-title">Shop with sidebar</div> -->
                     <ul>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Одежда, обувь, аксессуары</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Одежда, обувь, аксессуары</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Электроника и бытовая техника</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Электроника и бытовая техника</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Мебель и товары для дома</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Мебель и товары для дома</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Косметика, гигиена, аптеки</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Косметика, гигиена, аптеки</router-link
+                        >
                       </li>
                       <li>
                         <router-link to="/shop/sidebar/3cols">
@@ -283,25 +298,39 @@
                         </router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Товары для животных</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Товары для животных</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Спортивные товары </router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Спортивные товары
+                        </router-link>
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Хобби и канцтовары</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Хобби и канцтовары</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">Маркетплэйсы</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >Маркетплэйсы</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols">DIY и товары для сада</router-link>
+                        <router-link to="/shop/sidebar/3cols"
+                          >DIY и товары для сада</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/3cols"> Ювелирные изделия</router-link>
+                        <router-link to="/shop/sidebar/3cols">
+                          Ювелирные изделия</router-link
+                        >
                       </li>
                       <li>
-                        <router-link to="/shop/sidebar/without">Without</router-link>
+                        <router-link to="/shop/sidebar/without"
+                          >Without</router-link
+                        >
                       </li>
                     </ul>
                   </div>
@@ -369,7 +398,11 @@
       </li>
       <!-- :class="{ active: current == 'product' }" -->
       <li>
-        <router-link to="/product/default/dark-yellow-lace-cut-out-swing-dress" class="sf-with-ul">Акции</router-link>
+        <router-link
+          to="/product/default/dark-yellow-lace-cut-out-swing-dress"
+          class="sf-with-ul"
+          >Акции</router-link
+        >
         <!-- <div class="megamenu megamenu-sm">
           <div class="row no-gutters">
             <div class="col-md-6">
