@@ -49,4 +49,11 @@ p {
 .dropdown-toggle:hover svg path {
   fill: #005BAA;
 }
+
+@media screen and (max-width:468px) {
+    .cart-dropdown{
+      display: none !important;
+    }
+}
+
 </style>
