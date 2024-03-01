@@ -96,7 +96,8 @@
             <aside class="col-lg-3 order-lg-first" sticky-container>
               <div v-sticky="!isSidebar" sticky-offset="{ top: 69 }">
                 <button class="sidebar-fixed-toggler" @click="toggleSidebar" v-if="isSidebar">
-                  <i class="icon-cog"></i>
+                  <!-- <i class="icon-cog"></i> -->
+                  <img src="../../../assets/newImg/icons/settings.svg" alt="">
                 </button>
                 <div class="sidebar-filter-overlay" @click="hideSidebar"></div>
                 <shop-sidebar-one :is-sidebar="isSidebar"></shop-sidebar-one>
