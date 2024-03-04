@@ -162,13 +162,14 @@
   color: black;
 }
 
-@media screen and (max-width:468px) {
-.details-action-wrapper {
-  flex-direction: column;
-  align-items: center;
-}
+@media screen and (max-width: 468px) {
+  .details-action-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.product-details-action{
-  gap: 10px;
-}
+  .product-details-action {
+    /* gap: 10px; */
+    flex-direction: unset !important;
+  }
 }

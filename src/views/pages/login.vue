@@ -1,5 +1,5 @@
 <template>
-    <headerCatalog/>
+    <headerCatalog />
     <main class="main">
         <nav aria-label="breadcrumb" style="border-top: 0.1rem solid rgba(235, 235, 235, 0.55); padding: 16px 0;">
             <div class="container">
@@ -11,10 +11,10 @@
                 </ol>
             </div>
         </nav>
-        <div class="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17" 
+        <div class="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17"
             style="background-image:url(./assets/images/form_sig_up.jpg) !important; height: 720px;">
             <div class="container">
-                <div class="form-box" style="width: 420px; height: 380px; margin-left: 31%; margin-top: 4%;">
+                <div class="form-box">
                     <div class="form-tab">
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="sign_in">
