@@ -53,11 +53,11 @@
                   </router-link>
                 </li>
                 <li>
-                  <router-link to="/sign_up" class="callhov">
+                  <!-- <router-link to="/sign_up" class="callhov">
                     <span class="logIn">
                       Вход / Регистрация
                     </span>
-                  </router-link>
+                  </router-link> -->
                 </li>
               </ul>
             </li>
