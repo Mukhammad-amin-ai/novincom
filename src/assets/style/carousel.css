@@ -101,7 +101,7 @@
 
   .right-swiper-item-img img {
     position: absolute;
-    left: 20px;
+    left: -150px;
     right: 0;
     bottom: 0;
     top: -100px;
