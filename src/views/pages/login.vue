@@ -82,4 +82,11 @@ export default {
     }
 };
 </script>
-<style scoped></style>
+<style scoped>
+@media screen and (max-width:468px) {
+    .form-box{
+        margin-top: 60px !important;
+    }
+}
+
+</style>

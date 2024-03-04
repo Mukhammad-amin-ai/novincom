@@ -27,13 +27,14 @@
               <a href="#" @click="showMenuF" style="font-family: Gilroy-Medium !important;">Cсылки</a>
               <ul>
                 <li>
-                  <a href="/sign_up" style="font-family: Gilroy-Medium !important;">Вход/ Регистрация</a>
+                  <router-link to="/sign_up" style="font-family: Gilroy-Medium !important;">Вход/
+                    Регистрация</router-link>
                 </li>
               </ul>
             </li>
           </ul>
           <div class="drop-custom-sign" v-if="dropMenu">
-            <a href="/sign_up" style="font-family: Gilroy-Medium !important;">Вход/ Регистрация</a>
+            <router-link to="/sign_up" style="font-family: Gilroy-Medium !important;">Вход/ Регистрация</router-link>
           </div>
         </div>
       </div>
@@ -89,8 +90,8 @@
                 <nav class="side-nav">
                   <ul class="menu-vertical sf-arrows">
                     <li class="item-lead" :class="{
-                      active: $route.query.category == 'electronics',
-                    }">
+        active: $route.query.category == 'electronics',
+      }">
                       <router-link to="/product/default/">Подарочные сертификаты</router-link>
                     </li>
                     <li class="item-lead" :class="{ active: $route.query.category == 'gift-idea' }">
@@ -104,9 +105,9 @@
                       <router-link to="/flight-tickets">ЖД билеты</router-link>
                     </li>
                     <li :class="{
-                      active:
-                        $route.query.category == 'sofas-and-sleeper-sofas',
-                    }">
+        active:
+          $route.query.category == 'sofas-and-sleeper-sofas',
+      }">
                       <router-link to="/flight-tickets">Отели </router-link>
                     </li>
                     <li style="background-color: #f9f9f9" :class="{ active: $route.query.category == 'storage' }">
@@ -114,9 +115,9 @@
                       </router-link>
                     </li>
                     <li style="background-color: #f9f9f9" :class="{
-                      active:
-                        $route.query.category == 'armchairs-and-chaises',
-                    }">
+        active:
+          $route.query.category == 'armchairs-and-chaises',
+      }">
                       <router-link to="#">Благотворительность </router-link>
                     </li>
                   </ul>
@@ -170,6 +171,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .dropdown-toggle {
   justify-content: space-between;
