@@ -6,7 +6,7 @@
       </div>
 
       <div class="heading-right">
-        <router-link to="shop/sidebar/without" class="title-link">
+        <router-link to="/shop/without/3cols" class="title-link">
           Смотреть все предложения
           <svg
             width="16"
