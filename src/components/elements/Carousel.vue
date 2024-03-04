@@ -176,7 +176,7 @@ export default {
     position: absolute;
     top: 25%;
     left: 13px !important;
-    color: #eee !important;
+    color: var(--grey) !important;
     width: 8px;
     height: 8px;
     padding: 0 !important;
@@ -187,7 +187,7 @@ export default {
     top: 25%;
     right: 13px !important;
     left: auto !important;
-    color: #eee !important;
+    color: var(--grey) !important;
     width: 8px !important;
     padding: 0px !important;
   }

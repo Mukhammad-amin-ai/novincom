@@ -126,3 +126,11 @@
 .iPhone_img {
   max-height: 264px;
 }
+
+@media screen and (max-width: 567px) {
+  .product-details-action {
+    align-items: center !important;
+    display: grid;
+    grid-template-columns: auto 1fr 2fr;
+  }
+}
