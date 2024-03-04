@@ -58,7 +58,7 @@
           </div>
 
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link to="/shop/sidebar/without" class="cat-block">
+            <router-link to="/shop/without/3col" class="cat-block">
               <figure>
                 <span>
                   <img src="../assets/newImg/cat_5.png" alt="Category" class="bg-transparent" />

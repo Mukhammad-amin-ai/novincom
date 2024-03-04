@@ -34,12 +34,22 @@ const router = createRouter({
       component: () => import("@/views/shop/sidebar/_type.vue"),
     },
     {
+      path: "/shop/sidebar",
+      name: "param layout two",
+      component: () => import("@/views/shop/sidebar/_type.vue"),
+    },
+    {
       path: "/shop/sidebar/:loyaut",
       name: "param layout",
       component: () => import("@/views/shop/sidebar/_type.vue"),
     },
     {
-      path: "/shop/sidebar/without",
+      path: "/shop/without",
+      name:"without two",
+      component: () => import("@/views/shop/sidebar/_type2.vue"),
+    },
+    {
+      path: "/shop/without/:without",
       name:"without",
       component: () => import("@/views/shop/sidebar/_type2.vue"),
     },

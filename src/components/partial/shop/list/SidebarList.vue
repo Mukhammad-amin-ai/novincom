@@ -17,7 +17,7 @@
           <div class="skel-pro col col-6 col-md-4 col-lg-4" v-for="item in fakeArray" :key="item"></div>
         </template>
         <template v-else>
-          <div class="col-6 col-md-4 col-lg-4" v-for="(product, index) in products" :key="index">
+          <div class="col-6 " :class="gridClass" v-for="(product, index) in products" :key="index">
             <product-nine :product="product" class="w-100"></product-nine>
           </div>
         </template>
@@ -46,9 +46,9 @@ export default {
       return this.$route.params.without;
     },
     gridClass: function () {
-      if (this.type === "Wlist" || this.type === "W2cols") return "col-6";
-      if (this.type === "W3cols") return "col-6 col-md-4 col-lg-4";
-      if (this.type === "W4cols") return "col-6 col-md-4 col-lg-4 col-xl-3";
+      if (this.type === "list" || this.type === "2cols") return "col-6";
+      if (this.type === "3cols") return "col-6 col-md-4 col-lg-4";
+      if (this.type === "4cols") return "col-6 col-md-4 col-lg-4 col-xl-3";
       else {
         return "col-4";
       }

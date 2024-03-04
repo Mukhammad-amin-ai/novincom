@@ -45,8 +45,8 @@
                     </div>
                   </div>
                   <div class="toolbox-layout">
-                    <router-link to="/shop/sidebar/Wlist" class="btn-layout"
-                      :class="{ active: $route.path === '/shop/sidebar/list' }">
+                    <router-link to="/shop/without/list" class="btn-layout"
+                      :class="{ active: $route.path === '/shop/without/list' }">
                       <svg width="16" height="10">
                         <rect x="0" y="0" width="4" height="4" />
                         <rect x="6" y="0" width="10" height="4" />
@@ -54,8 +54,8 @@
                         <rect x="6" y="6" width="10" height="4" />
                       </svg>
                     </router-link>
-                    <router-link to="/shop/sidebar/W2cols" class="btn-layout"
-                      :class="{ active: $route.path === '/shop/sidebar/2cols' }">
+                    <router-link to="/shop/without/2cols" class="btn-layout"
+                      :class="{ active: $route.path === '/shop/without/2cols' }">
                       <svg width="10" height="10">
                         <rect x="0" y="0" width="4" height="4" />
                         <rect x="6" y="0" width="4" height="4" />
@@ -63,8 +63,8 @@
                         <rect x="6" y="6" width="4" height="4" />
                       </svg>
                     </router-link>
-                    <router-link to="/shop/sidebar/W3cols" class="btn-layout"
-                      :class="{ active: $route.path === '/shop/sidebar/3cols' }">
+                    <router-link to="/shop/without/3cols" class="btn-layout"
+                      :class="{ active: $route.path === '/shop/without/3cols' }">
                       <svg width="16" height="10">
                         <rect x="0" y="0" width="4" height="4" />
                         <rect x="6" y="0" width="4" height="4" />
@@ -74,8 +74,8 @@
                         <rect x="12" y="6" width="4" height="4" />
                       </svg>
                     </router-link>
-                    <router-link to="/shop/sidebar/W4cols" class="btn-layout"
-                      :class="{ active: $route.path === '/shop/sidebar/4cols' }">
+                    <router-link to="/shop/without/4cols" class="btn-layout"
+                      :class="{ active: $route.path === '/shop/without/4cols' }">
                       <svg width="22" height="10">
                         <rect x="0" y="0" width="4" height="4" />
                         <rect x="6" y="0" width="4" height="4" />
@@ -135,7 +135,7 @@
       return {
         // products: [],
         perPage: 5,
-        type: "list",
+        type: "",
         totalCount: 30,
         orderBy: "default",
         isSidebar: true,

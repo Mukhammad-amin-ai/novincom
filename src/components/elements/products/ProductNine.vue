@@ -35,7 +35,7 @@
             {{ formatNumber(minPrice.toFixed(2)) }}&ndash;{{ formatNumber(maxPrice.toFixed(2)) }}
           </div>
         </template>
-        <!-- <div class="ratings-container d-flex justify-start">
+        <div class="ratings-container d-flex justify-start">
           <div class="ratings_star">
             <svg v-for="(star, index) in totalStars" :key="index" :fill="star.color" width="12" height="12"
               viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@
             </svg>
           </div>
           <div class="ratings-text">( {{ product.review }} Reviews )</div>
-        </div> -->
+        </div>
       </template>
     </div>
   </div>

@@ -137,7 +137,7 @@
                       <router-link to="/flight-tickets">Отели </router-link>
                     </li>
                     <li style="background-color: #f9f9f9" :class="{ active: $route.query.category == 'storage' }">
-                      <router-link to="/shop/sidebar/without">Товары
+                      <router-link to="/shop/without/3cols">Товары
                       </router-link>
                     </li>
                     <li style="background-color: #f9f9f9" :class="{
