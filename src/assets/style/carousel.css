@@ -89,7 +89,7 @@
     padding-left: 10px;
   }
   .swiper-slide {
-    min-height: 400px;
+    /* min-height: 100%; */
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -101,7 +101,7 @@
 
   .right-swiper-item-img img {
     position: absolute;
-    left: 20px;
+    left: -150px;
     right: 0;
     bottom: 0;
     top: -100px;

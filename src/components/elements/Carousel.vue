@@ -7,7 +7,7 @@
           delay: 2500,
           disableOnInteraction: false,
         }" :draggable="true" :pagination="showPagination">
-        <swiper-slide v-for="slide in data" :key="slide.id">
+        <swiper-slide style="min-height: 400px;" v-for="slide in data" :key="slide.id">
           <div class="container swiper-item swiper_custom_item items-center">
             <div class="left-swiper-item">
               <div v-if="slide.image" class="right-swiper-item-img">

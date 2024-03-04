@@ -5,26 +5,16 @@
       <carousel />
     </div>
     <div class="container">
-      <h2
-        class="title text-center mb-4"
-        style="font-family: Gilroy-SemiBold !important"
-      >
+      <h2 class="title text-center mb-4" style="font-family: Gilroy-SemiBold !important">
         Каталог призов
       </h2>
       <div class="cat-blocks-container">
         <div class="row">
           <div class="col-6 col-sm-4 col-lg-2">
-            <router-link
-              to="/product/default/apple-smart-folio-for-11-inch-ipad-pro"
-              class="cat-block"
-            >
+            <router-link to="/product/default/apple-smart-folio-for-11-inch-ipad-pro" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    src="../assets/newImg/cat_1.png"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_1.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
               <h3 class="cat-block-title">Подарочные сертификаты</h3>
@@ -35,11 +25,7 @@
             <router-link to="/flight-tickets" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    src="../assets/newImg/cat_2.png"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_2.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -51,11 +37,7 @@
             <router-link to="/flight-tickets" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    src="../assets/newImg/cat_3.png"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_3.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -67,11 +49,7 @@
             <router-link to="/flight-tickets" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    src="../assets/newImg/cat_4.png"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_4.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -83,11 +61,7 @@
             <router-link to="/shop/sidebar/without" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    src="../assets/newImg/cat_5.png"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_5.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -99,11 +73,7 @@
             <router-link to="#" class="cat-block">
               <figure>
                 <span>
-                  <img
-                    src="../assets/newImg/cat_6.png"
-                    alt="Category"
-                    class="bg-transparent"
-                  />
+                  <img src="../assets/newImg/cat_6.png" alt="Category" class="bg-transparent" />
                 </span>
               </figure>
 
@@ -119,12 +89,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="banner banner-overlay banner-overlay-light">
             <router-link to="/shop/sidebar/3cols">
-              <img
-                src="../assets/newImg/banner-1.png"
-                width="376"
-                height="160"
-                alt="Banner"
-              />
+              <img src="../assets/newImg/banner-1.png" width="376" height="160" alt="Banner" />
             </router-link>
             <div class="banner-content">
               <h4 class="banner-subtitle">
@@ -141,19 +106,10 @@
               </h3>
               <router-link to="/shop/sidebar/without" class="banner-link">
                 Купить
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1 8.00002C1 7.86741 1.05268 7.74024 1.14645 7.64647C1.24021 7.5527 1.36739 7.50002 1.5 7.50002H13.293L10.146 4.35402C10.0521 4.26013 9.99937 4.1328 9.99937 4.00002C9.99937 3.86725 10.0521 3.73991 10.146 3.64602C10.2399 3.55213 10.3672 3.49939 10.5 3.49939C10.6328 3.49939 10.7601 3.55213 10.854 3.64602L14.854 7.64602C14.9006 7.69247 14.9375 7.74764 14.9627 7.80839C14.9879 7.86913 15.0009 7.93425 15.0009 8.00002C15.0009 8.06579 14.9879 8.13091 14.9627 8.19165C14.9375 8.2524 14.9006 8.30758 14.854 8.35402L10.854 12.354C10.7601 12.4479 10.6328 12.5007 10.5 12.5007C10.3672 12.5007 10.2399 12.4479 10.146 12.354C10.0521 12.2601 9.99937 12.1328 9.99937 12C9.99937 11.8672 10.0521 11.7399 10.146 11.646L13.293 8.50002H1.5C1.36739 8.50002 1.24021 8.44734 1.14645 8.35357C1.05268 8.25981 1 8.13263 1 8.00002Z"
-                    fill="#005BAA"
-                  />
+                    fill="#005BAA" />
                 </svg>
               </router-link>
             </div>
@@ -163,12 +119,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="banner banner-overlay banner-overlay-light">
             <router-link to="/shop/sidebar/without">
-              <img
-                src="../assets/newImg/banner-2.png"
-                width="376"
-                height="160"
-                alt="Banner"
-              />
+              <img src="../assets/newImg/banner-2.png" width="376" height="160" alt="Banner" />
             </router-link>
             <div class="banner-content">
               <h4 class="banner-subtitle">
@@ -183,19 +134,10 @@
               </h3>
               <router-link to="/shop/sidebar/without" class="banner-link">
                 Купить
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1 8.00002C1 7.86741 1.05268 7.74024 1.14645 7.64647C1.24021 7.5527 1.36739 7.50002 1.5 7.50002H13.293L10.146 4.35402C10.0521 4.26013 9.99937 4.1328 9.99937 4.00002C9.99937 3.86725 10.0521 3.73991 10.146 3.64602C10.2399 3.55213 10.3672 3.49939 10.5 3.49939C10.6328 3.49939 10.7601 3.55213 10.854 3.64602L14.854 7.64602C14.9006 7.69247 14.9375 7.74764 14.9627 7.80839C14.9879 7.86913 15.0009 7.93425 15.0009 8.00002C15.0009 8.06579 14.9879 8.13091 14.9627 8.19165C14.9375 8.2524 14.9006 8.30758 14.854 8.35402L10.854 12.354C10.7601 12.4479 10.6328 12.5007 10.5 12.5007C10.3672 12.5007 10.2399 12.4479 10.146 12.354C10.0521 12.2601 9.99937 12.1328 9.99937 12C9.99937 11.8672 10.0521 11.7399 10.146 11.646L13.293 8.50002H1.5C1.36739 8.50002 1.24021 8.44734 1.14645 8.35357C1.05268 8.25981 1 8.13263 1 8.00002Z"
-                    fill="#005BAA"
-                  />
+                    fill="#005BAA" />
                 </svg>
               </router-link>
             </div>
@@ -205,13 +147,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="banner banner-overlay banner-overlay-light">
             <router-link to="/shop/sidebar/without">
-              <img
-                src="../assets/newImg/banner-3.png"
-                class="bg-transparent"
-                width="376"
-                height="160"
-                alt="Banner"
-              />
+              <img src="../assets/newImg/banner-3.png" class="bg-transparent" width="376" height="160" alt="Banner" />
             </router-link>
             <div class="banner-content">
               <h4 class="banner-subtitle">
@@ -225,19 +161,10 @@
               </h3>
               <router-link to="/shop/sidebar/without" class="banner-link">
                 Купить
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1 8.00002C1 7.86741 1.05268 7.74024 1.14645 7.64647C1.24021 7.5527 1.36739 7.50002 1.5 7.50002H13.293L10.146 4.35402C10.0521 4.26013 9.99937 4.1328 9.99937 4.00002C9.99937 3.86725 10.0521 3.73991 10.146 3.64602C10.2399 3.55213 10.3672 3.49939 10.5 3.49939C10.6328 3.49939 10.7601 3.55213 10.854 3.64602L14.854 7.64602C14.9006 7.69247 14.9375 7.74764 14.9627 7.80839C14.9879 7.86913 15.0009 7.93425 15.0009 8.00002C15.0009 8.06579 14.9879 8.13091 14.9627 8.19165C14.9375 8.2524 14.9006 8.30758 14.854 8.35402L10.854 12.354C10.7601 12.4479 10.6328 12.5007 10.5 12.5007C10.3672 12.5007 10.2399 12.4479 10.146 12.354C10.0521 12.2601 9.99937 12.1328 9.99937 12C9.99937 11.8672 10.0521 11.7399 10.146 11.646L13.293 8.50002H1.5C1.36739 8.50002 1.24021 8.44734 1.14645 8.35357C1.05268 8.25981 1 8.13263 1 8.00002Z"
-                    fill="#005BAA"
-                  />
+                    fill="#005BAA" />
                 </svg>
               </router-link>
             </div>
@@ -249,15 +176,8 @@
     <NewCollection :products="newProducts" v-if="loaded"></NewCollection>
     <div class="mb-6"></div>
     <div class="container">
-      <div
-        class="cta cta-border ctaFL mb-5"
-        style="background-image: url(../assets/newImg/box.png)"
-      >
-        <img
-          src=" ../assets/newImg/plane.png"
-          alt="camera"
-          class="cta-img bg-transparent"
-        />
+      <div class="cta cta-border ctaFL mb-5" style="background-image: url(../assets/newImg/box.png)">
+        <img src=" ../assets/newImg/plane.png" alt="camera" class="cta-img bg-transparent" />
         <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="cta-content d-flex">
@@ -265,24 +185,12 @@
                 <p>
                   Путешествие по всем направлениям!
                   <br />
-                  <strong style="font-family: Gilroy-SemiBold !important"
-                    >Авиа- и железнодорожные билеты и отели.</strong
-                  >
+                  <strong style="font-family: Gilroy-SemiBold !important">Авиа- и железнодорожные билеты и отели.</strong>
                 </p>
               </div>
-              <router-link
-                to="/flight-tickets"
-                class="btn btn-primary btn-round"
-                style="display: flex; gap: 10px"
-              >
-                <span style="font-family: Gilroy-Medium !important"
-                  >Смотреть</span
-                >
-                <img
-                  src="../assets/newImg/icons/w_arrow-right.svg"
-                  style="width: 16px; height: 16px"
-                  alt="arrow-right"
-                />
+              <router-link to="/flight-tickets" class="btn btn-primary btn-round" style="display: flex; gap: 10px">
+                <span style="font-family: Gilroy-Medium !important">Смотреть</span>
+                <img src="../assets/newImg/icons/w_arrow-right.svg" style="width: 16px; height: 16px" alt="arrow-right" />
               </router-link>
             </div>
           </div>
@@ -296,15 +204,9 @@
         <CaruselLogo />
       </div>
     </div>
-    <trendy-collection
-      :products="topProducts"
-      v-if="loaded"
-    ></trendy-collection>
+    <trendy-collection :products="topProducts" v-if="loaded"></trendy-collection>
     <div class="mb-5"></div>
-    <recommend-collection
-      :products="products"
-      v-if="loaded"
-    ></recommend-collection>
+    <recommend-collection :products="products" v-if="loaded"></recommend-collection>
     <div class="mb-4"></div>
     <div class="container">
       <hr class="mb-0" />
@@ -360,10 +262,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="cta bg-image bg-dark pt-4 pb-5 mb-0"
-      style="background-image: url(./assets/images/bg-nout.png) !important"
-    >
+    <div class="cta bg-image bg-dark pt-4 pb-5 mb-0"
+      style="background-image: url(./assets/images/bg-nout.png) !important">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-md-8 col-lg-6">
@@ -375,28 +275,13 @@
             </div>
             <form action="#">
               <div class="input-group input-group-round">
-                <input
-                  type="email"
-                  class="form-control form-control-white"
-                  aria-label="Email Adress"
-                  required
-                />
+                <input type="email" class="form-control form-control-white" aria-label="Email Adress" required />
                 <div class="input-group-append">
-                  <button
-                    class="btn btn-primary"
-                    type="submit"
-                    style="display: flex; gap: 5px"
-                  >
-                    <router-link
-                      to="/sign_up"
-                      style="display: flex; gap: 5px; color: #fff"
-                    >
+                  <button class="btn btn-primary" type="submit" style="display: flex; gap: 5px">
+                    <router-link to="/sign_up" style="display: flex; gap: 5px; color: #fff">
                       <span>Подписаться</span>
                       <!-- <i class="icon-long-arrow-right"></i> -->
-                      <img
-                        src="../assets/newImg/icons/w_arrow-right.svg"
-                        alt="w_arrow"
-                      />
+                      <img src="../assets/newImg/icons/w_arrow-right.svg" alt="w_arrow" />
                     </router-link>
                   </button>
                 </div>
@@ -518,22 +403,25 @@ export default {
 }
 
 @media screen and (max-width: 468px) {
-  .cat-block-title{
+  .cat-block-title {
     height: 30px !important;
   }
-  .ctaFL{
+
+  .ctaFL {
     height: 248px !important;
   }
+
   .cta-border .cta-img {
-    top: -50px !important;
+    top: -65px !important;
     left: -40px !important;
   }
+
   .cta-img {
     width: 258px !important;
     height: 168px !important;
   }
 
-  .cta-text p{
+  .cta-text p {
     text-align: end;
   }
 
@@ -550,5 +438,4 @@ export default {
     width: 50%;
   }
 }
-
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-light pt-5 pb-5">
+  <div class="bg-light pt-5 pb-5" style="padding-bottom: 3.8rem !important;">
     <div class="container trending-products">
       <div class="heading heading-flex mb-3">
         <div class="heading-left">
@@ -854,5 +854,8 @@ export default {
   .swiper-carousel .swiper .swiper-wrapper .swiper-slide {
     width:165px !important;
   }
+  /* .pad{
+    padding-bottom: 0 !important;
+  } */
 }
 </style>

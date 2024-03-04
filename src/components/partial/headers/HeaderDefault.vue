@@ -24,7 +24,7 @@
         <div class="header-right">
           <ul class="top-menu">
             <li>
-              <a href="/sign_up" v-if="showLogin === true">
+              <a href="/sign_up">
                 <span class="logIn">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -37,7 +37,7 @@
                   Выход
                 </span></a>
               <ul>
-                <li >
+                <li>
                   <router-link to="/sign_up" class="callhov">
                     <span class="logIn">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
                     </span>
                   </router-link>
                 </li>
-                <li v-if="showLogin === false">
+                <li>
                   <router-link to="/sign_up" class="callhov">
                     <span class="logIn">
                       Вход / Регистрация
@@ -137,8 +137,7 @@
                       <router-link to="/flight-tickets">Отели </router-link>
                     </li>
                     <li style="background-color: #f9f9f9" :class="{ active: $route.query.category == 'storage' }">
-                      <router-link to="/shop/sidebar/without"
-                        >Товары
+                      <router-link to="/shop/sidebar/without">Товары
                       </router-link>
                     </li>
                     <li style="background-color: #f9f9f9" :class="{
@@ -296,9 +295,8 @@ export default {
 }
 
 
-.mobile-menu-cos{
+.mobile-menu-cos {
   width: 50px;
   height: 50px;
 }
-
 </style>
