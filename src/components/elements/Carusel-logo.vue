@@ -21,7 +21,7 @@
         slidesPerView: 5,
         spaceBetween: 35,
       },
-    }" :slidesPerView="5" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="true"
+    }" :slidesPerView="5" :spaceBetween="30" :freeMode="true" :modules="modules" :navigation="showNavigation"
       class="mySwiper" style="padding: 10px;">
       <swiper-slide>
         <router-link to="#" style="cursor: pointer">
@@ -70,6 +70,26 @@ export default {
     Swiper,
     SwiperSlide,
   },
+  data() {
+    return {
+      showNavigation: true,
+    }
+  },
+  methods: {
+    shoWindow() {
+      if (window.innerWidth <= 468) {
+        this.showPagination = true
+        this.showNavigation = false
+      } else {
+        this.showPagination = false
+        this.showNavigation = true
+
+      }
+    }
+  },
+  mounted() {
+    this.shoWindow()
+  },
   setup() {
     return {
       modules: [FreeMode, Pagination, Navigation],
@@ -90,6 +110,9 @@ export default {
     background-color: transparent !important;
   }
 
+  .carousel .swiper-slide {
+    height: auto !important;
+  }
 
 }
 </style>
