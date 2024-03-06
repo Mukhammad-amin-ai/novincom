@@ -185,7 +185,7 @@
                 <p>
                   Путешествия!
                   <br />
-                  <strong style="font-family: Gilroy-SemiBold !important">"Авиа и ж/д билеты, отели</strong>
+                  <strong style="font-family: Gilroy-SemiBold !important">Авиа и ж/д билеты, отели</strong>
                 </p>
               </div>
               <router-link to="/flight-tickets" class="btn btn-primary btn-round" style="display: flex; gap: 10px">
