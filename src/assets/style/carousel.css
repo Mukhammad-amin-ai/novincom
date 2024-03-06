@@ -55,13 +55,17 @@
   background: var(--grey) !important;
   border: 1px solid var(--grey);
 }
+.slide_item {
+  display: flex !important;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .left-swiper-item,
   .right-swiper-item {
     width: 50%;
   }
   .swiper-item-content {
-    font-size: 28px;
+    font-size: 34px;
     width: 90%;
     white-space: wrap;
     line-height: normal;
@@ -107,5 +111,12 @@
     top: -100px;
     z-index: -1;
     object-fit: contain;
+  }
+  .center_image {
+    top: -30px !important;
+  }
+  .slide_item {
+    display: flex !important;
+    align-items: center;
   }
 }
