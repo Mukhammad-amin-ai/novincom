@@ -186,5 +186,8 @@ export default {
   .custom3 {
     flex: 0 0 100%;
   }
+  .bg-transparent{
+    width: 80px;
+  }
 }
 </style>
