@@ -183,7 +183,7 @@
             <div class="cta-content d-flex">
               <div class="cta-text text-right text-white">
                 <p>
-                  Путешествие по всем направлениям!
+                  Путешествия !
                   <br />
                   <strong style="font-family: Gilroy-SemiBold !important">Авиа- и железнодорожные билеты и отели.</strong>
                 </p>
@@ -412,7 +412,7 @@ export default {
   }
 
   .cta-border .cta-img {
-    top: -65px !important;
+    top: -95px !important;
     left: -40px !important;
   }
 
@@ -423,6 +423,7 @@ export default {
 
   .cta-text p {
     text-align: end;
+    font-size: 20px !important;
   }
 
   .cta-border {

@@ -80,4 +80,10 @@ export default {
   align-items: center;
   border-radius: 100%;
 }
+
+@media screen and (max-width: 468px) {
+  #scroll-top {
+    display: none !important;
+  }
+}
 </style>
