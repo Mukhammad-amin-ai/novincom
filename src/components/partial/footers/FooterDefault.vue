@@ -5,8 +5,13 @@
         <div class="row">
           <div class="col-sm-6 col-lg-3">
             <div class="widget widget-about">
-              <img src="../../../assets/newImg/logotypes/logo.svg" class="footer-logo bg-transparent" alt="Footer Logo"
-                width="105" height="27" />
+              <img
+                src="../../../assets/newImg/logotypes/logo.svg"
+                class="footer-logo bg-transparent"
+                alt="Footer Logo"
+                width="105"
+                height="27"
+              />
               <p style="font-family: Gilroy-Medium !important">
                 Подключите программу “Бонусы” к Вашей карте, оплачивайте ей
                 <br />
@@ -15,9 +20,16 @@
 
               <div class="widget-call">
                 <!-- <i class="icon-phone"></i> -->
-                <img src="../../../assets/newImg/icons/icon-tell.svg" alt="icon" />
+                <img
+                  src="../../../assets/newImg/icons/icon-tell.svg"
+                  alt="icon"
+                />
                 Обратитья в банк
-                <a href="tel:#" style="font-family: Gilroy-Medium !important; font-size: 20px">+7 800 250-70-07</a>
+                <a
+                  href="tel:#"
+                  style="font-family: Gilroy-Medium !important; font-size: 20px"
+                  >+7 800 250-70-07</a
+                >
               </div>
             </div>
           </div>
@@ -28,22 +40,44 @@
 
               <ul class="widget-list">
                 <li>
-                  <a target="_blank" href="https://novikom.ru/individuals/bonus-program/">О программе</a>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/individuals/bonus-program/"
+                    >О программе</a
+                  >
                 </li>
                 <li>
-                  <a target="_blank" href="https://novikom.ru/individuals/bonus-program/">Как программа работает</a>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/individuals/bonus-program/"
+                    >Как программа работает</a
+                  >
                 </li>
                 <li>
-                  <a target="_blank" href="https://novikom.ru/upload/docs/bonusi-pravila.pdf">Правила программы</a>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/upload/docs/bonusi-pravila.pdf"
+                    >Правила программы</a
+                  >
                 </li>
                 <li>
-                  <a target="_blank" href="https://novikom.ru/individuals/bonus-program/faq/ ">Вопросы и ответы</a>
+                  <a
+                    target="_blank"
+                    href="https://novikom.ru/individuals/bonus-program/faq/ "
+                    >Вопросы и ответы</a
+                  >
                 </li>
                 <li>
-                  <a target="_blank" href="https://wikimybill.ru/page32603929.html ">Безопасность</a>
+                  <a
+                    target="_blank"
+                    href="https://wikimybill.ru/page32603929.html "
+                    >Безопасность</a
+                  >
                 </li>
                 <li>
-                  <a target="_blank" href="https://novikom.ru/">Официальный сайт АО АКБ “НОВИКОМБАНК”</a>
+                  <a target="_blank" href="https://novikom.ru/"
+                    >Официальный сайт АО АКБ “НОВИКОМБАНК”</a
+                  >
                 </li>
               </ul>
             </div>
@@ -54,10 +88,20 @@
 
               <ul class="widget-list">
                 <li>
-                  <a href="javascript:;" @click="downloadFile" style="cursor: pointer">RuMarket</a>
+                  <a
+                    href="javascript:;"
+                    @click="downloadFile"
+                    style="cursor: pointer"
+                    >RuMarket</a
+                  >
                 </li>
                 <li>
-                  <a href="javascript:;" @click="downloadFile" style="cursor: pointer">RuStore</a>
+                  <a
+                    href="javascript:;"
+                    @click="downloadFile"
+                    style="cursor: pointer"
+                    >RuStore</a
+                  >
                 </li>
                 <li>
                   <router-link to="#">NashMarket</router-link>
@@ -79,8 +123,11 @@
                   <router-link to="#">Заказы</router-link>
                 </li>
                 <li>
-                  <router-link to="/operation/
-Заказ 999313705-14">Операции</router-link>
+                  <router-link
+                    to="/operation/
+Заказ 999313705-14"
+                    >Операции</router-link
+                  >
                 </li>
                 <li>
                   <router-link to="#">Избранное</router-link>
@@ -96,11 +143,18 @@
     </div>
 
     <div class="footer-bottom">
-      <div :class="isFullwidth ? 'container-fluid' : 'container'" class="pb-2 pt-2">
+      <div
+        :class="isFullwidth ? 'container-fluid' : 'container'"
+        class="pb-2 pt-2"
+      >
         <p class="footer-copyright">АО АКБ “Новикомбанк”</p>
 
         <figure class="footer-payments">
-          <img src="../../../assets/newImg/logotypes/mir.jpg" alt="Payment methods" class="bg-transparent" />
+          <img
+            src="../../../assets/newImg/logotypes/mir.jpg"
+            alt="Payment methods"
+            class="bg-transparent mir"
+          />
         </figure>
       </div>
     </div>
@@ -170,9 +224,7 @@ export default {
   margin-left: 35px;
 }
 
-
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .custom2,
   .custom3 {
     flex: 0 0 50%;
@@ -180,13 +232,12 @@ export default {
   }
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .custom2,
   .custom3 {
     flex: 0 0 100%;
   }
-  .bg-transparent{
+  .mir {
     width: 30px;
   }
 }
