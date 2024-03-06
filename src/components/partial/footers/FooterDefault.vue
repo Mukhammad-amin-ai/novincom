@@ -187,7 +187,7 @@ export default {
     flex: 0 0 100%;
   }
   .bg-transparent{
-    width: 80px;
+    width: 30px;
   }
 }
 </style>

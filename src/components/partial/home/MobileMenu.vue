@@ -341,11 +341,11 @@ export default {
 
 <style scoped>
 .borderCus {
-  border-top-left-radius: 1rem !important;
-  border-bottom-left-radius: 1rem !important;
+  border-top-left-radius: 3rem !important;
+  border-bottom-left-radius: 3rem !important;
 }
 .btn {
-  border-top-right-radius: 1rem !important;
-  border-bottom-right-radius: 1rem !important;
+  border-top-right-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
 }
 </style>

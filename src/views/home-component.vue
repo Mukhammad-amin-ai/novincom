@@ -183,9 +183,9 @@
             <div class="cta-content d-flex">
               <div class="cta-text text-right text-white">
                 <p>
-                  Путешествия !
+                  Путешествия!
                   <br />
-                  <strong style="font-family: Gilroy-SemiBold !important">Авиа- и железнодорожные билеты и отели.</strong>
+                  <strong style="font-family: Gilroy-SemiBold !important">"Авиа и ж/д билеты, отели</strong>
                 </p>
               </div>
               <router-link to="/flight-tickets" class="btn btn-primary btn-round" style="display: flex; gap: 10px">
@@ -412,7 +412,7 @@ export default {
   }
 
   .cta-border .cta-img {
-    top: -95px !important;
+    top: -65px !important;
     left: -40px !important;
   }
 
