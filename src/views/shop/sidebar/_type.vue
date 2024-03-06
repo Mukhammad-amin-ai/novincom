@@ -1,5 +1,5 @@
 <template>
-  <headerCatalog/>
+  <headerCatalog />
   <main class="main">
     <page-header title="Электроника" :subtitle="category"></page-header>
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
@@ -21,22 +21,40 @@
     <div class="page-content">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 skeleton-body skel-shop-products" :class="{ loaded: loaded }">
+          <div
+            class="col-lg-9 skeleton-body skel-shop-products"
+            :class="{ loaded: loaded }"
+          >
             <div class="toolbox">
               <div class="toolbox-left">
                 <div class="toolbox-info">
                   Показано
-                  <span style="font-family:Gilroy-Medium !important">9 из 50</span>
+                  <span style="font-family: Gilroy-Medium !important"
+                    >9 из 50</span
+                  >
                   Tоваров
                 </div>
               </div>
               <div class="toolbox-right">
                 <div class="toolbox-sort">
-                  <label for="sortby" style="font-family: Gilroy-Medium !important; font-size: 14px;">Сортировка:</label>
+                  <label
+                    for="sortby"
+                    style="
+                      font-family: Gilroy-Medium !important;
+                      font-size: 14px;
+                    "
+                    >Сортировка:</label
+                  >
                   <div class="select-custom">
-                    <select name="sortby" id="sortby" class="form-control" @change.prevent="getProducts"
-                      v-model="orderBy">
-                      <option value="default">По умолчанию
+                    <select
+                      name="sortby"
+                      id="sortby"
+                      class="form-control"
+                      @change.prevent="getProducts"
+                      v-model="orderBy"
+                    >
+                      <option value="default">
+                        По умолчанию
                         <!-- <pre>   &#8964;</pre> -->
                       </option>
                       <option value="featured">Цена по возрастанию</option>
@@ -45,8 +63,11 @@
                   </div>
                 </div>
                 <div class="toolbox-layout">
-                  <router-link to="/shop/sidebar/list" class="btn-layout"
-                    :class="{ active: $route.path === '/shop/sidebar/list' }">
+                  <router-link
+                    to="/shop/sidebar/list"
+                    class="btn-layout"
+                    :class="{ active: $route.path === '/shop/sidebar/list' }"
+                  >
                     <svg width="16" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="10" height="4" />
@@ -54,8 +75,11 @@
                       <rect x="6" y="6" width="10" height="4" />
                     </svg>
                   </router-link>
-                  <router-link to="/shop/sidebar/2cols" class="btn-layout"
-                    :class="{ active: $route.path === '/shop/sidebar/2cols' }">
+                  <router-link
+                    to="/shop/sidebar/2cols"
+                    class="btn-layout"
+                    :class="{ active: $route.path === '/shop/sidebar/2cols' }"
+                  >
                     <svg width="10" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -63,8 +87,11 @@
                       <rect x="6" y="6" width="4" height="4" />
                     </svg>
                   </router-link>
-                  <router-link to="/shop/sidebar/3cols" class="btn-layout"
-                    :class="{ active: $route.path === '/shop/sidebar/3cols' }">
+                  <router-link
+                    to="/shop/sidebar/3cols"
+                    class="btn-layout"
+                    :class="{ active: $route.path === '/shop/sidebar/3cols' }"
+                  >
                     <svg width="16" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -74,8 +101,11 @@
                       <rect x="12" y="6" width="4" height="4" />
                     </svg>
                   </router-link>
-                  <router-link to="/shop/sidebar/4cols" class="btn-layout"
-                    :class="{ active: $route.path === '/shop/sidebar/4cols' }">
+                  <router-link
+                    to="/shop/sidebar/4cols"
+                    class="btn-layout"
+                    :class="{ active: $route.path === '/shop/sidebar/4cols' }"
+                  >
                     <svg width="22" height="10">
                       <rect x="0" y="0" width="4" height="4" />
                       <rect x="6" y="0" width="4" height="4" />
@@ -90,14 +120,22 @@
                 </div>
               </div>
             </div>
-            <shop-list-one :products="products" :per-page="perPage" :loaded="loaded"></shop-list-one>
+            <shop-list-one
+              :products="products"
+              :per-page="perPage"
+              :loaded="loaded"
+            ></shop-list-one>
             <pagination :per-page="perPage" :total="totalCount"></pagination>
           </div>
           <aside class="col-lg-3 order-lg-first" sticky-container>
             <div v-sticky="!isSidebar" sticky-offset="{ top: 69 }">
-              <button class="sidebar-fixed-toggler" @click="toggleSidebar" v-if="isSidebar">
+              <button
+                class="sidebar-fixed-toggler"
+                @click="toggleSidebar"
+                v-if="isSidebar"
+              >
                 <!-- <i class="icon-cog"></i> -->
-                <img src="../../../assets/newImg/icons/settings.svg" alt="">
+                <img src="../../../assets/newImg/icons/settings.svg" alt="" />
               </button>
               <div class="sidebar-filter-overlay" @click="hideSidebar"></div>
               <shop-sidebar-one :is-sidebar="isSidebar"></shop-sidebar-one>
@@ -111,7 +149,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Sticky from "vue-sticky-directive";
-import headerCatalog from '@/components/partial/headers/headerCatalog.vue'
+import headerCatalog from "@/components/partial/headers/headerCatalog.vue";
 import PageHeader from "@/components/elements/PageHeader.vue";
 import ShopListOne from "@/components/partial/shop/list/ShopListOne.vue";
 import ShopSidebarOne from "@/components/partial/shop/sidebar/ShopSidebarOne.vue";
@@ -184,7 +222,7 @@ export default {
                 product_id: "122",
                 "product-category_id": "27",
               },
-            }
+            },
           ],
           brands: [
             {
@@ -252,7 +290,7 @@ export default {
           slug: "apple-smart-folio-for-11-inch-ipad-pro",
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, ",
-          price: 3000.00,
+          price: 3000.0,
           sale_price: null,
           review: 2,
           ratings: 4,
@@ -1306,7 +1344,7 @@ export default {
                 product_id: "122",
                 "product-category_id": "27",
               },
-            }
+            },
           ],
           brands: [
             {
@@ -1374,7 +1412,7 @@ export default {
           slug: "apple-smart-folio-for-11-inch-ipad-pro",
           short_desc:
             "Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, ",
-          price: 3000.00,
+          price: 3000.0,
           sale_price: null,
           review: 2,
           ratings: 4,
@@ -1715,7 +1753,7 @@ export default {
             },
           ],
         },
-      ]
+      ],
     };
   },
   computed: {
@@ -1756,7 +1794,7 @@ export default {
     },
     localChange() {
       console.log(this.$route);
-      localStorage.setItem('showLogin', false)
+      localStorage.setItem("showLogin", false);
     },
     // getProducts: async function (samePage = false) {
     //   this.type = this.$route.params.type;
@@ -1822,5 +1860,8 @@ export default {
 <style scoped>
 .breadcrumb-item::before:nth-child(3) {
   content: none !important;
+}
+#sortby {
+  border-radius: 100px !important;
 }
 </style>
