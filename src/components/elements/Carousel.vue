@@ -93,20 +93,20 @@ export default {
       data: [
         {
           image: "/assets/images/iphone.svg",
-          name: "Товары с доставкой",
+          name: "Товары",
           description: "Покупайте за баллы и деньги",
           is_card: false,
         },
         {
           image: "/assets/images/card.svg",
-          name: "Подарочные сертификаты",
+          name: "Подарки",
           description: "Покупайте за баллы и деньги",
           is_card: true,
         },
 
         {
           image: "/assets/images/plane.svg",
-          name: "Билеты на самолет",
+          name: "Отпуск",
           description: "Покупайте за баллы и деньги",
           is_card: false,
         },

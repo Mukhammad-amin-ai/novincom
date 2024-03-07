@@ -31,7 +31,9 @@
         <div class="header-right">
           <ul class="top-menu">
             <li>
-              <router-link to="/sign_up" style="font-family: Gilroy-Medium !important"
+              <router-link
+                to="/sign_up"
+                style="font-family: Gilroy-Medium !important"
                 >Вход</router-link
               >
               <ul>
@@ -155,9 +157,9 @@
                       class="item-lead"
                       :class="{ active: $route.query.category == 'gift-idea' }"
                     >
-                      <router-link to="#">Трэвел-сервисы</router-link>
+                      <router-link to="/flight-tickets">Путешествия</router-link>
                     </li>
-                    <li :class="{ active: $route.query.category == 'beds' }">
+                    <!-- <li :class="{ active: $route.query.category == 'beds' }">
                       <router-link to="/flight-tickets"
                         >Авиабилеты
                       </router-link>
@@ -174,7 +176,7 @@
                       }"
                     >
                       <router-link to="/flight-tickets">Отели </router-link>
-                    </li>
+                    </li> -->
                     <li
                       style="background-color: #f9f9f9"
                       :class="{ active: $route.query.category == 'storage' }"

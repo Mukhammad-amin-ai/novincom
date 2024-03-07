@@ -51,7 +51,11 @@
         <div class="header-left">
           <button class="mobile-menu-toggler" @click="openMobileMenu">
             <span class="sr-only">Toggle mobile menu</span>
-            <img class="mobile-menu-cos" src="../../../assets/newImg/icons/menu.svg" alt="" />
+            <img
+              class="mobile-menu-cos"
+              src="../../../assets/newImg/icons/menu.svg"
+              alt=""
+            />
           </button>
           <router-link to="/" class="logo">
             <img
@@ -142,7 +146,9 @@
                       class="item-lead"
                       :class="{ active: $route.query.category == 'gift-idea' }"
                     >
-                      <router-link to="#">Трэвел-сервисы</router-link>
+                      <router-link to="/flight-tickets"
+                        >Путешествия</router-link
+                      >
                     </li>
                     <li :class="{ active: $route.query.category == 'beds' }">
                       <router-link to="/flight-tickets"
@@ -319,7 +325,7 @@ export default {
   color: #000;
 }
 
-.mobile-menu-cos{
+.mobile-menu-cos {
   width: 50px;
   height: 50px;
 }

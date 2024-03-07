@@ -260,9 +260,9 @@
                 >
               </li>
               <li class="item-cats-lead">
-                <router-link to="#">Трэвел-сервисы</router-link>
+                <router-link to="/flight-tickets">Путешествия</router-link>
               </li>
-              <li>
+              <!-- <li>
                 <router-link to="/flight-tickets">Авиабилеты</router-link>
               </li>
               <li>
@@ -270,7 +270,7 @@
               </li>
               <li>
                 <router-link to="/flight-tickets">Отели</router-link>
-              </li>
+              </li> -->
               <li>
                 <router-link to="/shop/sidebar/3cols">Товары</router-link>
               </li>
