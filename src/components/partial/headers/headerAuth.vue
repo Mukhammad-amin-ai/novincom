@@ -157,7 +157,7 @@
                       class="item-lead"
                       :class="{ active: $route.query.category == 'gift-idea' }"
                     >
-                      <router-link to="#">Трэвел-сервисы</router-link>
+                      <router-link to="/flight-tickets">Трэвел-сервисы</router-link>
                     </li>
                     <li :class="{ active: $route.query.category == 'beds' }">
                       <router-link to="/flight-tickets"
