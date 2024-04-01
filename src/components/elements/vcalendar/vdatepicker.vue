@@ -132,7 +132,7 @@ hr {
 }
 
 .active {
-  background-color: #005baa !important;
+  background-color: #55246A !important;
   color: #fff;
 }
 
@@ -244,7 +244,7 @@ hr {
 .filter-btn button {
   padding: 16px 24px;
   border-radius: 100px;
-  background-color: #005baa;
+  background-color: #55246A;
   color: #fff;
   font-family: Gilroy-Medium !important;
 }

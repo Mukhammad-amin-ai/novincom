@@ -9,8 +9,7 @@
                 src="../../../assets/newImg/logotypes/logo.svg"
                 class="footer-logo bg-transparent"
                 alt="Footer Logo"
-                width="105"
-                height="27"
+            
               />
               <p style="font-family: Gilroy-Medium !important">
                 Подключите программу “Бонусы” к Вашей карте, оплачивайте ей

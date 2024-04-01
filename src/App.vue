@@ -74,7 +74,7 @@ export default {
 #scroll-top {
   width: 64px;
   height: 64px;
-  background-color: #005baa;
+  background-color: var(--primary_bg);
   display: flex;
   justify-content: center;
   align-items: center;

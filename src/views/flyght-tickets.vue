@@ -44,7 +44,7 @@
           <h6>Туда</h6>
         </a>
         <a href="/#" style="text-decoration: underline">
-          <h6 style="color: #005baa">Туда-обратно</h6>
+          <h6 style="color: #55246A">Туда-обратно</h6>
         </a>
         <a href="/#">
           <h6>Cложный перелет</h6>
@@ -314,8 +314,8 @@ export default {
   font-family: Gilroy-Medium !important;
   font-size: 16px;
   border-radius: 100px;
-  color: #005baa;
-  border: 1px solid #005baa;
+  color: #55246A;
+  border: 1px solid #55246A;
 }
 
 .serach-result-field {

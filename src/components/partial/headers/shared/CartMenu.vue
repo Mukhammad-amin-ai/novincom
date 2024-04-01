@@ -114,7 +114,7 @@ p {
   font-size: 12px;
 }
 .dropdown-toggle:hover svg path{
-  fill: #005BAA;
+  fill: #55246A;
 }
 
 @media screen and (max-width:468px) {

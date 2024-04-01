@@ -62,8 +62,7 @@
               src="../../../assets/newImg/logotypes/logo.svg"
               class="bg-transparent"
               alt="Molla Logo"
-              width="105"
-              height="27"
+             
             />
           </router-link>
         </div>
@@ -260,7 +259,7 @@ export default {
 }
 
 .call:hover svg path {
-  fill: #005baa;
+  fill: #55246A;
 }
 
 .logIn {
@@ -273,12 +272,12 @@ export default {
 }
 
 .logIn:hover {
-  fill: #005baa !important;
-  color: #005baa !important;
+  fill: #55246A !important;
+  color: #55246A !important;
 }
 
 .logIn:hover svg path {
-  fill: #005baa;
+  fill: #55246A;
 }
 
 .drop-custom {

@@ -280,8 +280,8 @@ export default {
   font-family: Gilroy-Medium !important;
   font-size: 16px;
   border-radius: 100px;
-  color: #005baa;
-  border: 1px solid #005baa;
+  color: #55246A;
+  border: 1px solid #55246A;
 }
 
 .serach-result-field {

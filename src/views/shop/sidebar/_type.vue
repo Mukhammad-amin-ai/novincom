@@ -553,7 +553,7 @@ export default {
           variants: [
             {
               id: 26,
-              color: "#005BAA",
+              color: "#55246A",
               color_name: "Red",
               price: 20214.99,
               pivot: {
@@ -592,7 +592,7 @@ export default {
             },
             {
               id: 27,
-              color: "#005BAA",
+              color: "#55246A",
               color_name: "blue",
               price: 22217.99,
               pivot: {

@@ -40,7 +40,7 @@ p {
 }
 
 .dropdown-toggle:hover svg path {
-  fill: #005BAA;
+  fill: #55246A;
 }
 </style>
 

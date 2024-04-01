@@ -181,9 +181,9 @@ export default {
 
 .buttons .show {
   padding: 20px 105px;
-  border: 1px solid #005baa;
+  border: 1px solid #55246A;
   border-radius: 100px;
-  color: #005baa;
+  color: #55246A;
   font-size: 16px;
   white-space: nowrap;
   font-family: Gilroy-Medium !important;

@@ -440,7 +440,7 @@ export default {
     font-family: Gilroy-Medium !important;
     font-size: 16px;
     gap: 5px;
-    color: #005BAA;
+    color: #55246A;
 }
 
 .price-flight {
@@ -450,8 +450,8 @@ export default {
     font-family: Gilroy-Medium !important;
     font-size: 16px;
     border-radius: 100px;
-    color: #005BAA;
-    border: 1px solid #005BAA;
+    color: #55246A;
+    border: 1px solid #55246A;
 }
 
 .tooltip-flight {
@@ -461,7 +461,7 @@ export default {
     left: 70px;
     top: -60px;
     border-radius: .4rem;
-    background-color: #005BAA;
+    background-color: #55246A;
     color: #fff;
     white-space: nowrap;
 }
